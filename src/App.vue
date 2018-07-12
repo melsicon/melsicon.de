@@ -32,7 +32,7 @@ export default {
     margin: 0
     padding: 0
 
-  h1, h2, h3
+  h1, h2
     font-family: $font-heading
     margin: 0
 
@@ -77,7 +77,7 @@ export default {
   h2
     grid-column: 1 / -1
     margin-bottom: 1rem
-    font-size: 2.2rem
+    font-size: 2rem
 
   h3
     grid-column: 1 / -1

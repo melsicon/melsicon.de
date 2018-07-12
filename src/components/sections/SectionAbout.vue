@@ -6,7 +6,7 @@
             <p v-for="paragraph in melsicon.paragraphs" :key="paragraph.index" class="span-2">{{paragraph}}</p>
         </section>
         <section class="services span-2">
-            <h3 class="sub-heading">{{services.title}}</h3>
+            <h2 class="sub-heading">{{services.title}}</h2>
             <p v-for="paragraph in services.paragraphs" :key="paragraph.index">{{paragraph}}</p>
             <ul class="service-list">
                 <li v-for="service in services.list" :key="service.index" class="service">
@@ -16,7 +16,7 @@
             </ul>
         </section>
         <section class="clients span-2">
-            <h3 class="sub-heading">{{clients.title}}</h3>
+            <h2 class="sub-heading">{{clients.title}}</h2>
             <p v-for="paragraph in services.paragraphs" :key="paragraph.index">{{paragraph}}</p>
             <ul class="client-list">
                 <li v-for="client in clients.list" :key="client.index" class="client">

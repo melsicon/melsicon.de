@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: "Team"
-};
+    name: 'Team'
+}
 </script>
 
 <style lang="sass">

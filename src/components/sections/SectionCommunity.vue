@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: "Community"
-};
+    name: 'Community'
+}
 </script>
 
 <style lang="sass">

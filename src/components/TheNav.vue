@@ -1,13 +1,21 @@
 <template>
-    <h3>Navigation</h3>
+    <nav class="navigation">
+        <a href="#" class="nav-link">Nav</a>
+    </nav>
 </template>
 
 <script>
 export default {
-  name: "Navigation"
-};
+    name: 'Navigation'
+}
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
+
+.nav
+	position: sticky
+	top: 0
+	height: 3rem
+	background: white
 
 </style>

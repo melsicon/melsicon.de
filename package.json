@@ -35,13 +35,16 @@
       "@vue/prettier"
     ],
     "rules": {
-      "semi": ["error", "never"],
+      "semi": [
+        "error",
+        "never"
+      ],
       "prettier/prettier": [
         "error",
         {
           "singleQuote": true,
           "bracketSpacing": false,
-          "tabWidth": 4,
+          "tabWidth": 2,
           "semi": false
         }
       ],

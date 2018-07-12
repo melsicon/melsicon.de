@@ -14,14 +14,14 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
-    "@vue/cli-plugin-pwa": "^3.0.0-beta.15",
-    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/cli-plugin-babel": "^3.0.0-rc.3",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.3",
+    "@vue/cli-plugin-pwa": "^3.0.0-rc.3",
+    "@vue/cli-service": "^3.0.0-rc.3",
     "@vue/eslint-config-prettier": "^3.0.0-rc.3",
     "lint-staged": "^6.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
     "vue-cli-plugin-i18n": "^0.3.1",
     "vue-template-compiler": "^2.5.16"
   },
@@ -35,6 +35,16 @@
       "@vue/prettier"
     ],
     "rules": {
+      "semi": ["error", "never"],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "bracketSpacing": false,
+          "tabWidth": 4,
+          "semi": false
+        }
+      ],
       "vue/attribute-hyphenation": [
         "error",
         "always"

@@ -63,14 +63,16 @@ export default {
       display: grid
       grid-template-columns: repeat(2, 1fr)
       grid-auto-rows: max-content
+      grid-gap: 0 1rem
 
   p
     margin: 0
     grid-column: span 1
     &:not(:last-child)
       margin-bottom: 1rem
-    &.span2
-      grid-column: span 2
+
+  .span-2
+    grid-column: 1 / -1
 
   h2
     grid-column: 1 / -1

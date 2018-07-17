@@ -23,9 +23,11 @@ export default {
 
   body
     font-family: $font-body
-    font-size: 18px
+    font-size: 20px
     line-height: 1.3
     color: $color-body
+    @media screen and (max-width: 768px)
+      font-size: 16px
     
   *
     box-sizing: border-box
@@ -33,7 +35,7 @@ export default {
     padding: 0
 
   h1, h2
-    font-family: $font-heading
+    font-weight: 300
     margin: 0
 
   ul
@@ -46,42 +48,53 @@ export default {
   /* GENERAL ELEMENTS */
 
   .illustration
-    background: $color-primary-lighter
-    height: 300px
-    margin: 1rem 0
+    display: flex
+    justify-content: center
+    align-items: center
 
-  .article-section
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-auto-rows: max-content
-    flex-wrap: wrap
-    grid-gap: .5rem 1rem
-    grid-column: 1 / -1
-    margin: 3rem 0
-
-    section
-      display: grid
-      grid-template-columns: repeat(2, 1fr)
-      grid-auto-rows: max-content
-      grid-gap: 0 1rem
+    div
+      height: 150px
+      width: 150px
+      background: $color-primary-lighter
+      border-radius: 50%
 
   p
     margin: 0
-    grid-column: span 1
     &:not(:last-child)
       margin-bottom: 1rem
 
-  .span-2
+  h1
     grid-column: 1 / -1
+    font-size: 3.2rem
+    max-width: 35ch
+    margin-bottom: 1rem
+    @media screen and (max-width: 768px)
+      font-size: 2.5rem
 
   h2
-    grid-column: 1 / -1
-    margin-bottom: 1rem
-    font-size: 2rem
+    margin: 1rem 0
+    font-size: 2.5rem
+    @media screen and (max-width: 768px)
+      font-size: 2rem
 
   h3
-    grid-column: 1 / -1
     margin-top: 1rem
     margin-bottom: .5rem
-    font-size: 1.8rem
+    font-size: 1.5rem
+    @media screen and (max-width: 768px)
+      font-size: 1.2rem
+
+  button
+    min-height: 35px
+    background: $color-secondary
+    border: 0
+    color: white
+    font-size: 1rem
+    padding: 0 1rem
+    border-radius: .2rem
+    font-weight: bold
+    text-transform: uppercase
+  
+  .btn-wrap
+    grid-column: 1
 </style>

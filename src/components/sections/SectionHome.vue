@@ -1,8 +1,11 @@
 <template>
-    <article class="article-section introduction">
-        <h1 class="main-heading">{{title}}</h1>
-        <p>{{description}}</p>
-    </article>
+    <section class="section intro">
+        <article class="article">
+            <h1 class="main-heading">{{title}}</h1>
+            <p>{{description}}</p>
+            <span class="span2 btn-wrap"><button>Contact us</button></span>
+        </article>
+    </section>
 </template>
 
 <script>
@@ -15,17 +18,3 @@ export default {
   })
 }
 </script>
-
-<style lang="sass">
-
-  .introduction
-    margin-top: 8rem
-
-  .main-heading
-    grid-column: 1 / -1
-    font-size: 3.2rem
-    margin-top: 2rem
-    margin-bottom: 1.5rem
-    max-width: 30ch
-
-</style>

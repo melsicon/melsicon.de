@@ -15,7 +15,7 @@
 
   "home": {
     "heading": "Welcome to a long fancy heading. It's powerful yeah.",
-    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+    "paragraphs": ["Paragraph 1 in the English locale"]
   },
 
   "services": {
@@ -43,17 +43,17 @@
 
   "team": {
     "about": {
-      "heading": "",
+      "heading": "About our team",
       "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
     },
     "careers": {
-      "heading": "",
+      "heading": "Join our company",
       "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
     }
   },
 
   "contact": {
-    "heading": "",
-    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+    "heading": "Get in touch with us now",
+    "paragraphs": ["Paragraph 1 in the English locale"]
   }
 }

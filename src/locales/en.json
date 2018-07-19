@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "community": "Community",
+    "team": "Team",
+    "contact": "Contact"
+  },
+
+  "buttons": {
+    "contact": "Contact us",
+    "more": "Find out more"
+  },
+
+  "home": {
+    "heading": "Welcome to a long fancy heading. It's powerful yeah.",
+    "paragraphs": ["p 1", "p 2"]
+  },
+
+  "services": {
+    "about": {
+      "heading": "This is us",
+      "paragraphs": ["p 1", "p 2"]
+    },
+    "services": {
+      "heading": "Our services",
+      "paragraphs": ["p 1", "p 2"],
+      "list": ["service 1", "service 2"]
+    },
+    "clients": {
+      "heading": "Our clients",
+      "paragraphs": ["p 1", "p 2"],
+      "list": ["Commerzbank", "DB", "Deutsche Bank"]
+    }
+  },
+  "community": {
+    "heading": "Dedicated to the community",
+    "paragraphs": ["p 1", "p 2"],
+    "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
+  },
+  "team": {
+    "about": {
+      "heading": "",
+      "paragraphs": ["p 1", "p 2"]
+    },
+    "careers": {
+      "heading": "",
+      "paragraphs": ["p 1", "p 2"]
+    }
+  },
+  "contact": {
+    "heading": "",
+    "paragraphs": ["p 1", "p 2"]
+  }
+}

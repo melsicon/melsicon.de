@@ -2,13 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
-import i18n from './i18n'
 import VueScrollactive from 'vue-scrollactive'
 import VueMq from 'vue-mq'
+import i18n from './i18n'
 
 Vue.config.productionTip = false
 
 Vue.use(VueScrollactive)
+
+Vue.config.lang = 'en'
 
 Vue.use(VueMq, {
   breakpoints: {

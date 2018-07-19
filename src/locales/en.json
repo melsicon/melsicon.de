@@ -1,10 +1,10 @@
 {
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "community": "Community",
-    "team": "Team",
-    "contact": "Contact"
+      "home": "Home",
+      "services": "Services",
+      "community": "Community",
+      "team": "Team",
+      "contact": "Contact"
   },
 
   "buttons": {
@@ -33,11 +33,13 @@
       "list": ["Commerzbank", "DB", "Deutsche Bank"]
     }
   },
+
   "community": {
     "heading": "Dedicated to the community",
     "paragraphs": ["p 1", "p 2"],
     "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
   },
+
   "team": {
     "about": {
       "heading": "",
@@ -48,6 +50,7 @@
       "paragraphs": ["p 1", "p 2"]
     }
   },
+
   "contact": {
     "heading": "",
     "paragraphs": ["p 1", "p 2"]

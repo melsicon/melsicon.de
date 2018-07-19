@@ -34,10 +34,9 @@ export default {
   max-width: 1200px
   min-height: 100vh
   margin: auto
+  padding: 0 .8rem
   @media only screen and (min-width: 1480px)
     max-width: 1400px
-  @media only screen and (max-width: 768px)
-    padding: 0 .8rem
 
 .section
   min-height: 70vh

@@ -48,7 +48,7 @@ export default {
     z-index: 99
     display: flex
     justify-content: space-between
-    padding: .5rem 0
+    padding: .5rem .8rem
     @media only screen and (min-width: 1480px)
       max-width: 1400px
   

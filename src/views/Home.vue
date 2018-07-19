@@ -42,16 +42,12 @@ export default {
   display: flex
   justify-content: center
   flex-direction: column
+  margin-bottom: 5rem
   @media screen and (max-width: 768px)
     margin: 1rem 0
 
 .home
-  min-height: 80vh
-  display: flex
-  justify-content: center
-
-  .article
-    margin-bottom: 5rem
+  margin-bottom: 1rem
 
 .article
   display: grid

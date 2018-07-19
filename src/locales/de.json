@@ -1,3 +1,59 @@
 {
-  "message": "hello i18n !!"
+  "nav": {
+      "home": "Home",
+      "services": "Leistungen",
+      "community": "Community",
+      "team": "Team",
+      "contact": "Kontakt"
+  },
+
+  "buttons": {
+    "locale": "English",
+    "contact": "Kontakt uns",
+    "more": "Mehr lernen"
+  },
+
+  "home": {
+    "heading": "Wir sind die IT-experten in Frankfurt. Einhorn, Kuchen, Schokolade. Ich bin ein Einhorn.",
+    "paragraphs": ["Paragraph 1 in the German locale", "Paragraph 2 in the German locale"]
+  },
+
+  "services": {
+    "about": {
+      "heading": "This is us",
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+    },
+    "services": {
+      "heading": "Our services",
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
+      "list": ["service 1", "service 2"]
+    },
+    "clients": {
+      "heading": "Our clients",
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
+      "list": ["Commerzbank", "DB", "Deutsche Bank"]
+    }
+  },
+
+  "community": {
+    "heading": "Dedicated to the community",
+    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
+    "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
+  },
+
+  "team": {
+    "about": {
+      "heading": "",
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+    },
+    "careers": {
+      "heading": "",
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+    }
+  },
+
+  "contact": {
+    "heading": "",
+    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+  }
 }

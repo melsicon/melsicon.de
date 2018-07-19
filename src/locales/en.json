@@ -8,51 +8,52 @@
   },
 
   "buttons": {
+    "locale": "German",
     "contact": "Contact us",
     "more": "Find out more"
   },
 
   "home": {
     "heading": "Welcome to a long fancy heading. It's powerful yeah.",
-    "paragraphs": ["p 1", "p 2"]
+    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
   },
 
   "services": {
     "about": {
       "heading": "This is us",
-      "paragraphs": ["p 1", "p 2"]
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
     },
     "services": {
       "heading": "Our services",
-      "paragraphs": ["p 1", "p 2"],
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
       "list": ["service 1", "service 2"]
     },
     "clients": {
       "heading": "Our clients",
-      "paragraphs": ["p 1", "p 2"],
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
       "list": ["Commerzbank", "DB", "Deutsche Bank"]
     }
   },
 
   "community": {
     "heading": "Dedicated to the community",
-    "paragraphs": ["p 1", "p 2"],
+    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
     "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
   },
 
   "team": {
     "about": {
       "heading": "",
-      "paragraphs": ["p 1", "p 2"]
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
     },
     "careers": {
       "heading": "",
-      "paragraphs": ["p 1", "p 2"]
+      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
     }
   },
 
   "contact": {
     "heading": "",
-    "paragraphs": ["p 1", "p 2"]
+    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
   }
 }

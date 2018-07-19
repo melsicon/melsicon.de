@@ -56,6 +56,9 @@ export default {
     justify-content: center
     align-items: center
 
+    svg
+      max-width: 50%
+
   p
     margin: 0
     &:not(:last-child)

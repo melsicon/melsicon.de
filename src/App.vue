@@ -21,11 +21,15 @@ export default {
 
 <style lang="sass">
 
+  html
+    background: $color-secondary-darker
+
   body
     font-family: $font-body
     font-size: 20px
     line-height: 1.3
     color: $color-body
+    background: white
     @media screen and (max-width: 768px)
       font-size: 16px
     
@@ -65,8 +69,8 @@ export default {
 
   h1
     grid-column: 1 / -1
-    font-size: 3.2rem
-    max-width: 35ch
+    font-size: 3.5rem
+    //max-width: 35ch
     margin-bottom: 1rem
     @media screen and (max-width: 768px)
       font-size: 2.5rem
@@ -83,6 +87,11 @@ export default {
     font-size: 1.5rem
     @media screen and (max-width: 768px)
       font-size: 1.2rem
+
+  h4
+    font-size: .9rem
+    text-transform: uppercase
+    letter-spacing: .05rem
 
   button
     min-height: 35px

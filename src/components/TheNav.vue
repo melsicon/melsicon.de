@@ -59,6 +59,7 @@ export default {
 
   .nav-link
     color: $color-body
+    font-size: 18px
     text-decoration: none
     text-transform: capitalize
     transition: transform .3s ease-in-out

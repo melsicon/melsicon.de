@@ -30,6 +30,9 @@ export default {
     line-height: 1.3
     color: $color-body
     background: white
+    @media only screen and (min-width: 1000px)
+      background-image: url(assets/bg.svg)
+      background-size: cover
     @media screen and (max-width: 768px)
       font-size: 16px
     

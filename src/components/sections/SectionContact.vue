@@ -5,8 +5,17 @@
             <p v-for="p in $t('contact.paragraphs')" :key="p.index">{{p}}</p>
             <span class="btn-wrap"><button>{{ $t('buttons.contact') }}</button></span>
             <div class="illustration">
-                <div/>
+                <temp-illustration/>
             </div>
         </article>
     </section>
 </template>
+
+<script>
+import TempIllustration from '@/components/TempIllustration'
+export default {
+  components: {
+    TempIllustration
+  }
+}
+</script>

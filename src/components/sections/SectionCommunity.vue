@@ -9,8 +9,17 @@
                 </li>
             </ul>
             <div class="illustration span2">
-                <div/>
+                <temp-illustration/>
             </div>
         </article>
     </section>
 </template>
+
+<script>
+import TempIllustration from '@/components/TempIllustration'
+export default {
+  components: {
+    TempIllustration
+  }
+}
+</script>

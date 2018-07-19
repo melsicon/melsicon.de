@@ -56,12 +56,6 @@ export default {
     justify-content: center
     align-items: center
 
-    div
-      height: 150px
-      width: 150px
-      background: $color-primary-lighter
-      border-radius: 50%
-
   p
     margin: 0
     &:not(:last-child)

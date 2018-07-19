@@ -2,7 +2,7 @@
     <section id="services" class="section services">
         <article class="article">
             <div class="illustration">
-                <div/>
+                <temp-illustration/>
             </div>
             <article>
                 <h2 class="sub-heading">{{ $t('services.about.heading') }}</h2>
@@ -27,3 +27,12 @@
         </article>
     </section>
 </template>
+
+<script>
+import TempIllustration from '@/components/TempIllustration'
+export default {
+  components: {
+    TempIllustration
+  }
+}
+</script>

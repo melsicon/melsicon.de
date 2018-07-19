@@ -1,9 +1,9 @@
 <template>
-    <section class="section team">
+    <section id="team" class="section team">
         <article class="article">
             <article>
-                <h2 class="sub-heading span2r">{{team.title}}</h2>
-                <p v-for="paragraph in team.paragraphs" :key="paragraph.index" class="right">{{paragraph}}</p>
+                <h2 class="sub-heading span2r">{{ $t('team.about.heading') }}</h2>
+                <p v-for="p in $t('team.about.paragraphs')" :key="p.index" class="right">{{p}}</p>
             </article>
             <div class="illustration">
                 <div/>
@@ -12,8 +12,8 @@
                 <div/>
             </div>
             <article>
-                <h3 class="sub-heading span2r">{{team.subtitle}}</h3>
-                <p v-for="paragraph in team.paragraphs" :key="paragraph.index" class="right">{{paragraph}}</p>
+                <h3 class="sub-heading span2r">{{ $t('team.careers.heading') }}</h3>
+                <p v-for="p in $t('team.careers.paragraphs')" :key="p.index" class="right">{{p}}</p>
             </article>
         </article>
     </section>

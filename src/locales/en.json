@@ -15,45 +15,45 @@
 
   "home": {
     "heading": "Welcome to a long fancy heading. It's powerful yeah.",
-    "paragraphs": ["Paragraph 1 in the English locale"]
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
   },
 
   "services": {
     "about": {
       "heading": "This is us",
-      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
     },
     "services": {
       "heading": "Our services",
-      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
-      "list": ["service 1", "service 2"]
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."],
+      "list": ["service 1", "service 2", "service 3", "service 4"]
     },
     "clients": {
       "heading": "Our clients",
-      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
       "list": ["Commerzbank", "DB", "Deutsche Bank"]
     }
   },
 
   "community": {
     "heading": "Dedicated to the community",
-    "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"],
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."],
     "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
   },
 
   "team": {
     "about": {
       "heading": "About our team",
-      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
     },
     "careers": {
       "heading": "Join our company",
-      "paragraphs": ["Paragraph 1 in the English locale", "Paragraph 2 in the English locale"]
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
     }
   },
 
   "contact": {
     "heading": "Get in touch with us now",
-    "paragraphs": ["Paragraph 1 in the English locale"]
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
   }
 }

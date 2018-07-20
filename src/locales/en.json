@@ -10,7 +10,9 @@
   "buttons": {
     "locale": "German",
     "contact": "Contact us",
-    "more": "Find out more"
+    "more": "Find out more",
+    "open": "Menu",
+    "close": "Close"
   },
 
   "home": {

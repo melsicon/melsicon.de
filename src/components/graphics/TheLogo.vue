@@ -5,11 +5,3 @@
         </g>
     </svg>
 </template>
-
-<style lang="sass" scoped>
-
-  .logo
-    height: 2.5rem
-    fill: $color-primary
-
-</style>

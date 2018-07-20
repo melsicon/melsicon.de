@@ -1,5 +1,5 @@
 <template>
-    <div :class="{sidebar: $mq === 'sm'}" class="nav-wrapper">
+    <div class="nav-wrapper">
         <scrollactive :offset="100" 
                       :modify-url="false"
                       class="nav">
@@ -21,15 +21,6 @@ export default {
   name: 'Navigation',
   components: {
     TheLogo
-  },
-  data: () => ({
-    open: false
-  }),
-  computed: {
-    sidebar() {
-      if (this.$mq === 'sm') return true
-      else return false
-    }
   }
 }
 </script>
@@ -56,7 +47,9 @@ export default {
     display: flex
     flex-basis: 50%
     justify-content: space-between
+</style>
 
+<style lang="sass">
   .nav-link
     color: $color-body
     font-size: 18px
@@ -67,29 +60,4 @@ export default {
   .is-active
     border-bottom: 1.5px solid $color-primary
     transform: scale(1.05)
-
-  .sidebar
-    position: relative
-    height: 100vh
-    border: 1px solid red
-
-    .logo
-      position: absolute
-      top: 0
-      right: 0
-      margin: .5rem .5rem
-
-    .nav
-      //display: flex
-      //flex-direction: column
-
-      .circle
-        float: left
-        shape-outside: circle(50%)
-        background: $color-primary-lighter
-        height: 150px
-        width: 150px
-
-      .nav-link
-        font-size: 1.5rem
 </style>

@@ -35,6 +35,7 @@ export default {
   min-height: 100vh
   margin: auto
   padding: 0 .8rem
+  background: $color-white
   @media only screen and (min-width: 1480px)
     max-width: 1400px
 
@@ -45,10 +46,12 @@ export default {
   flex-direction: column
   margin-bottom: 5rem
   @media screen and (max-width: 768px)
-    margin: 1rem 0
+    margin-bottom: 1rem
 
 .home
   margin-bottom: 1rem
+  @media only screen and (max-width: 768px)
+    margin: 2rem 0
 
 .article
   display: grid

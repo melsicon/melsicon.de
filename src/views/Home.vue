@@ -32,12 +32,16 @@ export default {
 .wrapper
   position: relative
   max-width: 1200px
+  width: 100vw
   min-height: 100vh
   margin: auto
   padding: 0 .8rem
   background: $color-white
+  transition: all .5s cubic-bezier(.645,.045,.355,1)
   @media only screen and (min-width: 1480px)
     max-width: 1400px
+  @media only screen and (min-width: 1000px)
+    background: none
 
 .section
   min-height: 70vh

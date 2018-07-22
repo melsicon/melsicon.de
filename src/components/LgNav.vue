@@ -1,7 +1,6 @@
 <template>
     <div class="nav-wrapper">
-        <scrollactive v-if="!sidebar" 
-                      :offset="100"
+        <scrollactive :offset="100"
                       :modify-url="false"
                       class="nav lg-nav">
             <a v-for="(route, key) in $t('nav')" 
@@ -21,18 +20,9 @@ export default {
   components: {
     TheLogo
   },
-  props: {
-    open: {
-      type: Boolean,
-      required: true,
-      default: false
-    },
-    sidebar: {
-      type: Boolean,
-      required: true,
-      default: false
-    }
-  }
+  data: () => ({
+    open: false
+  })
 }
 </script>
 
@@ -63,19 +53,19 @@ export default {
   .logo
     fill: $color-primary
     margin-left: auto
-    max-height: 2rem
+    height: 2rem
     
   .nav-link
     color: $color-black
     font-size: 1rem
-    text-decoration: none
+    letter-spacing: .5px
     margin-right: 5rem
-    text-transform: capitalize
+    text-decoration: none
+    text-transform: uppercase
     transition: transform .3s ease-in
 
   .is-active
-    transform: translate3d(0, -1px, 0)
-    border-bottom: 1px solid $color-black
+    border-bottom: 1.8px solid $color-secondary
 
 
 </style>

@@ -93,9 +93,10 @@ export default {
       font-size: 2rem
 
   h3
+    font-size: 1.8rem
+    font-weight: 300
     margin-top: 1rem
     margin-bottom: .5rem
-    font-size: 1.5rem
     @media screen and (max-width: 768px)
       font-size: 1.2rem
 
@@ -107,7 +108,8 @@ export default {
   button
     background: 0
     border: 0
-    font-size: 1rem
+    font-family: $font-body
+    font-size: 1em
     cursor: pointer
 
   .btn-cta
@@ -118,6 +120,9 @@ export default {
     border-radius: .2rem
     font-weight: bold
     text-transform: uppercase
+
+  .btn-more
+    color: $color-secondary
   
   .btn-wrap
     grid-column: 1

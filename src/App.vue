@@ -1,12 +1,11 @@
 <template>
-    <div id="app" :class="{'no-scroll': open}">
+    <div id="app">
         <transition name="open">
             <the-sidebar v-if="sidebar && open" :open="open" v-on:toggleSidebar="toggleSidebar"/>
         </transition>
-        <the-nav v-if="!sidebar"/>
-        <sidebar-toggle v-if="sidebar" v-on:toggleSidebar="toggleSidebar"/>
-        <router-view/>
-        <the-footer/>
+        <the-nav :sidebar="sidebar" :open="open" v-on:toggleSidebar="toggleSidebar"/>
+        <router-view :class="{opened: open}"/>
+        <the-footer :class="{opened: open}"/>
     </div>
 </template>
 
@@ -28,21 +27,25 @@ export default {
   }),
   computed: {
     sidebar() {
+      // If screen size is 'sm' or less, sidebar will be true
       if (this.$mq === 'sm') return true
       else return false
     }
   },
   methods: {
     toggleSidebar() {
+      // Open and close the sidebar
       this.open = !this.open
-      if (
+      /* if (
         !document.body.style.overflow ||
         document.body.style.overflow === 'auto'
       ) {
+        // If body overflow is set to 'auto' or does not have the property, apply 'hidden'
         document.body.style.overflow = 'hidden'
       } else if (document.body.style.overflow === 'hidden') {
+        // If overflow is set to 'hidden', apply 'auto'
         document.body.style.overflow = 'auto'
-      }
+      } */
     }
   }
 }
@@ -55,11 +58,13 @@ export default {
     background: $color-secondary-darker
 
   body
+    position: relative
     font-family: $font-body
     font-size: 20px
     line-height: 1.3
     color: $color-body
     background: $color-white
+    overflow-x: hidden
     @media only screen and (min-width: 1000px)
       background-image: url(assets/bg.svg)
       background-size: cover
@@ -85,6 +90,10 @@ export default {
     padding: 0
 
   /* GENERAL ELEMENTS */
+  
+  #app
+    @media only screen and (max-width: 768px)
+      overflow-x: hidden
 
   .illustration
     display: flex
@@ -142,14 +151,8 @@ export default {
   
   .btn-wrap
     grid-column: 1
-  
-  // Transitions
 
-  .open-enter-active, .open-leave-active 
-    transition: transform .5s ease-in-out
-  
-  .open-enter, .open-leave-to
-    height: 100vh
-    transform: translate3d(-100%, 0, 0)
-  
+  .opened
+    transform: translate3d(40%, 0, 0)
+
 </style>

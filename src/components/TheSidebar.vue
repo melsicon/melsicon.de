@@ -1,9 +1,6 @@
 <template>
     <aside class="sidebar">
-        <div class="top">
-            <button class="btn btn-close" @click="$emit('toggleSidebar')">{{ $t('buttons.close') }}</button>
-            <the-logo/>
-        </div>
+        <div class="circle"/>
         <scrollactive :offset="100" 
                       :modify-url="false"
                       class="sidebar-nav">
@@ -14,11 +11,6 @@
                @click="$emit('toggleSidebar')"
             >{{route}}</a>
         </scrollactive>
-        <ul class="socialmedia-list">
-            <li class="socialmedia-item">Twitter</li>
-            <li class="socialmedia-item">LinkedIn</li>
-            <li class="socialmedia-item">XING</li>
-        </ul>
     </aside>
 </template>
 
@@ -27,6 +19,13 @@ import TheLogo from '@/components/graphics/TheLogo'
 export default {
   components: {
     TheLogo
+  },
+  props: {
+    open: {
+      type: Boolean,
+      required: true,
+      default: false
+    }
   }
 }
 </script>
@@ -37,23 +36,23 @@ export default {
     position: fixed
     top: 0
     left: 0
-    overflow: hidden
     display: flex
     flex-direction: column
     align-content: space-between
-    height: 100vh
-    width: 100%
-    z-index: 100
     background: $color-secondary-darker
-    padding: .5rem .8rem
+    height: 100vh
+    width: 40%
+    z-index: 98
 
   .top
     display: flex
     justify-content: space-between
+    padding: .5rem .8rem
+    z-index: 5
 
   .logo
     max-height: 1.8rem
-    fill: $color-white
+    fill: $color-primary
 
   .btn-close
     color: $color-white
@@ -64,16 +63,40 @@ export default {
     flex-direction: column
     align-items: flex-start
     margin: auto
+    z-index: 5
 
   .sb-nav-link
-    font-size: 1.5rem
+    position: relative
+    font-size: 1.3rem
     color: $color-white
     margin-bottom: 1rem
+    &::before
+      position: absolute
+      top: calc((100% - .5rem) / 2)
+      left: -1rem
+      content: ''
+      height: .5rem
+      width: .5rem
+      background: $color-white
+      border-radius: 50%
+      transform: scale(0)
+      transition: all .6s
+  
+  .is-active::before
+    transform: scale(1)
   
   .socialmedia-list
     display: flex
     justify-content: space-between
     color: white
     margin: 2rem
+    z-index: 5
+
+  // Open-Close Transitions
+  .open-enter-active, .open-leave-active
+    transition: all .5s cubic-bezier(.645,.045,.355,1)
+  
+  .open-enter, .open-leave-to
+    transform: translate3d(-100%, 0, 0)
 
 </style>

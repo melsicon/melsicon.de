@@ -12,15 +12,13 @@
 <script>
 import TheNav from '@/components/TheNav'
 import TheFooter from '@/components/TheFooter'
-import SidebarToggle from '@/components/SidebarToggle'
 import TheSidebar from '@/components/TheSidebar'
 
 export default {
   components: {
     TheNav,
     TheFooter,
-    TheSidebar,
-    SidebarToggle
+    TheSidebar
   },
   data: () => ({
     open: false

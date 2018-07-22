@@ -1,18 +1,21 @@
 <template>
     <div id="app">
-        <the-nav/>
+        <sm-nav v-if="$mq === 'sm'"/>
+        <lg-nav v-if="$mq !== 'sm'"/>
         <router-view/>
         <the-footer/>
     </div>
 </template>
 
 <script>
-import TheNav from '@/components/TheNav'
+import LgNav from '@/components/LgNav'
+import SmNav from '@/components/SmNav'
 import TheFooter from '@/components/TheFooter'
 
 export default {
   components: {
-    TheNav,
+    LgNav,
+    SmNav,
     TheFooter
   }
 }
@@ -21,19 +24,32 @@ export default {
 
 <style lang="sass">
 
+  html
+    background: $color-secondary-darker
+
   body
+    position: relative
     font-family: $font-body
-    font-size: 18px
+    font-size: 20px
     line-height: 1.3
-    color: $color-body
-    
+    color: $color-black
+    background: $color-white
+    overflow-x: hidden
+    @media only screen and (min-width: 1000px)
+      background-image: url(assets/bg.svg)
+      background-size: cover
+    @media screen and (max-width: 768px)
+      font-size: 16px
   *
     box-sizing: border-box
     margin: 0
     padding: 0
 
-  h1, h2, h3
-    font-family: $font-heading
+  ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
+      display: none
+
+  h1, h2
+    font-weight: 300
     margin: 0
 
   ul
@@ -44,44 +60,71 @@ export default {
     padding: 0
 
   /* GENERAL ELEMENTS */
+  
+  #app
+    @media only screen and (max-width: 768px)
+      overflow-x: hidden
 
   .illustration
-    background: $color-primary-lighter
-    height: 300px
-    margin: 1rem 0
+    display: flex
+    justify-content: center
+    align-items: center
 
-  .article-section
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-auto-rows: max-content
-    flex-wrap: wrap
-    grid-gap: .5rem 1rem
-    grid-column: 1 / -1
-    margin: 3rem 0
-
-    section
-      display: grid
-      grid-template-columns: repeat(2, 1fr)
-      grid-auto-rows: max-content
-      grid-gap: 0 1rem
+    svg
+      max-width: 50%
 
   p
     margin: 0
-    grid-column: span 1
     &:not(:last-child)
       margin-bottom: 1rem
 
-  .span-2
+  h1
     grid-column: 1 / -1
+    font-size: 3.5rem
+    //max-width: 35ch
+    margin-bottom: 1rem
+    @media screen and (max-width: 768px)
+      font-size: 2.5rem
 
   h2
-    grid-column: 1 / -1
-    margin-bottom: 1rem
-    font-size: 2.2rem
+    margin: 1rem 0
+    font-size: 2.5rem
+    @media screen and (max-width: 768px)
+      font-size: 2rem
 
   h3
-    grid-column: 1 / -1
+    font-size: 1.8rem
+    font-weight: 300
     margin-top: 1rem
     margin-bottom: .5rem
-    font-size: 1.8rem
+    @media screen and (max-width: 768px)
+      font-size: 1.2rem
+
+  h4
+    font-size: .9rem
+    text-transform: uppercase
+    letter-spacing: .05rem
+
+  button
+    background: 0
+    border: 0
+    font-family: $font-body
+    font-size: 1em
+    cursor: pointer
+
+  .btn-cta
+    min-height: 35px
+    background: $color-secondary
+    color: white
+    padding: 0 1rem
+    border-radius: .2rem
+    font-weight: bold
+    text-transform: uppercase
+
+  .btn-more
+    color: $color-secondary
+  
+  .btn-wrap
+    grid-column: 1
+
 </style>

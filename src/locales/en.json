@@ -1,0 +1,61 @@
+{
+  "nav": {
+      "home": "Home",
+      "services": "Services",
+      "community": "Community",
+      "team": "Team",
+      "contact": "Contact"
+  },
+
+  "buttons": {
+    "locale": "German",
+    "contact": "Contact us",
+    "more": "Find out more",
+    "open": "Menu",
+    "close": "Close"
+  },
+
+  "home": {
+    "heading": "Welcome to Cats Are Talented. C.A.T. We are catiful. Cats are the best. Oh yeah.",
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+  },
+
+  "services": {
+    "about": {
+      "heading": "This is us",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
+    },
+    "services": {
+      "heading": "Our services",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."],
+      "list": ["service 1", "service 2", "service 3", "service 4"]
+    },
+    "clients": {
+      "heading": "Our clients",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
+      "list": ["Commerzbank", "DB", "Deutsche Bank"]
+    }
+  },
+
+  "community": {
+    "heading": "Dedicated to the community",
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."],
+    "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
+  },
+
+  "team": {
+    "about": {
+      "heading": "About our team",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
+    },
+    "careers": {
+      "heading": "Join our company",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+    }
+  },
+
+  "contact": {
+    "heading": "Get in touch with us now",
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+  }
+}

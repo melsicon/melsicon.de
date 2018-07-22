@@ -1,14 +1,15 @@
 module.exports = {
   css: {
-    sourceMap: true,
     loaderOptions: {
-      // pass options to sass-loader
       sass: {
-        data: `@import "@/variables.sass";`
+        data: '@import "@/variables.sass";'
       }
-    }
+    },
+    sourceMap: true
   },
+
   lintOnSave: true,
+
   pluginOptions: {
     enableInSFC: false
   }

@@ -17,6 +17,21 @@ export default {
     LgNav,
     SmNav,
     TheFooter
+  },
+  computed: {
+    locale() {
+      return this.$i18n.locale
+    }
+  },
+  metaInfo: {
+    title: 'melsicon',
+    htmlAttrs: {
+      lang: 'en'
+    },
+    meta: [
+      {name: 'description', content: 'I have things here on my site.'},
+      {property: 'og:site_name', content: 'melsicon'}
+    ]
   }
 }
 </script>

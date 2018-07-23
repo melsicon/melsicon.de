@@ -1,7 +1,7 @@
 <template>
     <main class="wrapper">
         <section-home/>
-        <section-about/>
+        <section-services/>
         <section-community/>
         <section-team/>
         <section-contact/>
@@ -10,7 +10,7 @@
 
 <script>
 import SectionHome from '@/components/sections/SectionHome'
-import SectionAbout from '@/components/sections/SectionAbout'
+import SectionServices from '@/components/sections/SectionServices'
 import SectionCommunity from '@/components/sections/SectionCommunity'
 import SectionTeam from '@/components/sections/SectionTeam'
 import SectionContact from '@/components/sections/SectionContact'
@@ -19,7 +19,7 @@ export default {
   name: 'home',
   components: {
     SectionHome,
-    SectionAbout,
+    SectionServices,
     SectionCommunity,
     SectionTeam,
     SectionContact

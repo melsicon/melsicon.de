@@ -2,18 +2,18 @@
     <main class="wrapper">
         <section-home/>
         <section-services/>
-        <section-community/>
         <section-team/>
+        <section-community/>
         <section-contact/>
     </main>
 </template>
 
 <script>
-import SectionHome from '@/components/sections/SectionHome'
-import SectionServices from '@/components/sections/SectionServices'
-import SectionCommunity from '@/components/sections/SectionCommunity'
-import SectionTeam from '@/components/sections/SectionTeam'
-import SectionContact from '@/components/sections/SectionContact'
+import SectionHome from '@/components/home-sections/SectionHome'
+import SectionServices from '@/components/home-sections/SectionServices'
+import SectionCommunity from '@/components/home-sections/SectionCommunity'
+import SectionTeam from '@/components/home-sections/SectionTeam'
+import SectionContact from '@/components/home-sections/SectionContact'
 
 export default {
   name: 'home',
@@ -37,38 +37,34 @@ export default {
     margin: auto
     padding: 0 .8rem
     background: $color-white
-    transition: all .5s cubic-bezier(.645,.045,.355,1)
     @media only screen and (min-width: 1480px)
       max-width: 1400px
-    @media only screen and (min-width: 1000px)
-      background: none
+    @media only screen and (max-width: 1200px)
+      max-width: 1000px
+    @media only screen and (max-width: 1000px)
+      max-width: 850px
+    @media screen and (max-width: 900px)
+      max-width: 750px
 
   .section
-    min-height: 70vh
-    display: flex
-    justify-content: center
-    flex-direction: column
-    margin-bottom: 5rem
-    @media screen and (max-width: 768px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 1em
+    padding-top: 8rem
+    padding-bottom: 3rem
+    @media screen and (max-width: 1000px)
       margin-bottom: 1rem
+      grid-template-columns: 1fr
 
   .home
     margin-bottom: 1rem
     @media only screen and (max-width: 768px)
-      margin: 2rem 0
+      margin-top: 4rem
 
-  .contact
-    min-height: 55vh
+  .d-contents
+    display: contents
 
-  .article
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-auto-flow: dense
-    grid-column-gap: 1rem
-    @media screen and (max-width: 768px)
-      grid-template-columns: 1fr
-
-  .span2
+  .span-full
     grid-column: 1 / -1
 
   .center
@@ -77,11 +73,14 @@ export default {
       text-align: left
 
   .list
-    margin: 3rem 0
     display: flex
+    text-align: center
     justify-content: space-between
     @media screen and (max-width: 768px)
       margin: 1.5rem 0
       flex-direction: column
+  
+  .list-item.service
+    flex-basis: 33.33%
 
 </style>

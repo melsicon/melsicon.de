@@ -28,7 +28,7 @@
     "services": {
       "heading": "Das sind wir",
       "paragraphs": ["Gegründet 2012 mit Sitz in Eschborn. Schwerpunkt: IT-Projekte für Transportwesen und Finanzdienstleister. Startup Erfahrungen und Design Thinking Skills. Agile Methoden, Cloud, DevOps und alles rund um Java/JavaScript"],
-      "list": ["Idee", "Konzept", "Planung", "Umsetzung", "Betrieb"]
+      "list": ["Idee & Konzept", "Planung & Umsetzung", "Betrieb & Etwas"]
     },
     "clients": {
       "heading": "Unsere Kunden",
@@ -47,7 +47,7 @@
     "about": {
       "heading": "Unsere Werte",
       "paragraphs": ["melsicon steht für lösungsorientierte Beratung und Menschlichkeit und unsere vorbildliche Arbeitsweise motiviert gesamte Projekte. It's important to us that our work is meaningful and that we find joy in the work. We are not driven by the sake of money.",
-        "We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "]
+        "Somthing like: We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "]
     },
     "careers": {
       "heading": "Werde teil unseres Teams",
@@ -59,5 +59,100 @@
   "contact": {
     "heading": "Kontakt",
     "paragraphs": ["Finde heraus, ob wir in dein Projekt passen"]
+  },
+
+  "team-page": {
+    "team": {
+      "heading": "Say hello to our team",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
+    "profiles": [
+      {
+        "name": "Makele Ghebreamlak",
+        "title": "Geschaftsfuhrer, Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "  ",
+        "social": {
+          "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
+          "linkedin": "https://www.linkedin.com/in/makelefy/",
+          "twitter": "https://twitter.com/makelefy"
+        }
+      },
+      {
+        "name": "Alexander Figul",
+        "title": "Geschaftsfuhrer, Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "  ",
+        "social": {
+          "xing": "https://www.xing.com/profile/Alexander_Figul/"
+        }
+      },
+      {
+        "name": "Bastian Baist",
+        "title": "Job title",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "  ",
+        "social": {
+          "xing": "https://www.xing.com/profile/Bastian_Baist/"
+        }
+      },
+      {
+        "name": "Amir Wasim",
+        "title": "Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "  ",
+        "social": {
+          "xing": "https://www.xing.com/profile/Amir_Wasim/"
+        }
+      },
+      {
+        "name": "Victoria Bergquist",
+        "title": "Front-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "  ",
+        "social": {
+          "xing": "https://www.xing.com/profile/Victoria_Bergquist",
+          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
+          "twitter": "https://twitter.com/vicbergquist"
+        }
+      },
+      {
+        "name": "Your name",
+        "title": "Our vacancies"
+      }
+    ]
+    },
+    "jobs": {
+      "heading": "How to join our team",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
+      "vacancies": [
+        {
+          "title": "Front-End Developer",
+          "description": "Our team of developers  sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  ",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Back-End Developer",
+          "description": "Our team of developers  sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  ",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Software Architect",
+          "description": "Our team of developers  sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  ",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "DevOps Engineer",
+          "description": "Our team of developers  sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  ",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Internships",
+          "description": "Our team of developers  sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  ",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        }
+      ],
+        "cta-heading": "We'd love to hear from you, send us a message today!"
+    }
+    
   }
 }

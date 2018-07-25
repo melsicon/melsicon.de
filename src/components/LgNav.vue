@@ -49,6 +49,12 @@ export default {
     align-items: center
     @media only screen and (min-width: 1480px)
       max-width: 1400px
+    @media only screen and (max-width: 1200px)
+      max-width: 1000px
+    @media only screen and (max-width: 1000px)
+      max-width: 850px
+    @media screen and (max-width: 900px)
+      max-width: 750px
 
   .logo
     fill: $color-primary
@@ -59,13 +65,17 @@ export default {
     color: $color-black
     font-size: 1rem
     letter-spacing: .5px
-    margin-right: 5rem
+    margin-right: 5%
     text-decoration: none
     text-transform: uppercase
     transition: transform .3s ease-in
+    border-bottom: 1px solid $color-white
+    transition: all .3s ease-in
+    @media only screen and (max-width: 1000px)
+      //margin-right: 2rem
 
   .is-active
-    border-bottom: 1.8px solid $color-secondary
+    border-bottom: 1px solid $color-black
 
 
 </style>

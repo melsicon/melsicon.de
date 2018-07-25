@@ -29,7 +29,11 @@ export default {
       lang: 'en'
     },
     meta: [
-      {name: 'description', content: 'I have things here on my site.'},
+      {
+        name: 'description',
+        content:
+          'melsicon beratet Unternhemen aus dem Bereich Transportwesen und Banking in Frankfurt und Umgebung.'
+      },
       {property: 'og:site_name', content: 'melsicon'}
     ]
   }
@@ -44,17 +48,15 @@ export default {
 
   body
     position: relative
+    background: $color-white
     font-family: $font-body
-    font-size: 20px
+    font-size: 19px
+    height: 100%
     line-height: 1.3
     color: $color-black
-    background: $color-white
     overflow-x: hidden
-    @media only screen and (min-width: 1000px)
-      background-image: url(assets/bg.svg)
-      background-size: cover
     @media screen and (max-width: 768px)
-      font-size: 16px
+      font-size: 18px
   *
     box-sizing: border-box
     margin: 0
@@ -62,10 +64,6 @@ export default {
 
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
       display: none
-
-  h1, h2
-    font-weight: 300
-    margin: 0
 
   ul
     list-style-type: none
@@ -77,6 +75,8 @@ export default {
   /* GENERAL ELEMENTS */
   
   #app
+    height: 100%
+    background: white
     @media only screen and (max-width: 768px)
       overflow-x: hidden
 
@@ -94,31 +94,30 @@ export default {
       margin-bottom: 1rem
 
   h1
-    grid-column: 1 / -1
-    font-size: 3.5rem
-    //max-width: 35ch
+    font-size: 3em
+    font-weight: 200
+    margin: 0
     margin-bottom: 1rem
     @media screen and (max-width: 768px)
       font-size: 2.5rem
 
   h2
+    font-size: 2em
+    font-weight: 300
     margin: 1rem 0
-    font-size: 2.5rem
     @media screen and (max-width: 768px)
-      font-size: 2rem
+      font-size: 2em
 
   h3
-    font-size: 1.8rem
+    font-size: 1.5em
     font-weight: 300
-    margin-top: 1rem
-    margin-bottom: .5rem
+    margin-top: 1em
+    margin-bottom: 0
     @media screen and (max-width: 768px)
-      font-size: 1.2rem
+      font-size: 1.8em
 
   h4
-    font-size: .9rem
-    text-transform: uppercase
-    letter-spacing: .05rem
+    font-size: 1em
 
   button
     background: 0
@@ -138,6 +137,7 @@ export default {
 
   .btn-more
     color: $color-secondary
+    font-weight: 700
   
   .btn-wrap
     grid-column: 1

@@ -5,6 +5,14 @@ import './registerServiceWorker'
 import VueScrollactive from 'vue-scrollactive'
 import VueMq from 'vue-mq'
 import i18n from './i18n'
+// Icons
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {faTwitter, faXing, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+
+library.add(faTwitter, faLinkedin, faXing)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

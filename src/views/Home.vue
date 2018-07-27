@@ -72,7 +72,7 @@ export default {
     @media screen and (max-width: 768px)
       text-align: left
 
-  .list
+  .client-list, .service-list, .meetup-list
     display: flex
     text-align: center
     justify-content: space-between

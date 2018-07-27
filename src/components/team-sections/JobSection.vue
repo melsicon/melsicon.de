@@ -1,5 +1,5 @@
 <template>
-    <section class="section profiles">
+    <section id="jobs" class="section profiles">
         <article class="article vacancies">
             <h2 class="sub-heading">{{ $t('team-page.jobs.heading') }}</h2>
             <p>{{ $t('team-page.jobs.paragraphs')[0] }}</p>
@@ -15,7 +15,9 @@
             <p>{{ job.description }}</p>
         </article>
         <h2 class="cta-heading span-full center"> {{ $t('team-page.jobs.cta-heading') }} </h2>
-
+        <div class="btn-wrap">
+            <button class="btn btn-cta">{{ $t('buttons.apply') }}</button>
+        </div>
     </section>
 </template>
 

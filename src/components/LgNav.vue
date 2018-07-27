@@ -1,14 +1,28 @@
 <template>
     <div class="nav-wrapper">
-        <scrollactive :offset="100"
+        <scrollactive :offset="50"
                       :modify-url="false"
                       class="nav lg-nav">
-            <a v-for="(route, key) in $t('nav')" 
+            <a v-for="(route, key) in $t('nav.home')" 
+               v-if="$route.name === 'home'" 
                :key="route.index" 
-               :href="'#' + key" 
+               :href="'#' + key"
                class="nav-link scrollactive-item"
             >{{route}}</a>
-            <the-logo/>
+
+            <router-link v-if="$route.name === 'team'"
+                         to="/"
+                         class="nav-link">
+                {{ $t('nav.home.home') }}
+            </router-link>
+            <a v-for="(route, key) in $t('nav.team')" 
+               v-if="$route.name === 'team'" 
+               :key="route.index" 
+               :href="'#' + key"
+               class="nav-link scrollactive-item"
+            >{{route}}</a>
+
+            <div class="logo"><the-logo/></div>
         </scrollactive>
     </div>
 </template>

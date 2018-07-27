@@ -15,11 +15,23 @@
         </div>
         <transition name="fade-in">
             <scrollactive v-if="open" :offset="50" :modify-url="false" class="sm-nav-list" >
-                <a v-for="(route, key) in $t('nav')" 
+                <a v-for="(route, key) in $t('nav.home')" 
+                   v-if="$route.name === 'home'" 
                    :key="route.index" 
-                   :href="'#' + key" 
+                   :href="'#' + key"
                    class="nav-link sm-nav-link scrollactive-item"
                    @click="open = !open"
+                >{{route}}</a>
+                <router-link v-if="$route.name === 'team'"
+                             to="/"
+                             class="nav-link">
+                    {{ $t('nav.home.home') }}
+                </router-link>
+                <a v-for="(route, key) in $t('nav.team')" 
+                   v-if="$route.name === 'team'" 
+                   :key="route.index" 
+                   :href="'#' + key"
+                   class="nav-link scrollactive-item"
                 >{{route}}</a>
             </scrollactive>
         </transition>

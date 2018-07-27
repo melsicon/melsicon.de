@@ -43,6 +43,8 @@ export default {
 
 <style lang="sass">
 
+  /* GLOBAL STYLES */
+
   html
     background: $color-secondary-darker
 
@@ -57,6 +59,7 @@ export default {
     overflow-x: hidden
     @media screen and (max-width: 768px)
       font-size: 18px
+
   *
     box-sizing: border-box
     margin: 0
@@ -65,6 +68,12 @@ export default {
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
       display: none
 
+  a
+    text-decoration: none
+    color: $color-secondary
+    &:visited
+      color: $color-secondary-darker
+
   ul
     list-style-type: none
 
@@ -72,27 +81,18 @@ export default {
     margin: 0
     padding: 0
 
-  /* GENERAL ELEMENTS */
-  
   #app
     height: 100%
     background: white
     @media only screen and (max-width: 768px)
       overflow-x: hidden
 
-  .illustration
-    display: flex
-    justify-content: center
-    align-items: center
-
-    svg
-      max-width: 50%
-
   p
     margin: 0
     &:not(:last-child)
       margin-bottom: 1rem
 
+  // HEADINGS
   h1
     font-size: 3em
     font-weight: 200
@@ -116,9 +116,7 @@ export default {
     @media screen and (max-width: 768px)
       font-size: 1.8em
 
-  h4
-    font-size: 1em
-
+  // BUTTON STYLE
   button
     background: 0
     border: 0
@@ -135,11 +133,12 @@ export default {
     font-weight: bold
     text-transform: uppercase
 
-  .btn-more
-    color: $color-secondary
-    font-weight: 700
-  
   .btn-wrap
     grid-column: 1
+    text-align: center
 
+  .link-more
+    color: $color-secondary
+    font-weight: 700
+    text-decoration: none
 </style>

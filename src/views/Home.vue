@@ -46,37 +46,18 @@ export default {
     @media screen and (max-width: 900px)
       max-width: 750px
 
-  .section
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-column-gap: 1em
-    padding-top: 8rem
-    padding-bottom: 3rem
-    @media screen and (max-width: 1000px)
-      margin-bottom: 1rem
-      grid-template-columns: 1fr
-
   .home
     margin-bottom: 1rem
     @media only screen and (max-width: 768px)
       margin-top: 4rem
-
-  .d-contents
-    display: contents
-
-  .span-full
-    grid-column: 1 / -1
-
-  .center
-    text-align: center
-    @media screen and (max-width: 768px)
-      text-align: left
+  
+  /* LISTS */
 
   .client-list, .service-list, .meetup-list
     display: flex
     text-align: center
     justify-content: space-between
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1000px)
       margin: 1.5rem 0
       flex-direction: column
   

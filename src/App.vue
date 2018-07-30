@@ -68,11 +68,9 @@ export default {
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
       display: none
 
-  a
+  a, a:visited
     text-decoration: none
     color: $color-secondary
-    &:visited
-      color: $color-secondary-darker
 
   ul
     list-style-type: none
@@ -106,7 +104,7 @@ export default {
     font-weight: 300
     margin: 1rem 0
     @media screen and (max-width: 768px)
-      font-size: 2em
+      font-size: 1.8em
 
   h3
     font-size: 1.5em
@@ -115,6 +113,29 @@ export default {
     margin-bottom: 0
     @media screen and (max-width: 768px)
       font-size: 1.8em
+  
+  /* SECTIONS */
+
+  .section
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 1em
+    padding-top: 8rem
+    padding-bottom: 3rem
+    @media screen and (max-width: 1000px)
+      margin-bottom: 1rem
+      grid-template-columns: 1fr
+
+  .d-contents
+    display: contents
+
+  .span-full
+    grid-column: 1 / -1
+
+  .center
+    text-align: center
+    @media screen and (max-width: 768px)
+      text-align: left
 
   // BUTTON STYLE
   button

@@ -6,7 +6,7 @@
             <router-link class="link-more" to="/team">{{ $t('buttons.more') }}</router-link>
             <h3 class="sub-heading">{{ $t('team.careers.heading') }}</h3>
             <p v-for="p in $t('team.careers.paragraphs')" :key="p.index">{{p}}</p>
-            <router-link class="link-more" to="/team">{{ $t('buttons.jobs') }}</router-link>
+            <router-link class="link-more" to="/jobs">{{ $t('buttons.jobs') }}</router-link>
         </article>
     </section>
 </template>

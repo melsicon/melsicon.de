@@ -117,7 +117,7 @@ export default {
       color: $color-white
       margin-right: .5em
 
-  .footer-link
+  .footer-link, .footer-link:visited
     color: $color-white
     display: block
 

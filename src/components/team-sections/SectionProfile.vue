@@ -43,6 +43,6 @@
     margin: 0
   
   .profile-heading
-    font-weight: 700
+    font-weight: 600
 
 </style>

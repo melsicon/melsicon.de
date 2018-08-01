@@ -61,10 +61,12 @@ export default {
   .client-list
     flex-direction: column
     justify-content: space-around
-    margin: auto
+    margin: 0 auto
 
     .client
       margin: 1em 0
+      @media screen and (max-width: 768px)
+        margin: .5em 0
   
   .commerzbank, .deutschebank, .db
     fill: $color-grey
@@ -78,5 +80,8 @@ export default {
   
   .db
     height: 4em
+  
+  .article-bank
+    padding-bottom: 0
 
 </style>

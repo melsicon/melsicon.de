@@ -99,7 +99,7 @@ export default {
     margin: 0
     margin-bottom: .5em
     @media screen and (max-width: 768px)
-      font-size: 2.1em
+      font-size: 2.2em
 
   h2
     font-size: 2em
@@ -107,15 +107,13 @@ export default {
     margin-top: 1em
     margin-bottom: .3em
     @media screen and (max-width: 768px)
-      font-size: 1.7em
+      font-size: 1.9em
 
   h3
     font-size: 1.5em
     font-weight: 300
     margin-top: 1em
     margin-bottom: .3em
-    @media screen and (max-width: 768px)
-      font-size: 1.2em
 
   // MAIN WRAPPER
   .wrapper
@@ -138,8 +136,14 @@ export default {
   .illustration
     background: $color-secondary-darker
     height: 100%
-    width: 100%
-    clip-path: polygon(6% 5%, 32% 7%, 53% 4%, 79% 10%, 88% 33%, 76% 43%, 90% 58%, 92% 79%, 83% 89%, 44% 96%, 17% 80%, 6% 47%, 15% 23%)
+    width: 80%
+    clip-path: circle(50% at 50% 50%)
+    margin: auto
+    @media screen and (max-width: 768px)
+      height: 200px
+      width: 100%
+      margin: auto
+      clip-path: circle(50% at 50% 50%)
 
   /* SECTIONS */
 
@@ -153,8 +157,10 @@ export default {
       position: relative
       display: grid
       grid-template-columns: 1fr 1fr
+      grid-auto-rows: max-content
       grid-column-gap: 1em
       padding: 4em 0
+      min-height: 80vh
       @media screen and (max-width: 1000px)
         margin-bottom: 1em
         grid-template-columns: 1fr

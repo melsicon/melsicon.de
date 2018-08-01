@@ -1,24 +1,32 @@
 <template>
     <section id="services" class="section services">
-        <img src="" alt="" class="illustration">
+        <img src="" alt="" class="illustration service-illustration">
         <article class="article">
-            <h2 class="sub-heading col2">{{ $t('services.about.heading') }}</h2>
-            <p v-for="p in $t('services.about.paragraphs')" :key="p.index" class="col2">{{p}}</p>
-            <ul class="list service-list col1 row2">
-                <li v-for="service in $t('services.services.list')" :key="service.index" class="list-item service">
-                    <h4>{{service}}</h4>
-                </li>
+            <h2 class="sub-heading">{{ $t('services.about.heading') }}</h2>
+            <p v-for="p in $t('services.about.paragraphs')" :key="p.index">{{p}}</p>
+            <ul class="list service-list">
+                <li v-for="service in $t('services.services.list')" :key="service.index" class="list-item service">{{service}}</li>
             </ul>
+            <p v-for="p in $t('services.clients.paragraphs')" :key="p.index" >{{p}}</p>
         </article>
-        <article class="article">
-            <h3 class="sub-heading">{{ $t('services.clients.heading') }}</h3>
-            <p v-for="p in $t('services.clients.paragraphs')" :key="p.index" class="col2">{{p}}</p>
+        <div/>
+        <article class="article article-bank">
+            <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
+            <p v-for="p in $t('services.bank.paragraphs')" :key="p.index" >{{p}}</p>
+        </article>
+        <ul class="list client-list">
+            <li class="client">Commerzbank</li>
+            <li class="client">Deutsche Bank</li>
+        </ul>
+        <img src="" alt="" class="illustration">
+        <article class="article article-transport">
+            <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
+            <p v-for="p in $t('services.transport.paragraphs')" :key="p.index" >{{p}}</p>
             <ul class="list client-list">
                 <li class="client">Deutsche Bahn</li>
-                <li class="client">Commerzbank</li>
-                <li class="client">Deutsche Bank</li>
             </ul>
         </article>
+        
     </section>
 </template>
 
@@ -35,13 +43,19 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-  .client 
-    display: flex
-    align-items: center
-    justify-content: center
+<style lang="sass">
 
-    svg
-      max-height: 3em
-      opacity: .8
+  .article-bank, .article-transport
+    padding: 2em 0
+
+  .service-illustration
+    grid-row: 1 / -3
+  
+  .client-list
+    justify-content: space-around
+    margin: auto
+
+    .client
+      margin: 0 1em
+
 </style>

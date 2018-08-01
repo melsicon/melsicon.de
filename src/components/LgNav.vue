@@ -80,7 +80,7 @@ export default {
   
   .nav-item
     margin-right: 5%
-    padding: 0 .5em
+    padding-right: .5em
   
   .nav-dropdown
     background: $color-white

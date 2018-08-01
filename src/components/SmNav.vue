@@ -1,6 +1,6 @@
 <template>
     <div :class="{'sm-nav-opened': open}" class="nav-wrapper sm-nav">
-        <the-logo :class="{'logo-white': open}"/>
+        <div class="logo-wrapper"><the-logo :class="{'logo-white': open}"/></div>
         <div class="btn-toggle-wrapper" @click="open = !open">
             <button v-if="!open" class="btn btn-toggle btn-open">
                 {{ $t('buttons.open') }}
@@ -14,25 +14,29 @@
             </div>
         </div>
         <transition name="fade-in">
-            <scrollactive v-if="open" :offset="50" :modify-url="false" class="sm-nav-list" >
-                <a v-for="(route, key) in $t('nav.home')" 
-                   v-if="$route.name === 'home'" 
-                   :key="route.index" 
-                   :href="'#' + key"
-                   class="nav-link sm-nav-link scrollactive-item"
-                   @click="open = !open"
-                >{{route}}</a>
-                <router-link v-if="$route.name === 'team'"
-                             to="/"
-                             class="nav-link">
-                    {{ $t('nav.home.home') }}
-                </router-link>
-                <a v-for="(route, key) in $t('nav.team')" 
-                   v-if="$route.name === 'team'" 
-                   :key="route.index" 
-                   :href="'#' + key"
-                   class="nav-link scrollactive-item"
-                >{{route}}</a>
+            <scrollactive v-if="open" :offset="50" class="sm-nav-list" >
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home" @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services" @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
+                    </li>
+                    <li class="nav-item with-dropdown">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" aria-haspopup="true" @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
+                        <ul class="list nav-dropdown" aria-label="submenu">
+                            <li class="dropdown-item">
+                                <router-link class="nav-link" to="/team" @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
+                            </li>
+                            <li class="dropdown-item">
+                                <router-link class="nav-link" to="/jobs" @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
+                    </li>
+                </ul>
             </scrollactive>
         </transition>
     </div>
@@ -57,11 +61,11 @@ export default {
   .sm-nav
     background: $color-white
     display: flex
-    height: 2.5rem
+    height: 2.5em
     flex-wrap: wrap
     margin: auto
     overflow: hidden
-    padding: .5rem .8rem
+    padding: .5em .8em
     position: fixed
     top: 0
     transition: all .6s
@@ -71,28 +75,32 @@ export default {
   .sm-nav-opened
     background: $color-secondary-darker
     height: 50vh
-  
-  .logo
-    fill: $color-primary
-    height: 1.5rem
 
-  .logo-white
-    fill: $color-white
-    transition: all 1s
-  
+  .nav-item
+    margin-bottom: .5em
+
+  .nav-dropdown
+    padding: .5em .5em 0
+
+  .nav-dropdown .dropdown-item:hover .nav-link
+    border-bottom: 1.8px solid $color-white
+
+  .nav-dropdown li
+    margin-bottom: .5em
+
   .btn-toggle-wrapper
     align-items: center
     align-self: flex-start
     display: flex
     margin-left: auto
-    min-width: 4rem
+    min-width: 4em
     cursor: pointer
-    height: 1.5rem
+    height: 1.5em
 
   .btn-toggle
     align-self: center
     color: $color-secondary
-    font-size: 1rem
+    font-size: .9em
     font-weight: 600
     text-transform: uppercase
     transition: all 1s
@@ -101,10 +109,12 @@ export default {
   .btn-close
     color: $color-white
   
+  // OPEN/CLOSE ICON
+  
   .icon-toggle
     position: relative
     height: 8px
-    margin-left: .5rem
+    margin-left: .5em
     width: 15px
 
   .line
@@ -138,12 +148,13 @@ export default {
 
   .nav-link
     color: $color-white
-    font-size: 1.5rem
-    margin-bottom: .5rem
+    font-size: 1.2em
+    @media screen and (max-width: 400px)
+      font-size: 1.1em
 
   // Active menu item style
   .is-active
-    border-bottom: 1.8px solid $color-white
+    border-bottom: 1px solid $color-white
 
   .fade-in-enter-active
     transition: all 1s .5s

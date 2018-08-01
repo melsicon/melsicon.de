@@ -1,28 +1,30 @@
 <template>
     <div class="nav-wrapper">
         <scrollactive :offset="50"
-                      :modify-url="false"
                       class="nav lg-nav">
-            <a v-for="(route, key) in $t('nav.home')" 
-               v-if="$route.name === 'home'" 
-               :key="route.index" 
-               :href="'#' + key"
-               class="nav-link scrollactive-item"
-            >{{route}}</a>
-
-            <router-link v-if="$route.name === 'team'"
-                         to="/"
-                         class="nav-link">
-                {{ $t('nav.home.home') }}
-            </router-link>
-            <a v-for="(route, key) in $t('nav.team')" 
-               v-if="$route.name === 'team'" 
-               :key="route.index" 
-               :href="'#' + key"
-               class="nav-link scrollactive-item"
-            >{{route}}</a>
-
-            <div class="logo"><the-logo/></div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home">{{ $t('nav.home.home') }}</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services">{{ $t('nav.home.services') }}</router-link>
+                </li>
+                <li class="nav-item with-dropdown">
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" aria-haspopup="true">{{ $t('nav.home.about.about') }}</router-link>
+                    <ul class="list nav-dropdown" aria-label="submenu">
+                        <li class="dropdown-item">
+                            <router-link class="nav-link" to="/team">- {{ $t('nav.home.about.team') }}</router-link>
+                        </li>
+                        <li class="dropdown-item">
+                            <router-link class="nav-link" to="/jobs#jobs">- {{ $t('nav.home.about.jobs') }}</router-link>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a :class="{'scrollactive-item': $route.name === 'home'}" href="#contact" class="nav-link">{{$t('nav.home.contact')}}</a>
+                </li>
+            </ul>
+            <div class="logo-wrapper"><the-logo/></div>
         </scrollactive>
     </div>
 </template>
@@ -57,7 +59,7 @@ export default {
     display: flex
     position: relative
     width: 100%
-    max-width: 1200px
+    max-width: $width-full
     margin: auto
     padding: .5rem .8rem
     align-items: center
@@ -67,19 +69,43 @@ export default {
       max-width: 1000px
     @media only screen and (max-width: 1000px)
       max-width: 850px
-    @media screen and (max-width: 900px)
-      max-width: 750px
 
   .logo
     fill: $color-primary
     margin-left: auto
-    height: 2rem
-    
+
+  .nav-list
+    display: flex
+    width: 100%
+  
+  .nav-item
+    margin-right: 5%
+    padding: 0 .5em
+  
+  .nav-dropdown
+    background: $color-white
+    display: hidden
+    transition: all .3s ease-in-out
+    padding: .5em
+    position: absolute
+    opacity: 0
+    visibility: hidden
+
+  .nav-list .nav-item:hover > .nav-dropdown, .nav-list .nav-item:focus-within > .nav-dropdown, .nav-list .nav-item .nav-dropdown:hover
+    display: block
+    opacity: 1
+    visibility: visible
+  
+  .nav-dropdown .dropdown-item:hover .nav-link
+    border-bottom: 1px solid $color-black
+  
+  .nav-dropdown li
+    margin-bottom: .5em
+
   .nav-link
     color: $color-black
     font-size: 1rem
     letter-spacing: .5px
-    margin-right: 5%
     text-decoration: none
     text-transform: uppercase
     transition: transform .3s ease-in

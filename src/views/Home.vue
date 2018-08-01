@@ -2,8 +2,7 @@
     <main class="wrapper">
         <section-home/>
         <section-services/>
-        <section-team/>
-        <section-community/>
+        <section-about/>
         <section-contact/>
     </main>
 </template>
@@ -11,8 +10,7 @@
 <script>
 import SectionHome from '@/components/home-sections/SectionHome'
 import SectionServices from '@/components/home-sections/SectionServices'
-import SectionCommunity from '@/components/home-sections/SectionCommunity'
-import SectionTeam from '@/components/home-sections/SectionTeam'
+import SectionAbout from '@/components/home-sections/SectionAbout'
 import SectionContact from '@/components/home-sections/SectionContact'
 
 export default {
@@ -20,31 +18,13 @@ export default {
   components: {
     SectionHome,
     SectionServices,
-    SectionCommunity,
-    SectionTeam,
+    SectionAbout,
     SectionContact
   }
 }
 </script>
 
 <style lang="sass">
-
-  .wrapper
-    position: relative
-    max-width: 1200px
-    width: 100vw
-    min-height: 100vh
-    margin: auto
-    padding: 0 .8rem
-    background: $color-white
-    @media only screen and (min-width: 1480px)
-      max-width: 1400px
-    @media only screen and (max-width: 1200px)
-      max-width: 1000px
-    @media only screen and (max-width: 1000px)
-      max-width: 850px
-    @media screen and (max-width: 900px)
-      max-width: 750px
 
   .home
     margin-bottom: 1rem

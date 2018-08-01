@@ -1,14 +1,14 @@
 <template>
     <main class="wrapper">
-        <job-section/>
+        <section-job/>
     </main>
 </template>
 
 <script>
-import JobSection from '@/components/team-sections/JobSection'
+import SectionJob from '@/components/team-sections/SectionJob'
 export default {
   components: {
-    JobSection
+    SectionJob
   }
 }
 </script>

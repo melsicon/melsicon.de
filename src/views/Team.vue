@@ -1,14 +1,14 @@
 <template>
     <main class="wrapper">
-        <profile-section/>
+        <section-profile/>
     </main>
 </template>
 
 <script>
-import ProfileSection from '@/components/team-sections/ProfileSection'
+import SectionProfile from '@/components/team-sections/SectionProfile'
 export default {
   components: {
-    ProfileSection
+    SectionProfile
   }
 }
 </script>

@@ -7,6 +7,7 @@
             <ul class="list service-list">
                 <li v-for="service in $t('services.services.list')" :key="service.index" class="list-item service">{{service}}</li>
             </ul>
+            <h3 class="sub-heading">{{ $t('services.clients.heading') }}</h3>
             <p v-for="p in $t('services.clients.paragraphs')" :key="p.index" >{{p}}</p>
         </article>
         <div/>
@@ -15,15 +16,21 @@
             <p v-for="p in $t('services.bank.paragraphs')" :key="p.index" >{{p}}</p>
         </article>
         <ul class="list client-list">
-            <li class="client">Commerzbank</li>
-            <li class="client">Deutsche Bank</li>
+            <li class="client">
+                <the-deutschebank/>
+            </li>
+            <li class="client">
+                <the-commerzbank/>
+            </li>
         </ul>
         <img src="" alt="" class="illustration">
         <article class="article article-transport">
             <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
             <p v-for="p in $t('services.transport.paragraphs')" :key="p.index" >{{p}}</p>
             <ul class="list client-list">
-                <li class="client">Deutsche Bahn</li>
+                <li class="client">
+                    <the-db/>
+                </li>
             </ul>
         </article>
         
@@ -52,10 +59,24 @@ export default {
     grid-row: 1 / -3
   
   .client-list
+    flex-direction: column
     justify-content: space-around
     margin: auto
 
     .client
-      margin: 0 1em
+      margin: 1em 0
+  
+  .commerzbank, .deutschebank, .db
+    fill: $color-grey
+    margin: .5em 0
+    
+  .commerzbank
+    height: 2.3em
+  
+  .deutschebank
+    height: 3.5em
+  
+  .db
+    height: 4em
 
 </style>

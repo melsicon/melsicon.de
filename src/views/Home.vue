@@ -27,9 +27,9 @@ export default {
 <style lang="sass">
 
   .home
-    margin-bottom: 1rem
+    margin-bottom: 1em
     @media only screen and (max-width: 768px)
-      margin-top: 4rem
+      margin-top: 3em
   
   /* LISTS */
 
@@ -38,7 +38,7 @@ export default {
     text-align: center
     justify-content: space-between
     @media screen and (max-width: 1000px)
-      margin: 1.5rem 0
+      margin: 1.5em 0
       flex-direction: column
   
   .list-item.service

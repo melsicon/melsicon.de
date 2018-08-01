@@ -59,6 +59,8 @@ export default {
     overflow-x: hidden
     @media screen and (max-width: 768px)
       font-size: 18px
+    @media screen and (max-width: 400px)
+      font-size: 16px
 
   *
     box-sizing: border-box
@@ -88,49 +90,79 @@ export default {
   p
     margin: 0
     &:not(:last-child)
-      margin-bottom: 1rem
+      margin-bottom: 1em
 
   // HEADINGS
   h1
-    font-size: 3em
+    font-size: 2.8em
     font-weight: 200
     margin: 0
-    margin-bottom: 1rem
+    margin-bottom: .5em
     @media screen and (max-width: 768px)
-      font-size: 2.5rem
+      font-size: 2.1em
 
   h2
     font-size: 2em
     font-weight: 300
-    margin: 1rem 0
+    margin-top: 1em
+    margin-bottom: .3em
     @media screen and (max-width: 768px)
-      font-size: 1.8em
+      font-size: 1.7em
 
   h3
     font-size: 1.5em
     font-weight: 300
     margin-top: 1em
-    margin-bottom: 0
+    margin-bottom: .3em
     @media screen and (max-width: 768px)
-      font-size: 1.8em
+      font-size: 1.2em
+
+  // MAIN WRAPPER
+  .wrapper
+    position: relative
+    max-width: $width-full
+    width: 100vw
+    min-height: 100vh
+    margin: auto
+    padding: 0 .8rem
+    background: $color-white
+    @media only screen and (min-width: 1480px)
+      max-width: 1400px
+    @media only screen and (max-width: 1200px)
+      max-width: 1000px
+    @media only screen and (max-width: 1000px)
+      max-width: 850px
+    @media screen and (max-width: 900px)
+      max-width: 750px
   
+  .illustration
+    background: $color-secondary-darker
+    height: 100%
+    width: 100%
+    clip-path: polygon(6% 5%, 32% 7%, 53% 4%, 79% 10%, 88% 33%, 76% 43%, 90% 58%, 92% 79%, 83% 89%, 44% 96%, 17% 80%, 6% 47%, 15% 23%)
+
   /* SECTIONS */
 
-  .section
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-column-gap: 1em
-    padding-top: 8rem
-    padding-bottom: 3rem
-    @media screen and (max-width: 1000px)
-      margin-bottom: 1rem
-      grid-template-columns: 1fr
-
   .d-contents
-    display: contents
+      display: contents
 
-  .span-full
-    grid-column: 1 / -1
+  // Grid
+
+  @supports (display: grid)
+    .section
+      position: relative
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-column-gap: 1em
+      padding: 4em 0
+      @media screen and (max-width: 1000px)
+        margin-bottom: 1em
+        grid-template-columns: 1fr
+      @media screen and (max-width: 400px)
+        padding-top: 2em
+    
+    .span-full
+      grid-column: 1 / -1
 
   .center
     text-align: center
@@ -149,8 +181,8 @@ export default {
     min-height: 35px
     background: $color-secondary
     color: white
-    padding: 0 1rem
-    border-radius: .2rem
+    padding: 0 1em
+    border-radius: .2em
     font-weight: bold
     text-transform: uppercase
 
@@ -160,6 +192,6 @@ export default {
 
   .link-more
     color: $color-secondary
-    font-weight: 700
+    font-weight: 600
     text-decoration: none
 </style>

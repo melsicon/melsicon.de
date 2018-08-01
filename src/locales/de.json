@@ -3,7 +3,11 @@
       "home": {
         "home": "Home",
         "services": "Leistungen",
-        "team": "Team",
+        "about": {
+          "about": "Über uns",
+          "team": "Unser Team",
+          "jobs": "Stellenangebote"
+        },
         "community": "Community",
         "contact": "Kontakt"
       },
@@ -26,7 +30,7 @@
         "data": "+49 6196 93499 50"
       },
       "email": {
-        "label": "email",
+        "label": "Email",
         "data": "info@melsicon.de"
       }
     },
@@ -66,28 +70,38 @@
       "paragraphs": ["Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen. Dieses wird ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen.", "Durch die unterschiedlichen Schwerpunkte unserer Experten ist es uns möglich, Ihnen von der Planung bis zur Umsetzung alles aus einer Hand anzubieten. Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen."]
     },
     "services": {
-      "heading": "Das sind wir",
-      "paragraphs": ["Gegründet 2012 mit Sitz in Eschborn. Schwerpunkt: IT-Projekte für Transportwesen und Finanzdienstleister. Startup Erfahrungen und Design Thinking Skills. Agile Methoden, Cloud, DevOps und alles rund um Java/JavaScript"],
+      "heading": "Unsere Werte",
+      "paragraphs": ["melsicon steht für lösungsorientierte Beratung und Menschlichkeit und unsere vorbildliche Arbeitsweise motiviert gesamte Projekte. It's important to us that our work is meaningful and that we find joy in the work. We are not driven by the sake of money.",
+        "Somthing like: We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "],
       "list": ["Idee & Konzept", "Planung & Umsetzung", "Betrieb & Etwas"]
     },
     "clients": {
       "heading": "Unsere Kunden",
       "paragraphs": ["Wir konzentrieren uns auf Transportunternehmen und Finanzdienstleister im Frankfurter Raum."],
-      "list": ["Transportunternehmen (eigene Unterseite)", "Finanzdienstleister (eigene Unterseite)"]
+      "list": ["Transportunternehmen", "Finanzdienstleister"]
+    },
+    "transport": {
+      "heading": "Transportunternehmen",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
+      "list": ["DB"]
+    },
+    "bank": {
+      "heading": "Finanzdienstleister",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
+      "list": ["Deutsche Bank", "Commerzbank"]
     }
   },
 
   "community": {
     "heading": "Dedicated to the community",
-    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."],
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
     "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
   },
 
   "team": {
     "about": {
-      "heading": "Unsere Werte",
-      "paragraphs": ["melsicon steht für lösungsorientierte Beratung und Menschlichkeit und unsere vorbildliche Arbeitsweise motiviert gesamte Projekte. It's important to us that our work is meaningful and that we find joy in the work. We are not driven by the sake of money.",
-        "Somthing like: We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "]
+      "heading": "Das sind wir",
+      "paragraphs": ["Gegründet 2012 mit Sitz in Eschborn. Schwerpunkt: IT-Projekte für Transportwesen und Finanzdienstleister. Startup Erfahrungen und Design Thinking Skills. Agile Methoden, Cloud, DevOps und alles rund um Java/JavaScript"]
     },
     "careers": {
       "heading": "Werde teil unseres Teams",
@@ -97,8 +111,8 @@
   },
 
   "contact": {
-    "heading": "Kontakt",
-    "paragraphs": ["Finde heraus, ob wir in dein Projekt passen"]
+    "heading": "We'd love to hear from you!",
+    "paragraphs": ["Finde heraus, ob wir in dein Projekt passen. If you have any questions, would like to say hi or maybe grab a coffee, feel free to send us a message!"]
   },
 
   "team-page": {

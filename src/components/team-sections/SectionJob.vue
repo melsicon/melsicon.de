@@ -7,12 +7,12 @@
         <img src="" alt="" class="illustration">
         <article v-for="job in $t('team-page.jobs.vacancies')" 
                  :key="job.index" 
-                 class="article job">
+                 class="article article-job">
             <h3 class="sub-heading">{{ job.title }}</h3>
             <ul class="list list-skills">
                 <li v-for="skill in job.skills" :key="skill.index" class="skill">{{ skill }}</li>
             </ul>
-            <p>{{ job.description }}</p>
+            <p class="job-description">{{ job.description }}</p>
         </article>
         <h2 class="cta-heading span-full center"> {{ $t('team-page.jobs.cta-heading') }} </h2>
         <div class="btn-wrap">

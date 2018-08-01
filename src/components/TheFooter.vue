@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-wrapper">
-            <div class="logo"><the-logo/></div>
+            <div class="logo-wrapper"><the-logo class="logo-white"/></div>
             <div class="footer-content">
                 <div class="contact">
                     <h4 class="footer-heading">{{ $t('footer.contact.heading') }}</h4>
@@ -65,27 +65,38 @@ export default {
       padding: 2em 0
 
   .footer-wrapper
-    max-width: 1200px
+    max-width: $width-full
     margin: auto
     height: 100%
     display: grid
     grid-template-columns: repeat(2, 1fr)
+    grid-gap: 1em
+    padding: 0 .8rem
     @media only screen and (min-width: 1480px)
       max-width: 1400px
+    @media only screen and (max-width: 1200px)
+      max-width: 1000px
+    @media only screen and (max-width: 1000px)
+      max-width: 850px
+      grid-template-columns: 1fr
+    @media screen and (max-width: 900px)
+      max-width: 750px
 
-    .logo
-      fill: white
-      max-height: 1.8em
-    
     .footer-content
       display: grid
       grid-template-columns: 1fr 1fr
       grid-row-gap: 1em
+      @media only screen and (max-width: 768px)
+        grid-template-columns: 1fr
+
+  .contact, .social, .legal
+    margin-bottom: 1em
 
   .footer-heading
-    font-size: 0.9em
+    font-size: 0.8em
     margin-bottom: .5em
     text-transform: uppercase
+    letter-spacing: .5px
     opacity: .9
 
   .address

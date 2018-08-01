@@ -23,6 +23,11 @@
                 <li class="nav-item">
                     <a :class="{'scrollactive-item': $route.name === 'home'}" href="#contact" class="nav-link">{{$t('nav.home.contact')}}</a>
                 </li>
+                <li class="nav-item">
+                    <button class="btn-lang nav-link" @click="toggleLocale">
+                        {{$t('buttons.locale')}}
+                    </button>
+                </li>
             </ul>
             <div class="logo-wrapper"><the-logo/></div>
         </scrollactive>
@@ -38,7 +43,16 @@ export default {
   },
   data: () => ({
     open: false
-  })
+  }),
+  methods: {
+    toggleLocale() {
+      if (this.$i18n.locale === 'en') {
+        this.$i18n.locale = 'de'
+      } else {
+        this.$i18n.locale = 'en'
+      }
+    }
+  }
 }
 </script>
 

@@ -1,61 +1,212 @@
 {
   "nav": {
-      "home": "Home",
-      "services": "Services",
-      "community": "Community",
-      "team": "Team",
-      "contact": "Contact"
+      "home": {
+        "home": "Home",
+        "services": "Services",
+        "about": {
+          "about": "About",
+          "team": "Team",
+          "jobs": "Jobs"
+        },
+        "contact": "Contact"
+      },
+      "team": {
+        "team": "Team",
+        "jobs": "Jobs"
+      }
+  },
+
+  "footer": {
+    "contact": {
+      "heading": "Contact",
+      "address": {
+        "line-1": "melsicon GmbH",
+        "line-2": "Mergenthalerallee 73-75",
+        "line-3": "65760 Eschborn",
+        "line-4": "Germany"
+      },
+      "phone": {
+        "label": "Phone",
+        "data": "+49 6196 93499 50"
+      },
+      "email": {
+        "label": "Email",
+        "data": "info@melsicon.de"
+      }
+    },
+    "legal": {
+      "heading": "Legal",
+      "imprint": "Imprint",
+      "data": "Privacy Policy"
+    },
+    "social": {
+      "heading": "Follow us",
+      "social": {
+        "Twitter": "https://twitter.com/melsicon",
+        "XING": "https://www.xing.com/companies/melsicongmbh",
+        "GitHub": "https://github.com/melsicon"
+      }
+    }
   },
 
   "buttons": {
-    "locale": "German",
+    "locale": "Deutsch",
     "contact": "Contact us",
-    "more": "Find out more",
     "open": "Menu",
-    "close": "Close"
+    "close": "Close",
+    "more": "Learn more",
+    "jobs": "Jobs",
+    "apply": "Apply now"
   },
 
   "home": {
-    "heading": "Welcome to Cats Are Talented. C.A.T. We are catiful. Cats are the best. Oh yeah.",
-    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+    "heading": "Wir sind der IT-Partner, der Ihnen hilft, sich auf Ihre Kernkompetenz zu konzentrieren",
+    "paragraphs": ["Wir beraten Unternhemen aus dem Bereich Transportwesen und Banking in Frankfurt und Umgebung als IT-experten. Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung."]
   },
 
   "services": {
     "about": {
-      "heading": "This is us",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
+      "heading": "Our services",
+      "paragraphs": ["Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen. Dieses wird ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen.", "Durch die unterschiedlichen Schwerpunkte unserer Experten ist es uns möglich, Ihnen von der Planung bis zur Umsetzung alles aus einer Hand anzubieten. Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen."]
     },
     "services": {
-      "heading": "Our services",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren."],
-      "list": ["service 1", "service 2", "service 3", "service 4"]
+      "heading": "Our values",
+      "paragraphs": ["melsicon steht für lösungsorientierte Beratung und Menschlichkeit und unsere vorbildliche Arbeitsweise motiviert gesamte Projekte. It's important to us that our work is meaningful and that we find joy in the work. We are not driven by the sake of money.",
+        "Somthing like: We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "],
+      "list": ["Idee & Konzept", "Planung & Umsetzung", "Betrieb & Etwas"]
     },
     "clients": {
-      "heading": "Our clients",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
-      "list": ["Commerzbank", "DB", "Deutsche Bank"]
+      "heading": "Our customers",
+      "paragraphs": ["Wir konzentrieren uns auf Transportunternehmen und Finanzdienstleister im Frankfurter Raum."],
+      "list": ["Transportunternehmen", "Finanzdienstleister"]
+    },
+    "transport": {
+      "heading": "Transport industry",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
+      "list": ["DB"]
+    },
+    "bank": {
+      "heading": "Bank industry",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
+      "list": ["Deutsche Bank", "Commerzbank"]
     }
   },
 
   "community": {
     "heading": "Dedicated to the community",
-    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."],
+    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
     "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
   },
 
   "team": {
     "about": {
-      "heading": "About our team",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."]
+      "heading": "Our team",
+      "paragraphs": ["Gegründet 2012 mit Sitz in Eschborn. Schwerpunkt: IT-Projekte für Transportwesen und Finanzdienstleister. Startup Erfahrungen und Design Thinking Skills. Agile Methoden, Cloud, DevOps und alles rund um Java/JavaScript"]
     },
     "careers": {
-      "heading": "Join our company",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+      "heading": "Become a part of the team",
+      "paragraphs": ["We are always looking for talented and driven individuals to join our team. At melsicon, we put passion and grit before fancy educations"],
+      "list": ["Frontend Entwickler (w/m)", "Backend Entwickler (w/m)", "Softwarearchitekt  (w/m)", "DevOps Engineer (w/m)", "Scrum Master"]
     }
   },
 
   "contact": {
-    "heading": "Get in touch with us now",
-    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."]
+    "heading": "We'd love to hear from you!",
+    "paragraphs": ["Finde heraus, ob wir in dein Projekt passen. If you have any questions, would like to say hi or maybe grab a coffee, feel free to send us a message!"]
+  },
+
+  "team-page": {
+    "team": {
+      "heading": "Say hello to our team",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
+    "profiles": [
+      {
+        "name": "Makele Ghebreamlak",
+        "title": "Geschaftsfuhrer, Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "social": {
+          "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
+          "linkedin": "https://www.linkedin.com/in/makelefy/",
+          "twitter": "https://twitter.com/makelefy"
+        }
+      },
+      {
+        "name": "Alexander Figul",
+        "title": "Geschaftsfuhrer, Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "social": {
+          "xing": "https://www.xing.com/profile/Alexander_Figul/"
+        }
+      },
+      {
+        "name": "Bastian Baist",
+        "title": "Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "social": {
+          "xing": "https://www.xing.com/profile/Bastian_Baist/"
+        }
+      },
+      {
+        "name": "Amir Wasim",
+        "title": "Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "social": {
+          "xing": "https://www.xing.com/profile/Amir_Wasim/"
+        }
+      },
+      {
+        "name": "Victoria Bergquist",
+        "title": "Front-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "social": {
+          "xing": "https://www.xing.com/profile/Victoria_Bergquist",
+          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
+          "twitter": "https://twitter.com/vicbergquist"
+        }
+      },
+      {
+        "name": "Your name",
+        "title": "Our vacancies"
+      }
+    ]
+    },
+    "jobs": {
+      "heading": "How to join our team",
+      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
+      "vacancies": [
+        {
+          "title": "Front-End Developer",
+          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Back-End Developer",
+          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Software Architect",
+          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "DevOps Engineer",
+          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        },
+        {
+          "title": "Internships",
+          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "skills": ["Skill 1", "Skill 2", "Skill 3"]
+        }
+      ],
+        "cta-heading": "We'd love to hear from you, send us a message today!"
+    }
+    
   }
 }

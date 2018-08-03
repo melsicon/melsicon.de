@@ -1,10 +1,13 @@
 <template>
-    <div :class="{'sm-nav-opened': open}" class="nav-wrapper sm-nav">
-        <div class="logo-wrapper"><the-logo :class="{'logo-white': open}"/></div>
+    <div class="nav-wrapper sm-nav">
+        <the-logo :class="{'logo-white': open}"/>
         <div class="btn-toggle-wrapper" @click="open = !open">
             <button v-if="!open" class="btn btn-toggle btn-open">
                 {{ $t('buttons.open') }}
             </button>
+            <transition name="circle">
+                <div v-if="open" class="circle"/>
+            </transition>
             <button v-if="open" class="btn btn-toggle btn-close" >
                 {{ $t('buttons.close') }}
             </button>
@@ -36,6 +39,11 @@
                     <li class="nav-item">
                         <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn-lang nav-link" @click="toggleLocale">
+                            {{$t('buttons.locale')}}
+                        </button>
+                    </li>
                 </ul>
             </scrollactive>
         </transition>
@@ -51,7 +59,16 @@ export default {
   },
   data: () => ({
     open: false
-  })
+  }),
+  methods: {
+    toggleLocale() {
+      if (this.$i18n.locale === 'en') {
+        this.$i18n.locale = 'de'
+      } else {
+        this.$i18n.locale = 'en'
+      }
+    }
+  }
 }
 </script>
 
@@ -64,7 +81,6 @@ export default {
     height: 2.5em
     flex-wrap: wrap
     margin: auto
-    overflow: hidden
     padding: .5em .8em
     position: fixed
     top: 0
@@ -72,23 +88,21 @@ export default {
     width: 100%
     z-index: 9999
 
-  .sm-nav-opened
-    background: $color-secondary-darker
-    height: 50vh
-
   .nav-item
+    font-size: 1.2em
     margin-bottom: .5em
 
   .nav-dropdown
     padding: .5em .5em 0
 
   .nav-dropdown .dropdown-item:hover .nav-link
-    border-bottom: 1.8px solid $color-white
+    border-bottom: .2em solid $color-white
 
   .nav-dropdown li
     margin-bottom: .5em
 
   .btn-toggle-wrapper
+    position: relative
     align-items: center
     align-self: flex-start
     display: flex
@@ -100,17 +114,17 @@ export default {
   .btn-toggle
     align-self: center
     color: $color-secondary
-    font-size: .9em
+    font-size: 1em
     font-weight: 600
-    text-transform: uppercase
+    //text-transform: uppercase
     transition: all 1s
     margin-left: auto
 
   .btn-close
     color: $color-white
-  
+
   // OPEN/CLOSE ICON
-  
+
   .icon-toggle
     position: relative
     height: 8px
@@ -144,6 +158,7 @@ export default {
     display: flex
     flex-basis: 100%
     flex-direction: column
+    padding-top: 1.5em
     transition: opacity 1s .5s
 
   .nav-link
@@ -154,16 +169,36 @@ export default {
 
   // Active menu item style
   .is-active
-    border-bottom: 1px solid $color-white
+    border-bottom: 1.8px solid $color-white
 
   .fade-in-enter-active
     transition: all 1s .5s
-  
+
   .fade-in-leave-active
     transition: all .2s
-  
+
   .fade-in-enter, .fade-in-leave-to
     opacity: 0
+
+  // Circle Transition
+  .circle
+    position: absolute
+    top: 0
+    right: 0
+    height: 160vw
+    width: 160vw
+    background: $color-secondary-darker
+    border-radius: 50%
+    transform: translate3d(20%,-40%,0)
+    z-index: -1
+    transform-origin: 100% 0%
+
+  .circle-enter-active, .circle-leave-active
+    transition: all 1s
+
+  .circle-enter, .circle-leave-to
+    transform: translate3d(4%,-2%,0) scale(0.005)
+
 
 </style>
 

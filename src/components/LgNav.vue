@@ -29,7 +29,7 @@
                     </button>
                 </li>
             </ul>
-            <div class="logo-wrapper"><the-logo/></div>
+            <the-logo/>
         </scrollactive>
     </div>
 </template>

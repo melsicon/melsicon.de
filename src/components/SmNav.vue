@@ -192,6 +192,12 @@ export default {
     transform: translate3d(20%,-40%,0)
     z-index: -1
     transform-origin: 100% 0%
+    @media screen and (max-width: 768px)
+      transform: translate3d(20%,-55%,0)
+    @media screen and (max-width: 400px)
+      transform: translate3d(20%,-40%,0)
+    @media screen and (max-width: 320px)
+      transform: translate3d(20%,-30%,0)
 
   .circle-enter-active, .circle-leave-active
     transition: all 1s

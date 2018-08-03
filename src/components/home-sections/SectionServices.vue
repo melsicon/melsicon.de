@@ -1,6 +1,6 @@
 <template>
     <section id="services" class="section section-services">
-        <img src="" alt="" class="illustration service-illustration">
+        <illustration-services/>
         <article class="article">
             <h2 class="sub-heading">{{ $t('services.about.heading') }}</h2>
             <p v-for="p in $t('services.about.paragraphs')" :key="p.index">{{p}}</p>
@@ -23,7 +23,7 @@
                 <the-commerzbank/>
             </li>
         </ul>
-        <img src="" alt="" class="illustration">
+        <illustration-industry/>
         <article class="article article-transport">
             <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
             <p v-for="p in $t('services.transport.paragraphs')" :key="p.index" >{{p}}</p>
@@ -41,11 +41,15 @@
 import TheCommerzbank from '@/components/graphics/clients/TheCommerzbank'
 import TheDeutschebank from '@/components/graphics/clients/TheDeutschebank'
 import TheDb from '@/components/graphics/clients/TheDb'
+import IllustrationServices from '@/components/graphics/illustrations/IllustrationServices'
+import IllustrationIndustry from '@/components/graphics/illustrations/IllustrationIndustry'
 export default {
   components: {
     TheCommerzbank,
     TheDeutschebank,
-    TheDb
+    TheDb,
+    IllustrationServices,
+    IllustrationIndustry
   }
 }
 </script>
@@ -60,8 +64,7 @@ export default {
 
   .client-list
     flex-direction: column
-    justify-content: space-around
-    margin: 0 auto
+    margin: auto
 
     .client
       margin: 1em 0

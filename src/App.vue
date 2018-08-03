@@ -112,7 +112,6 @@ export default {
   h3
     font-size: 1.5em
     font-weight: 300
-    margin-top: 1em
     margin-bottom: .3em
 
   // MAIN WRAPPER
@@ -132,18 +131,6 @@ export default {
       max-width: 850px
     @media screen and (max-width: 900px)
       max-width: 750px
-  
-  .illustration
-    background: $color-secondary-darker
-    height: 100%
-    width: 80%
-    clip-path: circle(50% at 50% 50%)
-    margin: auto
-    @media screen and (max-width: 768px)
-      height: 200px
-      width: 100%
-      margin: auto
-      clip-path: circle(50% at 50% 50%)
 
   /* SECTIONS */
 
@@ -160,13 +147,12 @@ export default {
       grid-auto-rows: max-content
       grid-column-gap: 1em
       padding: 4em 0
-      min-height: 80vh
       @media screen and (max-width: 1000px)
         margin-bottom: 1em
         grid-template-columns: 1fr
       @media screen and (max-width: 400px)
         padding-top: 2em
-    
+
     .span-full
       grid-column: 1 / -1
 
@@ -174,6 +160,12 @@ export default {
     text-align: center
     @media screen and (max-width: 768px)
       text-align: left
+
+  .article
+    margin: 1em 0
+
+  .illustration
+    padding: 0 5em
 
   // BUTTON STYLE
   button

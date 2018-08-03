@@ -1,6 +1,6 @@
 <template>
     <section id="contact" class="section contact">
-        <img src="" alt="" class="illustration illustration-contact">
+        <illustration-contact/>
         <article class="article">
             <h2 class="sub-heading span2">{{ $t('contact.heading') }}</h2>
             <p v-for="p in $t('contact.paragraphs')" :key="p.index">{{p}}</p>
@@ -8,3 +8,12 @@
         </article>
     </section>
 </template>
+
+<script>
+import IllustrationContact from '@/components/graphics/illustrations/IllustrationContact'
+export default {
+  components: {
+    IllustrationContact
+  }
+}
+</script>

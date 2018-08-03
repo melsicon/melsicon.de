@@ -36,7 +36,6 @@ export default {
   .client-list, .service-list, .meetup-list
     display: flex
     text-align: center
-    justify-content: space-between
     @media screen and (max-width: 1000px)
       margin: 1.5em 0
       flex-direction: column

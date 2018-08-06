@@ -14,14 +14,12 @@
     display: flex
     align-content: center
 
-  svg
-    height: 1.8em
-    @media screen and (max-width: 768px)
-      height: 1.4em
-
   .logo
     fill: $color-secondary
     transition: all 1s
+    height: 1.5em
+    @media screen and (max-width: 768px)
+      height: 1.4em
 
   .logo-white .logo
     fill: $color-white

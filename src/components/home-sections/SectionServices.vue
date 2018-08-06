@@ -2,13 +2,8 @@
     <section id="services" class="section section-services">
         <illustration-services/>
         <article class="article">
-            <h2 class="sub-heading">{{ $t('services.about.heading') }}</h2>
-            <p v-for="p in $t('services.about.paragraphs')" :key="p.index">{{p}}</p>
-            <ul class="list service-list">
-                <li v-for="service in $t('services.services.list')" :key="service.index" class="list-item service">{{service}}</li>
-            </ul>
-            <h3 class="sub-heading">{{ $t('services.clients.heading') }}</h3>
-            <p v-for="p in $t('services.clients.paragraphs')" :key="p.index" >{{p}}</p>
+            <h2 class="sub-heading">{{ $t('services.heading') }}</h2>
+            <p v-for="p in $t('services.paragraphs')" :key="p.index">{{p}}</p>
         </article>
 
         <article class="article article-bank">
@@ -59,15 +54,14 @@ export default {
   .section-services
     grid-row-gap: 1.5em
 
-  .service-illustration
-    grid-row: 1
-
   .client-list
+    display: flex
+    text-align: center
     flex-direction: column
     margin: auto
 
     .client
-      margin: 1em 0
+      margin: .5em 0
       @media screen and (max-width: 768px)
         margin: .5em 0
 

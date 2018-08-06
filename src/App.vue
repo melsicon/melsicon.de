@@ -52,7 +52,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 19px
+    font-size: 21px
     height: 100%
     line-height: 1.3
     color: $color-black
@@ -91,15 +91,6 @@ export default {
     margin: 0
     &:not(:last-child)
       margin-bottom: 1em
-
-  // HEADINGS
-  h1
-    font-size: 2.8em
-    font-weight: 200
-    margin: 0
-    margin-bottom: .5em
-    @media screen and (max-width: 768px)
-      font-size: 2.2em
 
   h2
     font-size: 2em
@@ -165,7 +156,7 @@ export default {
     margin: 1em 0
 
   .illustration
-    padding: 0 5em
+    padding: 0 3em
 
   // BUTTON STYLE
   button

@@ -30,17 +30,5 @@ export default {
     margin-bottom: 1em
     @media only screen and (max-width: 768px)
       margin-top: 3em
-  
-  /* LISTS */
-
-  .client-list, .service-list, .meetup-list
-    display: flex
-    text-align: center
-    @media screen and (max-width: 1000px)
-      margin: 1.5em 0
-      flex-direction: column
-  
-  .list-item.service
-    flex-basis: 33.33%
 
 </style>

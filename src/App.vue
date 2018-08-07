@@ -43,7 +43,7 @@ export default {
 
 <style lang="sass">
 
-  /* GLOBAL STYLES */
+  /* GLOBAL/RESET STYLES */
 
   html
     background: $color-secondary-darker
@@ -54,7 +54,7 @@ export default {
     font-family: $font-body
     font-size: 21px
     height: 100%
-    line-height: 1.3
+    line-height: 1.4
     color: $color-black
     overflow-x: hidden
     @media screen and (max-width: 768px)
@@ -87,23 +87,19 @@ export default {
     @media only screen and (max-width: 768px)
       overflow-x: hidden
 
-  p
-    margin: 0
-    &:not(:last-child)
-      margin-bottom: 1em
-
-  h2
-    font-size: 2em
+  // HEADINGS
+  .heading
+    color: $color-black
+    font-size: 2.2em
     font-weight: 300
-    margin-top: 1em
-    margin-bottom: .3em
+    margin-bottom: .2em
     @media screen and (max-width: 768px)
       font-size: 1.9em
 
-  h3
-    font-size: 1.5em
-    font-weight: 300
-    margin-bottom: .3em
+  .sub-heading
+    font-weight: 700
+    margin-top: 1em
+    margin-bottom: .2em
 
   // MAIN WRAPPER
   .wrapper
@@ -123,29 +119,17 @@ export default {
     @media screen and (max-width: 900px)
       max-width: 750px
 
-  /* SECTIONS */
+  // SECTIONS
+  .section
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 10vh 0
 
-  .d-contents
-      display: contents
-
-  // Grid
-
-  @supports (display: grid)
-    .section
-      position: relative
-      display: grid
-      grid-template-columns: 1fr 1fr
-      grid-auto-rows: max-content
-      grid-column-gap: 1em
-      padding: 4em 0
-      @media screen and (max-width: 1000px)
-        margin-bottom: 1em
-        grid-template-columns: 1fr
-      @media screen and (max-width: 400px)
-        padding-top: 2em
-
-    .span-full
-      grid-column: 1 / -1
+  .article, .illustration
+    flex-basis: 50%
+    @media only screen and (max-width: 1000px)
+      flex-basis: 100%
 
   .center
     text-align: center
@@ -154,30 +138,44 @@ export default {
 
   .article
     margin: 1em 0
+    @media screen and (max-width: 375px)
+      margin: 0
 
   .illustration
-    padding: 0 3em
+    padding: 1em 5em
+
+  .paragraph
+    margin: 0
+    &:not(:last-child)
+      margin-bottom: 1em
 
   // BUTTON STYLE
   button
     background: 0
     border: 0
+    color: $color-black
     font-family: $font-body
     font-size: 1em
     cursor: pointer
 
-  .btn-cta
-    min-height: 35px
+  .btn-back, .btn-cta
+    color: $color-white
     background: $color-secondary
-    color: white
-    padding: 0 1em
-    border-radius: .2em
-    font-weight: bold
-    text-transform: uppercase
+    border: .1em solid $color-secondary
+    box-shadow: 3px 3px 0 $color-primary
+    border-radius: 1em
+    font-weight: 700
+    padding: .3em 1.2em
+    transition: all .1s ease-in
+    &:hover
+      transform: translate3d(2px, 2px, 0)
+      box-shadow: 1px 1px 0 $color-primary
+    &:active
+      transform: translate3d(3px, 3px, 0)
+      box-shadow: 1px 1px 0 $color-white
 
-  .btn-wrap
-    grid-column: 1
-    text-align: center
+
+  // LINK STYLES
 
   .inline-link
     color: $color-secondary

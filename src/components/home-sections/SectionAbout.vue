@@ -5,16 +5,16 @@
                 <h2 class="sub-heading">{{ $t('about.team.heading') }}</h2>
                 <p v-for="p in $t('about.team.paragraphs')" :key="p.index">{{p}}</p>
                 <i18n path="about.team.more" tag="p">
-                    <router-link place="team" class="link-more" to="/team">{{ $t("about.team.team") }}</router-link>
-                    <router-link place="jobs" class="link-more" to="/jobs">{{ $t("about.team.jobs") }}</router-link>
+                    <router-link place="team" class="inline-link" to="/team">{{ $t("about.team.team") }}</router-link>
+                    <router-link place="jobs" class="inline-link" to="/jobs">{{ $t("about.team.jobs") }}</router-link>
                 </i18n>
             </article>
 
             <article class="article article-community">
                 <p v-for="p in $t('about.community.paragraphs')" :key="p.index">{{p}}</p>
                 <ul class="list meetup-list">
-                    <li v-for="meetup in $t('about.community.list')" :key="meetup.index" class="meetup">
-                        {{meetup}}
+                    <li v-for="(meetup, key) in $t('about.community.list')" :key="meetup.index" class="meetup">
+                        <a :href="meetup" class="meetup-link">{{key}}</a>
                     </li>
                 </ul>
             </article>
@@ -36,7 +36,14 @@ export default {
 
 <style lang="sass" scoped>
 
+  .meetup-list .meetup
+    display: inline-block
+
   .meetup
-    margin: .5em 0
+    margin-right: .5em
+
+  .meetup-link
+    font-weight: 600
+    color: $color-secondary
 
 </style>

@@ -68,11 +68,11 @@
       "paragraphs": ["We create custom software solutions for the transportation and banking industry in the greater Frankfurt am Main area. Our team can support your existing project, or offer the full package from idea and concept to development and implementation of your product or service."],
     "bank": {
       "heading": "Trusted by the industry",
-      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula.", "In non feugiat nulla, sagittis molestie nunc. Vivamus rhoncus viverra euismod. Maecenas pellentesque pretium sollicitudin. Pellentesque vitae tortor eget ante tristique feugiat et sit amet ipsum. Sed euismod efficitur odio id egestas. Quisque in vehicula lorem. Etiam lacus diam, commodo commodo efficitur et, auctor a quam."]
     },
     "transport": {
       "heading": "Worked with the biggest",
-      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula.", "In non feugiat nulla, sagittis molestie nunc. Vivamus rhoncus viverra euismod. Maecenas pellentesque pretium sollicitudin. Pellentesque vitae tortor eget ante tristique feugiat et sit amet ipsum. Sed euismod efficitur odio id egestas."]
     }
   },
   "about": {
@@ -85,7 +85,14 @@
     },
     "community":{
       "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."],
-      "list": ["CSS Frankfurt", "Vue.js Frankfurt", "Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "FRADevJobs"]
+      "list": {
+        "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
+        "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
+        "DevBizFra": "https://www.meetup.com/devbizfra/",
+        "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler/",
+        "Mit wenigen Fehler von der Idee bis zum IT Produkt": "https://www.meetup.com/Mit-wenigen-Fehler-von-der-Idee-bis-zum-Produkt/"
+        
+      }
     }
   },
   "contact": {

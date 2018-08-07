@@ -179,7 +179,7 @@ export default {
     grid-column: 1
     text-align: center
 
-  .link-more
+  .inline-link
     color: $color-secondary
     font-weight: 600
     text-decoration: none

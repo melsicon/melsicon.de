@@ -54,159 +54,41 @@
     "contact": "Contact us",
     "open": "Menu",
     "close": "Close",
+    "team": "team",
     "more": "Learn more",
-    "jobs": "Jobs",
+    "jobs": "job openings",
     "apply": "Apply now"
   },
 
   "home": {
-    "heading": "Wir sind der IT-Partner, der Ihnen hilft, sich auf Ihre Kernkompetenz zu konzentrieren",
-    "paragraphs": ["Wir beraten Unternhemen aus dem Bereich Transportwesen und Banking in Frankfurt und Umgebung als IT-experten. Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung."]
+    "heading": "Software that empowers your business."
   },
-
   "services": {
-    "about": {
-      "heading": "Our services",
-      "paragraphs": ["Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen. Dieses wird ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen.", "Durch die unterschiedlichen Schwerpunkte unserer Experten ist es uns möglich, Ihnen von der Planung bis zur Umsetzung alles aus einer Hand anzubieten. Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen."]
-    },
-    "services": {
-      "heading": "Our values",
-      "paragraphs": ["melsicon steht für lösungsorientierte Beratung und Menschlichkeit und unsere vorbildliche Arbeitsweise motiviert gesamte Projekte. It's important to us that our work is meaningful and that we find joy in the work. We are not driven by the sake of money.",
-        "Somthing like: We work hard to provide our employees with the opportunity to be the best they can be, by continuesly invensting in their learning etc etc etc "],
-      "list": ["Idee & Konzept", "Planung & Umsetzung", "Betrieb & Etwas"]
-    },
-    "clients": {
-      "heading": "Our customers",
-      "paragraphs": ["Wir konzentrieren uns auf Transportunternehmen und Finanzdienstleister im Frankfurter Raum."],
-      "list": ["Transportunternehmen", "Finanzdienstleister"]
+      "heading": "Our expertise, your benefit",
+      "paragraphs": ["We create custom software solutions for the transportation and banking industry in the greater Frankfurt am Main area. Our team can support your existing project, or offer the full package from idea and concept to development and implementation of your product or service."],
+    "bank": {
+      "heading": "Trusted by the industry",
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
     },
     "transport": {
-      "heading": "Transport industry",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
-      "list": ["DB"]
-    },
-    "bank": {
-      "heading": "Bank industry",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
-      "list": ["Deutsche Bank", "Commerzbank"]
+      "heading": "Worked with the biggest",
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
     }
   },
-
-  "community": {
-    "heading": "Dedicated to the community",
-    "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.", "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"],
-    "list": ["Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "CSS Frankfurt", "Vue.js Frankfurt", "FRADevJobs"]
-  },
-
-  "team": {
-    "about": {
-      "heading": "Our team",
-      "paragraphs": ["Gegründet 2012 mit Sitz in Eschborn. Schwerpunkt: IT-Projekte für Transportwesen und Finanzdienstleister. Startup Erfahrungen und Design Thinking Skills. Agile Methoden, Cloud, DevOps und alles rund um Java/JavaScript"]
-    },
-    "careers": {
-      "heading": "Become a part of the team",
-      "paragraphs": ["We are always looking for talented and driven individuals to join our team. At melsicon, we put passion and grit before fancy educations"],
-      "list": ["Frontend Entwickler (w/m)", "Backend Entwickler (w/m)", "Softwarearchitekt  (w/m)", "DevOps Engineer (w/m)", "Scrum Master"]
-    }
-  },
-
-  "contact": {
-    "heading": "We'd love to hear from you!",
-    "paragraphs": ["Finde heraus, ob wir in dein Projekt passen. If you have any questions, would like to say hi or maybe grab a coffee, feel free to send us a message!"]
-  },
-
-  "team-page": {
+  "about": {
     "team": {
-      "heading": "Say hello to our team",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
-    "profiles": [
-      {
-        "name": "Makele Ghebreamlak",
-        "title": "Geschaftsfuhrer, Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "social": {
-          "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
-          "linkedin": "https://www.linkedin.com/in/makelefy/",
-          "twitter": "https://twitter.com/makelefy"
-        }
-      },
-      {
-        "name": "Alexander Figul",
-        "title": "Geschaftsfuhrer, Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "social": {
-          "xing": "https://www.xing.com/profile/Alexander_Figul/"
-        }
-      },
-      {
-        "name": "Bastian Baist",
-        "title": "Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "social": {
-          "xing": "https://www.xing.com/profile/Bastian_Baist/"
-        }
-      },
-      {
-        "name": "Amir Wasim",
-        "title": "Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "social": {
-          "xing": "https://www.xing.com/profile/Amir_Wasim/"
-        }
-      },
-      {
-        "name": "Victoria Bergquist",
-        "title": "Front-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "social": {
-          "xing": "https://www.xing.com/profile/Victoria_Bergquist",
-          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
-          "twitter": "https://twitter.com/vicbergquist"
-        }
-      },
-      {
-        "name": "Your name",
-        "title": "Our vacancies"
-      }
-    ]
+      "heading": "Small teams build great products",
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."],
+      "more": "Read about our {team} or see our {jobs}.",
+      "team": "team",
+      "jobs": "job openings"
     },
-    "jobs": {
-      "heading": "How to join our team",
-      "paragraphs": ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."],
-      "vacancies": [
-        {
-          "title": "Front-End Developer",
-          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "skills": ["Skill 1", "Skill 2", "Skill 3"]
-        },
-        {
-          "title": "Back-End Developer",
-          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "skills": ["Skill 1", "Skill 2", "Skill 3"]
-        },
-        {
-          "title": "Software Architect",
-          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "skills": ["Skill 1", "Skill 2", "Skill 3"]
-        },
-        {
-          "title": "DevOps Engineer",
-          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "skills": ["Skill 1", "Skill 2", "Skill 3"]
-        },
-        {
-          "title": "Internships",
-          "description": "Lorem ipsum sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          "skills": ["Skill 1", "Skill 2", "Skill 3"]
-        }
-      ],
-        "cta-heading": "We'd love to hear from you, send us a message today!"
+    "community":{
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."],
+      "list": ["CSS Frankfurt", "Vue.js Frankfurt", "Mit wenigen Fehler von der Idee bis zum IT Produkt", "Business für selbstständige Softwareentwickler­ - Frankfurt", "FRADevJobs"]
     }
-    
+  },
+  "contact": {
+    "heading": "Don't wait, contact us today!"
   }
 }

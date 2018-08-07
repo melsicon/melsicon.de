@@ -55,18 +55,17 @@
     "open": "Menü",
     "close": "Schließen",
     "more": "Mehr lernen",
-    "jobs": "Unsere Stellenangebote",
+    "jobs": "unsere Stellenangebote",
     "apply": "Bewirb dich jetzt"
   },
 
   "home": {
-    "heading": "Wir sind der IT-Partner, der Ihnen hilft, sich auf Ihre Kernkompetenz zu konzentrieren",
-    "paragraphs": ["Wir beraten Unternhemen aus dem Bereich Transportwesen und Banking in Frankfurt und Umgebung als IT-experten. Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung."]
+    "heading": "Software that empowers your business."
   },
 
   "services": {
     "about": {
-      "heading": "Unsere Dienstleistung",
+      "heading": "We develop better software",
       "paragraphs": ["Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen. Dieses wird ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen.", "Durch die unterschiedlichen Schwerpunkte unserer Experten ist es uns möglich, Ihnen von der Planung bis zur Umsetzung alles aus einer Hand anzubieten. Wir bringen ein eingespieltes Team ein, mit klarer Aufgabenteilung und definierten Kommunikationswegen."]
     },
     "services": {

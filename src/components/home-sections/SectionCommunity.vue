@@ -1,9 +1,12 @@
 <template>
-    <section id="services" class="section section-services">
-        <illustration-services/>
-        <article class="article">
-            <h2 class="heading">{{ $t('services.heading') }}</h2>
-            <p v-for="p in $t('services.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
+    <section id="industry" class="section section-industry">
+        <article class="article article-bank">
+            <p v-for="p in $t('about.community.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
+            <ul class="list meetup-list">
+                <li v-for="(meetup, key) in $t('about.community.list')" :key="meetup.index" class="meetup">
+                    <a :href="meetup" class="meetup-link">{{key}}</a>
+                </li>
+            </ul>
         </article>
     </section>
 </template>
@@ -28,7 +31,7 @@ export default {
 <style lang="sass">
 
   .section-services
-    grid-row-gap: 1.5em
+    margin-bottom: 20vh
 
   .client-list
     display: flex
@@ -38,6 +41,8 @@ export default {
 
     .client
       margin: .5em 0
+      @media screen and (max-width: 768px)
+        margin: .5em 0
 
   .commerzbank, .deutschebank, .db
     fill: $color-grey
@@ -50,13 +55,6 @@ export default {
     height: 3.5em
 
   .db
-    height: 4em
-
-  @media screen and (max-width: 1000px)
-    .client
-      margin: .5em 0
-
-    .illustration-services
-      order: 2
+    height: 3em
 
 </style>

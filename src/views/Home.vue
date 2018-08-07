@@ -2,6 +2,7 @@
     <main class="wrapper">
         <section-home/>
         <section-services/>
+        <section-industry/>
         <section-about/>
         <section-contact/>
     </main>
@@ -10,6 +11,7 @@
 <script>
 import SectionHome from '@/components/home-sections/SectionHome'
 import SectionServices from '@/components/home-sections/SectionServices'
+import SectionIndustry from '@/components/home-sections/SectionIndustry'
 import SectionAbout from '@/components/home-sections/SectionAbout'
 import SectionContact from '@/components/home-sections/SectionContact'
 
@@ -18,6 +20,7 @@ export default {
   components: {
     SectionHome,
     SectionServices,
+    SectionIndustry,
     SectionAbout,
     SectionContact
   }

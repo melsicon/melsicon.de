@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from './views/Home'
 import Team from './views/Team'
 import Jobs from './views/Jobs'
+import NotFound from './views/NotFound'
 
 Vue.use(Router)
 Vue.use(Meta)
@@ -25,6 +26,11 @@ export default new Router({
       path: '/jobs',
       name: 'jobs',
       component: Jobs
+    },
+    {
+      path: '*',
+      name: '404',
+      component: NotFound
     }
   ],
   scrollBehavior: (to, from, savedPosition) => {

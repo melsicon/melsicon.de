@@ -2,15 +2,15 @@
     <section id="about" class="section about">
         <illustration-team/>
         <article class="article article-about">
-            <h2 class="heading">{{ $t('about.team.heading') }}</h2>
-            <p v-for="p in $t('about.team.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
+            <h2 class="heading" tabindex="0">{{ $t('about.team.heading') }}</h2>
+            <p v-for="p in $t('about.team.paragraphs')" :key="p.index" class="paragraph" tabindex="0">{{p}}</p>
             <i18n path="about.team.more" tag="p">
                 <router-link place="team" class="inline-link" to="/team">{{ $t("about.team.team") }}</router-link>
                 <router-link place="jobs" class="inline-link" to="/jobs">{{ $t("about.team.jobs") }}</router-link>
             </i18n>
             <!-- <h3 class="sub-heading">{{ $t('about.community.heading') }}</h3> -->
-            <p v-for="p in $t('about.community.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
-            <ul class="list meetup-list">
+            <p v-for="p in $t('about.community.paragraphs')" :key="p.index" class="paragraph" tabindex="0">{{p}}</p>
+            <ul class="list meetup-list" tabindex="0">
                 <li v-for="(meetup, key) in $t('about.community.list')" :key="meetup.index" class="meetup">
                     <a :href="meetup" class="meetup-link">{{key}}</a>
                 </li>

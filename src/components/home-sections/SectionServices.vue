@@ -2,8 +2,8 @@
     <section id="services" class="section section-services">
         <illustration-services/>
         <article class="article">
-            <h2 class="heading">{{ $t('services.heading') }}</h2>
-            <p v-for="p in $t('services.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
+            <h2 class="heading" tabindex="0">{{ $t('services.heading') }}</h2>
+            <p v-for="p in $t('services.paragraphs')" :key="p.index" class="paragraph" tabindex="0">{{p}}</p>
         </article>
     </section>
 </template>

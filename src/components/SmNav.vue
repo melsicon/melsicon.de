@@ -1,45 +1,53 @@
 <template>
-    <div class="nav-wrapper sm-nav">
+    <div class="nav-wrapper sm-nav-wrapper">
         <the-logo :class="{'logo-white': open}"/>
-        <div class="btn-toggle-wrapper" @click="open = !open">
-            <button v-if="!open" class="btn btn-toggle btn-open">
-                {{ $t('buttons.open') }}
-            </button>
-            <transition name="circle">
-                <div v-if="open" class="circle"/>
-            </transition>
-            <button v-if="open" class="btn btn-toggle btn-close" >
-                {{ $t('buttons.close') }}
-            </button>
+        <!-- NAV BACKGROUND CIRCLE -->
+        <transition name="circle">
+            <div v-if="open" class="circle"/>
+        </transition>
+        <!-- OPEN/CLOSE BUTTON FOR SMALL NAV -->
+        <button id="menubutton"
+                :class="open ? 'btn-close' : 'btn-open'"
+                class="btn btn-toggle"
+                aria-haspopup="true"
+                aria-controls="menu"
+                @click="open = !open">
+            <span v-if="!open">{{ $t('buttons.open') }}</span>
+            <span v-else>{{ $t('buttons.close') }}</span>
             <div :class="{close: open}" class="icon-toggle">
                 <span class="line"/>
                 <span class="line"/>
             </div>
-        </div>
+        </button>
+        <!-- NAV MENU WHEN MENU IS OPENED -->
         <transition name="fade-in">
-            <scrollactive v-if="open" :offset="50" class="sm-nav-list" >
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home" @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
+            <scrollactive v-if="open" :offset="50" class="sm-nav" >
+                <ul id="menu" class="nav-list" role="menu" aria-labelledby="menubutton">
+
+                    <li class="nav-item" role="none">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home" role="menuitem" @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
                     </li>
-                    <li class="nav-item">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services" @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
+
+                    <li class="nav-item" role="none">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services" role="menuitem" @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
                     </li>
-                    <li class="nav-item with-dropdown">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" aria-haspopup="true" @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
+
+                    <li class="nav-item with-dropdown" role="none">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" role="menuitem" aria-haspopup="true" @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
+
                         <ul class="list nav-dropdown" aria-label="submenu">
-                            <li class="dropdown-item">
-                                <router-link class="nav-link" to="/team" @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
+                            <li class="dropdown-item" role="none">
+                                <router-link class="nav-link" to="/team" role="menuitem" @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
                             </li>
-                            <li class="dropdown-item">
-                                <router-link class="nav-link" to="/jobs" @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
+                            <li class="dropdown-item" role="none">
+                                <router-link class="nav-link" to="/jobs" role="menuitem" @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
+                    <li class="nav-item" role="none">
+                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" role="menuitem" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" role="none">
                         <button class="btn-lang nav-link" @click="toggleLocale">
                             {{$t('buttons.locale')}}
                         </button>
@@ -74,8 +82,8 @@ export default {
 
 <style lang="sass" scoped>
 
-  // SMALL NAV STYLES
-  .sm-nav
+  // SMALL NAV WRAPPER
+  .sm-nav-wrapper
     background: $color-white
     display: flex
     height: 2.5em
@@ -101,41 +109,33 @@ export default {
   .nav-dropdown li
     margin-bottom: .5em
 
-  .btn-toggle-wrapper
-    position: relative
-    align-items: center
-    align-self: flex-start
-    display: flex
-    margin-left: auto
-    min-width: 4em
-    cursor: pointer
-    height: 1.5em
-
+  // OPEN/CLOSE BUTTON
   .btn-toggle
-    align-self: center
+    position: relative
+    display: flex
+    align-items: center
     color: $color-secondary
     font-size: 1em
     font-weight: 600
-    //text-transform: uppercase
+    text-transform: uppercase
     transition: all 1s
     margin-left: auto
+    min-height: 1.5em
 
   .btn-close
     color: $color-white
 
-  // OPEN/CLOSE ICON
-
   .icon-toggle
     position: relative
-    height: 8px
     margin-left: .5em
-    width: 15px
+    height: 8px
+    width: 1em
 
   .line
     display: block;
-    height: 1.5px;
+    height: .1em;
     background: $color-secondary
-    width: 100%
+    width: 80%
     position: absolute
     left: 0
     right: 0
@@ -146,6 +146,7 @@ export default {
       bottom: 0
 
   .close .line
+    position: absolute
     background: $color-white
     top: 3px
     &:first-child
@@ -153,7 +154,8 @@ export default {
     &:last-child
       transform: rotate(-45deg)
 
-  .sm-nav-list
+  // SMALL NAV
+  .sm-nav
     align-items: center
     display: flex
     flex-basis: 100%
@@ -167,7 +169,7 @@ export default {
     @media screen and (max-width: 400px)
       font-size: 1.1em
 
-  // Active menu item style
+  // ACTIVE NAV ITEM
   .is-active
     border-bottom: 1.8px solid $color-white
 
@@ -180,7 +182,7 @@ export default {
   .fade-in-enter, .fade-in-leave-to
     opacity: 0
 
-  // Circle Transition
+  // CIRCLE BACKGROUND
   .circle
     position: absolute
     top: 0
@@ -210,8 +212,7 @@ export default {
 
 <style lang="sass">
 
-  // Global menu item style
-
+  // GLOBAL MENU ITEMS
   .nav-link
     color: $color-black
     font-size: 18px

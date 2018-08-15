@@ -2,29 +2,29 @@
     <div class="nav-wrapper">
         <scrollactive :offset="50"
                       class="nav lg-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home">{{ $t('nav.home.home') }}</router-link>
+            <ul class="nav-list" role="menu">
+                <li class="nav-item" role="none">
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home" role="menuitem">{{ $t('nav.home.home') }}</router-link>
                 </li>
-                <li class="nav-item">
-                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services">{{ $t('nav.home.services') }}</router-link>
+                <li class="nav-item" role="none">
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services" role="menuitem">{{ $t('nav.home.services') }}</router-link>
                 </li>
                 <li class="nav-item with-dropdown">
-                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" aria-haspopup="true">{{ $t('nav.home.about.about') }}</router-link>
+                    <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" role="menuitem" aria-haspopup="true">{{ $t('nav.home.about.about') }}</router-link>
                     <ul class="list nav-dropdown" aria-label="submenu">
-                        <li class="dropdown-item">
-                            <router-link class="nav-link" to="/team">- {{ $t('nav.home.about.team') }}</router-link>
+                        <li class="dropdown-item" role="none">
+                            <router-link class="nav-link" to="/team" role="menuitem">- {{ $t('nav.home.about.team') }}</router-link>
                         </li>
-                        <li class="dropdown-item">
-                            <router-link class="nav-link" to="/jobs#jobs">- {{ $t('nav.home.about.jobs') }}</router-link>
+                        <li class="dropdown-item" role="none">
+                            <router-link class="nav-link" to="/jobs#jobs" role="menuitem">- {{ $t('nav.home.about.jobs') }}</router-link>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a :class="{'scrollactive-item': $route.name === 'home'}" href="#contact" class="nav-link">{{$t('nav.home.contact')}}</a>
+                <li class="nav-item" role="none">
+                    <a :class="{'scrollactive-item': $route.name === 'home'}" href="#contact" class="nav-link" role="menuitem">{{$t('nav.home.contact')}}</a>
                 </li>
-                <li class="nav-item">
-                    <button class="btn-lang nav-link" @click="toggleLocale">
+                <li class="nav-item" role="none">
+                    <button class="btn-lang nav-link" role="menuitem" @click="toggleLocale">
                         {{$t('buttons.locale')}}
                     </button>
                 </li>

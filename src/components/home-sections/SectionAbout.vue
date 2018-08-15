@@ -34,11 +34,12 @@ export default {
     display: flex
     flex-wrap: wrap
     justify-content: center
+    margin-top: 2em
 
   .meetup
     margin-right: 2em
     margin-bottom: 1em
-    border-radius: .2em
+    border-radius: 1em
     background: $color-white
     border: .1em solid $color-secondary
     box-shadow: 3px 3px 0 $color-primary

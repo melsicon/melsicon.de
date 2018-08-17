@@ -24,7 +24,10 @@
                     <a :class="{'scrollactive-item': $route.name === 'home'}" href="#contact" class="nav-link" role="menuitem">{{$t('nav.home.contact')}}</a>
                 </li>
                 <li class="nav-item" role="none">
-                    <button class="btn-lang nav-link" role="menuitem" @click="toggleLocale">
+                    <button class="btn-lang nav-link"
+                            type="button"
+                            title="Change language"
+                            @click="toggleLocale">
                         {{$t('buttons.locale')}}
                     </button>
                 </li>
@@ -91,11 +94,11 @@ export default {
   .nav-list
     display: flex
     width: 100%
-  
+
   .nav-item
     margin-right: 5%
     padding-right: .5em
-  
+
   .nav-dropdown
     background: $color-white
     display: hidden
@@ -109,16 +112,16 @@ export default {
     display: block
     opacity: 1
     visibility: visible
-  
+
   .nav-dropdown .dropdown-item:hover .nav-link
     border-bottom: 1px solid $color-black
-  
+
   .nav-dropdown li
     margin-bottom: .5em
 
   .nav-link
     color: $color-black
-    font-size: 1rem
+    font-size: .9em
     letter-spacing: .5px
     text-decoration: none
     text-transform: uppercase

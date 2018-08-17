@@ -48,7 +48,10 @@
                         <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" role="menuitem" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
                     </li>
                     <li class="nav-item" role="none">
-                        <button class="btn-lang nav-link" @click="toggleLocale">
+                        <button class="btn-lang nav-link"
+                                type="button"
+                                title="Change language"
+                                @click="toggleLocale">
                             {{$t('buttons.locale')}}
                         </button>
                     </li>
@@ -215,7 +218,7 @@ export default {
   // GLOBAL MENU ITEMS
   .nav-link
     color: $color-black
-    font-size: 18px
+    font-size: 1em  
     text-decoration: none
     text-transform: capitalize
     transition: transform .3s ease-in

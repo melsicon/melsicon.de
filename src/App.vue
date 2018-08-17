@@ -68,7 +68,7 @@ export default {
     padding: 0
 
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
-      display: none
+    display: none
 
   a, a:visited
     text-decoration: none

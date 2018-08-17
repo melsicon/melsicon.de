@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Meta from 'vue-meta'
 import Router from 'vue-router'
 // Pages
-const Home = () => import('@/views/Home')
+import Home from '@/views/Home'
 const Team = () => import('@/views/Team')
 const Jobs = () => import('@/views/Jobs')
 const NotFound = () => import('@/views/NotFound')

@@ -1,9 +1,12 @@
 <template>
     <section id="contact" class="section section-contact">
         <article class="article">
-            <h2 class="heading">{{ $t('contact.heading') }}</h2>
-            <p v-for="p in $t('contact.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
-            <button class="btn btn-cta">{{ $t('buttons.contact') }}</button>
+            <h2 class="heading" >{{ $t('contact.heading') }}</h2>
+            <p v-for="p in $t('contact.paragraphs')" :key="p.index" class="paragraph" >{{p}}</p>
+            <button class="btn btn-cta"
+                    type="button"
+                    title="Contact us">
+                {{ $t('buttons.contact') }}</button>
         </article>
         <illustration-contact/>
     </section>

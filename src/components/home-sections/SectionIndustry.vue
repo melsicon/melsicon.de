@@ -1,9 +1,9 @@
 <template>
     <section id="industry" class="section section-industry">
         <article class="article article-bank">
-            <h2 class="heading">{{ $t('services.bank.heading') }}</h2>
+            <h2 class="heading" >{{ $t('services.bank.heading') }}</h2>
             <p v-for="p in $t('services.bank.paragraphs')" :key="p.index" class="paragraph" >{{p}}</p>
-            <ul class="list client-list">
+            <ul class="list client-list" >
                 <li class="client"><the-deutschebank/></li>
                 <li class="client"><the-commerzbank/></li>
                 <li class="client"><the-db/></li>

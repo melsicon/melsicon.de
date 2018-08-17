@@ -1,10 +1,10 @@
 <template>
     <footer class="footer">
         <div class="footer-wrapper">
-            <div class="logo-wrapper"><the-logo class="logo-white"/></div>
+            <the-logo class="logo-white"/>
             <div class="footer-content">
                 <div class="contact">
-                    <h4 class="footer-heading">{{ $t('footer.contact.heading') }}</h4>
+                    <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
                     <address class="address">
                         {{ $t('footer.contact.address.line-1') }}<br>
                         {{ $t('footer.contact.address.line-2') }}<br>
@@ -16,7 +16,7 @@
                 </div>
 
                 <div class="social">
-                    <h4 class="footer-heading">{{ $t('footer.social.heading') }}</h4>
+                    <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
                     <ul class="list social-list">
                         <li class="social-item">
                             <a href="https://twitter.com/melsicon" class="social-link">
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="legal">
-                    <h4 class="footer-heading">{{ $t('footer.legal.heading') }}</h4>
+                    <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
                     <router-link class="footer-link" to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
                     <router-link class="footer-link" to="/privacy">{{ $t('footer.legal.data') }}</router-link>
                 </div>

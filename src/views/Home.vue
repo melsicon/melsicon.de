@@ -16,7 +16,7 @@ import SectionAbout from '@/components/home-sections/SectionAbout'
 import SectionContact from '@/components/home-sections/SectionContact'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     SectionHome,
     SectionServices,

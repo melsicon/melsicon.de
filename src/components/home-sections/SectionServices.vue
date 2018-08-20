@@ -1,9 +1,14 @@
 <template>
-    <section id="services" class="section section-services">
+    <section
+        id="services"
+        class="section section-services">
         <illustration-services/>
         <article class="article">
-            <h2 class="heading" >{{ $t('services.heading') }}</h2>
-            <p v-for="p in $t('services.paragraphs')" :key="p.index" class="paragraph" >{{p}}</p>
+            <h2 class="heading">{{ $t('services.heading') }}</h2>
+            <p
+                v-for="p in $t('services.paragraphs')"
+                :key="p.index"
+                class="paragraph">{{ p }}</p>
         </article>
     </section>
 </template>

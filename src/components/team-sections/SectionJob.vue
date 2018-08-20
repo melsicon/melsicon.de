@@ -1,16 +1,25 @@
 <template>
-    <section id="jobs" class="section profiles">
+    <section
+        id="jobs"
+        class="section profiles">
         <article class="article vacancies">
             <h2 class="sub-heading">{{ $t('team-page.jobs.heading') }}</h2>
             <p>{{ $t('team-page.jobs.paragraphs')[0] }}</p>
         </article>
-        <img src="" alt="" class="illustration">
-        <article v-for="job in $t('team-page.jobs.vacancies')" 
-                 :key="job.index" 
-                 class="article article-job">
+        <img
+            src=""
+            alt=""
+            class="illustration">
+        <article
+            v-for="job in $t('team-page.jobs.vacancies')"
+            :key="job.index"
+            class="article article-job">
             <h3 class="sub-heading">{{ job.title }}</h3>
             <ul class="list list-skills">
-                <li v-for="skill in job.skills" :key="skill.index" class="skill">{{ skill }}</li>
+                <li
+                    v-for="skill in job.skills"
+                    :key="skill.index"
+                    class="skill">{{ skill }}</li>
             </ul>
             <p class="job-description">{{ job.description }}</p>
         </article>
@@ -28,7 +37,7 @@
 
   .job
     margin-bottom: 2em
-  
+
   .list-skills
     justify-content: flex-start
 

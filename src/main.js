@@ -7,10 +7,15 @@ import VueMq from 'vue-mq'
 import i18n from './i18n'
 // Icons
 import {library} from '@fortawesome/fontawesome-svg-core'
-import {faTwitter, faXing, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {
+  faTwitter,
+  faXing,
+  faGithub,
+  faLinkedin
+} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faGithub, faXing)
+library.add(faTwitter, faGithub, faXing, faLinkedin)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -1,9 +1,15 @@
 <template>
-    <section id="team" class="section section-profiles">
-        <article v-for="profile in $t('team.profiles')"
-                 :key="profile.index"
-                 class="article article-profile">
-            <img src="" alt="" class="profile-img">
+    <section
+        id="team"
+        class="section section-profiles">
+        <article
+            v-for="profile in $t('team.profiles')"
+            :key="profile.index"
+            class="article article-profile">
+            <img
+                src=""
+                alt=""
+                class="profile-img">
             <div>
                 <h3 class="profile-name">{{ profile.name }}</h3>
                 <span class="profile-heading">{{ profile.title }}</span>

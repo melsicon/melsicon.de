@@ -1,10 +1,20 @@
 <template>
-    <section id="industry" class="section section-industry">
+    <section
+        id="industry"
+        class="section section-industry">
         <article class="article article-bank">
-            <p v-for="p in $t('about.community.paragraphs')" :key="p.index" class="paragraph">{{p}}</p>
+            <p
+                v-for="p in $t('about.community.paragraphs')"
+                :key="p.index"
+                class="paragraph">{{ p }}</p>
             <ul class="list meetup-list">
-                <li v-for="(meetup, key) in $t('about.community.list')" :key="meetup.index" class="meetup">
-                    <a :href="meetup" class="meetup-link">{{key}}</a>
+                <li
+                    v-for="(meetup, key) in $t('about.community.list')"
+                    :key="meetup.index"
+                    class="meetup">
+                    <a
+                        :href="meetup"
+                        class="meetup-link">{{ key }}</a>
                 </li>
             </ul>
         </article>

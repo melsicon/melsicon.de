@@ -1,6 +1,8 @@
 <template>
-    <section id="home" class="home">
-        <h1 class="main-heading" >{{ $t('home.heading') }}</h1>
+    <section
+        id="home"
+        class="home">
+        <h1 class="main-heading">{{ $t('home.heading') }}</h1>
         <illustration-heading/>
     </section>
 </template>

@@ -4,8 +4,13 @@
             <h2 class="error-heading">{{ $t('error.heading') }}</h2>
             <p class="error-description">{{ $t('error.description') }}</p>
             <!-- <button class="btn btn-back">{{ $t('error.back') }}</button> -->
-            <i18n path="error.action" tag="p">
-                <router-link class="inline-link" place="back" to="/#home">{{ $t('error.back') }}</router-link>
+            <i18n
+                path="error.action"
+                tag="p">
+                <router-link
+                    class="inline-link"
+                    place="back"
+                    to="/#home">{{ $t('error.back') }}</router-link>
             </i18n>
         </section>
     </main>

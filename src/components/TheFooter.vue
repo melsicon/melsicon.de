@@ -19,18 +19,39 @@
                     <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
                     <ul class="list social-list">
                         <li class="social-item">
-                            <a href="https://twitter.com/melsicon" class="social-link">
-                                <font-awesome-icon :icon="['fab', 'twitter']" aria-role="img" aria-hidden="true" class="social-icon" fixed-width/> Twitter
+                            <a
+                                href="https://twitter.com/melsicon"
+                                class="social-link">
+                                <font-awesome-icon
+                                    :icon="['fab', 'twitter']"
+                                    aria-role="img"
+                                    aria-hidden="true"
+                                    class="social-icon"
+                                    fixed-width/> Twitter
                             </a>
                         </li>
                         <li class="social-item">
-                            <a href="" class="social-link">
-                                <font-awesome-icon :icon="['fab', 'github']" aria-role="img" aria-hidden="true" class="social-icon" fixed-width/> GitHub
+                            <a
+                                href=""
+                                class="social-link">
+                                <font-awesome-icon
+                                    :icon="['fab', 'github']"
+                                    aria-role="img"
+                                    aria-hidden="true"
+                                    class="social-icon"
+                                    fixed-width/> GitHub
                             </a>
                         </li>
                         <li class="social">
-                            <a href="https://www.xing.com/companies/melsicongmbh" class="social-link">
-                                <font-awesome-icon :icon="['fab', 'xing']" aria-role="img" aria-hidden="true" class="social-icon" fixed-width/> XING
+                            <a
+                                href="https://www.xing.com/companies/melsicongmbh"
+                                class="social-link">
+                                <font-awesome-icon
+                                    :icon="['fab', 'xing']"
+                                    aria-role="img"
+                                    aria-hidden="true"
+                                    class="social-icon"
+                                    fixed-width/> XING
                             </a>
                         </li>
                     </ul>
@@ -38,8 +59,12 @@
 
                 <div class="legal">
                     <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
-                    <router-link class="footer-link" to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
-                    <router-link class="footer-link" to="/privacy">{{ $t('footer.legal.data') }}</router-link>
+                    <router-link
+                        class="footer-link"
+                        to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
+                    <router-link
+                        class="footer-link"
+                        to="/privacy">{{ $t('footer.legal.data') }}</router-link>
                 </div>
             </div>
         </div>

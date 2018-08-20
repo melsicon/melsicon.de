@@ -3,56 +3,114 @@
         <the-logo :class="{'logo-white': open}"/>
         <!-- NAV BACKGROUND CIRCLE -->
         <transition name="circle">
-            <div v-if="open" class="circle"/>
+            <div
+                v-if="open"
+                class="circle"/>
         </transition>
         <!-- OPEN/CLOSE BUTTON FOR SMALL NAV -->
-        <button id="menubutton"
-                :class="open ? 'btn-close' : 'btn-open'"
-                class="btn btn-toggle"
-                aria-haspopup="true"
-                aria-controls="menu"
-                @click="open = !open">
+        <button
+            id="menubutton"
+            :class="open ? 'btn-close' : 'btn-open'"
+            class="btn btn-toggle"
+            aria-haspopup="true"
+            aria-controls="menu"
+            @click="open = !open">
             <span v-if="!open">{{ $t('buttons.open') }}</span>
             <span v-else>{{ $t('buttons.close') }}</span>
-            <div :class="{close: open}" class="icon-toggle">
+            <div
+                :class="{close: open}"
+                class="icon-toggle">
                 <span class="line"/>
                 <span class="line"/>
             </div>
         </button>
         <!-- NAV MENU WHEN MENU IS OPENED -->
         <transition name="fade-in">
-            <scrollactive v-if="open" :offset="50" class="sm-nav" >
-                <ul id="menu" class="nav-list" role="menu" aria-labelledby="menubutton">
+            <scrollactive
+                v-if="open"
+                :offset="50"
+                class="sm-nav" >
+                <ul
+                    id="menu"
+                    class="nav-list"
+                    role="menu"
+                    aria-labelledby="menubutton">
 
-                    <li class="nav-item" role="none">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#home" role="menuitem" @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
+                    <li
+                        class="nav-item"
+                        role="none">
+                        <router-link
+                            :class="{'scrollactive-item': $route.name === 'home'}"
+                            class="nav-link"
+                            to="/#home"
+                            role="menuitem"
+                            @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
                     </li>
 
-                    <li class="nav-item" role="none">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#services" role="menuitem" @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
+                    <li
+                        class="nav-item"
+                        role="none">
+                        <router-link
+                            :class="{'scrollactive-item': $route.name === 'home'}"
+                            class="nav-link"
+                            to="/#services"
+                            role="menuitem"
+                            @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
                     </li>
 
-                    <li class="nav-item with-dropdown" role="none">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#about" role="menuitem" aria-haspopup="true" @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
+                    <li
+                        class="nav-item with-dropdown"
+                        role="none">
+                        <router-link
+                            :class="{'scrollactive-item': $route.name === 'home'}"
+                            class="nav-link"
+                            to="/#about"
+                            role="menuitem"
+                            aria-haspopup="true"
+                            @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
 
-                        <ul class="list nav-dropdown" aria-label="submenu">
-                            <li class="dropdown-item" role="none">
-                                <router-link class="nav-link" to="/team" role="menuitem" @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
+                        <ul
+                            class="list nav-dropdown"
+                            aria-label="submenu">
+                            <li
+                                class="dropdown-item"
+                                role="none">
+                                <router-link
+                                    class="nav-link"
+                                    to="/team"
+                                    role="menuitem"
+                                    @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
                             </li>
-                            <li class="dropdown-item" role="none">
-                                <router-link class="nav-link" to="/jobs" role="menuitem" @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
+                            <li
+                                class="dropdown-item"
+                                role="none">
+                                <router-link
+                                    class="nav-link"
+                                    to="/jobs"
+                                    role="menuitem"
+                                    @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item" role="none">
-                        <router-link :class="{'scrollactive-item': $route.name === 'home'}" class="nav-link" to="/#contact" role="menuitem" @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
+                    <li
+                        class="nav-item"
+                        role="none">
+                        <router-link
+                            :class="{'scrollactive-item': $route.name === 'home'}"
+                            class="nav-link"
+                            to="/#contact"
+                            role="menuitem"
+                            @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
                     </li>
-                    <li class="nav-item" role="none">
-                        <button class="btn-lang nav-link"
-                                type="button"
-                                title="Change language"
-                                @click="toggleLocale">
-                            {{$t('buttons.locale')}}
+                    <li
+                        class="nav-item"
+                        role="none">
+                        <button
+                            class="btn-lang nav-link"
+                            type="button"
+                            title="Change language"
+                            @click="toggleLocale">
+                            {{ $t('buttons.locale') }}
                         </button>
                     </li>
                 </ul>
@@ -218,7 +276,7 @@ export default {
   // GLOBAL MENU ITEMS
   .nav-link
     color: $color-black
-    font-size: 1em  
+    font-size: 1em
     text-decoration: none
     text-transform: capitalize
     transition: transform .3s ease-in

@@ -1,21 +1,20 @@
 <template>
     <main class="wrapper">
-        <section-intro/>
+        <section-description/>
         <section-profile/>
+        <section class="section section-contact">
+            <h2 class="heading">{{ $t('team.join') }}</h2>
+        </section>
     </main>
 </template>
 
 <script>
 import SectionProfile from '@/components/team-sections/SectionProfile'
-import SectionIntro from '@/components/team-sections/SectionIntro'
+import SectionDescription from '@/components/team-sections/SectionDescription'
 export default {
   components: {
     SectionProfile,
-    SectionIntro
+    SectionDescription
   }
 }
 </script>
-
-<style lang="sass">
-  
-</style>

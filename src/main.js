@@ -14,9 +14,10 @@ import {
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
+import {faCaretRight} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faGithub, faXing, faLinkedin, faEnvelope)
+library.add(faTwitter, faGithub, faXing, faLinkedin, faEnvelope, faCaretRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -52,7 +52,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 21px
+    font-size: 19px
     height: 100%
     line-height: 1.4
     color: $color-black
@@ -97,9 +97,11 @@ export default {
       font-size: 1.9em
 
   .sub-heading
-    font-weight: 700
+    font-weight: 400
     margin-top: 1em
     margin-bottom: .2em
+    text-transform: uppercase
+    letter-spacing: 1px
 
   // MAIN WRAPPER
   .wrapper
@@ -108,7 +110,7 @@ export default {
     width: 100vw
     min-height: 100vh
     margin: auto
-    padding: 0 .8rem
+    padding: 0
     background: $color-white
     @media only screen and (min-width: 1480px)
       max-width: 1400px
@@ -123,11 +125,11 @@ export default {
   .section
     display: flex
     flex-wrap: wrap
-    align-items: center
     margin: 10vh 0
 
   .article, .illustration
     flex-basis: 50%
+    padding: 1em
     @media only screen and (max-width: 1000px)
       flex-basis: 100%
 
@@ -161,7 +163,7 @@ export default {
     color: $color-secondary
     background: $color-white
     border-radius: .1em
-    font-weight: 700
+    font-weight: 600
     padding: .5em 1em
     font-size: 1em
     letter-spacing: 1px

@@ -141,9 +141,6 @@ export default {
     @media screen and (max-width: 375px)
       margin: 0
 
-  .illustration
-    padding: 1em 5em
-
   .paragraph
     margin: 0
     &:not(:last-child)
@@ -158,14 +155,17 @@ export default {
     font-size: 1em
     cursor: pointer
 
-  .btn-back, .btn-cta
-    color: $color-white
-    background: $color-secondary
-    border: .1em solid $color-secondary
-    box-shadow: 3px 3px 0 $color-primary
-    border-radius: 1em
+  .btn-cta
+    display: flex
+    align-items: center
+    color: $color-secondary
+    background: $color-white
+    border-radius: .1em
     font-weight: 700
-    padding: .3em 1.2em
+    padding: .5em 1em
+    font-size: 1em
+    letter-spacing: 1px
+    text-transform: uppercase
     transition: all .1s ease-in
     &:hover
       transform: translate3d(2px, 2px, 0)
@@ -174,11 +174,22 @@ export default {
       transform: translate3d(3px, 3px, 0)
       box-shadow: 1px 1px 0 $color-white
 
+    .social-icon
+      font-size: 1em
+
 
   // LINK STYLES
-
   .inline-link
     color: $color-secondary
     font-weight: 600
     text-decoration: none
+
+  // SOCIAL ITEMS
+  .social-item
+    display: flex
+    align-items: center
+    margin-right: 1em
+    transition: transform .5s ease-in-out
+    &:hover
+      transform: scale(1.05)
 </style>

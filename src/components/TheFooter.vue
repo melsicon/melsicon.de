@@ -1,71 +1,50 @@
 <template>
     <footer class="footer">
         <div class="footer-wrapper">
-            <the-logo class="logo-white"/>
             <div class="footer-content">
-                <div class="contact">
-                    <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
-                    <address class="address">
-                        {{ $t('footer.contact.address.line-1') }}<br>
-                        {{ $t('footer.contact.address.line-2') }}<br>
-                        {{ $t('footer.contact.address.line-3') }}<br>
-                        <br>
-                        {{ $t('footer.contact.phone.label') }}: {{ $t('footer.contact.phone.data') }}<br>
-                        {{ $t('footer.contact.email.label') }}: {{ $t('footer.contact.email.data') }}
-                    </address>
-                </div>
+                <the-logo class="logo-white"/>
+            </div>
+            <div class="footer-content contact">
+                <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
+                <address class="address">
+                    {{ $t('footer.contact.address.line-1') }}<br>
+                    {{ $t('footer.contact.address.line-2') }}<br>
+                    {{ $t('footer.contact.address.line-3') }}<br>
+                    <br>
+                    {{ $t('footer.contact.phone.label') }}: {{ $t('footer.contact.phone.data') }}<br>
+                    {{ $t('footer.contact.email.label') }}: {{ $t('footer.contact.email.data') }}
+                </address>
+            </div>
 
-                <div class="social">
-                    <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
-                    <ul class="list social-list">
-                        <li class="social-item">
-                            <a
-                                href="https://twitter.com/melsicon"
-                                class="social-link">
-                                <font-awesome-icon
-                                    :icon="['fab', 'twitter']"
-                                    aria-role="img"
-                                    aria-hidden="true"
-                                    class="social-icon"
-                                    fixed-width/> Twitter
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a
-                                href=""
-                                class="social-link">
-                                <font-awesome-icon
-                                    :icon="['fab', 'github']"
-                                    aria-role="img"
-                                    aria-hidden="true"
-                                    class="social-icon"
-                                    fixed-width/> GitHub
-                            </a>
-                        </li>
-                        <li class="social">
-                            <a
-                                href="https://www.xing.com/companies/melsicongmbh"
-                                class="social-link">
-                                <font-awesome-icon
-                                    :icon="['fab', 'xing']"
-                                    aria-role="img"
-                                    aria-hidden="true"
-                                    class="social-icon"
-                                    fixed-width/> XING
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="footer-content social">
+                <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
+                <ul class="list social-list">
+                    <li
+                        v-for="(item, key) in $t('footer.social.social')"
+                        :key="item.index"
+                        class="social-item">
+                        <a
+                            :href="item"
+                            class="social-link">
+                            <font-awesome-icon
+                                :icon="['fab', key]"
+                                aria-role="img"
+                                aria-hidden="true"
+                                class="social-icon"
+                                fixed-width/> {{ key }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="legal">
-                    <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
-                    <router-link
-                        class="footer-link"
-                        to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
-                    <router-link
-                        class="footer-link"
-                        to="/privacy">{{ $t('footer.legal.data') }}</router-link>
-                </div>
+            <div class="footer-content legal">
+                <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
+                <router-link
+                    class="footer-link"
+                    to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    class="footer-link"
+                    to="/privacy">{{ $t('footer.legal.data') }}</router-link>
             </div>
         </div>
     </footer>
@@ -84,18 +63,21 @@ export default {
 <style lang="sass">
 
   .footer
-      min-height: 20rem
-      background: $color-secondary-darker
-      color: white
-      padding: 2em 0
+    min-height: 20rem
+    background: $color-secondary-darker
+    color: white
+    font-size: .85em
+    padding: 2em 0
+    @media screen and (max-width: 768px)
+      font-size: 1em
 
   .footer-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
     max-width: $width-full
     margin: auto
     height: 100%
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-gap: 1em
     padding: 0 .8rem
     @media only screen and (min-width: 1480px)
       max-width: 1400px
@@ -103,19 +85,16 @@ export default {
       max-width: 1000px
     @media only screen and (max-width: 1000px)
       max-width: 850px
-      grid-template-columns: 1fr
     @media screen and (max-width: 900px)
       max-width: 750px
 
-    .footer-content
-      display: grid
-      grid-template-columns: 1fr 1fr
-      grid-row-gap: 1em
-      @media only screen and (max-width: 768px)
-        grid-template-columns: 1fr
-
-  .contact, .social, .legal
+  .footer-content
+    width: 25%
     margin-bottom: 1em
+    @media only screen and (max-width: 1000px)
+      width: 50%
+    @media only screen and (max-width: 420px)
+      width: 100%
 
   .footer-heading
     font-size: 0.8em
@@ -137,10 +116,14 @@ export default {
   .social-link, .social-link:visited, .social-link:focus
     color: $color-white
 
-    .social-icon
-      font-size: 1.2em
-      color: $color-white
-      margin-right: .5em
+  .social-link
+    font-size: 1em
+    text-transform: capitalize
+
+  .social-icon
+    color: $color-white
+    font-size: 1.3em
+    margin-right: .4em
 
   .footer-link, .footer-link:visited
     color: $color-white

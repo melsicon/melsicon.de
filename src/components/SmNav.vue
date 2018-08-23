@@ -44,7 +44,7 @@
                             class="nav-link"
                             to="/#home"
                             role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.home.home') }}</router-link>
+                            @click.native="open = !open">{{ $t('nav.home') }}</router-link>
                     </li>
 
                     <li
@@ -55,7 +55,7 @@
                             class="nav-link"
                             to="/#services"
                             role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.home.services') }}</router-link>
+                            @click.native="open = !open">{{ $t('nav.services') }}</router-link>
                     </li>
 
                     <li
@@ -67,9 +67,9 @@
                             to="/#about"
                             role="menuitem"
                             aria-haspopup="true"
-                            @click.native="open = !open">{{ $t('nav.home.about.about') }}</router-link>
+                            @click.native="open = !open">{{ $t('nav.about') }}</router-link>
 
-                        <ul
+                            <!--  <ul
                             class="list nav-dropdown"
                             aria-label="submenu">
                             <li
@@ -79,7 +79,7 @@
                                     class="nav-link"
                                     to="/team"
                                     role="menuitem"
-                                    @click.native="open = !open">- {{ $t('nav.home.about.team') }}</router-link>
+                                    @click.native="open = !open">- {{ $t('nav.about.team') }}</router-link>
                             </li>
                             <li
                                 class="dropdown-item"
@@ -88,9 +88,9 @@
                                     class="nav-link"
                                     to="/jobs"
                                     role="menuitem"
-                                    @click.native="open = !open">- {{ $t('nav.home.about.jobs') }}</router-link>
+                                    @click.native="open = !open">- {{ $t('nav.about.jobs') }}</router-link>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li
                         class="nav-item"
@@ -100,9 +100,9 @@
                             class="nav-link"
                             to="/#contact"
                             role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.home.contact') }}</router-link>
+                            @click.native="open = !open">{{ $t('nav.contact') }}</router-link>
                     </li>
-                    <li
+                    <!-- <li
                         class="nav-item"
                         role="none">
                         <button
@@ -112,7 +112,7 @@
                             @click="toggleLocale">
                             {{ $t('buttons.locale') }}
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
             </scrollactive>
         </transition>

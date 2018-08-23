@@ -66,7 +66,6 @@ export default {
     min-height: 20rem
     background: $color-secondary-darker
     color: white
-    font-size: .85em
     padding: 2em 0
     @media screen and (max-width: 768px)
       font-size: 1em

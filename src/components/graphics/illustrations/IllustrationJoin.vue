@@ -1,5 +1,5 @@
 <template>
-    <div class="illustration illustration-jobs">
+    <div class="illustration illustration-join">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 500 462">

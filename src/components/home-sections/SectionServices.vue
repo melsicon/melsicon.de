@@ -9,6 +9,12 @@
                 v-for="p in $t('services.paragraphs')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
+            <!-- TO DO: ADD ICONS FOR EACH SERVICE? -->
+            <ul class="list client-list">
+                <li class="service">Idee & Konzept</li>
+                <li class="service">Planung & Umsetzung</li>
+                <li class="service">Service & Betrieb</li>
+            </ul>
         </article>
         <article class="article article-industry">
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
@@ -25,7 +31,7 @@
         <ul class="list client-list">
             <li class="client"><the-deutschebank/></li>
             <li class="client"><the-commerzbank/></li>
-            <li class="client"><the-amadeus/></li>
+            <!-- <li class="client"><the-amadeus/></li> -->
             <li class="client"><the-db/></li>
         </ul>
     </section>
@@ -52,6 +58,7 @@ export default {
 
   .section-services
     align-items: center
+    margin-bottom: 10em
 
   .client-list
     display: flex

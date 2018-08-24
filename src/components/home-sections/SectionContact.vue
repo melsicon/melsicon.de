@@ -4,10 +4,7 @@
         class="section section-contact">
         <article class="article">
             <h2 class="heading">{{ $t('contact.heading') }}</h2>
-            <p
-                v-for="p in $t('contact.paragraphs')"
-                :key="p.index"
-                class="paragraph">{{ p }}</p>
+            <p class="paragraph">{{ $t('contact.description') }}</p>
             <button
                 class="btn btn-cta"
                 type="button"

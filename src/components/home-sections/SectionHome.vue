@@ -3,8 +3,8 @@
         id="home"
         class="home">
         <article class="article article-hero">
-            <h1 class="main-heading">{{ $t('home.heading') }}</h1>
-            <p class="paragraph">{{ $t('home.description') }}</p>
+            <h1 class="main-heading">{{ $t('hero.heading') }}</h1>
+            <p class="paragraph">{{ $t('hero.description') }}</p>
         </article>
         <illustration-hero/>
     </section>
@@ -26,25 +26,19 @@ export default {
     display: flex
     flex-wrap: wrap
     align-items: center
-    min-height: 80vh
-    @media screen and (max-width: 1000px)
-      padding: 3em 0
-
-  .article-hero
-    flex-basis: 60%
-
-  .illustration-hero
-    flex-basis: 40%
+    padding-top: 3em
+    padding-bottom: 3em
 
   .main-heading
-    font-size: 2.6em
+    font-size: 3em
     font-weight: 200
-    margin: 0
     letter-spacing: 1px
-    padding: .5em 0
+    margin-bottom: .3em
     @media screen and (max-width: 1000px)
-      font-size: 3.4em
+      font-size: 2.5em
       flex-basis: 100%
+    @media screen and (max-width: 320px)
+      font-size: 2em
 
 
 </style>

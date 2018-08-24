@@ -87,22 +87,6 @@ export default {
     @media only screen and (max-width: 768px)
       overflow-x: hidden
 
-  // HEADINGS
-  .heading
-    color: $color-black
-    font-size: 2.2em
-    font-weight: 300
-    margin-bottom: .2em
-    @media screen and (max-width: 768px)
-      font-size: 1.9em
-
-  .sub-heading
-    font-weight: 400
-    margin-top: 1em
-    margin-bottom: .2em
-    text-transform: uppercase
-    letter-spacing: 1px
-
   // MAIN WRAPPER
   .wrapper
     position: relative
@@ -117,6 +101,7 @@ export default {
     @media only screen and (max-width: 1200px)
       max-width: 1000px
     @media only screen and (max-width: 1000px)
+      padding: 0 1em
       max-width: 850px
     @media screen and (max-width: 900px)
       max-width: 750px
@@ -125,30 +110,50 @@ export default {
   .section
     display: flex
     flex-wrap: wrap
-    margin: 10vh 0
+    margin: 3em 0
+    @media screen and (max-width: 1000px)
+      margin: 1em 0
 
+  // HEADINGS
+  .heading
+    color: $color-black
+    font-size: 2.4em
+    font-weight: 300
+    margin-bottom: .2em
+    @media screen and (max-width: 768px)
+      font-size: 1.9em
+
+  .sub-heading
+    font-weight: 400
+    margin-top: 1em
+    margin-bottom: .2em
+    text-transform: uppercase
+    letter-spacing: 1px
+
+  // CONTENT
   .article, .illustration
     flex-basis: 50%
     padding: 1em
     @media only screen and (max-width: 1000px)
       flex-basis: 100%
-
-  .center
-    text-align: center
-    @media screen and (max-width: 768px)
-      text-align: left
+      padding: .5em 0
 
   .article
     margin: 1em 0
-    @media screen and (max-width: 375px)
+    @media screen and (max-width: 1000px)
       margin: 0
 
   .paragraph
-    margin: 0
-    &:not(:last-child)
-      margin-bottom: 1em
+    margin: 1em 0
+    &:last-child
+      margin-bottom: 0
 
-  // BUTTON STYLE
+  .illustration-services, .illustration-contact, .illustration-team
+    padding: 0 4em
+    @media screen and (max-width: 768px)
+      padding: 0 2em
+
+  // BUTTON STYLES
   button
     background: 0
     border: 0
@@ -186,12 +191,4 @@ export default {
     font-weight: 600
     text-decoration: none
 
-  // SOCIAL ITEMS
-  .social-item
-    display: flex
-    align-items: center
-    margin-right: 1em
-    transition: transform .5s ease-in-out
-    &:hover
-      transform: scale(1.05)
 </style>

@@ -1,23 +1,37 @@
 <template>
-    <main class="wrapper"/>
+    <main class="wrapper">
+        <section-home/>
+        <section-services/>
+        <section-team/>
+        <section-join/>
+        <section-contact/>
+    </main>
 </template>
 
 <script>
+import SectionHome from '@/components/home-sections/SectionHome'
+import SectionServices from '@/components/home-sections/SectionServices'
+import SectionTeam from '@/components/home-sections/SectionTeam'
+import SectionJoin from '@/components/home-sections/SectionJoin'
+import SectionContact from '@/components/home-sections/SectionContact'
+
 export default {
-    name: 'home'
+  name: 'Home',
+  components: {
+    SectionHome,
+    SectionServices,
+    SectionTeam,
+    SectionJoin,
+    SectionContact
+  }
 }
 </script>
 
 <style lang="sass">
 
-.wrapper
-	max-width: 1280px
-	min-height: 100vh
-	margin: auto
-	display: grid
-	grid-template-columns: repeat(10, 1fr)
-	grid-template-rows: repeat(5, auto)
-	grid-gap: 1rem
-	padding: 0 1rem
+  .home
+    margin-bottom: 1em
+    @media only screen and (max-width: 768px)
+      margin-top: 3em
 
 </style>

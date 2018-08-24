@@ -2,12 +2,41 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
+import VueScrollactive from 'vue-scrollactive'
+import VueMq from 'vue-mq'
 import i18n from './i18n'
+// Icons
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {
+  faTwitter,
+  faXing,
+  faGithub,
+  faLinkedin
+} from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
+import {faCaretRight} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+
+library.add(faTwitter, faGithub, faXing, faLinkedin, faEnvelope, faCaretRight)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
+Vue.use(VueScrollactive)
+
+Vue.config.lang = 'en'
+
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 800,
+    md: 1250,
+    lg: Infinity
+  }
+})
+
 new Vue({
-    router,
-    i18n,
-    render: h => h(App)
+  router,
+  i18n,
+  render: h => h(App)
 }).$mount('#app')

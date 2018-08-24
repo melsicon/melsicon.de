@@ -1,3 +1,174 @@
 {
-  "message": "hello i18n !!"
+  "nav": {
+    "home": "Home",
+    "services": "Leistungen",
+    "about": "Team",
+    "contact": "Kontakt"
+  },
+
+  "footer": {
+    "contact": {
+      "heading": "Kontakt",
+      "address": {
+        "line-1": "melsicon GmbH",
+        "line-2": "Mergenthalerallee 73-75",
+        "line-3": "65760 Eschborn",
+        "line-4": ""
+      },
+      "phone": {
+        "label": "Telefon",
+        "data": "+49 6196 93499 50"
+      },
+      "email": {
+        "label": "Email",
+        "data": "hello@melsicon.de"
+      }
+    },
+    "legal": {
+      "heading": "Rechtliches",
+      "imprint": "Impressum",
+      "data": "Datenschutz"
+    },
+    "social": {
+      "heading": "Folg uns",
+      "social": {
+        "twitter": "https://twitter.com/melsicon",
+        "xing": "https://www.xing.com/companies/melsicongmbh",
+        "github": "https://github.com/melsicon"
+      }
+    }
+  },
+
+  "buttons": {
+    "locale": "Deutsch",
+    "contact": "Kontakt uns",
+    "open": "Menu",
+    "close": "Schliessen",
+    "team": "team",
+    "more": "Mehr lernen",
+    "jobs": "Unsere Stellenangebote",
+    "apply": "Apply now"
+  },
+
+  "error": {
+    "heading": "404 :(",
+    "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
+    "action": "Gehen Sie züruck zur {back}!",
+    "back": "Startseite"
+  },
+
+  "hero": {
+    "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
+    "description": "Wir sind der IT-Partner der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
+  },
+  "services": {
+    "heading": "Services heading",
+    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im größeren Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Sie bestmögliche ‚rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "bank": {
+      "heading": "Versicherungen und Banken",
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+    },
+    "transport": {
+      "heading": "Transportwesen",
+      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+    }
+  },
+  "about": {
+    "heading": "IT-Experten mit geballtem Wissen",
+    "paragraphs": ["Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit."],
+    "join": {
+      "heading": "Werde Teil unseres Teams!",
+      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob langjähriger Entwickler, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "benefits": {
+        "heading": "Unsere Benefits",
+        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch einen guten Work - Life - Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein - Main - Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+      },
+      "community": {
+        "heading": "Engagement in der Community",
+        "description": "Uns es ist wichtig, die IT-Gemeinschaft im Rhein-Main-Gebiet zu unterstützen und fördern. We let our employees dedicate time and resources to organise meetups and events for the community, and we are doing our best to support them and proudly sponsor them. Our meetups:",
+        "meetups": {
+          "DevBizFra": "https://www.meetup.com/devbizfra/",
+          "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
+          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler/",
+          "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/"
+        }
+      },
+      "open": ["Junior/Senior Frontend Entwickler (m/w)", "Backend Entwickler (m/w)", "Software Architecten (m/w)"]
+    }
+  },
+  "contact": {
+    "heading": "Wir freuen uns von Ihnen zu hören!",
+    "description": "Whether you'd like to talk business or grab a coffee, our inbox is always open."
+  },
+  "team": {
+    "heading": "Say hello to our team!",
+    "description": "melsicon GmbH wurde 2012 von den drei Informatik MSc Absolventen der Universität Darmstadt Makele Ghebreamlak, Alexander Figul und Joachim Hauck gegründet. Unsere Mitarbeiter besitzen langjährige Erfahrung in der IT-Beratung und Softwareentwicklung. Durch kontinuierliche Weiterbildungen dafür, dass ihr Wissen stets auf dem neusten Stand ist. ",
+    "profiles": [{
+        "name": "Makele Ghebreamlak",
+        "title": "Geschäftsführer, Back-End Developer",
+        "skills": ["Projektmanagment", "Java", "Skill 3"],
+        "description": "Der Kunde ist König. Als Manager und erfahrener Entwickler, stelle ich sicher, dass Termine eingehalten werden und alle Stakeholder in sync sind.",
+        "img": "../img/profiles/victoria1.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/makelefy/",
+          "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
+          "twitter": "https://twitter.com/makelefy"
+        }
+      },
+      {
+        "name": "Alexander Figul",
+        "title": "Geschäftsführer, Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Als Scrum Master und Leitender Entwickler tue ich alles, damit mein Team produktiv ist und jederzeit höchste Qualität liefert.",
+        "img": "../img/profiles/victoria2.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
+          "xing": "https://www.xing.com/profile/Alexander_Figul/",
+          "github": "https://github.com/afigul"
+        }
+      },
+      {
+        "name": "Victoria Bergquist",
+        "title": "Front-End Developer, Community Manager",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Kunden werden immer anspruchsvoller, mit meiner Arbeit als UX/UI Designerin und Frontend Entwicklerin sorge ich dafür, dass diese Ansprüche übertroffen werden.",
+        "img": "../img/profiles/victoria7.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
+          "github": "https://github.com/vicbergquist",
+          "twitter": "https://twitter.com/vicbergquist"
+        }
+      },
+      {
+        "name": "Bastian Baist",
+        "title": "Back-End Developer",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Mit meiner Liebe fürs Details finde ich als Entwickler die richtige Lösung auch für komplexe Probleme - ohne dabei den Blick fürs große Ganze zu verlieren.",
+        "img": "../img/profiles/victoria3.jpg",
+        "social": {
+          "xing": "https://www.xing.com/profile/Bastian_Baist/"
+        }
+      },
+      {
+        "name": "Amir Wasim",
+        "title": "Software Architecht",
+        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "description": "Als Cloud Architekt und Senior Software Entwickler achte ich sehr drauf, dass optimale Tools, Frameworks, Sprachen und Plattformen eingesetzt werden.",
+        "img": "../img/profiles/victoria4.jpg",
+        "social": {
+          "xing": "https://www.xing.com/profile/Amir_Wasim/"
+        }
+      },
+      {
+        "name": "Sarah Kesete",
+        "title": "Managment Assistant",
+        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img": "../img/profiles/victoria6.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
+          "xing": "https://www.xing.com/profile/Sarah_Kesete/"
+        }
+      }
+    ]
+  }
 }

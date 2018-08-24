@@ -1,15 +1,25 @@
 import Vue from 'vue'
+import Meta from 'vue-meta'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+// Pages
+import Home from '@/views/Home'
+const NotFound = () => import('@/views/NotFound')
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: Home
-        }
-    ]
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '*',
+      name: '404',
+      component: NotFound
+    }
+  ]
 })

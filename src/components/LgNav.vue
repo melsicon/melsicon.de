@@ -10,7 +10,7 @@
                     class="nav-item"
                     role="none">
                     <router-link
-                        class="nav-link"
+                        class="nav-link scrollactive-item"
                         to="/#home"
                         role="menuitem">{{ $t('nav.home') }}</router-link>
                 </li>
@@ -18,13 +18,13 @@
                     class="nav-item"
                     role="none">
                     <router-link
-                        class="nav-link"
+                        class="nav-link scrollactive-item"
                         to="/#services"
                         role="menuitem">{{ $t('nav.services') }}</router-link>
                 </li>
                 <li class="nav-item with-dropdown">
                     <router-link
-                        class="nav-link"
+                        class="nav-link scrollactive-item"
                         to="/#about"
                         role="menuitem"
                         aria-haspopup="true">{{ $t('nav.about') }}</router-link>
@@ -34,7 +34,7 @@
                     role="none">
                     <a
                         href="#contact"
-                        class="nav-link"
+                        class="nav-link scrollactive-item"
                         role="menuitem">{{ $t('nav.contact') }}</a>
                 </li>
             </ul>
@@ -96,27 +96,7 @@ export default {
     margin-right: 5%
     padding-right: .5em
 
-  .nav-dropdown
-    background: $color-white
-    display: hidden
-    transition: all .3s ease-in-out
-    padding: .5em
-    position: absolute
-    opacity: 0
-    visibility: hidden
-
-  .nav-list .nav-item:hover > .nav-dropdown, .nav-list .nav-item:focus-within > .nav-dropdown, .nav-list .nav-item .nav-dropdown:hover
-    display: block
-    opacity: 1
-    visibility: visible
-
-  .nav-dropdown .dropdown-item:hover .nav-link
-    border-bottom: 1px solid $color-black
-
-  .nav-dropdown li
-    margin-bottom: .5em
-
-  .nav-link
+  .scrollactive-item
     color: $color-black
     font-size: .9em
     letter-spacing: .5px

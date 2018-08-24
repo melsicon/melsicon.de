@@ -35,13 +35,11 @@
                     class="nav-list"
                     role="menu"
                     aria-labelledby="menubutton">
-
                     <li
                         class="nav-item"
                         role="none">
                         <router-link
-                            :class="{'scrollactive-item': $route.name === 'home'}"
-                            class="nav-link"
+                            class="nav-link scrollactive-item"
                             to="/#home"
                             role="menuitem"
                             @click.native="open = !open">{{ $t('nav.home') }}</router-link>
@@ -51,68 +49,29 @@
                         class="nav-item"
                         role="none">
                         <router-link
-                            :class="{'scrollactive-item': $route.name === 'home'}"
-                            class="nav-link"
+                            class="nav-link scrollactive-item"
                             to="/#services"
                             role="menuitem"
                             @click.native="open = !open">{{ $t('nav.services') }}</router-link>
                     </li>
-
                     <li
                         class="nav-item with-dropdown"
                         role="none">
                         <router-link
-                            :class="{'scrollactive-item': $route.name === 'home'}"
-                            class="nav-link"
+                            class="nav-link scrollactive-item"
                             to="/#about"
                             role="menuitem"
-                            aria-haspopup="true"
                             @click.native="open = !open">{{ $t('nav.about') }}</router-link>
-
-                            <!--  <ul
-                            class="list nav-dropdown"
-                            aria-label="submenu">
-                            <li
-                                class="dropdown-item"
-                                role="none">
-                                <router-link
-                                    class="nav-link"
-                                    to="/team"
-                                    role="menuitem"
-                                    @click.native="open = !open">- {{ $t('nav.about.team') }}</router-link>
-                            </li>
-                            <li
-                                class="dropdown-item"
-                                role="none">
-                                <router-link
-                                    class="nav-link"
-                                    to="/jobs"
-                                    role="menuitem"
-                                    @click.native="open = !open">- {{ $t('nav.about.jobs') }}</router-link>
-                            </li>
-                        </ul> -->
                     </li>
                     <li
                         class="nav-item"
                         role="none">
                         <router-link
-                            :class="{'scrollactive-item': $route.name === 'home'}"
-                            class="nav-link"
+                            class="nav-link scrollactive-item"
                             to="/#contact"
                             role="menuitem"
                             @click.native="open = !open">{{ $t('nav.contact') }}</router-link>
                     </li>
-                    <!-- <li
-                        class="nav-item"
-                        role="none">
-                        <button
-                            class="btn-lang nav-link"
-                            type="button"
-                            title="Change language"
-                            @click="toggleLocale">
-                            {{ $t('buttons.locale') }}
-                        </button>
-                    </li> -->
                 </ul>
             </scrollactive>
         </transition>
@@ -164,7 +123,7 @@ export default {
   .nav-dropdown
     padding: .5em .5em 0
 
-  .nav-dropdown .dropdown-item:hover .nav-link
+  .nav-dropdown .dropdown-item:hover .nav-link scrollactive-item
     border-bottom: .2em solid $color-white
 
   .nav-dropdown li
@@ -224,7 +183,7 @@ export default {
     padding-top: 1.5em
     transition: opacity 1s .5s
 
-  .nav-link
+  .nav-link scrollactive-item
     color: $color-white
     font-size: 1.2em
     @media screen and (max-width: 400px)
@@ -274,7 +233,7 @@ export default {
 <style lang="sass">
 
   // GLOBAL MENU ITEMS
-  .nav-link
+  .nav-link scrollactive-item
     color: $color-black
     font-size: 1em
     text-decoration: none

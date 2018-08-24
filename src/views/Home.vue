@@ -3,6 +3,7 @@
         <section-home/>
         <section-services/>
         <section-team/>
+        <section-join/>
         <section-contact/>
     </main>
 </template>
@@ -11,6 +12,7 @@
 import SectionHome from '@/components/home-sections/SectionHome'
 import SectionServices from '@/components/home-sections/SectionServices'
 import SectionTeam from '@/components/home-sections/SectionTeam'
+import SectionJoin from '@/components/home-sections/SectionJoin'
 import SectionContact from '@/components/home-sections/SectionContact'
 
 export default {
@@ -19,6 +21,7 @@ export default {
     SectionHome,
     SectionServices,
     SectionTeam,
+    SectionJoin,
     SectionContact
   }
 }

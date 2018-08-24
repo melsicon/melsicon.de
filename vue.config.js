@@ -8,7 +8,7 @@ module.exports = {
     sourceMap: true
   },
 
-  lintOnSave: undefined,
+  lintOnSave: true,
 
   pluginOptions: {
     enableInSFC: false

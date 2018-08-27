@@ -69,7 +69,7 @@ export default {
     .client
       margin: .5em 0
 
-  .commerzbank, .deutschebank, .db, .amadeus
+  .client-logo
     fill: $color-grey
     margin: .5em 0
 

@@ -1,6 +1,6 @@
 <template>
     <svg
-        class="commerzbank"
+        class="commerzbank client-logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 320 42">
         <g>

@@ -1,6 +1,6 @@
 <template>
     <svg
-        class="deutschebank"
+        class="deutschebank client-logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 287 53">
         <g fill-rule="evenodd">

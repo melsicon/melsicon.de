@@ -1,6 +1,6 @@
 <template>
     <svg
-        class="amadeus"
+        class="amadeus client-logo"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 354 47">
         <path

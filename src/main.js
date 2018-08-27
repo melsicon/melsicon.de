@@ -14,10 +14,10 @@ import {
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
-import {faCaretRight} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faGithub, faXing, faLinkedin, faEnvelope, faCaretRight)
+library.add(faTwitter, faGithub, faXing, faLinkedin, faEnvelope, faAngleRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
@@ -29,7 +29,7 @@ Vue.config.lang = 'en'
 
 Vue.use(VueMq, {
   breakpoints: {
-    sm: 800,
+    sm: 700,
     md: 1250,
     lg: Infinity
   }

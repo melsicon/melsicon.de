@@ -6,11 +6,33 @@ $font-body: 'Source Sans Pro', sans-serif
 $color-black: #333333
 $color-grey: #CFCFCF
 $color-white: #fff
-$color-primary: #66E866
-$color-primary-lighter: #CAF6CA
-$color-secondary: #6464E1
-$color-secondary-darker: #4B4BA9
+$color-secondary: #66E866
+$color-primary: #6464E1
+$color-primary-darker: #4B4BA9
 
-// Widths
+// Media Queries
+$x-large: 1700px
+$large: 1400px
+$medium: 1200px
+$small: 700px
+$x-small: 320px
 
-$width-full: 1240px
+@mixin x-large
+  @media (min-width: #{$x-large})
+    @content
+
+@mixin large
+  @media (max-width: #{$large})
+    @content
+
+@mixin medium
+  @media (max-width: #{$medium})
+    @content
+
+@mixin small
+  @media (max-width: #{$small})
+    @content
+
+@mixin x-small
+  @media (max-width: #{$x-small})
+    @content

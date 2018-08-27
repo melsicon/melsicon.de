@@ -134,7 +134,7 @@ export default {
     position: relative
     display: flex
     align-items: center
-    color: $color-secondary
+    color: $color-primary
     font-size: 1em
     font-weight: 600
     text-transform: uppercase
@@ -154,7 +154,7 @@ export default {
   .line
     display: block;
     height: .1em;
-    background: $color-secondary
+    background: $color-primary
     width: 80%
     position: absolute
     left: 0
@@ -209,7 +209,7 @@ export default {
     right: 0
     height: 160vw
     width: 160vw
-    background: $color-secondary-darker
+    background: $color-primary-darker
     border-radius: 50%
     transform: translate3d(20%,-40%,0)
     z-index: -1

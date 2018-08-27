@@ -3,7 +3,7 @@
         <section-home/>
         <section-services/>
         <section-team/>
-        <section-join/>
+        <section-careers/>
         <section-contact/>
     </main>
 </template>
@@ -12,7 +12,7 @@
 import SectionHome from '@/components/home-sections/SectionHome'
 import SectionServices from '@/components/home-sections/SectionServices'
 import SectionTeam from '@/components/home-sections/SectionTeam'
-import SectionJoin from '@/components/home-sections/SectionJoin'
+import SectionCareers from '@/components/home-sections/SectionCareers'
 import SectionContact from '@/components/home-sections/SectionContact'
 
 export default {
@@ -21,7 +21,7 @@ export default {
     SectionHome,
     SectionServices,
     SectionTeam,
-    SectionJoin,
+    SectionCareers,
     SectionContact
   }
 }
@@ -31,7 +31,7 @@ export default {
 
   .home
     margin-bottom: 1em
-    @media only screen and (max-width: 768px)
+    @include small
       margin-top: 3em
 
 </style>

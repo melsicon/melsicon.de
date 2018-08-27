@@ -36,8 +36,7 @@
       "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
-        "title": "Geschäftsführer, Back-End Developer",
-        "skills": ["Projektmanagment", "Java", "Skill 3"],
+        "title": "Geschäftsführer, Back-End Entwickler",
         "description": "Der Kunde ist König. Als Manager und erfahrener Entwickler, stelle ich sicher, dass Termine eingehalten werden und alle Stakeholder in sync sind.",
         "img": "../img/profiles/victoria1.jpg",
         "social": {
@@ -48,8 +47,7 @@
       },
       {
         "name": "Alexander Figul",
-        "title": "Geschäftsführer, Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "title": "Geschäftsführer, Back-End Entwickler",
         "description": "Als Scrum Master und Leitender Entwickler tue ich alles, damit mein Team produktiv ist und jederzeit höchste Qualität liefert.",
         "img": "../img/profiles/victoria2.jpg",
         "social": {
@@ -60,8 +58,7 @@
       },
       {
         "name": "Victoria Bergquist",
-        "title": "Front-End Developer, Community Manager",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "title": "Front-End Entwicklerin",
         "description": "Kunden werden immer anspruchsvoller, mit meiner Arbeit als UX/UI Designerin und Frontend Entwicklerin sorge ich dafür, dass diese Ansprüche übertroffen werden.",
         "img": "../img/profiles/victoria7.jpg",
         "social": {
@@ -72,8 +69,7 @@
       },
       {
         "name": "Bastian Baist",
-        "title": "Back-End Developer",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "title": "Back-End Entwickler",
         "description": "Mit meiner Liebe fürs Details finde ich als Entwickler die richtige Lösung auch für komplexe Probleme - ohne dabei den Blick fürs große Ganze zu verlieren.",
         "img": "../img/profiles/victoria3.jpg",
         "social": {
@@ -82,8 +78,7 @@
       },
       {
         "name": "Amir Wasim",
-        "title": "Software Architecht",
-        "skills": ["Skill 1", "Skill 2", "Skill 3"],
+        "title": "Back-End Entwickler",
         "description": "Als Cloud Architekt und Senior Software Entwickler achte ich sehr drauf, dass optimale Tools, Frameworks, Sprachen und Plattformen eingesetzt werden.",
         "img": "../img/profiles/victoria4.jpg",
         "social": {
@@ -121,11 +116,11 @@
       },
       "open": [{
           "title": "Front-End Entwickler/Berater (w/m)",
-          "url": "https://stackoverflow.com/jobs/152449/frontend-javascript-web-developer-consultant-melsicon-gmbh"
+          "url": "https://stackoverflow.com/jobs/152449/frontend-javascript-web-Entwickler-consultant-melsicon-gmbh"
         },
         {
           "title": "Back-End Entwickler/Berater (w/m)",
-          "url": "https://stackoverflow.com/jobs/152008/java-developer-consultant-frankfurt-melsicon-gmbh"
+          "url": "https://stackoverflow.com/jobs/152008/java-Entwickler-consultant-frankfurt-melsicon-gmbh"
         }
       ]
     }

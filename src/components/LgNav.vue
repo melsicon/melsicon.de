@@ -33,6 +33,14 @@
                     class="nav-item"
                     role="none">
                     <a
+                        href="#careers"
+                        class="nav-link scrollactive-item"
+                        role="menuitem">{{ $t('nav.careers') }}</a>
+                </li>
+                <li
+                    class="nav-item"
+                    role="none">
+                    <a
                         href="#contact"
                         class="nav-link scrollactive-item"
                         role="menuitem">{{ $t('nav.contact') }}</a>
@@ -73,16 +81,10 @@ export default {
     display: flex
     position: relative
     width: 100%
-    max-width: $width-full
+    max-width: $large
     margin: auto
     padding: .5rem .8rem
     align-items: center
-    @media only screen and (min-width: 1480px)
-      max-width: 1400px
-    @media only screen and (max-width: 1200px)
-      max-width: 1000px
-    @media only screen and (max-width: 1000px)
-      max-width: 850px
 
   .logo
     fill: $color-primary

@@ -1,7 +1,7 @@
 <template>
     <section
         id="home"
-        class="home">
+        class="section section-home">
         <article class="article article-hero">
             <h1 class="main-heading">{{ $t('hero.heading') }}</h1>
             <p class="paragraph">{{ $t('hero.description') }}</p>
@@ -22,12 +22,14 @@ export default {
 
 <style lang="sass" scoped>
 
-  .home
-    display: flex
-    flex-wrap: wrap
+  .section-home
+    flex-wrap: nowrap
     align-items: center
     padding: 3em 0
-    @media screen and (max-width: 500px)
+    @include medium
+      padding-top: 1em
+    @include small
+      flex-wrap: wrap
       padding: 0
       padding-top: 2em
 
@@ -36,11 +38,10 @@ export default {
     font-weight: 200
     letter-spacing: 1px
     margin-bottom: .3em
-    @media screen and (max-width: 1000px)
+    @include medium
       font-size: 2.5em
       flex-basis: 100%
-    @media screen and (max-width: 320px)
+    @include x-small
       font-size: 2em
-
 
 </style>

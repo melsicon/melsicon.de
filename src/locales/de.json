@@ -2,68 +2,19 @@
   "nav": {
     "home": "Home",
     "services": "Leistungen",
-    "about": "Team",
+    "about": "Über uns",
+    "careers": "Karriere",
     "contact": "Kontakt"
-  },
-
-  "footer": {
-    "contact": {
-      "heading": "Kontakt",
-      "address": {
-        "line-1": "melsicon GmbH",
-        "line-2": "Mergenthalerallee 73-75",
-        "line-3": "65760 Eschborn",
-        "line-4": ""
-      },
-      "phone": {
-        "label": "Telefon",
-        "data": "+49 6196 93499 50"
-      },
-      "email": {
-        "label": "Email",
-        "data": "hello@melsicon.de"
-      }
-    },
-    "legal": {
-      "heading": "Rechtliches",
-      "imprint": "Impressum",
-      "data": "Datenschutz"
-    },
-    "social": {
-      "heading": "Folg uns",
-      "social": {
-        "twitter": "https://twitter.com/melsicon",
-        "xing": "https://www.xing.com/companies/melsicongmbh",
-        "github": "https://github.com/melsicon"
-      }
-    }
-  },
-
-  "buttons": {
-    "locale": "Deutsch",
-    "contact": "Kontakt uns",
-    "open": "Menu",
-    "close": "Schliessen",
-    "team": "team",
-    "more": "Mehr lernen",
-    "jobs": "Unsere Stellenangebote",
-    "apply": "Apply now"
-  },
-
-  "error": {
-    "heading": "404 :(",
-    "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
-    "action": "Gehen Sie züruck zur {back}!",
-    "back": "Startseite"
   },
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind der IT-Partner der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
+    "description": "Wir sind der IT-Partner der Dir hilft dich auf Ihre Kernkompetenz zu konzentrieren."
   },
+
   "services": {
     "heading": "Services heading",
-    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im größeren Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Sie bestmögliche ‚rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im größeren Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Dich bestmögliche ‚rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Dich von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
     "bank": {
       "heading": "Versicherungen und Banken",
       "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
@@ -73,37 +24,17 @@
       "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
     }
   },
+
   "about": {
-    "heading": "IT-Experten mit geballtem Wissen",
-    "paragraphs": ["Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit."],
-    "join": {
-      "heading": "Werde Teil unseres Teams!",
-      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob langjähriger Entwickler, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
-      "benefits": {
-        "heading": "Unsere Benefits",
-        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch einen guten Work - Life - Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein - Main - Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
-      },
-      "community": {
-        "heading": "Engagement in der Community",
-        "description": "Uns es ist wichtig, die IT-Gemeinschaft im Rhein-Main-Gebiet zu unterstützen und fördern. We let our employees dedicate time and resources to organise meetups and events for the community, and we are doing our best to support them and proudly sponsor them. Our meetups:",
-        "meetups": {
-          "DevBizFra": "https://www.meetup.com/devbizfra/",
-          "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
-          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler/",
-          "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/"
-        }
-      },
-      "open": ["Junior/Senior Frontend Entwickler (m/w)", "Backend Entwickler (m/w)", "Software Architecten (m/w)"]
-    }
-  },
-  "contact": {
-    "heading": "Wir freuen uns von Ihnen zu hören!",
-    "description": "Whether you'd like to talk business or grab a coffee, our inbox is always open."
-  },
-  "team": {
-    "heading": "Say hello to our team!",
-    "description": "melsicon GmbH wurde 2012 von den drei Informatik MSc Absolventen der Universität Darmstadt Makele Ghebreamlak, Alexander Figul und Joachim Hauck gegründet. Unsere Mitarbeiter besitzen langjährige Erfahrung in der IT-Beratung und Softwareentwicklung. Durch kontinuierliche Weiterbildungen dafür, dass ihr Wissen stets auf dem neusten Stand ist. ",
-    "profiles": [{
+    "company": {
+      "heading": "This is our company",
+      "description": ["melsicon GmbH wurde 2012 von den drei Informatik MSc Absolventen der Universität Darmstadt Makele Ghebreamlak, Alexander Figul und Joachim Hauck gegründet. Die Existenzgründung erfolgte aus dem Verlangen heraus unsere eigenen Motivationen und Ziele zu verfolgen, statt die vorgegebenen (und meist strikt umsatzorientierten) Ziele etablierter Softwareberatungen.",
+      "melsicon ist ein Kunstwort aus „melsi“ und „con“. Das Wort „melsi“ kommt aus dem Eritreischen, dem Ursprungsland von Makele, und bedeutet ‚Lösung‘. Das Wort „con“ ist die Abkürzung für Consulting."]
+    },
+    "team": {
+      "heading": "IT-Experten mit geballtem Wissen",
+      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
+      "profiles": [{
         "name": "Makele Ghebreamlak",
         "title": "Geschäftsführer, Back-End Developer",
         "skills": ["Projektmanagment", "Java", "Skill 3"],
@@ -170,5 +101,87 @@
         }
       }
     ]
+    },
+    "careers": {
+      "heading": "Werde Teil unseres Teams!",
+      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob langjähriger Entwickler, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "benefits": {
+        "heading": "Warum melsicon?",
+        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch einen guten Work - Life - Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein - Main - Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+      },
+      "community": {
+        "heading": "Engagement in der Community",
+        "description": "Es ist uns auch wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
+        "meetups": {
+          "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
+          "DevBizFra": "https://www.meetup.com/devbizfra/",
+          "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
+          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler/"
+        }
+      },
+      "open": [{
+          "title": "Front-End Entwickler/Berater (w/m)",
+          "url": "https://stackoverflow.com/jobs/152449/frontend-javascript-web-developer-consultant-melsicon-gmbh"
+        },
+        {
+          "title": "Back-End Entwickler/Berater (w/m)",
+          "url": "https://stackoverflow.com/jobs/152008/java-developer-consultant-frankfurt-melsicon-gmbh"
+        }
+      ]
+    }
+  },
+
+  "contact": {
+    "heading": "Wir freuen uns von Ihnen zu hören!",
+    "description1": "Möchtest du eine Geschäftsanfrage oder Projekt besprechen, dich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen! Wir würden uns freuen von dir zu hören!",
+    "description2": "Schreib uns entweder eine Email unter {email}, oder schreib uns einfach direkt im Chat hier auf unsere Webseite an.",
+    "email": "hallo@melsicon.de"
+  },
+
+  "buttons": {
+    "contact": "Schreibe uns",
+    "open": "Menu",
+    "close": "Schliessen",
+    "apply": "Apply now"
+  },
+
+  "error": {
+    "heading": "404 :(",
+    "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
+    "action": "Gehe züruck zur {back}!",
+    "back": "Startseite"
+  },
+
+  "footer": {
+    "contact": {
+      "heading": "Kontakt",
+      "address": {
+        "line-1": "melsicon GmbH",
+        "line-2": "Mergenthalerallee 73-75",
+        "line-3": "65760 Eschborn",
+        "line-4": ""
+      },
+      "phone": {
+        "label": "Telefon",
+        "data": "+49 6196 93499 50"
+      },
+      "email": {
+        "label": "Email",
+        "data": "hallo@melsicon.de"
+      }
+    },
+    "legal": {
+      "heading": "Rechtliches",
+      "imprint": "Impressum",
+      "data": "Datenschutz"
+    },
+    "social": {
+      "heading": "Folg uns",
+      "social": {
+        "twitter": "https://twitter.com/melsicon",
+        "xing": "https://www.xing.com/companies/melsicongmbh",
+        "github": "https://github.com/melsicon"
+      }
+    }
   }
 }

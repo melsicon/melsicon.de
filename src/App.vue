@@ -46,7 +46,7 @@ export default {
   /* GLOBAL/RESET STYLES */
 
   html
-    background: $color-secondary-darker
+    background: $color-primary-darker
 
   body
     position: relative
@@ -57,9 +57,9 @@ export default {
     line-height: 1.4
     color: $color-black
     overflow-x: hidden
-    @media screen and (max-width: 768px)
+    @include medium
       font-size: 18px
-    @media screen and (max-width: 400px)
+    @include x-small
       font-size: 16px
 
   *
@@ -72,9 +72,10 @@ export default {
 
   a, a:visited
     text-decoration: none
-    color: $color-secondary
+    color: $color-primary
 
   ul
+    width: 100%
     list-style-type: none
 
   * + *
@@ -84,34 +85,25 @@ export default {
   #app
     height: 100%
     background: white
-    @media only screen and (max-width: 768px)
+    @include medium
       overflow-x: hidden
 
   // MAIN WRAPPER
   .wrapper
     position: relative
-    max-width: $width-full
+    max-width: $large
     width: 100vw
     min-height: 100vh
     margin: auto
-    padding: 0
+    padding: 0 1em
     background: $color-white
-    @media only screen and (min-width: 1480px)
-      max-width: 1400px
-    @media only screen and (max-width: 1200px)
-      max-width: 1000px
-    @media only screen and (max-width: 1000px)
-      padding: 0 1em
-      max-width: 850px
-    @media screen and (max-width: 900px)
-      max-width: 750px
 
   // SECTIONS
   .section
     display: flex
     flex-wrap: wrap
     margin: 3em 0
-    @media screen and (max-width: 1000px)
+    @include medium
       margin: 1em 0
 
   // HEADINGS
@@ -120,7 +112,7 @@ export default {
     font-size: 2.4em
     font-weight: 300
     margin-bottom: .2em
-    @media screen and (max-width: 768px)
+    @include small
       font-size: 1.9em
 
   .sub-heading
@@ -133,23 +125,24 @@ export default {
   // CONTENT
   .article, .illustration
     flex-basis: 50%
-    padding: 1em
-    @media only screen and (max-width: 1000px)
+    @include small
       flex-basis: 100%
       padding: .5em 0
 
   .article
+    padding: 1em
     margin: 1em 0
-    @media screen and (max-width: 1000px)
+    @include medium
       margin: 0
+    @include small
+      padding: 1em 0
+
+  .illustration svg
+    width: 100%
+    max-height: 500px
 
   .paragraph:not(:last-child)
     margin-bottom: 1em
-
-  .illustration-services, .illustration-contact, .illustration-team
-    padding: 0 4em
-    @media screen and (max-width: 768px)
-      padding: 0 2em
 
   // BUTTON STYLES
   button
@@ -161,32 +154,24 @@ export default {
     cursor: pointer
 
   .btn-cta
-    display: flex
-    align-items: center
-    color: $color-secondary
-    background: $color-white
-    border-radius: .1em
+    color: $color-white
     font-weight: 600
-    padding: .5em 1em
-    font-size: 1em
-    letter-spacing: 1px
-    text-transform: uppercase
-    transition: all .1s ease-in
-    &:hover
-      transform: translate3d(2px, 2px, 0)
-      box-shadow: 1px 1px 0 $color-primary
+    padding: .5em 1.5em
+    background: $color-primary
+    border-radius: .3em
+    margin: 1em 0
+    box-shadow: .15em .15em 0 $color-primary-darker
     &:active
-      transform: translate3d(3px, 3px, 0)
-      box-shadow: 1px 1px 0 $color-white
-
-    .social-icon
-      font-size: 1em
-
+      box-shadow: .1em .1em 0 $color-white
+      transform: translate3d(.15em, .15em, 0)
 
   // LINK STYLES
   .inline-link
-    color: $color-secondary
+    color: $color-primary
     font-weight: 600
     text-decoration: none
+
+  iframe#drift-widget.drift-widget-welcome-online div
+    border: 2px solid red !important
 
 </style>

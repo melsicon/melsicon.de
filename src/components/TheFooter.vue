@@ -1,9 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-wrapper">
-            <div class="footer-content">
-                <the-logo class="logo-white"/>
-            </div>
+            <the-logo class="logo-white footer-logo"/>
             <div class="footer-content contact">
                 <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
                 <address class="address">
@@ -15,7 +13,6 @@
                     {{ $t('footer.contact.email.label') }}: {{ $t('footer.contact.email.data') }}
                 </address>
             </div>
-
             <div class="footer-content social">
                 <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
                 <ul class="list social-list">
@@ -64,35 +61,29 @@ export default {
 
   .footer
     min-height: 20rem
-    background: $color-secondary-darker
+    background: $color-primary-darker
     color: white
     padding: 2em 0
-    @media screen and (max-width: 768px)
-      font-size: 1em
 
   .footer-wrapper
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    max-width: $width-full
+    max-width: $large
     margin: auto
     height: 100%
-    padding: 0 .8rem
-    @media only screen and (min-width: 1480px)
-      max-width: 1400px
-    @media only screen and (max-width: 1200px)
-      max-width: 1000px
-    @media only screen and (max-width: 1000px)
-      max-width: 850px
-    @media screen and (max-width: 900px)
-      max-width: 750px
+    padding: 0 2em
+    @include small
+      padding: 0 1em
+
+  .footer-logo
+    flex-basis: 100%
+    margin-bottom: 1em
 
   .footer-content
-    width: 25%
+    width: 33.3%
     margin-bottom: 1em
-    @media only screen and (max-width: 1000px)
-      width: 50%
-    @media only screen and (max-width: 420px)
+    @include small
       width: 100%
 
   .footer-heading

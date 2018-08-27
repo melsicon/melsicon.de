@@ -31,7 +31,7 @@
         <ul class="list client-list">
             <li class="client"><the-deutschebank/></li>
             <li class="client"><the-commerzbank/></li>
-            <!-- <li class="client"><the-amadeus/></li> -->
+            <li class="client"><the-amadeus/></li>
             <li class="client"><the-db/></li>
         </ul>
     </section>
@@ -58,15 +58,17 @@ export default {
 
   .section-services
     align-items: center
-    margin-bottom: 10em
-    @media screen and (max-width: 500px)
+    margin-bottom: 5em
+    @include small
       margin-bottom: 2em
 
   .client-list
-    display: flex
     text-align: center
-    flex-direction: column
     margin: auto
+    flex-basis: 50%
+    height: 100%
+    @include small
+      flex-basis: 100%
 
     .client
       margin: .5em 0
@@ -76,18 +78,18 @@ export default {
     margin: .5em 0
 
   .commerzbank
-    height: 2.3em
+    max-height: 2.3em
 
   .deutschebank
-    height: 3.5em
+    max-height: 3.5em
 
   .db
-    height: 4em
+    max-height: 4em
 
   .amadeus
-    height: 2em
+    max-height: 2em
 
-  @media screen and (max-width: 1000px)
+  @include small
     .article-intro
       order: 1
 

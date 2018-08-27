@@ -74,6 +74,7 @@ export default {
     @include medium
       padding: 0 3em
     @include small
+      order: -1
       padding: 0 2em
 
   .job-list

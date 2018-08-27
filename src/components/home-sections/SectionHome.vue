@@ -41,7 +41,7 @@ export default {
     @include medium
       font-size: 2.5em
       flex-basis: 100%
-    @include x-small
-      font-size: 2em
+    @include small
+      font-size: 2.2em
 
 </style>

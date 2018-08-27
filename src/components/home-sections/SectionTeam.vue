@@ -4,7 +4,7 @@
         class="section section-team">
         <article class="article article-team">
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
-            <p 
+            <p
                 v-for="p in $t('about.company.description')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
@@ -41,4 +41,8 @@ export default {
   .illustration-team
     padding: 0 3em
     align-self: center
+    @include small
+      order: -1
+      padding: 0 1em
+
 </style>

@@ -5,11 +5,11 @@
         <article class="article article-contact">
             <h2 class="heading">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description1') }}</p>
-            <i18n 
-                path="contact.description2" 
+            <i18n
+                path="contact.description2"
                 tag="p">
-                <span 
-                    class="email" 
+                <span
+                    class="email"
                     place="email">{{ $t('contact.email') }}</span>
             </i18n>
             <button
@@ -38,7 +38,8 @@ export default {
 
   .illustration-contact
     padding: 0 2em
-
+    //@include small
+      order: -1
   .email
     color: $color-primary
     font-weight: 600

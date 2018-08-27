@@ -48,6 +48,8 @@ export default {
     flex-basis: 100%
     display: flex
     flex-wrap: wrap
+    @include small
+      margin-top: 1em
 
   .profile
     display: flex
@@ -70,7 +72,8 @@ export default {
     font-weight: 300
 
   .profile-title
-    font-weight: 400
+    font-size: 1em
+    font-weight: 600
     text-align: center
 
   .profile-img
@@ -78,7 +81,7 @@ export default {
     max-width: 9em
     border-radius: 50%
     margin-bottom: .5em
-    box-shadow: -.8em .2em 0 $color-secondary
+    box-shadow: -.7em .2em 0 $color-secondary
 
   .list-social
     display: flex
@@ -101,8 +104,6 @@ export default {
     font-weight: 700
     text-transform: uppercase
     letter-spacing: 1px
-    @include small
-      font-size: 1em
 
   .social-icon
     color: $color-primary

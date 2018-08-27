@@ -143,10 +143,8 @@ export default {
     @media screen and (max-width: 1000px)
       margin: 0
 
-  .paragraph
-    margin: 1em 0
-    &:last-child
-      margin-bottom: 0
+  .paragraph:not(:last-child)
+    margin-bottom: 1em
 
   .illustration-services, .illustration-contact, .illustration-team
     padding: 0 4em

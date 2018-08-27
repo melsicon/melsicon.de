@@ -46,6 +46,8 @@ export default {
 
   .illustration-join
     padding: 0 5em
+    @media screen and (max-width: 500px)
+      padding: 0 2em
 
   .meetup-list
     display: flex

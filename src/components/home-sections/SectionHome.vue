@@ -26,8 +26,10 @@ export default {
     display: flex
     flex-wrap: wrap
     align-items: center
-    padding-top: 3em
-    padding-bottom: 3em
+    padding: 3em 0
+    @media screen and (max-width: 500px)
+      padding: 0
+      padding-top: 2em
 
   .main-heading
     font-size: 3em

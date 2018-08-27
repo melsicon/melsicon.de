@@ -10,7 +10,7 @@
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
             <!-- TO DO: ADD ICONS FOR EACH SERVICE? -->
-            <ul class="list client-list">
+            <ul class="list service-list">
                 <li class="service">Idee & Konzept</li>
                 <li class="service">Planung & Umsetzung</li>
                 <li class="service">Service & Betrieb</li>
@@ -59,6 +59,8 @@ export default {
   .section-services
     align-items: center
     margin-bottom: 10em
+    @media screen and (max-width: 500px)
+      margin-bottom: 2em
 
   .client-list
     display: flex

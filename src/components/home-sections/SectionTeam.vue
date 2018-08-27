@@ -56,8 +56,8 @@ export default {
   .article-team
     align-self: center
     margin-bottom: 5em
-    @media screen and (max-width: 1000px)
-      margin-bottom: 1em
+    @media screen and (max-width: 500px)
+      margin-bottom: 0
 
   .illustration-team
     padding-bottom: 2em
@@ -83,6 +83,8 @@ export default {
     display: flex
     flex-wrap: wrap
     margin-top: 2em
+    @media screen and (max-width: 500px)
+      margin-top: 1em
 
   .profile
     display: flex

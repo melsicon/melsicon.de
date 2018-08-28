@@ -32,7 +32,7 @@
                 class="sm-nav" >
                 <ul
                     id="menu"
-                    class="nav-list"
+                    class="list nav-list"
                     role="menu"
                     aria-labelledby="menubutton">
                     <li
@@ -62,6 +62,15 @@
                             to="/#about"
                             role="menuitem"
                             @click.native="open = !open">{{ $t('nav.about') }}</router-link>
+                    </li>
+                    <li
+                        class="nav-item with-dropdown"
+                        role="none">
+                        <router-link
+                            class="nav-link scrollactive-item"
+                            to="/#careers"
+                            role="menuitem"
+                            @click.native="open = !open">{{ $t('nav.careers') }}</router-link>
                     </li>
                     <li
                         class="nav-item"
@@ -102,7 +111,6 @@ export default {
 
 <style lang="sass" scoped>
 
-  // SMALL NAV WRAPPER
   .sm-nav-wrapper
     background: $color-white
     display: flex
@@ -116,15 +124,21 @@ export default {
     width: 100%
     z-index: 9999
 
-  .nav-item
+  .sm-nav
+    display: flex
+    flex-basis: 100%
+    padding-top: 1.5em
+    transition: opacity 1s .5s
+
+  .nav-list
+    margin: auto
+
+  .nav-link, .scrollactive-item
     font-size: 1.2em
-    margin-bottom: .5em
+    color: $color-white
 
-  .nav-dropdown
-    padding: .5em .5em 0
-
-  .nav-dropdown .dropdown-item:hover .nav-link scrollactive-item
-    border-bottom: .2em solid $color-white
+  .nav-item
+    margin-bottom: 1em
 
   .nav-dropdown li
     margin-bottom: .5em
@@ -174,24 +188,9 @@ export default {
     &:last-child
       transform: rotate(-45deg)
 
-  // SMALL NAV
-  .sm-nav
-    align-items: center
-    display: flex
-    flex-basis: 100%
-    flex-direction: column
-    padding-top: 1.5em
-    transition: opacity 1s .5s
-
-  .nav-link scrollactive-item
-    color: $color-white
-    font-size: 1.2em
-    @media screen and (max-width: 400px)
-      font-size: 1.1em
-
   // ACTIVE NAV ITEM
   .is-active
-    border-bottom: 1.8px solid $color-white
+    border-bottom: 1px solid $color-white
 
   .fade-in-enter-active
     transition: all 1s .5s

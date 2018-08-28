@@ -56,7 +56,6 @@ export default {
     height: 100%
     line-height: 1.4
     color: $color-black
-    overflow-x: hidden
     @include medium
       font-size: 18px
     @include x-small
@@ -75,7 +74,6 @@ export default {
     color: $color-primary
 
   ul
-    width: 100%
     list-style-type: none
 
   * + *
@@ -85,18 +83,21 @@ export default {
   #app
     height: 100%
     background: white
+    margin-top: -1rem
     @include medium
       overflow-x: hidden
 
   // MAIN WRAPPER
   .wrapper
     position: relative
-    max-width: $large
+    max-width: $normal-width
     width: 100vw
     min-height: 100vh
-    margin: auto
+    margin: 0 auto
     padding: 0 1em
     background: $color-white
+    @include x-large
+      max-width: $large-width
 
   // SECTIONS
   .section
@@ -127,7 +128,6 @@ export default {
     flex-basis: 50%
     @include small
       flex-basis: 100%
-      padding: .5em 0
 
   .article
     padding: 1em
@@ -135,11 +135,12 @@ export default {
     @include medium
       margin: 0
     @include small
+      flex-basis: 100%
       padding: 1em 0
 
   .illustration svg
     width: 100%
-    max-height: 500px
+    max-height: 600px
 
   .paragraph:not(:last-child)
     margin-bottom: 1em
@@ -170,8 +171,5 @@ export default {
     color: $color-primary
     font-weight: 600
     text-decoration: none
-
-  iframe#drift-widget.drift-widget-welcome-online div
-    border: 2px solid red !important
 
 </style>

@@ -69,7 +69,7 @@ export default {
   // LARGE NAV STYLES
 
   .nav-wrapper
-    position: sticky
+    position: fixed
     top: 0
     display: flex
     width: 100%
@@ -81,10 +81,12 @@ export default {
     display: flex
     position: relative
     width: 100%
-    max-width: $large
+    max-width: $normal-width
     margin: auto
     padding: .5rem .8rem
     align-items: center
+    @include x-large
+      max-width: large-width
 
   .logo
     fill: $color-primary

@@ -2,6 +2,7 @@
     <section
         id="about"
         class="section section-team">
+        <illustration-team v-if="$mq === 'sm'"/>
         <article class="article article-team">
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
             <p
@@ -11,7 +12,7 @@
             <h3 class="sub-heading">{{ $t('about.team.heading') }}</h3>
             <p class="paragraph">{{ $t('about.team.description') }}</p>
         </article>
-        <illustration-team/>
+        <illustration-team v-if="$mq === 'lg'"/>
         <team-profile :profiles="$t('about.team.profiles')"/>
     </section>
 </template>
@@ -42,7 +43,5 @@ export default {
     padding: 0 3em
     align-self: center
     @include small
-      order: -1
       padding: 0 1em
-
 </style>

@@ -2,7 +2,7 @@
     <section
         id="careers"
         class="section section-careers">
-        <illustration-careers/>
+        <illustration-careers v-if="$mq === 'lg'"/>
         <article class="article article-careers">
             <h2 class="heading">{{ $t('about.careers.heading') }}</h2>
             <p class="paragraph">{{ $t('about.careers.description') }}</p>
@@ -25,9 +25,9 @@
                     </a>
                 </li>
             </ul>
+            <illustration-careers v-if="$mq === 'sm'"/>
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
             <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
-            <!-- <h3 class="sub-heading">{{ $t('about.careers.community.heading') }}</h3> -->
             <p class="paragraph">{{ $t('about.careers.community.description') }}</p>
             <ul class="list meetup-list">
                 <li

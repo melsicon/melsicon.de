@@ -29,8 +29,7 @@ Vue.config.lang = 'en'
 
 Vue.use(VueMq, {
   breakpoints: {
-    sm: 700,
-    md: 1250,
+    sm: 768,
     lg: Infinity
   }
 })

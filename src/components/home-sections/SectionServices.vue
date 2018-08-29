@@ -2,21 +2,18 @@
     <section
         id="services"
         class="section section-services">
-        <illustration-services/>
+        <illustration-services v-if="$mq === 'lg'"/>
         <article class="article article-intro">
             <h2 class="heading">{{ $t('services.heading') }}</h2>
             <p
                 v-for="p in $t('services.paragraphs')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
-            <!-- TO DO: ADD ICONS FOR EACH SERVICE? -->
-            <ul class="list service-list">
-                <li class="service">Idee & Konzept</li>
-                <li class="service">Planung & Umsetzung</li>
-                <li class="service">Service & Betrieb</li>
-            </ul>
         </article>
         <article class="article article-industry">
+            <illustration-services 
+                v-if="$mq === 'md'" 
+                :class="{'illustration-medium': $mq === 'md'}"/>
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p
                 v-for="p in $t('services.bank.paragraphs')"
@@ -62,6 +59,9 @@ export default {
     @include small
       margin-bottom: 2em
 
+  .illustration-services
+    padding: 0 2em
+
   .client-list
     text-align: center
     margin: auto
@@ -89,21 +89,5 @@ export default {
 
   .amadeus
     max-height: 2em
-
-  @include small
-    .article-intro
-      order: 1
-
-    .article-industry
-      order: 3
-
-    .client-list
-      order: 4
-
-    .client
-      margin: .5em 0
-
-    .illustration-services
-      order: 2
 
 </style>

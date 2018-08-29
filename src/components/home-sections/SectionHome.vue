@@ -40,7 +40,6 @@ export default {
     margin-bottom: .3em
     @include medium
       font-size: 2.5em
-      flex-basis: 100%
     @include small
       margin-top: 1em
       font-size: 2.2em

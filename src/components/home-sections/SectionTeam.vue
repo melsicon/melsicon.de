@@ -2,9 +2,12 @@
     <section
         id="about"
         class="section section-team">
-        <illustration-team v-if="$mq === 'sm'"/>
+        <illustration-team v-if="$mq === 'xs'"/>
         <article class="article article-team">
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
+            <illustration-team 
+                v-if="$mq === 'md'" 
+                :class="{'illustration-medium': $mq === 'md'}"/>
             <p
                 v-for="p in $t('about.company.description')"
                 :key="p.index"

@@ -3,6 +3,9 @@
         id="contact"
         class="section section-contact">
         <article class="article article-contact">
+            <illustration-contact 
+                v-if="$mq === 'md'" 
+                :class="{'illustration-medium': $mq === 'md'}"/>
             <h2 class="heading">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description1') }}</p>
             <i18n
@@ -18,7 +21,7 @@
                 title="Contact us">
                 {{ $t('buttons.contact') }}</button>
         </article>
-        <illustration-contact/>
+        <illustration-contact v-if="$mq === 'lg' || $mq === 'xs'"/>
     </section>
 </template>
 
@@ -34,12 +37,17 @@ export default {
 <style lang="sass" scoped>
   .section-contact
     align-items: center
-    margin: 3em 0
+    margin: 10em 0
+    @include small
+      margin: 3em 0
 
   .illustration-contact
-    padding: 0 2em
-    //@include small
-      order: -1
+    padding: 0 1em
+    @include x-large
+      padding: 0 5em
+    @include small
+      padding: 0 3em
+
   .email
     color: $color-primary
     font-weight: 600

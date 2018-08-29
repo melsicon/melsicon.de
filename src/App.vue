@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <sm-nav v-if="$mq === 'sm'"/>
-        <lg-nav v-if="$mq !== 'sm'"/>
+        <sm-nav v-if="$mq === 'xs'"/>
+        <lg-nav v-if="$mq === 'lg'"/>
         <router-view/>
         <the-footer/>
     </div>
@@ -52,12 +52,12 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 19px
+    font-size: 20px
     height: 100%
     line-height: 1.4
     color: $color-black
-    @include medium
-      font-size: 18px
+    @include x-large
+      font-size: 22px
     @include x-small
       font-size: 16px
 
@@ -137,6 +137,12 @@ export default {
     @include small
       flex-basis: 100%
       padding: 1em 0
+
+  .illustration-medium
+    float: right
+    shape-outside: circle(50%)
+    svg
+      height: 300px
 
   .illustration svg
     width: 100%

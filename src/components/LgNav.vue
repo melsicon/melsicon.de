@@ -83,10 +83,10 @@ export default {
     width: 100%
     max-width: $normal-width
     margin: auto
-    padding: .5rem .8rem
+    padding: .5rem 2em
     align-items: center
     @include x-large
-      max-width: large-width
+      max-width: $large-width
 
   .logo
     fill: $color-primary

@@ -9,8 +9,9 @@
                 :alt="profile.name"
                 class="profile-img">
             <h4 class="profile-name">{{ profile.name }}</h4>
-            <h5 class="profile-title">{{ profile.title }}</h5>
-            <ul class="list-social">
+            <p class="profile-title">{{ profile.title }}</p>
+            <p class="profile-subtitle">{{ profile.subtitle }}</p>
+            <ul class="list list-social">
                 <li
                     v-for="(item, key) in profile.social"
                     :key="item.index"
@@ -48,6 +49,9 @@ export default {
     flex-basis: 100%
     display: flex
     flex-wrap: wrap
+    justify-content: center
+    @include x-large
+      margin-top: 3em
     @include small
       margin-top: 1em
 
@@ -58,9 +62,11 @@ export default {
     align-items: center
     margin-top: 0
     margin-bottom: 2em
+    @include x-large
+      flex-basis: 25%
     @include medium
       flex-basis: 50%
-    @include small
+    @include x-small
       flex-basis: 100%
     &:nth-child(2n+1)
       padding-right: 1em
@@ -86,8 +92,10 @@ export default {
   .list-social
     display: flex
     flex-wrap: wrap
-    margin-top: .5em
+    margin: .3em 1em 0
     justify-content: center
+    @include x-large
+      margin: .3em 0 0
 
   .social-item
     display: flex

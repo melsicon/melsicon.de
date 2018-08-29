@@ -25,7 +25,9 @@
                     </a>
                 </li>
             </ul>
-            <illustration-careers v-if="$mq === 'sm'"/>
+            <illustration-careers 
+                v-if="$mq === 'xs' || $mq === 'md'" 
+                :class="{'illustration-medium': $mq === 'md'}"/>
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
             <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
             <p class="paragraph">{{ $t('about.careers.community.description') }}</p>
@@ -74,8 +76,7 @@ export default {
     @include medium
       padding: 0 3em
     @include small
-      order: -1
-      padding: 0 2em
+      padding: 1em 2em
 
   .job-list
     display: block
@@ -101,18 +102,5 @@ export default {
   .item-icon
     font-size: .8em
     margin-top: .15em
-
-  @include small
-    .article-careers
-      order: 0
-
-    .illustration-careers
-      order: 1
-
-    .article-benefits
-      order: 2
-
-    .article-community
-      order: 3
 
 </style>

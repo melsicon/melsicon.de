@@ -9,12 +9,12 @@
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind der IT-Partner der Dir hilft dich auf Ihre Kernkompetenz zu konzentrieren."
+    "description": "Wir sind der IT-Partner der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
   },
 
   "services": {
     "heading": "Services heading",
-    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im größeren Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Dich bestmögliche ‚rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Dich von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Ihnen bestmögliche‚ rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
     "bank": {
       "heading": "Versicherungen und Banken",
       "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
@@ -36,19 +36,21 @@
       "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
-        "title": "Geschäftsführer, Back-End Entwickler",
-        "description": "Der Kunde ist König. Als Manager und erfahrener Entwickler, stelle ich sicher, dass Termine eingehalten werden und alle Stakeholder in sync sind.",
+        "title": "Geschäftsführer",
+        "subtitle": "Back-End Entwickler (Java)",
         "img": "../img/profiles/victoria1.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/makelefy/",
           "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
-          "twitter": "https://twitter.com/makelefy"
+          "twitter": "https://twitter.com/makelefy",
+          "github": "https://github.com/makelefy",
+          "meetup": "https://www.meetup.com/members/185522630/"
         }
       },
       {
         "name": "Alexander Figul",
-        "title": "Geschäftsführer, Back-End Entwickler",
-        "description": "Als Scrum Master und Leitender Entwickler tue ich alles, damit mein Team produktiv ist und jederzeit höchste Qualität liefert.",
+        "title": "Geschäftsführer",
+        "subtitle": "Back-End Entwickler (Java)",
         "img": "../img/profiles/victoria2.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
@@ -59,27 +61,29 @@
       {
         "name": "Victoria Bergquist",
         "title": "Front-End Entwicklerin",
-        "description": "Kunden werden immer anspruchsvoller, mit meiner Arbeit als UX/UI Designerin und Frontend Entwicklerin sorge ich dafür, dass diese Ansprüche übertroffen werden.",
+        "subtitle": "Designer, Community Manager",
         "img": "../img/profiles/victoria7.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
           "github": "https://github.com/vicbergquist",
-          "twitter": "https://twitter.com/vicbergquist"
+          "twitter": "https://twitter.com/vicbergquist",
+          "meetup": "https://www.meetup.com/members/195726615/"
         }
       },
       {
         "name": "Bastian Baist",
-        "title": "Back-End Entwickler",
-        "description": "Mit meiner Liebe fürs Details finde ich als Entwickler die richtige Lösung auch für komplexe Probleme - ohne dabei den Blick fürs große Ganze zu verlieren.",
+        "title": "Berater",
+        "subtitle": "Back-End Entwickler (Java/DevOps)",
         "img": "../img/profiles/victoria3.jpg",
         "social": {
-          "xing": "https://www.xing.com/profile/Bastian_Baist/"
+          "xing": "https://www.xing.com/profile/Bastian_Baist/",
+          "twitter": "https://twitter.com/Miiepser"
         }
       },
       {
         "name": "Amir Wasim",
-        "title": "Back-End Entwickler",
-        "description": "Als Cloud Architekt und Senior Software Entwickler achte ich sehr drauf, dass optimale Tools, Frameworks, Sprachen und Plattformen eingesetzt werden.",
+        "title": "Senior Berater",
+        "subtitle": "Back-End Entwickler (Java/JavaScript)",
         "img": "../img/profiles/victoria4.jpg",
         "social": {
           "xing": "https://www.xing.com/profile/Amir_Wasim/"
@@ -87,12 +91,20 @@
       },
       {
         "name": "Sarah Kesete",
-        "title": "Managment Assistant",
-        "description": "Lorem ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Assistent",
+        "subtitle": "Assistent der Geschäftsführung",
         "img": "../img/profiles/victoria6.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
           "xing": "https://www.xing.com/profile/Sarah_Kesete/"
+        }
+      },
+      {
+        "name": "Mina Dawlatzai",
+        "title": "Research Analyst",
+        "subtitle": "Researcher",
+        "img": "../img/profiles/victoria1.jpg",
+        "social": {
         }
       }
     ]
@@ -128,13 +140,13 @@
 
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
-    "description1": "Möchtest du eine Geschäftsanfrage oder Projekt besprechen, dich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen! Wir würden uns freuen von dir zu hören!",
-    "description2": "Schreib uns entweder eine Email unter {email}, oder schreib uns einfach direkt im Chat hier auf unsere Webseite an.",
+    "description1": "Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!",
+    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im Chat hier auf unsere Webseite.",
     "email": "hallo@melsicon.de"
   },
 
   "buttons": {
-    "contact": "Schreibe uns",
+    "contact": "Chat",
     "open": "Menu",
     "close": "Schliessen",
     "apply": "Apply now"
@@ -143,7 +155,7 @@
   "error": {
     "heading": "404 :(",
     "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
-    "action": "Gehe züruck zur {back}!",
+    "action": "Gehen Sie züruck zur {back}!",
     "back": "Startseite"
   },
 

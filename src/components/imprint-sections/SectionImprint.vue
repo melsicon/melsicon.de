@@ -62,7 +62,8 @@ export default {
 
   .section-imprint
     min-height: 50vh
-    padding-top: 5em
+    padding: 5em 0
+
 
   .article-imprint
     @include medium

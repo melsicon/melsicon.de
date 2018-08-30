@@ -4,9 +4,9 @@
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 31"
-            aria-labelledby="logo-title"
+            aria-labelledby="title"
             role="img">
-            <title id="logo-title">melsicon logo</title>
+            <title id="title">{{ $t('graphics.logo') }}</title>
             <g
                 stroke="none"
                 stroke-width="1"

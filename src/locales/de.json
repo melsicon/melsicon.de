@@ -159,6 +159,17 @@
     "back": "Startseite"
   },
 
+  "graphics": {
+    "logo": "Logo von melsicon GmbH",
+    "illustrations": {
+      "hero": "Ein Team das gemeinsam an einem Dashboard für Transportdienstleistungen arbeiten.",
+      "services": "Zwei Menschen die gemeinsam an einem Web-Dashboard für Banking arbeiten.",
+      "team": "Ein Team von vier Personen in einen Meeting.",
+      "careers": "Zwei Personen die sich nach einem Interview freundlich die Hand schütteln.",
+      "contact": "Eine Person die im Sitzen an ihrem Handy ist."
+    }
+  },
+
   "footer": {
     "contact": {
       "heading": "Kontakt",

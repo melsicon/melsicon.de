@@ -3,7 +3,11 @@
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 480 442">
+            viewBox="0 0 480 442"
+            role="img"
+            aria-labelledby="title desc">
+            <title id="title">{{ $t('nav.contact') }}</title>
+            <desc id="desc">{{ $t('graphics.illustrations.contact') }}</desc>
             <defs>
                 <rect
                     id="illustration-contact-a"

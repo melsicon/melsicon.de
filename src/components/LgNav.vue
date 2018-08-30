@@ -1,53 +1,21 @@
 <template>
-    <div class="nav-wrapper">
-        <scrollactive
-            :offset="100"
-            class="nav lg-nav">
-            <ul
-                class="nav-list"
-                role="menu">
-                <li
-                    class="nav-item"
-                    role="none">
-                    <router-link
-                        class="nav-link scrollactive-item"
-                        to="/#home"
-                        role="menuitem">{{ $t('nav.home') }}</router-link>
-                </li>
-                <li
-                    class="nav-item"
-                    role="none">
-                    <router-link
-                        class="nav-link scrollactive-item"
-                        to="/#services"
-                        role="menuitem">{{ $t('nav.services') }}</router-link>
-                </li>
-                <li class="nav-item with-dropdown">
-                    <router-link
-                        class="nav-link scrollactive-item"
-                        to="/#about"
-                        role="menuitem"
-                        aria-haspopup="true">{{ $t('nav.about') }}</router-link>
-                </li>
-                <li
-                    class="nav-item"
-                    role="none">
-                    <a
-                        href="#careers"
-                        class="nav-link scrollactive-item"
-                        role="menuitem">{{ $t('nav.careers') }}</a>
-                </li>
-                <li
-                    class="nav-item"
-                    role="none">
-                    <a
-                        href="#contact"
-                        class="nav-link scrollactive-item"
-                        role="menuitem">{{ $t('nav.contact') }}</a>
-                </li>
-            </ul>
+    <div class="nav">
+        <div class="lg-nav-wrapper">
+            <scrollactive
+                :offset="50"
+                :modify-url="false"
+                class="lg-nav"
+                role="navigation">
+                <a
+                    v-for="(nav, key) in $t('nav')"
+                    :class="{'scrollactive-item': $route.name === 'home'}"
+                    :href="'#' + key"
+                    :key="nav.index"
+                    class="nav-link"
+                    role="menuitem">{{ nav }}</a>
+            </scrollactive>
             <the-logo/>
-        </scrollactive>
+        </div>
     </div>
 </template>
 
@@ -60,7 +28,14 @@ export default {
   },
   data: () => ({
     open: false
-  })
+  }),
+  methods: {
+    returnHome() {
+      if (this.$route.name !== 'home') {
+        this.$router.push('/')
+      }
+    }
+  }
 }
 </script>
 
@@ -68,16 +43,16 @@ export default {
 
   // LARGE NAV STYLES
 
-  .nav-wrapper
+  .nav
     position: fixed
     top: 0
     display: flex
     width: 100%
     background: white
     z-index: 9999
-    margin: auto
+    margin: 0 auto
 
-  .lg-nav
+  .lg-nav-wrapper
     display: flex
     position: relative
     width: 100%
@@ -88,6 +63,10 @@ export default {
     @include x-large
       max-width: $large-width
 
+  .lg-nav
+    display: flex
+    width: 100%
+
   .logo
     fill: $color-primary
     margin-left: auto
@@ -96,11 +75,9 @@ export default {
     display: flex
     width: 100%
 
-  .nav-item
+  .nav-link
     margin-right: 5%
     padding-right: .5em
-
-  .scrollactive-item
     color: $color-black
     font-size: .9em
     letter-spacing: .5px
@@ -113,7 +90,8 @@ export default {
       //margin-right: 2rem
 
   .is-active
-    border-bottom: 1px solid $color-black
+    color: $color-primary
+    font-weight: 600
 
 
 </style>

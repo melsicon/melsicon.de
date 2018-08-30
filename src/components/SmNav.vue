@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-wrapper sm-nav-wrapper">
+    <div class="nav">
         <the-logo :class="{'logo-white': open}"/>
         <!-- NAV BACKGROUND CIRCLE -->
         <transition name="circle">
@@ -28,60 +28,17 @@
         <transition name="fade-in">
             <scrollactive
                 v-if="open"
-                :offset="50"
-                class="sm-nav" >
-                <ul
-                    id="menu"
-                    class="list nav-list"
-                    role="menu"
-                    aria-labelledby="menubutton">
-                    <li
-                        class="nav-item"
-                        role="none">
-                        <router-link
-                            class="nav-link scrollactive-item"
-                            to="/#home"
-                            role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.home') }}</router-link>
-                    </li>
-
-                    <li
-                        class="nav-item"
-                        role="none">
-                        <router-link
-                            class="nav-link scrollactive-item"
-                            to="/#services"
-                            role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.services') }}</router-link>
-                    </li>
-                    <li
-                        class="nav-item with-dropdown"
-                        role="none">
-                        <router-link
-                            class="nav-link scrollactive-item"
-                            to="/#about"
-                            role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.about') }}</router-link>
-                    </li>
-                    <li
-                        class="nav-item with-dropdown"
-                        role="none">
-                        <router-link
-                            class="nav-link scrollactive-item"
-                            to="/#careers"
-                            role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.careers') }}</router-link>
-                    </li>
-                    <li
-                        class="nav-item"
-                        role="none">
-                        <router-link
-                            class="nav-link scrollactive-item"
-                            to="/#contact"
-                            role="menuitem"
-                            @click.native="open = !open">{{ $t('nav.contact') }}</router-link>
-                    </li>
-                </ul>
+                id="menu"
+                :offset="46"
+                :modify-url="false"
+                class="sm-nav">
+                <a
+                    v-for="(nav, key) in $t('nav')"
+                    :key="nav.index"
+                    :href="'#' + key"
+                    class="nav-link scrollactive-item"
+                    role="menuitem"
+                    @click="open = !open">{{ nav }}</a>
             </scrollactive>
         </transition>
     </div>
@@ -111,7 +68,7 @@ export default {
 
 <style lang="sass" scoped>
 
-  .sm-nav-wrapper
+  .nav
     background: $color-white
     display: flex
     height: 2.5em
@@ -126,22 +83,17 @@ export default {
 
   .sm-nav
     display: flex
+    flex-direction: column
     flex-basis: 100%
+    text-align: center
     padding-top: 1.5em
     transition: opacity 1s .5s
 
-  .nav-list
-    margin: auto
-
-  .nav-link, .scrollactive-item
+  .nav-link
+    display: block
     font-size: 1.2em
     color: $color-white
-
-  .nav-item
     margin-bottom: 1em
-
-  .nav-dropdown li
-    margin-bottom: .5em
 
   // OPEN/CLOSE BUTTON
   .btn-toggle
@@ -188,19 +140,6 @@ export default {
     &:last-child
       transform: rotate(-45deg)
 
-  // ACTIVE NAV ITEM
-  .is-active
-    border-bottom: 1px solid $color-white
-
-  .fade-in-enter-active
-    transition: all 1s .5s
-
-  .fade-in-leave-active
-    transition: all .2s
-
-  .fade-in-enter, .fade-in-leave-to
-    opacity: 0
-
   // CIRCLE BACKGROUND
   .circle
     position: absolute
@@ -226,17 +165,14 @@ export default {
   .circle-enter, .circle-leave-to
     transform: translate3d(4%,-2%,0) scale(0.005)
 
+  // FADE IN TRANSITION
+  .fade-in-enter-active
+    transition: all 1s .5s
 
-</style>
+  .fade-in-leave-active
+    transition: all .2s
 
-<style lang="sass">
-
-  // GLOBAL MENU ITEMS
-  .nav-link scrollactive-item
-    color: $color-black
-    font-size: 1em
-    text-decoration: none
-    text-transform: capitalize
-    transition: transform .3s ease-in
+  .fade-in-enter, .fade-in-leave-to
+    opacity: 0
 
 </style>

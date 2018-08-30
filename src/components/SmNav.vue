@@ -27,7 +27,7 @@
         <!-- NAV MENU WHEN MENU IS OPENED -->
         <transition name="fade-in">
             <scrollactive
-                v-if="open"
+                v-if="open && $route.name !== 'imprint'"
                 id="menu"
                 :offset="46"
                 :modify-url="false"
@@ -40,6 +40,31 @@
                     role="menuitem"
                     @click="open = !open">{{ nav }}</a>
             </scrollactive>
+        </transition>
+        <transition name="fade-in">
+            <nav
+                v-if="open && $route.name === 'imprint'"
+                class="sm-nav"
+                role="navigation">
+                <router-link
+                    :class="{'is-active': $route.name === 'home'}"
+                    to="/"
+                    class="nav-link"
+                    role="menuitem"
+                    @click.native="open = !open">{{ $t('nav.home') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'imprint'}"
+                    to="/imprint"
+                    class="nav-link"
+                    role="menuitem"
+                    @click.native="open = !open">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'privacy'}"
+                    to="/privacy"
+                    class="nav-link"
+                    role="menuitem"
+                    @click.native="open = !open">{{ $t('footer.legal.data') }}</router-link>
+            </nav>
         </transition>
     </div>
 </template>

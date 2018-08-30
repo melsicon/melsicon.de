@@ -25,13 +25,9 @@ export default {
   .section-home
     flex-wrap: nowrap
     align-items: center
-    padding: 3em 0
-    @include medium
-      padding-top: 1em
+    padding-top: 3em
     @include small
       flex-wrap: wrap
-      padding: 0
-      padding-top: 2em
 
   .main-heading
     font-size: 3em

@@ -11,8 +11,8 @@
                 class="paragraph">{{ p }}</p>
         </article>
         <article class="article article-industry">
-            <illustration-services 
-                v-if="$mq === 'md'" 
+            <illustration-services
+                v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p

@@ -1,7 +1,9 @@
 <template>
     <div id="app">
-        <sm-nav v-if="$mq === 'xs'"/>
-        <lg-nav v-if="$mq === 'lg'"/>
+        <template v-if="$route.name === 'home'">
+            <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
+            <lg-nav v-if="$mq === 'lg'"/>
+        </template>
         <router-view/>
         <the-footer/>
     </div>
@@ -52,7 +54,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 20px
+    font-size: 19px
     height: 100%
     line-height: 1.4
     color: $color-black
@@ -83,9 +85,6 @@ export default {
   #app
     height: 100%
     background: white
-    margin-top: -1rem
-    @include medium
-      overflow-x: hidden
 
   // MAIN WRAPPER
   .wrapper
@@ -103,9 +102,9 @@ export default {
   .section
     display: flex
     flex-wrap: wrap
-    margin: 3em 0
-    @include medium
-      margin: 1em 0
+    padding-bottom: 5em
+    @include small
+      padding-bottom: 1em
 
   // HEADINGS
   .heading

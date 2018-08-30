@@ -5,8 +5,8 @@
         <illustration-team v-if="$mq === 'xs'"/>
         <article class="article article-team">
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
-            <illustration-team 
-                v-if="$mq === 'md'" 
+            <illustration-team
+                v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
             <p
                 v-for="p in $t('about.company.description')"
@@ -34,7 +34,7 @@ export default {
 <style lang="sass" scoped>
 
   .section-team
-    margin-bottom: 0
+    padding-bottom: 5em
 
   .article-team
     align-self: center

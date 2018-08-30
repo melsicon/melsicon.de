@@ -62,6 +62,8 @@ export default {
     align-items: center
     margin-top: 0
     margin-bottom: 2em
+    &:last-child
+      margin-bottom: 0
     @include x-large
       flex-basis: 25%
     @include medium

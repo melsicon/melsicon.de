@@ -25,8 +25,8 @@
                     </a>
                 </li>
             </ul>
-            <illustration-careers 
-                v-if="$mq === 'xs' || $mq === 'md'" 
+            <illustration-careers
+                v-if="$mq === 'xs' || $mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
             <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
@@ -63,9 +63,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
-  .section-careers
-    margin-top: 0
 
   .article-careers
     align-self: center

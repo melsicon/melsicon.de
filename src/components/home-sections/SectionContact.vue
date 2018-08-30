@@ -3,8 +3,8 @@
         id="contact"
         class="section section-contact">
         <article class="article article-contact">
-            <illustration-contact 
-                v-if="$mq === 'md'" 
+            <illustration-contact
+                v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
             <h2 class="heading">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description1') }}</p>
@@ -37,9 +37,10 @@ export default {
 <style lang="sass" scoped>
   .section-contact
     align-items: center
-    margin: 10em 0
+    padding-top: 5em
+    padding-bottom: 10em
     @include small
-      margin: 3em 0
+      padding: 2em 0
 
   .illustration-contact
     padding: 0 1em

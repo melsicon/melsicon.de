@@ -8,7 +8,7 @@
                 path="error.action"
                 tag="p">
                 <router-link
-                    class="inline-link"
+                    class="inline-link error-link"
                     place="back"
                     to="/">{{ $t('error.back') }}</router-link>
             </i18n>
@@ -27,7 +27,7 @@ export default {
   .wrapper-404
     display: flex
     margin: auto
-    min-height: 100vh
+    min-height: 60vh
 
   .section-404
     display: flex
@@ -35,12 +35,20 @@ export default {
     margin: auto;
     flex-direction: column
     padding-bottom: 3em
+    padding: 5em 0
 
   .error-heading
-    color: $color-black
+    color: $color-white
     font-size: 4.5em
     font-weight: 200
     margin: 0
     margin-bottom: 0
+
+  .error-link
+    color: $color-white
+    text-decoration: underline
+
+  p
+    color: $color-white
 
 </style>

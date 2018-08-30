@@ -1,5 +1,7 @@
 <template>
-    <div id="app">
+    <div 
+        id="app" 
+        :class="{'error404': $route.name === 'error404'}">
         <template v-if="$route.name !== 'error404'">
             <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
             <lg-nav v-if="$mq === 'lg'"/>
@@ -84,17 +86,17 @@ export default {
 
   #app
     height: 100%
-    background: white
+
+  .error404
+    background: $color-primary-darker
 
   // MAIN WRAPPER
   .wrapper
     position: relative
     max-width: $normal-width
     width: 100vw
-    //min-height: 100vh
     margin: 0 auto
     padding: 0 1em
-    background: $color-white
     @include x-large
       max-width: $large-width
 

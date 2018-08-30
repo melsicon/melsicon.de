@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <template v-if="$route.name === 'home'">
+        <template v-if="$route.name !== 'error404'">
             <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
             <lg-nav v-if="$mq === 'lg'"/>
         </template>
@@ -91,7 +91,7 @@ export default {
     position: relative
     max-width: $normal-width
     width: 100vw
-    min-height: 100vh
+    //min-height: 100vh
     margin: 0 auto
     padding: 0 1em
     background: $color-white
@@ -116,7 +116,7 @@ export default {
       font-size: 1.9em
 
   .sub-heading
-    font-weight: 400
+    font-weight: 600
     margin-top: 1em
     margin-bottom: .2em
     text-transform: uppercase
@@ -147,7 +147,7 @@ export default {
     width: 100%
     max-height: 600px
 
-  .paragraph:not(:last-child)
+  p:not(:last-child)
     margin-bottom: 1em
 
   // BUTTON STYLES

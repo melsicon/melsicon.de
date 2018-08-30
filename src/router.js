@@ -3,6 +3,7 @@ import Meta from 'vue-meta'
 import Router from 'vue-router'
 // Pages
 import Home from '@/views/Home'
+const Imprint = () => import('@/views/Imprint')
 const NotFound = () => import('@/views/NotFound')
 
 Vue.use(Router)
@@ -15,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/imprint',
+      name: 'imprint',
+      component: Imprint
     },
     {
       path: '*',

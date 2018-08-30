@@ -2,6 +2,7 @@
     <div class="nav">
         <div class="lg-nav-wrapper">
             <scrollactive
+                v-if="$route.name !== 'imprint'"
                 :offset="50"
                 :modify-url="false"
                 class="lg-nav"
@@ -14,6 +15,26 @@
                     class="nav-link"
                     role="menuitem">{{ nav }}</a>
             </scrollactive>
+            <nav
+                v-if="$route.name === 'imprint' || $route.name === 'privacy'"
+                class="lg-nav"
+                role="navigation">
+                <router-link
+                    :class="{'is-active': $route.name === 'home'}"
+                    to="/"
+                    class="nav-link"
+                    role="menuitem">{{ $t('nav.home') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'imprint'}"
+                    to="/imprint"
+                    class="nav-link"
+                    role="menuitem">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'privacy'}"
+                    to="/privacy"
+                    class="nav-link"
+                    role="menuitem">{{ $t('footer.legal.data') }}</router-link>
+            </nav>
             <the-logo/>
         </div>
     </div>

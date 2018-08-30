@@ -10,7 +10,7 @@
                 <router-link
                     class="inline-link"
                     place="back"
-                    to="/#home">{{ $t('error.back') }}</router-link>
+                    to="/">{{ $t('error.back') }}</router-link>
             </i18n>
         </section>
     </main>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: '404'
+  name: 'Error404'
 }
 </script>
 
@@ -27,7 +27,7 @@ export default {
   .wrapper-404
     display: flex
     margin: auto
-    min-height: 70vh
+    min-height: 100vh
 
   .section-404
     display: flex

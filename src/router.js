@@ -18,8 +18,15 @@ export default new Router({
     },
     {
       path: '*',
-      name: '404',
+      name: 'error404',
       component: NotFound
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return {x: 0, y: 0}
+    }
+  }
 })

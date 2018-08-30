@@ -83,6 +83,7 @@ export default {
     font-size: 1em
     font-weight: 600
     text-align: center
+    margin: 0
 
   .profile-img
     max-height: 9em
@@ -90,6 +91,9 @@ export default {
     border-radius: 50%
     margin-bottom: .5em
     box-shadow: -.7em .2em 0 $color-secondary
+
+  .profile-subtitle
+    margin: 0
 
   .list-social
     display: flex

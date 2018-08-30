@@ -1,6 +1,6 @@
 <template>
-    <div 
-        id="app" 
+    <div
+        id="app"
         :class="{'error404': $route.name === 'error404'}">
         <template v-if="$route.name !== 'error404'">
             <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
@@ -114,6 +114,7 @@ export default {
     font-size: 2.4em
     font-weight: 300
     margin-bottom: .2em
+    hyphens: auto
     @include small
       font-size: 1.9em
 
@@ -123,6 +124,7 @@ export default {
     margin-bottom: .2em
     text-transform: uppercase
     letter-spacing: 1px
+    hyphens: auto
 
   // CONTENT
   .article, .illustration

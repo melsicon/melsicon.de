@@ -2,7 +2,11 @@
     <div class="illustration illustration-careers">
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 500 462">
+            viewBox="0 0 500 462"
+            role="img"
+            aria-labelledby="title desc">
+            <title id="title">{{ $t('nav.careers') }}</title>
+            <desc id="desc">{{ $t('graphics.illustrations.careers') }}</desc>
             <g
                 fill="none"
                 transform="translate(0 -1)">

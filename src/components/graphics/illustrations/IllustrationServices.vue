@@ -3,7 +3,11 @@
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 590 644">
+            viewBox="0 0 590 644"
+            role="img"
+            aria-labelledby="title desc">
+            <title id="title">{{ $t('nav.services') }}</title>
+            <desc id="desc">{{ $t('graphics.illustrations.services') }}</desc>
             <defs>
                 <ellipse
                     id="illustration-services-a"

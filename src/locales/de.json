@@ -2,42 +2,47 @@
   "nav": {
     "home": "Home",
     "services": "Leistungen",
-    "about": "über uns",
+    "about": "Über uns",
     "careers": "Karriere",
     "contact": "Kontakt"
   },
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind der IT-Partner der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
+    "description": "Wir sind Ihr IT-Partner und helfen Ihnen sich auf Ihre Kernkompetenz zu konzentrieren."
   },
 
   "services": {
-    "heading": "Services heading",
-    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Dabei ist unsere Motivation unseren Kunden das für Ihnen bestmögliche‚ rund-um-sorglos-Paket‘ zu bieten, i.e. Softwarelösungen aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "heading": "Unser Angebot",
+    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Dabei ist unsere Motivation die Anforderungen unserer Kunden zu verstehen und maßgeschneiderte Beratung anzubieten. In der Softwarelösungen heißt dass für uns aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
     "bank": {
       "heading": "Versicherungen und Banken",
-      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+      "paragraphs": ["Mit dem Finanzcheck.....", 
+        "Deutsche Vermögensberatung: Digitalisierung verändert die Bedürfnisse Ihrere Berater, diese erwarten dass Sie Lösungen die Sie im B2C verwenden, wie z.B. Dropbox auch in Ihrer Arbeit einsetzten können.", 
+        "Um die Bedürfnisse und rechtlichen Anforderungen gerecht zu werden haben wir für die Berater eine integrierte Cloud Lösung Konzepiert und realisiert. Die Herausforderungen im Projekt ist die Umsetzung einer hoch skalierbaren Lösung auf Basis von moderner Architektur." ]
     },
     "transport": {
       "heading": "Transportwesen",
-      "paragraphs": ["Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sodales luctus nunc, non luctus elit pharetra sit amet. Vestibulum justo arcu, dapibus sit amet aliquet a, vehicula at ligula."]
+      "paragraphs": ["Deutsche Bahn - Das Ziel beim Projekt Reisendeninformation der Zukunft ist die Information für Reisende immer besser und verlässlicher zu liefern. ", 
+        "Die Herausforderung im Projekt ist die Realisierung einer Lösung die auf moderner Architektur basiert und durch verschiedene Teams betrieben wird und als gesamtes Produkt läuft.", 
+        "Als Testmanagement Team sind wir verantwortlich das gesamte Produkt im Auge zu haben und die ständige Sicherstellung der Qualität. Dazu habe wir eine Methodik auf Basis von Entscheidungstabellen entwickelt die das xhubio Framework unterstütz. Mit dieser Methodik und Kanban haben wird die Möglicchkeit schnell auf Veränderung im Produkt zu reagieren und die kontinuierliche Qualität zu gewährleisten.", 
+        "Tags: Agile Softwareentwicklung, Verteilte Software, Virtualsierung, Microservice, DevOps, Testmanagement"]
     }
   },
 
   "about": {
     "company": {
-      "heading": "This is our company",
-      "description": ["melsicon GmbH wurde 2012 von den drei Informatik MSc Absolventen der Universität Darmstadt Makele Ghebreamlak, Alexander Figul und Joachim Hauck gegründet. Die Existenzgründung erfolgte aus dem Verlangen heraus unsere eigenen Motivationen und Ziele zu verfolgen, statt die vorgegebenen (und meist strikt umsatzorientierten) Ziele etablierter Softwareberatungen.",
-      "melsicon ist ein Kunstwort aus „melsi“ und „con“. Das Wort „melsi“ kommt aus dem Eritreischen, dem Ursprungsland von Makele, und bedeutet ‚Lösung‘. Das Wort „con“ ist die Abkürzung für Consulting."]
+      "heading": "Über uns",
+      "description": ["melsicon GmbH wurde 2012 von drei Informatik Absolventen der Universität Darmstadt gegründet. Die Gründung erfolgte aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestallten.",
+      "melsicon ist ein Kunstwort aus „melsi“ und „con“. Das Wort „melsi“ kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet ‚Lösung‘. Das Wort „con“ ist die Abkürzung für Consulting. melsicon versteht sich als Lösungsorientiert Beratung"]
     },
     "team": {
       "heading": "IT-Experten mit geballtem Wissen",
-      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
+      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
         "title": "Geschäftsführer",
-        "subtitle": "Back-End Entwickler (Java)",
+        "subtitle": "Projektmanagement, Dev",
         "img": "../img/profiles/victoria1.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/makelefy/",
@@ -91,8 +96,8 @@
       },
       {
         "name": "Sarah Kesete",
-        "title": "Assistent",
-        "subtitle": "Assistent der Geschäftsführung",
+        "title": "Assistentin der Geschäftsführung",
+        "subtitle": "Assistentin",
         "img": "../img/profiles/victoria6.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
@@ -111,7 +116,7 @@
     },
     "careers": {
       "heading": "Werde Teil unseres Teams!",
-      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob langjähriger Entwickler, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater, Entwickler mit Berufserfahgrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
       "benefits": {
         "heading": "Warum melsicon?",
         "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch einen guten Work - Life - Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein - Main - Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
@@ -121,18 +126,19 @@
         "description": "Es ist uns auch wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
         "meetups": {
           "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
-          "DevBizFra": "https://www.meetup.com/devbizfra/",
           "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
-          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler/"
+          "DevBizFra": "https://www.meetup.com/devbizfra/",
+          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler",
+          "Business meets IT": "https://www.meetup.com/de-DE/Business-meets-IT/"
         }
       },
       "open": [{
           "title": "Front-End Entwickler/Berater (w/m)",
-          "url": "https://stackoverflow.com/jobs/152449/frontend-javascript-web-Entwickler-consultant-melsicon-gmbh"
+          "url": "https://fradevjobs.de/job/152/frontend-web-developer-consultant"
         },
         {
           "title": "Back-End Entwickler/Berater (w/m)",
-          "url": "https://stackoverflow.com/jobs/152008/java-Entwickler-consultant-frankfurt-melsicon-gmbh"
+          "url": "https://fradevjobs.de/job/102/backend-java-developer-consultant"
         }
       ]
     }

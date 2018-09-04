@@ -28,18 +28,10 @@ export default {
     }
   },
   metaInfo: {
-    title: 'melsicon',
+    title: 'melsicon GmbH',
     htmlAttrs: {
-      lang: 'en'
-    },
-    meta: [
-      {
-        name: 'description',
-        content:
-          'melsicon beratet Unternhemen aus dem Bereich Transportwesen und Banking in Frankfurt und Umgebung.'
-      },
-      {property: 'og:site_name', content: 'melsicon'}
-    ]
+      lang: 'de'
+    }
   }
 }
 </script>

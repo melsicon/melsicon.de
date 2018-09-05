@@ -8,6 +8,7 @@
         </template>
         <router-view/>
         <the-footer/>
+        <drift-comp app-id="a4bzgnvsk28w"/>
     </div>
 </template>
 
@@ -15,12 +16,14 @@
 import LgNav from '@/components/LgNav'
 import SmNav from '@/components/SmNav'
 import TheFooter from '@/components/TheFooter'
+import DriftComp from '@/components/DriftComp'
 
 export default {
   components: {
     LgNav,
     SmNav,
-    TheFooter
+    TheFooter,
+    DriftComp
   },
   computed: {
     locale() {

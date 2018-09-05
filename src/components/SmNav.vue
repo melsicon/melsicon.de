@@ -29,7 +29,7 @@
             <scrollactive
                 v-if="open && $route.name !== 'imprint'"
                 id="menu"
-                :offset="46"
+                :offset="30"
                 :modify-url="false"
                 class="sm-nav">
                 <a

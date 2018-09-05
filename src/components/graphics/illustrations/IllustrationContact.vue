@@ -5,9 +5,9 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 480 442"
             role="img"
-            aria-labelledby="title desc">
-            <title id="title">{{ $t('nav.contact') }}</title>
-            <desc id="desc">{{ $t('graphics.illustrations.contact') }}</desc>
+            aria-labelledby="title-contact desc-contact">
+            <title id="title-contact">{{ $t('nav.contact') }}</title>
+            <desc id="desc-contact">{{ $t('graphics.illustrations.contact') }}</desc>
             <defs>
                 <rect
                     id="illustration-contact-a"

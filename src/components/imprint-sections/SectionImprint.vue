@@ -2,9 +2,11 @@
     <section
         id="services"
         class="section section-imprint">
-        <h2 class="heading">{{ $t('imprint.heading') }}</h2>
+        <!-- IMPRINT -->
+        <h2 class="heading heading-imprint">{{ $t('imprint.heading') }}</h2>
         <article class="article article-imprint">
-            <h3 class="sub-heading">{{ $t('imprint.main.heading') }}</h3>
+            <!-- COMPANY DETAILS -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.main.heading') }}</h3>
             <p>{{ $t('imprint.main.company') }}</p>
             <p>
                 <span
@@ -18,24 +20,30 @@
                     :key="content.index"
                     class="imprint-p">{{ content }}</span>
             </p>
-            <h3 class="sub-heading">{{ $t('imprint.responsible.heading') }}</h3>
+            <!-- FOUNDERS -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.responsible.heading') }}</h3>
             <p>
                 <span
                     v-for="content in $t('imprint.responsible.people')"
                     :key="content.index"
                     class="imprint-p">{{ content }}</span>
             </p>
-            <h3 class="sub-heading">{{ $t('imprint.register.heading') }}</h3>
+            <!-- COMPANY REGISTRATION -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.register.heading') }}</h3>
             <p>{{ $t('imprint.register.info') }}</p>
-            <h3 class="sub-heading">{{ $t('imprint.USt-IdNr.heading') }}</h3>
+            <!-- TAX ID NUMBER -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.USt-IdNr.heading') }}</h3>
             <p>{{ $t('imprint.USt-IdNr.info') }}</p>
         </article>
         <article class="article article-imprint">
-            <h3 class="sub-heading">{{ $t('imprint.content.heading') }}</h3>
+            <!-- CONTENT DISCLAIMER -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.content.heading') }}</h3>
             <p>{{ $t('imprint.content.info') }}</p>
-            <h3 class="sub-heading">{{ $t('imprint.links.heading') }}</h3>
+            <!-- EXTERNAL LINKS DISCLAIMER -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.links.heading') }}</h3>
             <p>{{ $t('imprint.links.info') }}</p>
-            <h3 class="sub-heading">{{ $t('imprint.copyright.heading') }}</h3>
+            <!-- COPYRIGHT -->
+            <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.copyright.heading') }}</h3>
             <p>{{ $t('imprint.copyright.info') }}</p>
         </article>
     </section>
@@ -58,24 +66,23 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
   .section-imprint
     min-height: 50vh
     padding: 5em 0
 
-
   .article-imprint
     @include medium
       flex-basis: 100%
 
-  .heading
+  .heading-imprint
     flex-basis: 100%
     padding: 1rem
     @include small
       padding: 0
 
-  .sub-heading
+  .sub-heading-imprint
     margin-top: 2rem
     @include small
       margin-top: 0

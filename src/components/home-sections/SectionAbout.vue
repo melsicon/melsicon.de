@@ -1,10 +1,12 @@
 <template>
     <section
-        id="about"
-        class="section section-team">
+        id="team"
+        class="section section-about">
         <illustration-team v-if="$mq === 'xs'"/>
-        <article class="article article-team">
+        <article class="article article-about">
+            <!-- ABOUT COMPANY -->
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
+            <!-- ILLUSTRATION ON MEDIUM SCREENS -->
             <illustration-team
                 v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
@@ -12,10 +14,13 @@
                 v-for="p in $t('about.company.description')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
+            <!-- ABOUT TEAM -->
             <h3 class="sub-heading">{{ $t('about.team.heading') }}</h3>
             <p class="paragraph">{{ $t('about.team.description') }}</p>
         </article>
+        <!-- ILLUSTRATION ON LARGE SCREENS -->
         <illustration-team v-if="$mq === 'lg'"/>
+        <!-- TEAM PROFILES -->
         <team-profile :profiles="$t('about.team.profiles')"/>
     </section>
 </template>
@@ -31,12 +36,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
-  .section-team
-    padding-bottom: 5em
-
-  .article-team
+  .article-about
     align-self: center
     margin-bottom: 2em
     @include small

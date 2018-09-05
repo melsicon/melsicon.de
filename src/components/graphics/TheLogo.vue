@@ -4,9 +4,9 @@
             class="logo"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 128 31"
-            aria-labelledby="title"
+            aria-labelledby="title-logo"
             role="img">
-            <title id="title">{{ $t('graphics.logo') }}</title>
+            <title id="title-logo">{{ $t('graphics.logo') }}</title>
             <g
                 stroke="none"
                 stroke-width="1"
@@ -17,7 +17,7 @@
     </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
   .logo-wrapper
     display: flex

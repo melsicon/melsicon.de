@@ -11,6 +11,18 @@ module.exports = {
   lintOnSave: true,
 
   pluginOptions: {
-    enableInSFC: false
+    i18n: {
+      locale: 'de',
+      fallbackLocale: 'de',
+      localeDir: 'locales',
+      enableInSFC: false
+    }
+  },
+
+  pwa: {
+    name: 'melsicon GmbH',
+    themeColor: '#6464E1',
+    msTileColor: '#fff',
+    appleMobileWebAppStatusBarStyle: '#6464E1'
   }
 }

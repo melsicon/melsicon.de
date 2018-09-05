@@ -2,8 +2,10 @@
     <section
         id="services"
         class="section section-services">
+        <!-- ILLUSTRATION ON LARGE SCREENS -->
         <illustration-services v-if="$mq === 'lg'"/>
         <article class="article article-intro">
+            <!-- INTRO TO OUR SERVICES -->
             <h2 class="heading">{{ $t('services.heading') }}</h2>
             <p
                 v-for="p in $t('services.paragraphs')"
@@ -11,20 +13,24 @@
                 class="paragraph">{{ p }}</p>
         </article>
         <article class="article article-industry">
+            <!-- ILLUSTRATION ON MEDIUM SCREENS -->
             <illustration-services
                 v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
+            <!-- ABOUT OUR BANK INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p
                 v-for="p in $t('services.bank.paragraphs')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
+            <!-- ABOUT OUR TRANSPORTATION INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
             <p
                 v-for="p in $t('services.transport.paragraphs')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
         </article>
+        <!-- OUR CLIENTS -->
         <ul class="list client-list">
             <li class="client"><the-deutschebank/></li>
             <li class="client"><the-commerzbank/></li>
@@ -55,9 +61,6 @@ export default {
 
   .section-services
     align-items: center
-    margin-bottom: 5em
-    @include small
-      margin-bottom: 2em
 
   .illustration-services
     padding: 0 2em
@@ -72,7 +75,7 @@ export default {
       flex-basis: 100%
 
     .client
-      margin: .5em 0
+      margin: 1em 0
 
   .client-logo
     fill: $color-grey

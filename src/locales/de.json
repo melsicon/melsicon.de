@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Leistungen",
-    "about": "Über uns",
+    "team": "Über uns",
     "careers": "Karriere",
     "contact": "Kontakt"
   },
@@ -234,11 +234,19 @@
       "imprint": "Impressum",
       "data": "Datenschutz"
     },
+    "quick": {
+      "heading": "Schnelleinstieg",
+      "jobs": "Stellenangebote"
+    },
+    "meetups": {
+      "heading": "Unsere Meetups"
+    },
     "social": {
       "heading": "Folg uns",
       "social": {
         "twitter": "https://twitter.com/melsicon",
         "xing": "https://www.xing.com/companies/melsicongmbh",
+        "linkedin": "https://www.linkedin.com/company/melsicon",
         "github": "https://github.com/melsicon"
       }
     }

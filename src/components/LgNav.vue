@@ -49,20 +49,11 @@ export default {
   },
   data: () => ({
     open: false
-  }),
-  methods: {
-    returnHome() {
-      if (this.$route.name !== 'home') {
-        this.$router.push('/')
-      }
-    }
-  }
+  })
 }
 </script>
 
 <style lang="sass" scoped>
-
-  // LARGE NAV STYLES
 
   .nav
     position: fixed
@@ -107,12 +98,9 @@ export default {
     transition: transform .3s ease-in
     border-bottom: 1px solid $color-white
     transition: all .3s ease-in
-    @media only screen and (max-width: 1000px)
-      //margin-right: 2rem
 
   .is-active
     color: $color-primary
     font-weight: 600
-
 
 </style>

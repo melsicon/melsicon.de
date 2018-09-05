@@ -2,11 +2,11 @@
     <main class="wrapper wrapper-404">
         <section class="section section-404">
             <h2 class="error-heading">{{ $t('error.heading') }}</h2>
-            <p class="error-description">{{ $t('error.description') }}</p>
-            <!-- <button class="btn btn-back">{{ $t('error.back') }}</button> -->
+            <p class="paragraph-error">{{ $t('error.description') }}</p>
             <i18n
                 path="error.action"
-                tag="p">
+                tag="p"
+                class="paragraph-error">
                 <router-link
                     class="inline-link error-link"
                     place="back"
@@ -46,9 +46,8 @@ export default {
 
   .error-link
     color: $color-white
-    text-decoration: underline
 
-  p
+  .paragraph-error
     color: $color-white
 
 </style>

@@ -147,8 +147,9 @@
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
     "description1": "Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!",
-    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im Chat hier auf unsere Webseite.",
-    "email": "hallo@melsicon.de"
+    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite.",
+    "email": "hallo@melsicon.de",
+    "chat": "Chat"
   },
 
   "buttons": {

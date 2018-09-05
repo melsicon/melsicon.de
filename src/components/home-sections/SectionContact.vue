@@ -6,20 +6,19 @@
             <illustration-contact
                 v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
-            <h2 class="heading">{{ $t('contact.heading') }}</h2>
+            <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description1') }}</p>
             <i18n
                 path="contact.description2"
                 tag="p">
                 <span
-                    class="email"
+                    class="email inline-link"
                     place="email">{{ $t('contact.email') }}</span>
+                <a
+                    class="chat inline-link"
+                    place="chat"
+                    @click="openChat">{{ $t('contact.chat') }}</a>
             </i18n>
-            <button
-                class="btn btn-cta"
-                type="button"
-                title="Contact us">
-                {{ $t('buttons.contact') }}</button>
         </article>
         <illustration-contact v-if="$mq === 'lg' || $mq === 'xs'"/>
     </section>
@@ -30,11 +29,19 @@ import IllustrationContact from '@/components/graphics/illustrations/Illustratio
 export default {
   components: {
     IllustrationContact
+  },
+  methods: {
+    openChat() {
+      window.drift.on('ready', api => {
+        api.sidebar.toggle()
+      })
+    }
   }
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
+
   .section-contact
     align-items: center
     padding-top: 5em
@@ -43,14 +50,11 @@ export default {
       padding: 2em 0
 
   .illustration-contact
-    padding: 0 1em
-    @include x-large
-      padding: 0 5em
+    padding: 0 5em
     @include small
       padding: 0 3em
 
-  .email
-    color: $color-primary
-    font-weight: 600
+  .heading-contact
+    hyphens: none
 
 </style>

@@ -4,8 +4,8 @@
         class="section section-home">
         <article class="article article-hero">
             <h1 class="main-heading">{{ $t('hero.heading') }}</h1>
-            <p class="paragraph">{{ $t('hero.description') }}</p>
         </article>
+        <!-- HERO ILLUSTRATION -->
         <illustration-hero/>
     </section>
 </template>
@@ -20,12 +20,11 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
   .section-home
     flex-wrap: nowrap
     align-items: center
-    padding-top: 3em
     @include small
       flex-wrap: wrap
 

@@ -4,8 +4,10 @@
         class="section section-careers">
         <illustration-careers v-if="$mq === 'lg'"/>
         <article class="article article-careers">
+            <!-- INTRO TO CAREERS AT MELSICON -->
             <h2 class="heading">{{ $t('about.careers.heading') }}</h2>
             <p class="paragraph">{{ $t('about.careers.description') }}</p>
+            <!-- CURRENT/MOST RECENT OPENINGS -->
             <ul class="list job-list">
                 <li
                     v-for="job in $t('about.careers.open')"
@@ -25,12 +27,15 @@
                     </a>
                 </li>
             </ul>
+            <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
             <illustration-careers
                 v-if="$mq === 'xs' || $mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
+            <!-- OUR BENEFITS & COMMUNITY -->
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
             <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
             <p class="paragraph">{{ $t('about.careers.community.description') }}</p>
+            <!-- OUR MEETUPS -->
             <ul class="list meetup-list">
                 <li
                     v-for="(meetup, key) in $t('about.careers.community.meetups')"
@@ -62,14 +67,14 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
   .article-careers
     align-self: center
 
   .illustration-careers
     align-self: center
-    padding: 0 3em
+    padding: 0 5em
     @include medium
       padding: 0 3em
     @include small

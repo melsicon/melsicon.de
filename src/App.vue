@@ -68,24 +68,30 @@ export default {
     @include x-small
       font-size: 16px
 
-  *
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
     display: none
 
   a, a:visited
     text-decoration: none
     color: $color-primary
+    transition: transform .5s ease-in-out
+    &:hover
+      transform: scale(1.02)
+      @include small
+        transform: scale(1.01)
 
   ul
     list-style-type: none
 
-  * + *
+  *, * + *
     margin: 0
     padding: 0
+    box-sizing: border-box
+
+  button
+    background: 0
+    border: 0
+    box-shadow: 0
 
   #app
     height: 100%
@@ -103,13 +109,13 @@ export default {
     @include x-large
       max-width: $large-width
 
-  // SECTIONS
+  // MAIN SECTIONS
   .section
     display: flex
     flex-wrap: wrap
-    padding-bottom: 5em
+    padding-top: 5em
     @include small
-      padding-bottom: 1em
+      padding-top: 2em
 
   // HEADINGS
   .heading
@@ -144,6 +150,10 @@ export default {
       flex-basis: 100%
       padding: 1em 0
 
+  p:not(:last-child)
+    margin-bottom: 1em
+
+  // ILLUSTRATIONS
   .illustration-medium
     float: right
     shape-outside: circle(50%)
@@ -154,34 +164,11 @@ export default {
     width: 100%
     max-height: 600px
 
-  p:not(:last-child)
-    margin-bottom: 1em
-
-  // BUTTON STYLES
-  button
-    background: 0
-    border: 0
-    color: $color-black
-    font-family: $font-body
-    font-size: 1em
-    cursor: pointer
-
-  .btn-cta
-    color: $color-white
-    font-weight: 600
-    padding: .5em 1.5em
-    background: $color-primary
-    border-radius: .3em
-    margin: 1em 0
-    box-shadow: .15em .15em 0 $color-primary-darker
-    &:active
-      box-shadow: .1em .1em 0 $color-white
-      transform: translate3d(.15em, .15em, 0)
-
   // LINK STYLES
   .inline-link
     color: $color-primary
     font-weight: 600
     text-decoration: none
+    cursor: pointer
 
 </style>

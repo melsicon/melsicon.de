@@ -5,9 +5,9 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 566 571"
             role="img"
-            aria-labelledby="title desc">
-            <title id="title">{{ $t('nav.home') }}</title>
-            <desc id="desc">{{ $t('graphics.illustrations.hero') }}</desc>
+            aria-labelledby="title-hero desc-hero">
+            <title id="title-hero">{{ $t('nav.home') }}</title>
+            <desc id="desc-hero">{{ $t('graphics.illustrations.hero') }}</desc>
             <defs>
                 <path
                     id="illustration-hero-a"

@@ -5,9 +5,9 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 590 644"
             role="img"
-            aria-labelledby="title desc">
-            <title id="title">{{ $t('nav.services') }}</title>
-            <desc id="desc">{{ $t('graphics.illustrations.services') }}</desc>
+            aria-labelledby="title-services desc-services">
+            <title id="title-services">{{ $t('nav.services') }}</title>
+            <desc id="desc-services">{{ $t('graphics.illustrations.services') }}</desc>
             <defs>
                 <ellipse
                     id="illustration-services-a"

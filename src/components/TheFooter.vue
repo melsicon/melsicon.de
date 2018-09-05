@@ -2,7 +2,21 @@
     <footer class="footer">
         <div class="footer-wrapper">
             <the-logo class="logo-white footer-logo"/>
-            <div class="footer-content contact">
+
+            <div class="footer-content footer-quick">
+                <h3 class="footer-heading">{{ $t('footer.quick.heading') }}</h3>
+                <router-link
+                    class="footer-link"
+                    to="/jobs">{{ $t('footer.quick.jobs') }}</router-link>
+                <a
+                    v-for="(meetup, key) in $t('about.careers.community.meetups')"
+                    :key="meetup.index"
+                    :href="meetup"
+                    class="footer-link">{{ key }}
+                </a>
+            </div>
+
+            <div class="footer-content footer-contact">
                 <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
                 <address class="address">
                     {{ $t('footer.contact.address.line-1') }}<br>
@@ -13,21 +27,22 @@
                     {{ $t('footer.contact.email.label') }}: {{ $t('footer.contact.email.data') }}
                 </address>
             </div>
-            <div class="footer-content social">
+
+            <div class="footer-content footer-social">
                 <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
                 <ul class="list social-list">
                     <li
                         v-for="(item, key) in $t('footer.social.social')"
                         :key="item.index"
-                        class="social-item">
+                        class="footer-social-item">
                         <a
                             :href="item"
-                            class="social-link">
+                            class="footer-social-link">
                             <font-awesome-icon
                                 :icon="['fab', key]"
                                 aria-role="img"
                                 aria-hidden="true"
-                                class="social-icon"
+                                class="footer-social-icon"
                                 fixed-width/> {{ key }}
                         </a>
                     </li>
@@ -62,17 +77,20 @@ export default {
   .footer
     min-height: 20rem
     background: $color-primary-darker
-    color: white
+    color: $color-white
+    font-size: 17px
     padding: 2em 0
 
   .footer-wrapper
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    max-width: $large
+    max-width: $normal-width
     margin: auto
     height: 100%
     padding: 0 2em
+    @include x-large
+      max-width: $large-width
     @include small
       padding: 0 1em
 
@@ -81,39 +99,42 @@ export default {
     margin-bottom: 1em
 
   .footer-content
-    width: 33.3%
-    margin-bottom: 1em
+    flex-basis: calc(100% / 4)
     @include small
-      width: 100%
+      flex-basis: 50%
+
+  @include small
+    .footer-contact, .footer-legal
+      order: 1
+      flex-basis: 100%
+
 
   .footer-heading
     font-size: 0.8em
+    margin-top: 1.5em
     margin-bottom: .5em
     text-transform: uppercase
     letter-spacing: .5px
-    opacity: .9
 
   .address
     font-style: normal
 
-  .social-item
+  .footer-social-item
     margin-bottom: .5em
+    color: $color-white
+    font-size: 1em
+    text-transform: capitalize
+    @include small
+      margin-left: 0
 
-  .social-link
+  .footer-social-link, .footer-social-link:visited
+    color: $color-white
     display: flex
     align-items: center
 
-  .social-link, .social-link:visited, .social-link:focus
-    color: $color-white
-
-  .social-link
-    font-size: 1em
-    text-transform: capitalize
-
-  .social-icon
-    color: $color-white
-    font-size: 1.3em
-    margin-right: .4em
+    .footer-social-icon
+      color: $color-white
+      margin-right: .4em
 
   .footer-link, .footer-link:visited
     color: $color-white

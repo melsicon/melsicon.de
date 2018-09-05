@@ -4,9 +4,9 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 575 479"
             role="img"
-            aria-labelledby="title desc">
-            <title id="title">{{ $t('nav.team') }}</title>
-            <desc id="desc">{{ $t('graphics.illustrations.team') }}</desc>
+            aria-labelledby="title-team desc-team">
+            <title id="title-team">{{ $t('nav.team') }}</title>
+            <desc id="desc-team">{{ $t('graphics.illustrations.team') }}</desc>
             <g
                 fill="none"
                 fill-rule="evenodd"

@@ -3,9 +3,11 @@
         id="contact"
         class="section section-contact">
         <article class="article article-contact">
+            <!-- ILLUSTRATION ON MEDIUM SCREENS -->
             <illustration-contact
                 v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
+            <!-- CONTACT US -->
             <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description1') }}</p>
             <i18n
@@ -20,6 +22,7 @@
                     @click="openChat">{{ $t('contact.chat') }}</a>
             </i18n>
         </article>
+        <!-- ILLUSTRATION ON LARGE & XSMALL SCREENS -->
         <illustration-contact v-if="$mq === 'lg' || $mq === 'xs'"/>
     </section>
 </template>
@@ -33,7 +36,7 @@ export default {
   methods: {
     openChat() {
       window.drift.on('ready', api => {
-        api.sidebar.toggle()
+        api.showWelcomeOrAwayMessage()
       })
     }
   }
@@ -44,17 +47,11 @@ export default {
 
   .section-contact
     align-items: center
-    padding-top: 5em
-    padding-bottom: 10em
+    padding: 8em 0
     @include small
       padding: 2em 0
 
   .illustration-contact
-    padding: 0 5em
-    @include small
-      padding: 0 3em
-
-  .heading-contact
-    hyphens: none
-
+    padding: 0 4em
+    margin: 2em 0
 </style>

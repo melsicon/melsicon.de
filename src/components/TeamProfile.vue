@@ -18,12 +18,12 @@
                     class="social-item">
                     <a
                         :href="item"
-                        class="social-link">
+                        class="profile-social-link">
                         <font-awesome-icon
                             :icon="['fab', key]"
                             aria-role="img"
                             aria-hidden="true"
-                            class="social-icon"/>{{ key }}
+                            class="profile-social-icon"/>{{ key }}
                     </a>
                 </li>
             </ul>
@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
 
   .profiles
     flex-basis: 100%
@@ -62,16 +62,16 @@ export default {
     align-items: center
     margin-top: 0
     margin-bottom: 2em
+    text-align: center
     &:last-child
       margin-bottom: 0
     @include x-large
       flex-basis: 25%
+      padding: 0 1em
     @include medium
       flex-basis: 50%
     @include x-small
       flex-basis: 100%
-    &:nth-child(2n+1)
-      padding-right: 1em
       @include small
         padding: 0
 
@@ -79,7 +79,7 @@ export default {
     font-size: 1.6em
     font-weight: 300
 
-  .profile-title
+  p.profile-title
     font-size: 1em
     font-weight: 600
     text-align: center
@@ -92,7 +92,7 @@ export default {
     margin-bottom: .5em
     box-shadow: -.7em .2em 0 $color-secondary
 
-  .profile-subtitle
+  p.profile-subtitle
     margin: 0
 
   .list-social
@@ -106,20 +106,22 @@ export default {
   .social-item
     display: flex
     align-items: center
-    transition: transform .5s ease-in-out
-    &:not(:last-child)
-      margin-right: 1em
-    &:hover
-      transform: scale(1.05)
+    margin: 0 .6em
+    margin-bottom: .5em
+    @include small
+      margin: 0 .4em
+      margin-bottom: .5em
 
-  .social-link
+  .profile-social-link
+    display: flex
+    align-items: center
     color: $color-primary
     font-size: .75em
     font-weight: 700
     text-transform: uppercase
     letter-spacing: 1px
 
-  .social-icon
+  .profile-social-icon
     color: $color-primary
     font-size: 1.3em
     margin-right: .4em

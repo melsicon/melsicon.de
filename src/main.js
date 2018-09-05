@@ -14,19 +14,10 @@ import {
   faLinkedin,
   faMeetup
 } from '@fortawesome/free-brands-svg-icons'
-import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-library.add(
-  faTwitter,
-  faGithub,
-  faXing,
-  faLinkedin,
-  faMeetup,
-  faEnvelope,
-  faAngleRight
-)
+library.add(faTwitter, faGithub, faXing, faLinkedin, faMeetup, faAngleRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

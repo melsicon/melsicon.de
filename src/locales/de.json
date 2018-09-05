@@ -17,15 +17,15 @@
     "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Dabei ist unsere Motivation die Anforderungen unserer Kunden zu verstehen und maßgeschneiderte Beratung anzubieten. In der Softwarelösungen heißt dass für uns aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
     "bank": {
       "heading": "Versicherungen und Banken",
-      "paragraphs": ["Mit dem Finanzcheck.....", 
-        "Deutsche Vermögensberatung: Digitalisierung verändert die Bedürfnisse Ihrere Berater, diese erwarten dass Sie Lösungen die Sie im B2C verwenden, wie z.B. Dropbox auch in Ihrer Arbeit einsetzten können.", 
+      "paragraphs": ["Mit dem Finanzcheck.....",
+        "Deutsche Vermögensberatung: Digitalisierung verändert die Bedürfnisse Ihrere Berater, diese erwarten dass Sie Lösungen die Sie im B2C verwenden, wie z.B. Dropbox auch in Ihrer Arbeit einsetzten können.",
         "Um die Bedürfnisse und rechtlichen Anforderungen gerecht zu werden haben wir für die Berater eine integrierte Cloud Lösung Konzepiert und realisiert. Die Herausforderungen im Projekt ist die Umsetzung einer hoch skalierbaren Lösung auf Basis von moderner Architektur." ]
     },
     "transport": {
       "heading": "Transportwesen",
-      "paragraphs": ["Deutsche Bahn - Das Ziel beim Projekt Reisendeninformation der Zukunft ist die Information für Reisende immer besser und verlässlicher zu liefern. ", 
-        "Die Herausforderung im Projekt ist die Realisierung einer Lösung die auf moderner Architektur basiert und durch verschiedene Teams betrieben wird und als gesamtes Produkt läuft.", 
-        "Als Testmanagement Team sind wir verantwortlich das gesamte Produkt im Auge zu haben und die ständige Sicherstellung der Qualität. Dazu habe wir eine Methodik auf Basis von Entscheidungstabellen entwickelt die das xhubio Framework unterstütz. Mit dieser Methodik und Kanban haben wird die Möglicchkeit schnell auf Veränderung im Produkt zu reagieren und die kontinuierliche Qualität zu gewährleisten.", 
+      "paragraphs": ["Deutsche Bahn - Das Ziel beim Projekt Reisendeninformation der Zukunft ist die Information für Reisende immer besser und verlässlicher zu liefern. ",
+        "Die Herausforderung im Projekt ist die Realisierung einer Lösung die auf moderner Architektur basiert und durch verschiedene Teams betrieben wird und als gesamtes Produkt läuft.",
+        "Als Testmanagement Team sind wir verantwortlich das gesamte Produkt im Auge zu haben und die ständige Sicherstellung der Qualität. Dazu habe wir eine Methodik auf Basis von Entscheidungstabellen entwickelt die das xhubio Framework unterstütz. Mit dieser Methodik und Kanban haben wird die Möglicchkeit schnell auf Veränderung im Produkt zu reagieren und die kontinuierliche Qualität zu gewährleisten.",
         "Tags: Agile Softwareentwicklung, Verteilte Software, Virtualsierung, Microservice, DevOps, Testmanagement"]
     }
   },
@@ -147,8 +147,9 @@
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
     "description1": "Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!",
-    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im Chat hier auf unsere Webseite.",
-    "email": "hallo@melsicon.de"
+    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite.",
+    "email": "hallo@melsicon.de",
+    "chat": "Chat"
   },
 
   "buttons": {

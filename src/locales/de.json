@@ -9,41 +9,38 @@
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind Ihr IT-Partner und helfen Ihnen sich auf Ihre Kernkompetenz zu konzentrieren."
+    "description": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
   },
 
   "services": {
     "heading": "Unser Angebot",
-    "paragraphs": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Dabei ist unsere Motivation die Anforderungen unserer Kunden zu verstehen und maßgeschneiderte Beratung anzubieten. In der Softwarelösungen heißt dass für uns aus einer Hand mit Sicht aufs Ganze.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "description": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Unser Ziel ist es eine maßgeschneiderte Softwarelösung zu liefern und bei der Integration in das bestehende System zu unterstützen.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
     "bank": {
-      "heading": "Versicherungen und Banken",
-      "paragraphs": ["Mit dem Finanzcheck.....",
-        "Deutsche Vermögensberatung: Digitalisierung verändert die Bedürfnisse Ihrere Berater, diese erwarten dass Sie Lösungen die Sie im B2C verwenden, wie z.B. Dropbox auch in Ihrer Arbeit einsetzten können.",
-        "Um die Bedürfnisse und rechtlichen Anforderungen gerecht zu werden haben wir für die Berater eine integrierte Cloud Lösung Konzepiert und realisiert. Die Herausforderungen im Projekt ist die Umsetzung einer hoch skalierbaren Lösung auf Basis von moderner Architektur." ]
+      "heading": "Finazdienstleister",
+      "description": ["Viele Große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren. Aber auch Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
     },
     "transport": {
       "heading": "Transportwesen",
-      "paragraphs": ["Deutsche Bahn - Das Ziel beim Projekt Reisendeninformation der Zukunft ist die Information für Reisende immer besser und verlässlicher zu liefern. ",
-        "Die Herausforderung im Projekt ist die Realisierung einer Lösung die auf moderner Architektur basiert und durch verschiedene Teams betrieben wird und als gesamtes Produkt läuft.",
-        "Als Testmanagement Team sind wir verantwortlich das gesamte Produkt im Auge zu haben und die ständige Sicherstellung der Qualität. Dazu habe wir eine Methodik auf Basis von Entscheidungstabellen entwickelt die das xhubio Framework unterstütz. Mit dieser Methodik und Kanban haben wird die Möglicchkeit schnell auf Veränderung im Produkt zu reagieren und die kontinuierliche Qualität zu gewährleisten.",
-        "Tags: Agile Softwareentwicklung, Verteilte Software, Virtualsierung, Microservice, DevOps, Testmanagement"]
+      "description": ["Das Transportwesen der Zukunft wird immer Transparenter. Unser Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Wir unterstützen unsere Kunden hier bei der Umsetzung von verteilten, hochskalierbaren Microservice Lösungen und stellen eine Umfassende Systemtestsuit für ihre Cloudarchitektur zur Verfügung."]
     }
   },
 
   "about": {
     "company": {
       "heading": "Über uns",
-      "description": ["melsicon GmbH wurde 2012 von drei Informatik Absolventen der Universität Darmstadt gegründet. Die Gründung erfolgte aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestallten.",
-      "melsicon ist ein Kunstwort aus „melsi“ und „con“. Das Wort „melsi“ kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet ‚Lösung‘. Das Wort „con“ ist die Abkürzung für Consulting. melsicon versteht sich als Lösungsorientiert Beratung"]
+      "description": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen und Dies macht schon unsere Firmanname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
+      "melsi": "melsi",
+      "con": "con",
+      "solution": "Lösung"
     },
     "team": {
       "heading": "IT-Experten mit geballtem Wissen",
-      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know - How mit.",
+      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know-How mit.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
         "title": "Geschäftsführer",
-        "subtitle": "Projektmanagement, Dev",
-        "img": "../img/profiles/victoria1.jpg",
+        "subtitle": "Projektmanagement, Back-End Entwickler",
+        "img": "../img/profiles/makele.png",
         "social": {
           "linkedin": "https://www.linkedin.com/in/makelefy/",
           "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
@@ -56,7 +53,7 @@
         "name": "Alexander Figul",
         "title": "Geschäftsführer",
         "subtitle": "Back-End Entwickler (Java)",
-        "img": "../img/profiles/victoria2.jpg",
+        "img": "../img/profiles/alex.png",
         "social": {
           "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
           "xing": "https://www.xing.com/profile/Alexander_Figul/",
@@ -66,8 +63,8 @@
       {
         "name": "Victoria Bergquist",
         "title": "Front-End Entwicklerin",
-        "subtitle": "Designer, Community Manager",
-        "img": "../img/profiles/victoria7.jpg",
+        "subtitle": "Designerin, Community Manager",
+        "img": "../img/profiles/victoria.png",
         "social": {
           "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
           "github": "https://github.com/vicbergquist",
@@ -79,7 +76,7 @@
         "name": "Bastian Baist",
         "title": "Berater",
         "subtitle": "Back-End Entwickler (Java/DevOps)",
-        "img": "../img/profiles/victoria3.jpg",
+        "img": "../img/profiles/bastian.png",
         "social": {
           "xing": "https://www.xing.com/profile/Bastian_Baist/",
           "twitter": "https://twitter.com/Miiepser"
@@ -89,7 +86,7 @@
         "name": "Amir Wasim",
         "title": "Senior Berater",
         "subtitle": "Back-End Entwickler (Java/JavaScript)",
-        "img": "../img/profiles/victoria4.jpg",
+        "img": "../img/profiles/amir.png",
         "social": {
           "xing": "https://www.xing.com/profile/Amir_Wasim/"
         }
@@ -98,7 +95,7 @@
         "name": "Sarah Kesete",
         "title": "Assistentin der Geschäftsführung",
         "subtitle": "Assistentin",
-        "img": "../img/profiles/victoria6.jpg",
+        "img": "../img/profiles/sarah.png",
         "social": {
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
           "xing": "https://www.xing.com/profile/Sarah_Kesete/"
@@ -106,9 +103,9 @@
       },
       {
         "name": "Mina Dawlatzai",
-        "title": "Research Analyst",
-        "subtitle": "Researcher",
-        "img": "../img/profiles/victoria1.jpg",
+        "title": "Researcher",
+        "subtitle": "Innovation & Strategy Research",
+        "img": "../img/profiles/mina.png",
         "social": {
         }
       }
@@ -146,8 +143,7 @@
 
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
-    "description1": "Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!",
-    "description2": "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite.",
+    "description": ["Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
     "email": "hallo@melsicon.de",
     "chat": "Chat"
   },

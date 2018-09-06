@@ -10,10 +10,21 @@
             <illustration-team
                 v-if="$mq === 'md'"
                 :class="{'illustration-medium': $mq === 'md'}"/>
-            <p
-                v-for="p in $t('about.company.description')"
-                :key="p.index"
-                class="paragraph">{{ p }}</p>
+            <p class="paragraph">{{ $t('about.company.description[0]') }}</p>
+            <i18n
+                path="about.company.description[1]"
+                tag="p">
+                <q
+                    class="quote"
+                    place="melsi">{{ $t('about.company.melsi') }}</q>
+                <q
+                    class="quote"
+                    place="con">{{ $t('about.company.con') }}</q>
+                <q
+                    class="quote"
+                    place="solution">{{ $t('about.company.solution') }}</q>
+            </i18n>
+            <!-- <p class="paragraph">{{ $t('about.company.description') }}</p> -->
             <!-- ABOUT TEAM -->
             <h3 class="sub-heading">{{ $t('about.team.heading') }}</h3>
             <p class="paragraph">{{ $t('about.team.description') }}</p>
@@ -44,9 +55,7 @@ export default {
     @include small
       margin-bottom: 0
 
-  .illustration-team
-    padding: 0 3em
-    align-self: center
-    @include small
-      padding: 0 1em
+  .quote
+    color: $color-primary
+    font-weight: 600
 </style>

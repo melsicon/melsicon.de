@@ -72,14 +72,6 @@ export default {
   .article-careers
     align-self: center
 
-  .illustration-careers
-    align-self: center
-    padding: 0 5em
-    @include medium
-      padding: 0 3em
-    @include small
-      padding: 1em 2em
-
   .job-list
     display: block
     margin-bottom: 1em

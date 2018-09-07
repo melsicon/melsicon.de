@@ -2,12 +2,9 @@
     <footer class="footer">
         <div class="footer-wrapper">
             <the-logo class="logo-white footer-logo"/>
-
+            <!-- QUICK LINKS -->
             <div class="footer-content footer-quick">
                 <h3 class="footer-heading">{{ $t('footer.quick.heading') }}</h3>
-                <router-link
-                    class="footer-link"
-                    to="/jobs">{{ $t('footer.quick.jobs') }}</router-link>
                 <a
                     v-for="(meetup, key) in $t('about.careers.community.meetups')"
                     :key="meetup.index"
@@ -15,7 +12,7 @@
                     class="footer-link">{{ key }}
                 </a>
             </div>
-
+            <!-- CONTACT INFO -->
             <div class="footer-content footer-contact">
                 <h3 class="footer-heading">{{ $t('footer.contact.heading') }}</h3>
                 <address class="address">
@@ -27,7 +24,7 @@
                     {{ $t('footer.contact.email.label') }}: {{ $t('footer.contact.email.data') }}
                 </address>
             </div>
-
+            <!-- SOCIAL MEDIA -->
             <div class="footer-content footer-social">
                 <h3 class="footer-heading">{{ $t('footer.social.heading') }}</h3>
                 <ul class="list social-list">
@@ -48,15 +45,12 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- LEGAL -->
             <div class="footer-content legal">
                 <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
                 <router-link
                     class="footer-link"
                     to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
-                <router-link
-                    class="footer-link"
-                    to="/privacy">{{ $t('footer.legal.data') }}</router-link>
             </div>
         </div>
     </footer>

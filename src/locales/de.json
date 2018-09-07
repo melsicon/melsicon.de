@@ -9,26 +9,26 @@
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu konzentrieren."
+    "description": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu fokussieren."
   },
 
   "services": {
     "heading": "Unser Angebot",
-    "description": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Unser Ziel ist es eine maßgeschneiderte Softwarelösung zu liefern und bei der Integration in das bestehende System zu unterstützen.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Ihnen von der Konzeptionierung über die Entwicklung bis hin zum Betrieb."],
+    "description": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Unser Ziel ist es eine maßgeschneiderte Softwarelösung zu liefern und Sie bei der Integration in Ihr bestehendes System zu unterstützen.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
     "bank": {
-      "heading": "Finazdienstleister",
-      "description": ["Viele Große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren. Aber auch Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
+      "heading": "Finanzdienstleister",
+      "description": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
     },
     "transport": {
       "heading": "Transportwesen",
-      "description": ["Das Transportwesen der Zukunft wird immer Transparenter. Unser Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Wir unterstützen unsere Kunden hier bei der Umsetzung von verteilten, hochskalierbaren Microservice Lösungen und stellen eine Umfassende Systemtestsuit für ihre Cloudarchitektur zur Verfügung."]
+      "description": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
     }
   },
 
   "about": {
     "company": {
       "heading": "Über uns",
-      "description": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen und Dies macht schon unsere Firmanname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
+      "description": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen. Dies macht schon unser Firmenname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
       "melsi": "melsi",
       "con": "con",
       "solution": "Lösung"
@@ -110,14 +110,14 @@
     },
     "careers": {
       "heading": "Werde Teil unseres Teams!",
-      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater, Entwickler mit Berufserfahgrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater-/in, Entwickler-/in mit Berufserfahrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
       "benefits": {
         "heading": "Warum melsicon?",
-        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch einen guten Work - Life - Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein - Main - Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
       },
       "community": {
         "heading": "Engagement in der Community",
-        "description": "Es ist uns auch wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
+        "description": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
         "meetups": {
           "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
           "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
@@ -140,7 +140,7 @@
 
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
-    "description": ["Möchten Sie eine Geschäftsanfrage oder Projekt besprechen, Ihnen auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreibe uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
+    "description": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
     "email": "hallo@melsicon.de",
     "chat": "Chat"
   },

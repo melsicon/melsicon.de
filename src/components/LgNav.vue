@@ -2,7 +2,7 @@
     <div class="nav">
         <div class="lg-nav-wrapper">
             <scrollactive
-                v-if="$route.name !== 'imprint'"
+                v-if="$route.name === 'home'"
                 :offset="50"
                 :modify-url="false"
                 class="lg-nav"

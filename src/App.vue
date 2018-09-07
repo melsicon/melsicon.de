@@ -131,8 +131,6 @@ export default {
     font-weight: 600
     margin-top: 1em
     margin-bottom: .2em
-    text-transform: uppercase
-    letter-spacing: 1px
     hyphens: auto
 
   // CONTENT

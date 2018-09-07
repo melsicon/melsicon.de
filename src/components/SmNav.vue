@@ -58,12 +58,6 @@
                     class="nav-link"
                     role="menuitem"
                     @click.native="open = !open">{{ $t('footer.legal.imprint') }}</router-link>
-                <router-link
-                    :class="{'is-active': $route.name === 'privacy'}"
-                    to="/privacy"
-                    class="nav-link"
-                    role="menuitem"
-                    @click.native="open = !open">{{ $t('footer.legal.data') }}</router-link>
             </nav>
         </transition>
     </div>

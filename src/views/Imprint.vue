@@ -29,6 +29,9 @@
                 <!-- TAX ID NUMBER -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.USt-IdNr.heading') }}</h3>
                 <p>{{ $t('imprint.USt-IdNr.description') }}</p>
+                <!-- COPYRIGHT -->
+                <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.copyright.heading') }}</h3>
+                <p>{{ $t('imprint.copyright.description') }}</p>
             </article>
             <article class="article article-imprint">
                 <!-- CONTENT DISCLAIMER -->
@@ -37,9 +40,6 @@
                 <!-- EXTERNAL LINKS DISCLAIMER -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.links.heading') }}</h3>
                 <p>{{ $t('imprint.links.description') }}</p>
-                <!-- COPYRIGHT -->
-                <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.copyright.heading') }}</h3>
-                <p>{{ $t('imprint.copyright.description') }}</p>
             </article>
         </section>
     </main>

@@ -39,4 +39,7 @@ export default {
       margin-top: 1em
       font-size: 2.2em
 
+  .illustration-hero
+    padding: 0 2em
+
 </style>

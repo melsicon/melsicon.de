@@ -86,8 +86,11 @@ export default {
     margin: 0
 
   .profile-img
-    max-height: 9em
-    max-width: 9em
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 9em
+    width: 9em
     border-radius: 50%
     margin-bottom: .5em
     box-shadow: -.7em .2em 0 $color-secondary

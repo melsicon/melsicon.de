@@ -66,7 +66,7 @@ export default {
     @include x-large
       font-size: 22px
     @include x-small
-      font-size: 16px
+      font-size: 18px
 
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
     display: none
@@ -125,14 +125,12 @@ export default {
     margin-bottom: .2em
     hyphens: auto
     @include small
-      font-size: 1.9em
+      font-size: 2.1em
 
   .sub-heading
     font-weight: 600
     margin-top: 1em
     margin-bottom: .2em
-    text-transform: uppercase
-    letter-spacing: 1px
     hyphens: auto
 
   // CONTENT
@@ -154,6 +152,12 @@ export default {
     margin-bottom: 1em
 
   // ILLUSTRATIONS
+  .illustration
+    padding: 0 4em
+    align-self: center
+    @include small
+      padding: 0 1em
+
   .illustration-medium
     float: right
     shape-outside: circle(50%)

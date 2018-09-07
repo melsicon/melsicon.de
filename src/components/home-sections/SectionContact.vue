@@ -9,9 +9,9 @@
                 :class="{'illustration-medium': $mq === 'md'}"/>
             <!-- CONTACT US -->
             <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
-            <p class="paragraph">{{ $t('contact.description1') }}</p>
+            <p class="paragraph">{{ $t('contact.description[0]') }}</p>
             <i18n
-                path="contact.description2"
+                path="contact.description[1]"
                 tag="p">
                 <span
                     class="email inline-link"
@@ -54,4 +54,6 @@ export default {
   .illustration-contact
     padding: 0 4em
     margin: 2em 0
+    @include small
+      padding: 0 2em
 </style>

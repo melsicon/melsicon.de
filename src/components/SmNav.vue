@@ -27,7 +27,7 @@
         <!-- NAV MENU WHEN MENU IS OPENED -->
         <transition name="fade-in">
             <scrollactive
-                v-if="open && $route.name !== 'imprint'"
+                v-if="open && $route.name === 'home'"
                 id="menu"
                 :offset="30"
                 :modify-url="false"
@@ -43,7 +43,7 @@
         </transition>
         <transition name="fade-in">
             <nav
-                v-if="open && $route.name === 'imprint'"
+                v-if="open && $route.name === 'imprint' || open && $route.name === 'privacy'"
                 class="sm-nav"
                 role="navigation">
                 <router-link

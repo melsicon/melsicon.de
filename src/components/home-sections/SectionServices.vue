@@ -8,7 +8,7 @@
             <!-- INTRO TO OUR SERVICES -->
             <h2 class="heading">{{ $t('services.heading') }}</h2>
             <p
-                v-for="p in $t('services.paragraphs')"
+                v-for="p in $t('services.description')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
         </article>
@@ -20,13 +20,13 @@
             <!-- ABOUT OUR BANK INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p
-                v-for="p in $t('services.bank.paragraphs')"
+                v-for="p in $t('services.bank.description')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
             <!-- ABOUT OUR TRANSPORTATION INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
             <p
-                v-for="p in $t('services.transport.paragraphs')"
+                v-for="p in $t('services.transport.description')"
                 :key="p.index"
                 class="paragraph">{{ p }}</p>
         </article>
@@ -61,9 +61,6 @@ export default {
 
   .section-services
     align-items: center
-
-  .illustration-services
-    padding: 0 2em
 
   .client-list
     text-align: center

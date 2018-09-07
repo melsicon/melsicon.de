@@ -14,6 +14,9 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     bucket: $DOMAIN
     local_dir: dist
-    cache_control: 'max-age=2628000'
+    cache_control: 'max-age=28000'
     on:
         branch: master
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

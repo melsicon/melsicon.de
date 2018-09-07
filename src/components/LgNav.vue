@@ -29,11 +29,6 @@
                     to="/imprint"
                     class="nav-link"
                     role="menuitem">{{ $t('footer.legal.imprint') }}</router-link>
-                <router-link
-                    :class="{'is-active': $route.name === 'privacy'}"
-                    to="/privacy"
-                    class="nav-link"
-                    role="menuitem">{{ $t('footer.legal.data') }}</router-link>
             </nav>
             <the-logo/>
         </div>

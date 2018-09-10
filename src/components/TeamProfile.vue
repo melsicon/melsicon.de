@@ -5,7 +5,7 @@
             :key="profile.index"
             class="profile">
             <img
-                :src="profile.img"
+                v-lazy="profile.img"
                 :alt="profile.name"
                 class="profile-img">
             <h4 class="profile-name">{{ profile.name }}</h4>

@@ -167,4 +167,12 @@ export default {
     text-decoration: none
     cursor: pointer
 
+  img[lazy=loading]
+    opacity: 0
+
+  img[lazy=loaded]
+    opacity: 1
+    transition: all .5s ease-in
+
+
 </style>

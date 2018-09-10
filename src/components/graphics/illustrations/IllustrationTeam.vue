@@ -1,7 +1,7 @@
 <template>
     <div class="illustration illustration-team">
         <img
-            :alt="$t('graphics.illustrations.team')"
-            src="/img/team.svg">
+            v-lazy="$t('illustrations.team.src')"
+            :alt="$t('illustrations.team.desc')">
     </div>
 </template>

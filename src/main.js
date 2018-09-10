@@ -16,6 +16,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+import VueLazyload from 'vue-lazyload'
+
+Vue.use(VueLazyload)
 
 library.add(faTwitter, faGithub, faXing, faLinkedin, faMeetup, faAngleRight)
 

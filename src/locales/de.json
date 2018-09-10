@@ -7,6 +7,29 @@
     "contact": "Kontakt"
   },
 
+"illustrations": {
+  "hero": {
+    "desc": "Ein Team das gemeinsam an einem Dashboard für Transportdienstleistungen arbeiten.",
+    "src": "../img/illustrations/hero.svg"
+  },
+  "services": {
+    "desc": "Zwei Menschen die gemeinsam an einem Web-Dashboard für Banking arbeiten.",
+    "src": "../img/illustrations/services.svg"
+  },
+  "team": {
+    "desc": "Ein Team von vier Personen in einen Meeting.",
+    "src": "../img/illustrations/team.svg"
+  },
+  "careers": {
+    "desc": "Zwei Personen die sich nach einem Interview freundlich die Hand schütteln.",
+    "src": "../img/illustrations/careers.svg"
+  },
+  "contact": {
+    "desc": "Eine Person die im Sitzen an ihrem Handy ist.",
+    "src": "../img/illustrations/contact.svg"
+  }
+},
+
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
     "description": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu fokussieren."
@@ -22,7 +45,25 @@
     "transport": {
       "heading": "Transportwesen",
       "description": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
-    }
+    },
+    "clients": [
+      {
+        "title": "deutschebank",
+        "src": "../img/clients/deutschebank.svg"
+      },
+      {
+        "title": "commerzbank",
+        "src": "../img/clients/commerzbank.svg"
+      },
+      {
+        "title": "amadeus",
+        "src": "../img/clients/amadeus.svg"
+      },
+      {
+        "title": "deutschebahn",
+        "src": "../img/clients/deutschebahn.svg"
+      }
+    ]
   },
 
   "about": {
@@ -157,17 +198,6 @@
     "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
     "action": "Gehen Sie züruck zur {back}!",
     "back": "Startseite"
-  },
-
-  "graphics": {
-    "logo": "Logo von melsicon GmbH",
-    "illustrations": {
-      "hero": "Ein Team das gemeinsam an einem Dashboard für Transportdienstleistungen arbeiten.",
-      "services": "Zwei Menschen die gemeinsam an einem Web-Dashboard für Banking arbeiten.",
-      "team": "Ein Team von vier Personen in einen Meeting.",
-      "careers": "Zwei Personen die sich nach einem Interview freundlich die Hand schütteln.",
-      "contact": "Eine Person die im Sitzen an ihrem Handy ist."
-    }
   },
 
   "imprint": {

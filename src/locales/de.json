@@ -40,7 +40,7 @@
         "name": "Makele Ghebreamlak",
         "title": "Geschäftsführer",
         "subtitle": "Projektmanagement, Back-End Entwickler",
-        "img": "../img/profiles/makele.png",
+        "img": "../img/profiles/makele.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/makelefy/",
           "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
@@ -51,7 +51,7 @@
         "name": "Alexander Figul",
         "title": "Geschäftsführer",
         "subtitle": "Back-End Entwickler (Java)",
-        "img": "../img/profiles/alex.png",
+        "img": "../img/profiles/alex.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
           "xing": "https://www.xing.com/profile/Alexander_Figul/",
@@ -62,7 +62,7 @@
         "name": "Victoria Bergquist",
         "title": "Front-End Entwicklerin",
         "subtitle": "Designerin, Community Manager",
-        "img": "../img/profiles/victoria.png",
+        "img": "../img/profiles/victoria.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
           "github": "https://github.com/vicbergquist",
@@ -73,7 +73,7 @@
         "name": "Bastian Baist",
         "title": "Berater",
         "subtitle": "Back-End Entwickler (Java/DevOps)",
-        "img": "../img/profiles/bastian.png",
+        "img": "../img/profiles/bastian.jpg",
         "social": {
           "xing": "https://www.xing.com/profile/Bastian_Baist/",
           "twitter": "https://twitter.com/Miiepser"
@@ -83,7 +83,7 @@
         "name": "Amir Wasim",
         "title": "Senior Berater",
         "subtitle": "Back-End Entwickler (Java/JavaScript)",
-        "img": "../img/profiles/amir.png",
+        "img": "../img/profiles/amir.jpg",
         "social": {
           "xing": "https://www.xing.com/profile/Amir_Wasim/"
         }
@@ -92,7 +92,7 @@
         "name": "Sarah Kesete",
         "title": "Assistentin der Geschäftsführung",
         "subtitle": "Assistentin",
-        "img": "../img/profiles/sarah.png",
+        "img": "../img/profiles/sarah.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
           "xing": "https://www.xing.com/profile/Sarah_Kesete/"
@@ -102,7 +102,7 @@
         "name": "Mina Dawlatzai",
         "title": "Researcher",
         "subtitle": "Innovation & Strategy Research",
-        "img": "../img/profiles/mina.png",
+        "img": "../img/profiles/mina.jpg",
         "social": {
         }
       }

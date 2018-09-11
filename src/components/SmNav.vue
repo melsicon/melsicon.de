@@ -37,7 +37,7 @@
                     :key="nav.index"
                     :href="'#' + key"
                     class="nav-link scrollactive-item"
-                    role="menuitem"
+
                     @click="open = !open">{{ nav }}</a>
             </scrollactive>
         </transition>
@@ -50,13 +50,11 @@
                     :class="{'is-active': $route.name === 'home'}"
                     to="/"
                     class="nav-link"
-                    role="menuitem"
                     @click.native="open = !open">{{ $t('nav.home') }}</router-link>
                 <router-link
                     :class="{'is-active': $route.name === 'imprint'}"
                     to="/imprint"
                     class="nav-link"
-                    role="menuitem"
                     @click.native="open = !open">{{ $t('footer.legal.imprint') }}</router-link>
             </nav>
         </transition>

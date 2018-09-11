@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import TheLogo from '@/components/graphics/TheLogo'
+import TheLogo from '@/components/TheLogo'
 export default {
   name: 'Footer',
   components: {
@@ -112,6 +112,7 @@ export default {
 
   .address
     font-style: normal
+    margin-bottom: 1em
 
   .footer-social-item
     margin-bottom: .5em

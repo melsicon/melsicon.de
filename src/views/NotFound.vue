@@ -2,7 +2,7 @@
     <main class="wrapper wrapper-404">
         <section class="section section-404">
             <h2 class="error-heading">{{ $t('error.heading') }}</h2>
-            <p class="paragraph-error">{{ $t('error.description') }}</p>
+            <p class="paragraph-error">{{ $t('error.desc') }}</p>
             <i18n
                 path="error.action"
                 tag="p"

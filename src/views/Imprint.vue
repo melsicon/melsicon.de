@@ -9,9 +9,9 @@
                 <!-- COMPANY DETAILS -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.main.heading') }}</h3>
                 <p>{{ $t('imprint.main.company') }}</p>
-                <address
-                    v-for="content in $t('imprint.main.address')"
-                    :key="content.index">{{ content }}</address>
+                <address class="address">
+                    <template v-for="content in $t('imprint.main.address')">{{ content }}<br :key="content.index"></template>
+                </address>
                 <div
                     v-for="content in $t('imprint.main.contact')"
                     :key="content.index">{{ content }}</div>
@@ -25,21 +25,21 @@
                 </p>
                 <!-- COMPANY REGISTRATION -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.register.heading') }}</h3>
-                <p>{{ $t('imprint.register.description') }}</p>
+                <p>{{ $t('imprint.register.desc') }}</p>
                 <!-- TAX ID NUMBER -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.USt-IdNr.heading') }}</h3>
-                <p>{{ $t('imprint.USt-IdNr.description') }}</p>
+                <p>{{ $t('imprint.USt-IdNr.desc') }}</p>
                 <!-- COPYRIGHT -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.copyright.heading') }}</h3>
-                <p>{{ $t('imprint.copyright.description') }}</p>
+                <p>{{ $t('imprint.copyright.desc') }}</p>
             </article>
             <article class="article article-imprint">
                 <!-- CONTENT DISCLAIMER -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.content.heading') }}</h3>
-                <p>{{ $t('imprint.content.description') }}</p>
+                <p>{{ $t('imprint.content.desc') }}</p>
                 <!-- EXTERNAL LINKS DISCLAIMER -->
                 <h3 class="sub-heading sub-heading-imprint">{{ $t('imprint.links.heading') }}</h3>
-                <p>{{ $t('imprint.links.description') }}</p>
+                <p>{{ $t('imprint.links.desc') }}</p>
             </article>
         </section>
     </main>
@@ -66,10 +66,5 @@ export default {
     padding: 1rem
     @include small
       padding: 0
-
-  .sub-heading-imprint
-    margin-top: 2rem
-    @include small
-      margin-top: 0
 
 </style>

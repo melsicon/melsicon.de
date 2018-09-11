@@ -6,19 +6,13 @@
             <h1 class="main-heading">{{ $t('hero.heading') }}</h1>
         </article>
         <!-- HERO ILLUSTRATION -->
-        <illustration-hero/>
+        <div class="illustration illustration-hero">
+            <img
+                v-lazy="$t('illustrations.hero.src')"
+                :alt="$t('illustrations.hero.desc')">
+        </div>
     </section>
 </template>
-
-<script>
-import IllustrationHero from '@/components/graphics/illustrations/IllustrationHero'
-export default {
-  name: 'Home',
-  components: {
-    IllustrationHero
-  }
-}
-</script>
 
 <style lang="sass">
 
@@ -35,9 +29,9 @@ export default {
     margin-bottom: .3em
     @include medium
       font-size: 2.5em
-    @include small
+    @include x-small
       margin-top: 1em
-      font-size: 2.2em
+      font-size: 2em
 
   .illustration-hero
     padding: 0 2em

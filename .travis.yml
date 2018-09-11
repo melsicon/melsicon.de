@@ -15,5 +15,6 @@ deploy:
     bucket: $DOMAIN
     local_dir: dist
     cache_control: 'max-age=2628000'
+    detect_encoding: true
     on:
         branch: master

@@ -3,7 +3,14 @@
         id="services"
         class="section section-services">
         <!-- ILLUSTRATION ON LARGE SCREENS -->
-        <illustration-services v-if="$mq === 'lg'"/>
+        <div
+            v-if="$mq === 'lg'"
+            :class="{'illustration-medium': $mq === 'md'}"
+            class="illustration illustration-services">
+            <img
+                v-lazy="$t('illustrations.services.src')"
+                :alt="$t('illustrations.services.desc')">
+        </div>
         <article class="article article-intro">
             <!-- INTRO TO OUR SERVICES -->
             <h2 class="heading">{{ $t('services.heading') }}</h2>
@@ -14,9 +21,14 @@
         </article>
         <article class="article article-industry">
             <!-- ILLUSTRATION ON MEDIUM SCREENS -->
-            <illustration-services
+            <div
                 v-if="$mq === 'md'"
-                :class="{'illustration-medium': $mq === 'md'}"/>
+                :class="{'illustration-medium': $mq === 'md'}"
+                class="illustration illustration-services">
+                <img
+                    v-lazy="$t('illustrations.services.src')"
+                    :alt="$t('illustrations.services.desc')">
+            </div>
             <!-- ABOUT OUR BANK INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p
@@ -44,15 +56,6 @@
         </ul>
     </section>
 </template>
-
-<script>
-import IllustrationServices from '@/components/graphics/illustrations/IllustrationServices'
-export default {
-  components: {
-    IllustrationServices
-  }
-}
-</script>
 
 <style lang="sass">
 

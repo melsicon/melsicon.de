@@ -4,9 +4,14 @@
         class="section section-contact">
         <article class="article article-contact">
             <!-- ILLUSTRATION ON MEDIUM SCREENS -->
-            <illustration-contact
+            <div
                 v-if="$mq === 'md'"
-                :class="{'illustration-medium': $mq === 'md'}"/>
+                :class="{'illustration-medium': $mq === 'md'}"
+                class="illustration illustration-contact">
+                <img
+                    v-lazy="$t('illustrations.contact.src')"
+                    :alt="$t('illustrations.contact.desc')">
+            </div>
             <!-- CONTACT US -->
             <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
             <p class="paragraph">{{ $t('contact.description[0]') }}</p>
@@ -23,16 +28,19 @@
             </i18n>
         </article>
         <!-- ILLUSTRATION ON LARGE & XSMALL SCREENS -->
-        <illustration-contact v-if="$mq === 'lg' || $mq === 'xs'"/>
+        <div
+            v-if="$mq === 'lg' || $mq === 'xs'"
+            :class="{'illustration-medium': $mq === 'md'}"
+            class="illustration illustration-contact">
+            <img
+                v-lazy="$t('illustrations.contact.src')"
+                :alt="$t('illustrations.contact.desc')">
+        </div>
     </section>
 </template>
 
 <script>
-import IllustrationContact from '@/components/graphics/illustrations/IllustrationContact'
 export default {
-  components: {
-    IllustrationContact
-  },
   methods: {
     openChat() {
       window.drift.on('ready', api => {

@@ -7,9 +7,14 @@
             <!-- ABOUT COMPANY -->
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
             <!-- ILLUSTRATION ON MEDIUM SCREENS -->
-            <illustration-team
+            <div
                 v-if="$mq === 'md'"
-                :class="{'illustration-medium': $mq === 'md'}"/>
+                :class="{'illustration-medium': $mq === 'md'}"
+                class="illustration illustration-team">
+                <img
+                    v-lazy="$t('illustrations.team.src')"
+                    :alt="$t('illustrations.team.desc')">
+            </div>
             <p class="paragraph">{{ $t('about.company.description[0]') }}</p>
             <i18n
                 path="about.company.description[1]"
@@ -31,17 +36,22 @@
         </article>
         <!-- ILLUSTRATION ON LARGE SCREENS -->
         <illustration-team v-if="$mq === 'lg'"/>
+        <div
+            v-if="$mq === 'lg'"
+            class="illustration illustration-team">
+            <img
+                v-lazy="$t('illustrations.team.src')"
+                :alt="$t('illustrations.team.desc')">
+        </div>
         <!-- TEAM PROFILES -->
         <team-profile :profiles="$t('about.team.profiles')"/>
     </section>
 </template>
 
 <script>
-import IllustrationTeam from '@/components/graphics/illustrations/IllustrationTeam'
 import TeamProfile from '@/components/TeamProfile'
 export default {
   components: {
-    IllustrationTeam,
     TeamProfile
   }
 }

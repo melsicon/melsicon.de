@@ -2,7 +2,13 @@
     <section
         id="careers"
         class="section section-careers">
-        <illustration-careers v-if="$mq === 'lg'"/>
+        <div
+            v-if="$mq === 'lg'"
+            class="illustration illustration-careers">
+            <img
+                v-lazy="$t('illustrations.careers.src')"
+                :alt="$t('illustrations.careers.desc')">
+        </div>
         <article class="article article-careers">
             <!-- INTRO TO CAREERS AT MELSICON -->
             <h2 class="heading">{{ $t('about.careers.heading') }}</h2>
@@ -28,9 +34,14 @@
                 </li>
             </ul>
             <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
-            <illustration-careers
+            <div
                 v-if="$mq === 'xs' || $mq === 'md'"
-                :class="{'illustration-medium': $mq === 'md'}"/>
+                :class="{'illustration-medium': $mq === 'md'}"
+                class="illustration illustration-careers">
+                <img
+                    v-lazy="$t('illustrations.careers.src')"
+                    :alt="$t('illustrations.careers.desc')">
+            </div>
             <!-- OUR BENEFITS & COMMUNITY -->
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
             <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
@@ -57,15 +68,6 @@
         </article>
     </section>
 </template>
-
-<script>
-import IllustrationCareers from '@/components/graphics/illustrations/IllustrationCareers'
-export default {
-  components: {
-    IllustrationCareers
-  }
-}
-</script>
 
 <style lang="sass">
 

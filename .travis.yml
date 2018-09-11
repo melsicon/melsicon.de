@@ -14,7 +14,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     bucket: $DOMAIN
     local_dir: dist
-    cache_control: 'max-age=2628000'
+    cache_control: 'max-age=5184000'
     detect_encoding: true
     on:
         branch: master

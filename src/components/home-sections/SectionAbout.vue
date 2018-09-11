@@ -15,9 +15,9 @@
                     v-lazy="$t('illustrations.team.src')"
                     :alt="$t('illustrations.team.desc')">
             </div>
-            <p class="paragraph">{{ $t('about.company.description[0]') }}</p>
+            <p>{{ $t('about.company.desc[0]') }}</p>
             <i18n
-                path="about.company.description[1]"
+                path="about.company.desc[1]"
                 tag="p">
                 <q
                     class="quote"
@@ -29,10 +29,10 @@
                     class="quote"
                     place="solution">{{ $t('about.company.solution') }}</q>
             </i18n>
-            <!-- <p class="paragraph">{{ $t('about.company.description') }}</p> -->
+            <!-- <p>{{ $t('about.company.desc') }}</p> -->
             <!-- ABOUT TEAM -->
             <h3 class="sub-heading">{{ $t('about.team.heading') }}</h3>
-            <p class="paragraph">{{ $t('about.team.description') }}</p>
+            <p>{{ $t('about.team.desc') }}</p>
         </article>
         <!-- ILLUSTRATION ON LARGE SCREENS -->
         <illustration-team v-if="$mq === 'lg'"/>

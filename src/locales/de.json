@@ -32,19 +32,19 @@
 
   "hero": {
     "heading": "Kundenspezifische Lösungen, von Experten entwickelt",
-    "description": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu fokussieren."
+    "desc": "Wir sind Ihr IT-Partner, der Ihnen hilft sich auf Ihre Kernkompetenz zu fokussieren."
   },
 
   "services": {
     "heading": "Unser Angebot",
-    "description": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Unser Ziel ist es eine maßgeschneiderte Softwarelösung zu liefern und Sie bei der Integration in Ihr bestehendes System zu unterstützen.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
+    "desc": ["Unser Fokus liegt in der Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Unser Ziel ist es eine maßgeschneiderte Softwarelösung zu liefern und Sie bei der Integration in Ihr bestehendes System zu unterstützen.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
     "bank": {
       "heading": "Finanzdienstleister",
-      "description": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
+      "desc": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
     },
     "transport": {
       "heading": "Transportwesen",
-      "description": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
+      "desc": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
     },
     "clients": [
       {
@@ -69,14 +69,14 @@
   "about": {
     "company": {
       "heading": "Über uns",
-      "description": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen. Dies macht schon unser Firmenname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
+      "desc": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen. Dies macht schon unser Firmenname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
       "melsi": "melsi",
       "con": "con",
       "solution": "Lösung"
     },
     "team": {
       "heading": "IT-Experten mit geballtem Wissen",
-      "description": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know-How mit.",
+      "desc": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know-How mit.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
         "title": "Geschäftsführer",
@@ -151,14 +151,14 @@
     },
     "careers": {
       "heading": "Werde Teil unseres Teams!",
-      "description": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater-/in, Entwickler-/in mit Berufserfahrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "desc": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater-/in, Entwickler-/in mit Berufserfahrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
       "benefits": {
         "heading": "Warum melsicon?",
-        "description": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+        "desc": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
       },
       "community": {
         "heading": "Engagement in der Community",
-        "description": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
+        "desc": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
         "meetups": {
           "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
           "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
@@ -181,7 +181,7 @@
 
   "contact": {
     "heading": "Wir freuen uns von Ihnen zu hören!",
-    "description": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
+    "desc": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
     "email": "hallo@melsicon.de",
     "chat": "Chat"
   },
@@ -195,7 +195,7 @@
 
   "error": {
     "heading": "404 :(",
-    "description": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
+    "desc": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
     "action": "Gehen Sie züruck zur {back}!",
     "back": "Startseite"
   },
@@ -214,23 +214,23 @@
     },
     "register": {
       "heading": "Handelsregister",
-      "description": "Amtsgericht Frankfurt am Main, HRB 102600"
+      "desc": "Amtsgericht Frankfurt am Main, HRB 102600"
     },
     "USt-IdNr": {
       "heading": "Umsatzsteueridentifikationsnummer",
-      "description": "DE 284277275"
+      "desc": "DE 284277275"
     },
     "content": {
       "heading": "Haftung für Inhalte",
-      "description": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+      "desc": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
     },
     "links": {
       "heading": "Haftung für Links",
-      "description": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+      "desc": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
     },
     "copyright": {
       "heading": "Urheberrecht",
-      "description": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      "desc": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
     }
   },
 

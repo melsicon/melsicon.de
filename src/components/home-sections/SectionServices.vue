@@ -15,9 +15,9 @@
             <!-- INTRO TO OUR SERVICES -->
             <h2 class="heading">{{ $t('services.heading') }}</h2>
             <p
-                v-for="p in $t('services.description')"
+                v-for="p in $t('services.desc')"
                 :key="p.index"
-                class="paragraph">{{ p }}</p>
+            >{{ p }}</p>
         </article>
         <article class="article article-industry">
             <!-- ILLUSTRATION ON MEDIUM SCREENS -->
@@ -32,15 +32,14 @@
             <!-- ABOUT OUR BANK INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.bank.heading') }}</h3>
             <p
-                v-for="p in $t('services.bank.description')"
+                v-for="p in $t('services.bank.desc')"
                 :key="p.index"
-                class="paragraph">{{ p }}</p>
+            >{{ p }}</p>
             <!-- ABOUT OUR TRANSPORTATION INDUSTRY EXPERTISE -->
             <h3 class="sub-heading">{{ $t('services.transport.heading') }}</h3>
             <p
-                v-for="p in $t('services.transport.description')"
-                :key="p.index"
-                class="paragraph">{{ p }}</p>
+                v-for="p in $t('services.transport.desc')"
+                :key="p.index">{{ p }}</p>
         </article>
         <!-- OUR CLIENTS -->
         <ul class="list client-list">

@@ -14,9 +14,9 @@
             </div>
             <!-- CONTACT US -->
             <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
-            <p class="paragraph">{{ $t('contact.description[0]') }}</p>
+            <p>{{ $t('contact.desc[0]') }}</p>
             <i18n
-                path="contact.description[1]"
+                path="contact.desc[1]"
                 tag="p">
                 <span
                     class="email inline-link"

@@ -12,7 +12,7 @@
         <article class="article article-careers">
             <!-- INTRO TO CAREERS AT MELSICON -->
             <h2 class="heading">{{ $t('about.careers.heading') }}</h2>
-            <p class="paragraph">{{ $t('about.careers.description') }}</p>
+            <p>{{ $t('about.careers.desc') }}</p>
             <!-- CURRENT/MOST RECENT OPENINGS -->
             <ul class="list job-list">
                 <li
@@ -44,8 +44,8 @@
             </div>
             <!-- OUR BENEFITS & COMMUNITY -->
             <h3 class="sub-heading">{{ $t('about.careers.benefits.heading') }}</h3>
-            <p class="paragraph">{{ $t('about.careers.benefits.description') }}</p>
-            <p class="paragraph">{{ $t('about.careers.community.description') }}</p>
+            <p>{{ $t('about.careers.benefits.desc') }}</p>
+            <p>{{ $t('about.careers.community.desc') }}</p>
             <!-- OUR MEETUPS -->
             <ul class="list meetup-list">
                 <li

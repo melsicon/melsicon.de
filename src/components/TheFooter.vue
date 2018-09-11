@@ -112,6 +112,7 @@ export default {
 
   .address
     font-style: normal
+    margin-bottom: 1em
 
   .footer-social-item
     margin-bottom: .5em

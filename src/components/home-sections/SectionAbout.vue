@@ -7,12 +7,17 @@
             <!-- ABOUT COMPANY -->
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
             <!-- ILLUSTRATION ON MEDIUM SCREENS -->
-            <illustration-team
+            <div
                 v-if="$mq === 'md'"
-                :class="{'illustration-medium': $mq === 'md'}"/>
-            <p class="paragraph">{{ $t('about.company.description[0]') }}</p>
+                :class="{'illustration-medium': $mq === 'md'}"
+                class="illustration illustration-team">
+                <img
+                    v-lazy="$t('illustrations.team.src')"
+                    :alt="$t('illustrations.team.desc')">
+            </div>
+            <p>{{ $t('about.company.desc[0]') }}</p>
             <i18n
-                path="about.company.description[1]"
+                path="about.company.desc[1]"
                 tag="p">
                 <q
                     class="quote"
@@ -24,24 +29,29 @@
                     class="quote"
                     place="solution">{{ $t('about.company.solution') }}</q>
             </i18n>
-            <!-- <p class="paragraph">{{ $t('about.company.description') }}</p> -->
+            <!-- <p>{{ $t('about.company.desc') }}</p> -->
             <!-- ABOUT TEAM -->
             <h3 class="sub-heading">{{ $t('about.team.heading') }}</h3>
-            <p class="paragraph">{{ $t('about.team.description') }}</p>
+            <p>{{ $t('about.team.desc') }}</p>
         </article>
         <!-- ILLUSTRATION ON LARGE SCREENS -->
         <illustration-team v-if="$mq === 'lg'"/>
+        <div
+            v-if="$mq === 'lg'"
+            class="illustration illustration-team">
+            <img
+                v-lazy="$t('illustrations.team.src')"
+                :alt="$t('illustrations.team.desc')">
+        </div>
         <!-- TEAM PROFILES -->
         <team-profile :profiles="$t('about.team.profiles')"/>
     </section>
 </template>
 
 <script>
-import IllustrationTeam from '@/components/graphics/illustrations/IllustrationTeam'
 import TeamProfile from '@/components/TeamProfile'
 export default {
   components: {
-    IllustrationTeam,
     TeamProfile
   }
 }

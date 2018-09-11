@@ -12,8 +12,7 @@
                     :class="{'scrollactive-item': $route.name === 'home'}"
                     :href="'#' + key"
                     :key="nav.index"
-                    class="nav-link"
-                    role="menuitem">{{ nav }}</a>
+                    class="nav-link">{{ nav }}</a>
             </scrollactive>
             <nav
                 v-if="$route.name === 'imprint' || $route.name === 'privacy'"
@@ -22,13 +21,11 @@
                 <router-link
                     :class="{'is-active': $route.name === 'home'}"
                     to="/"
-                    class="nav-link"
-                    role="menuitem">{{ $t('nav.home') }}</router-link>
+                    class="nav-link">{{ $t('nav.home') }}</router-link>
                 <router-link
                     :class="{'is-active': $route.name === 'imprint'}"
                     to="/imprint"
-                    class="nav-link"
-                    role="menuitem">{{ $t('footer.legal.imprint') }}</router-link>
+                    class="nav-link">{{ $t('footer.legal.imprint') }}</router-link>
             </nav>
             <the-logo/>
         </div>
@@ -36,7 +33,7 @@
 </template>
 
 <script>
-import TheLogo from '@/components/graphics/TheLogo'
+import TheLogo from '@/components/TheLogo'
 export default {
   name: 'Navigation',
   components: {

@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import LgNav from '@/components/LgNav'
-import SmNav from '@/components/SmNav'
+const LgNav = () => import('@/components/LgNav')
+const SmNav = () => import('@/components/SmNav')
 import TheFooter from '@/components/TheFooter'
 import DriftComp from '@/components/DriftComp'
 

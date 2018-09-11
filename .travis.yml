@@ -1,6 +1,7 @@
 language: node_js
 node_js: '9.8.0'
 install:
+    - npm install -g travis-ci-cloudfront-invalidation
     - npm install
 before_script:
     - npm run lint
@@ -15,9 +16,7 @@ deploy:
     bucket: $DOMAIN
     local_dir: dist
     cache_control: 'max-age=5184000'
-    detect_encoding: true
     on:
         branch: master
 after_deploy:
-  - aws configure set preview.cloudfront true
-  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  - travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY_ID -s $AWS_SECRET_ACCESS_KEY -c $AWS_CLOUDFRONT_DIST_ID -i '/*' -b $TRAVIS_BRANCH -p $TRAVIS_PULL_REQUEST

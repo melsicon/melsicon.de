@@ -60,6 +60,8 @@
 
   .section-services
     align-items: center
+    @include small
+      padding-top: 1em
 
   .client-list
     text-align: center

@@ -29,7 +29,8 @@
             <scrollactive
                 v-if="open && $route.name === 'home'"
                 id="menu"
-                :offset="0"
+                :offset="30"
+                :duration="duration"
                 :modify-url="false"
                 class="sm-nav">
                 <a
@@ -37,7 +38,7 @@
                     :key="nav.index"
                     :href="'#' + key"
                     class="nav-link scrollactive-item"
-                    @click="open = !open">{{ nav }}</a>
+                    @click="toggleOpen">{{ nav }}</a>
             </scrollactive>
         </transition>
         <transition name="fade-in">
@@ -49,12 +50,12 @@
                     :class="{'is-active': $route.name === 'home'}"
                     to="/"
                     class="nav-link"
-                    @click.native="open = !open">{{ $t('nav.home') }}</router-link>
+                    @click.native="toggleOpen">{{ $t('nav.home') }}</router-link>
                 <router-link
                     :class="{'is-active': $route.name === 'imprint'}"
                     to="/imprint"
                     class="nav-link"
-                    @click.native="open = !open">{{ $t('footer.legal.imprint') }}</router-link>
+                    @click.native="toggleOpen">{{ $t('footer.legal.imprint') }}</router-link>
             </nav>
         </transition>
     </div>
@@ -68,15 +69,15 @@ export default {
     TheLogo
   },
   data: () => ({
-    open: false
+    open: false,
+    // How long scrolling to section takes, and after how long the open changes to false
+    duration: 400
   }),
   methods: {
-    toggleLocale() {
-      if (this.$i18n.locale === 'en') {
-        this.$i18n.locale = 'de'
-      } else {
-        this.$i18n.locale = 'en'
-      }
+    toggleOpen() {
+      setTimeout(() => {
+        this.open = !this.open
+      }, this.duration)
     }
   }
 }

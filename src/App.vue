@@ -55,6 +55,7 @@ export default {
     height: 100%
     line-height: 1.4
     color: $color-black
+    text-size-adjust: none
     @include x-large
       font-size: 22px
     @include x-small

@@ -29,7 +29,7 @@
             <scrollactive
                 v-if="open && $route.name === 'home'"
                 id="menu"
-                :offset="30"
+                :offset="0"
                 :modify-url="false"
                 class="sm-nav">
                 <a
@@ -37,7 +37,6 @@
                     :key="nav.index"
                     :href="'#' + key"
                     class="nav-link scrollactive-item"
-
                     @click="open = !open">{{ nav }}</a>
             </scrollactive>
         </transition>

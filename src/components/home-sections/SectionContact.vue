@@ -59,6 +59,9 @@ export default {
     @include small
       padding: 2em 0
 
+  .heading-contact
+    hyphens: none
+
   .illustration-contact
     padding: 0 4em
     margin: 2em 0

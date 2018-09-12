@@ -3,7 +3,7 @@
         <div class="lg-nav-wrapper">
             <scrollactive
                 v-if="$route.name === 'home'"
-                :offset="50"
+                :offset="0"
                 :modify-url="false"
                 class="lg-nav"
                 role="navigation">

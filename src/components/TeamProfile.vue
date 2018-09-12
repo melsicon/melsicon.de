@@ -70,10 +70,11 @@ export default {
       padding: 0 1em
     @include medium
       flex-basis: 50%
+    @include small
+      padding: 0
+      margin-bottom: 1em
     @include x-small
       flex-basis: 100%
-      @include small
-        padding: 0
 
   .profile-name
     font-size: 1.6em
@@ -105,6 +106,8 @@ export default {
     justify-content: center
     @include x-large
       margin: .3em 0 0
+    @include small
+      margin: .3em 0
 
   .social-item
     display: flex

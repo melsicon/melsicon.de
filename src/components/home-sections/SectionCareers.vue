@@ -86,6 +86,10 @@
   .meetup, .job
     margin-right: 1em
 
+  .job
+    @include small
+      margin-right: 0
+
   .item-link
     display: flex
     align-items: center

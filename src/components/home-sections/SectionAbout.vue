@@ -2,7 +2,13 @@
     <section
         id="team"
         class="section section-about">
-        <illustration-team v-if="$mq === 'xs'"/>
+        <div
+            v-if="$mq === 'xs'"
+            class="illustration illustration-team">
+            <img
+                v-lazy="$t('illustrations.team.src')"
+                :alt="$t('illustrations.team.desc')">
+        </div>
         <article class="article article-about">
             <!-- ABOUT COMPANY -->
             <h2 class="heading">{{ $t('about.company.heading') }}</h2>
@@ -35,7 +41,6 @@
             <p>{{ $t('about.team.desc') }}</p>
         </article>
         <!-- ILLUSTRATION ON LARGE SCREENS -->
-        <illustration-team v-if="$mq === 'lg'"/>
         <div
             v-if="$mq === 'lg'"
             class="illustration illustration-team">
@@ -58,6 +63,11 @@ export default {
 </script>
 
 <style lang="sass">
+
+  .section-about
+    padding-top: 10em
+    @include small
+      padding-top: 1em
 
   .article-about
     align-self: center

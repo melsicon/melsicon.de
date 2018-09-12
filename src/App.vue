@@ -101,6 +101,8 @@ export default {
     padding: 0 1em
     @include x-large
       max-width: $large-width
+    @include x-small
+      padding: 0 .6em
 
   // MAIN SECTIONS
   .section
@@ -131,15 +133,6 @@ export default {
     flex-basis: 50%
     @include small
       flex-basis: 100%
-
-  .article
-    padding: 1em
-    margin: 1em 0
-    @include medium
-      margin: 0
-    @include small
-      flex-basis: 100%
-      padding: 1em 0
 
   p:not(:last-child)
     margin-bottom: 1em

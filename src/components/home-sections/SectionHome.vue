@@ -28,12 +28,15 @@
     letter-spacing: 1px
     margin-bottom: .3em
     @include medium
+      padding-top: 1em
       font-size: 2.5em
     @include x-small
-      margin-top: 1em
+      padding-top: 2em
       font-size: 2em
 
   .illustration-hero
     padding: 0 2em
+    @include small
+      padding: 0 .5em
 
 </style>

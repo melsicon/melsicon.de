@@ -62,7 +62,7 @@ export default {
     width: 100%
     max-width: $normal-width
     margin: auto
-    padding: .5rem 2em
+    padding: .5rem 1em
     align-items: center
     @include x-large
       max-width: $large-width

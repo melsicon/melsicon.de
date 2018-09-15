@@ -61,9 +61,6 @@ export default {
     @include x-small
       font-size: 18px
 
-  ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
-    display: none
-
   a, a:visited
     text-decoration: none
     color: $color-primary

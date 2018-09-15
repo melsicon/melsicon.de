@@ -51,7 +51,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 19px
+    font-size: 20px
     height: 100%
     line-height: 1.4
     color: $color-black
@@ -60,9 +60,6 @@ export default {
       font-size: 22px
     @include x-small
       font-size: 18px
-
-  ::-webkit-scrollbar-thumb, ::-webkit-scrollbar
-    display: none
 
   a, a:visited
     text-decoration: none

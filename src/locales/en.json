@@ -1,0 +1,277 @@
+﻿{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "team": "About us",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+
+"illustrations": {
+  "hero": {
+    "desc": "A team collectivetly working on a dashboard for transportation services.",
+    "src": "../img/illustrations/hero.svg"
+  },
+  "services": {
+    "desc": "Two people working together on a web dashboard for banking.",
+    "src": "../img/illustrations/services.svg"
+  },
+  "team": {
+    "desc": "A team of four peope in a meeting.",
+    "src": "../img/illustrations/team.svg"
+  },
+  "careers": {
+    "desc": "Two people shaking hands after an interview.",
+    "src": "../img/illustrations/careers.svg"
+  },
+  "contact": {
+    "desc": "A person on their phone while sitting.",
+    "src": "../img/illustrations/contact.svg"
+  }
+},
+
+  "hero": {
+    "heading": "Customer specific solutions, developed by experts",
+    "desc": "We're the IT partner that will help you focus on your core competence."
+  },
+
+  "services": {
+    "heading": "Our services",
+    "desc": ["Our focus is on software development for the banking and transportation sector in the Rhein-Main area. Our goal is to provide you with a customized software solution and to help you with the integreation into your existing system.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
+    "bank": {
+      "heading": "Finanzdienstleister",
+      "desc": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
+    },
+    "transport": {
+      "heading": "Transportwesen",
+      "desc": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
+    },
+    "clients": [
+      {
+        "title": "deutschebank",
+        "src": "../img/clients/deutschebank.svg"
+      },
+      {
+        "title": "commerzbank",
+        "src": "../img/clients/commerzbank.svg"
+      },
+      {
+        "title": "amadeus",
+        "src": "../img/clients/amadeus.svg"
+      },
+      {
+        "title": "deutschebahn",
+        "src": "../img/clients/deutschebahn.svg"
+      }
+    ]
+  },
+
+  "about": {
+    "company": {
+      "heading": "Über uns",
+      "desc": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen. Dies macht schon unser Firmenname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
+      "melsi": "melsi",
+      "con": "con",
+      "solution": "Lösung"
+    },
+    "team": {
+      "heading": "IT-Experten mit geballtem Wissen",
+      "desc": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know-How mit.",
+      "profiles": [{
+        "name": "Makele Ghebreamlak",
+        "title": "Geschäftsführer",
+        "subtitle": "Projektmanagement, Back-End Entwickler",
+        "img": "../img/profiles/makele.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/makelefy/",
+          "xing": "https://www.xing.com/profile/Makele_Ghebreamlak/",
+          "twitter": "https://twitter.com/makelefy"
+        }
+      },
+      {
+        "name": "Alexander Figul",
+        "title": "Geschäftsführer",
+        "subtitle": "Back-End Entwickler (Java)",
+        "img": "../img/profiles/alex.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
+          "xing": "https://www.xing.com/profile/Alexander_Figul/",
+          "github": "https://github.com/afigul"
+        }
+      },
+      {
+        "name": "Victoria Bergquist",
+        "title": "Front-End Entwicklerin",
+        "subtitle": "Designerin, Community Manager",
+        "img": "../img/profiles/victoria.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
+          "github": "https://github.com/vicbergquist",
+          "twitter": "https://twitter.com/vicbergquist"
+        }
+      },
+      {
+        "name": "Bastian Baist",
+        "title": "Berater",
+        "subtitle": "Back-End Entwickler (Java/DevOps)",
+        "img": "../img/profiles/bastian.jpg",
+        "social": {
+          "xing": "https://www.xing.com/profile/Bastian_Baist/",
+          "twitter": "https://twitter.com/Miiepser"
+        }
+      },
+      {
+        "name": "Amir Wasim",
+        "title": "Senior Berater",
+        "subtitle": "Back-End Entwickler (Java/JavaScript)",
+        "img": "../img/profiles/amir.jpg",
+        "social": {
+          "xing": "https://www.xing.com/profile/Amir_Wasim/"
+        }
+      },
+      {
+        "name": "Sarah Kesete",
+        "title": "Assistentin der Geschäftsführung",
+        "subtitle": "Assistentin",
+        "img": "../img/profiles/sarah.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
+          "xing": "https://www.xing.com/profile/Sarah_Kesete/"
+        }
+      },
+      {
+        "name": "Mina Dawlatzai",
+        "title": "Researcher",
+        "subtitle": "Innovation & Strategy Research",
+        "img": "../img/profiles/mina.jpg",
+        "social": {
+        }
+      }
+    ]
+    },
+    "careers": {
+      "heading": "Werde Teil unseres Teams!",
+      "desc": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater-/in, Entwickler-/in mit Berufserfahrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "benefits": {
+        "heading": "Warum melsicon?",
+        "desc": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+      },
+      "community": {
+        "heading": "Engagement in der Community",
+        "desc": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
+        "meetups": {
+          "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
+          "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
+          "DevBizFra": "https://www.meetup.com/devbizfra/",
+          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler",
+          "Business meets IT": "https://www.meetup.com/de-DE/Business-meets-IT/"
+        }
+      },
+      "open": [{
+          "title": "Front-End Entwickler/Berater (w/m)",
+          "url": "https://fradevjobs.de/job/152/frontend-web-developer-consultant"
+        },
+        {
+          "title": "Back-End Entwickler/Berater (w/m)",
+          "url": "https://fradevjobs.de/job/102/backend-java-developer-consultant"
+        }
+      ]
+    }
+  },
+
+  "contact": {
+    "heading": "Wir freuen uns von Ihnen zu hören!",
+    "desc": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
+    "email": "hallo@melsicon.de",
+    "chat": "Chat"
+  },
+
+  "buttons": {
+    "contact": "Chat",
+    "open": "Menu",
+    "close": "Schliessen",
+    "apply": "Apply now"
+  },
+
+  "error": {
+    "heading": "404 :(",
+    "desc": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
+    "action": "Gehen Sie züruck zur {back}!",
+    "back": "Startseite"
+  },
+
+  "imprint": {
+    "heading": "Impressum",
+    "main": {
+      "heading": "Hauptsitz der Gesellschaft",
+      "company": "melsicon GmbH",
+      "address": ["Mergenthalerallee 73-75", "65760 Eschborn", "Deutschland"],
+      "contact": ["Telefon: +49 6196 9349 950", "Fax: +49 6196 9349 951", "Email: hallo@melsicon.de"]
+    },
+    "responsible": {
+      "heading": "Vertretungsberechtigter Vorstand",
+      "people": ["Makele Ghebreamlak, ", " Alexander Figul"]
+    },
+    "register": {
+      "heading": "Handelsregister",
+      "desc": "Amtsgericht Frankfurt am Main, HRB 102600"
+    },
+    "USt-IdNr": {
+      "heading": "Umsatzsteueridentifikationsnummer",
+      "desc": "DE 284277275"
+    },
+    "content": {
+      "heading": "Haftung für Inhalte",
+      "desc": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach § 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+    },
+    "links": {
+      "heading": "Haftung für Links",
+      "desc": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+    },
+    "copyright": {
+      "heading": "Urheberrecht",
+      "desc": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+    }
+  },
+
+  "footer": {
+    "contact": {
+      "heading": "Kontakt",
+      "address": {
+        "line-1": "melsicon GmbH",
+        "line-2": "Mergenthalerallee 73-75",
+        "line-3": "65760 Eschborn",
+        "line-4": ""
+      },
+      "phone": {
+        "label": "Telefon",
+        "data": "+49 6196 93499 50"
+      },
+      "email": {
+        "label": "Email",
+        "data": "hallo@melsicon.de"
+      }
+    },
+    "legal": {
+      "heading": "Rechtliches",
+      "imprint": "Impressum",
+      "data": "Datenschutz"
+    },
+    "quick": {
+      "heading": "Schnelleinstieg",
+      "jobs": "Stellenangebote"
+    },
+    "meetups": {
+      "heading": "Unsere Meetups"
+    },
+    "social": {
+      "heading": "Folg uns",
+      "social": {
+        "twitter": "https://twitter.com/melsicon",
+        "xing": "https://www.xing.com/companies/melsicongmbh",
+        "linkedin": "https://www.linkedin.com/company/melsicon",
+        "github": "https://github.com/melsicon"
+      }
+    }
+  }
+}

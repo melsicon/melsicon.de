@@ -17,7 +17,7 @@
     "src": "../img/illustrations/services.svg"
   },
   "team": {
-    "desc": "A team of four peope in a meeting.",
+    "desc": "A team of four people in a meeting.",
     "src": "../img/illustrations/team.svg"
   },
   "careers": {
@@ -39,12 +39,12 @@
     "heading": "Our services",
     "desc": ["Our focus is on software development for the banking and transportation sector in the Rhein-Main area. Our goal is to provide you with a customized software solution and to help you with the integreation into your existing system.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
     "bank": {
-      "heading": "Finanzdienstleister",
-      "desc": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
+      "heading": "Financiel service providers",
+      "desc": ["Many large financial service providers see themselves having to rethink their business model after the financial crisis and a low-interest fiscal policy. We help our clients integrate innovative concepts into their existing systems, such as robo advisors and integrated cloud solutions ofr all consultants. In addition, we help our clients support in implementing regulations such as MiFID II and to offer consultations following the DEFINO standard."]
     },
     "transport": {
-      "heading": "Transportwesen",
-      "desc": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
+      "heading": "Transportation industry",
+      "desc": ["The transportation industry of the future is becoming ever more transparent. Our clients are facing the challenge of processing the enormous amount of real-time data. We support our clients in the implementation of distributed, highly scalable microservice solutions and provide a comprehensive system test suite for your cloud architecture."]
     },
     "clients": [
       {

@@ -138,6 +138,17 @@
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
           "xing": "https://www.xing.com/profile/Sarah_Kesete/"
         }
+      },
+      {
+        "name": "Meike Hankewicz",
+        "title": "Junior Software Entwicklerin",
+        "subtitle": "Back-End Entwicklerin (Java/JavaScript)",
+        "img": "../img/profiles/meike.jpg",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/meike-h/",
+          "github": "https://github.com/Schlenges",
+          "twitter": "https://twitter.com/meikewicz"
+        }
       }
     ]
     },

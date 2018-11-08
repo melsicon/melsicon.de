@@ -19,9 +19,11 @@
                 path="contact.desc[1]"
                 tag="p">
                 <span
+                    tabindex="0"
                     class="email inline-link"
                     place="email">{{ $t('contact.email') }}</span>
                 <a
+                    tabindex="0"
                     class="chat inline-link"
                     place="chat"
                     @click="openChat">{{ $t('contact.chat') }}</a>

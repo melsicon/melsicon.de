@@ -82,6 +82,25 @@ export default {
     background: 0
     border: 0
     box-shadow: 0
+    font-size: 1rem
+
+  a::-moz-focus-inner, a::-moz-focus-outer, button::-moz-focus-outer, button::-moz-focus-inner, button:-moz-focusring, span.inline-link::-moz-focus-outer
+    outline-color: $color-primary
+    outline-style: dashed
+    outline-width: 1.5px
+    outline-offset: 1px
+
+  a:focus, a.nav-link:focus, button:focus, span.inline-link:focus
+    outline-color: $color-primary
+    outline-style: dashed
+    outline-width: 1.5px
+    outline-offset: 1px
+
+  .footer-link:focus, .footer-social-link:focus
+    outline-color: $color-white
+    outline-style: dashed
+    outline-width: 1.5px
+    outline-offset: 1px
 
   #app
     height: 100%

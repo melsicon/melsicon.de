@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Services",
     "team": "About us",
-    "careers": "Careers",
+    "careers": "Career",
     "contact": "Contact"
   },
 
@@ -31,20 +31,20 @@
 },
 
   "hero": {
-    "heading": "Customer specific solutions, developed by experts",
-    "desc": "We're the IT partner that will help you focus on your core competence."
+    "heading": "Custom-built solutions, developed by experts",
+    "desc": "We are the IT partner that will help you focus on your core competency."
   },
 
   "services": {
-    "heading": "Our services",
-    "desc": ["Our focus is on software development for the banking and transportation sector in the Rhein-Main area. Our goal is to provide you with a customized software solution and to help you with the integreation into your existing system.", "Unsere Stärken liegen in der agilen Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java. Hierbei begleiten wir Sie von der Konzeptionierung, über die Entwicklung bis hin zum Betrieb."],
+    "heading": "Our Services",
+    "desc": ["We focus on software development for the banking and transportation sector in the Rhein-Main area. Our goal is to deliver customized software solutions and support for its integration into your existing system.", "Our main strengths lie in agile development, test management, DevOps, cloud engineering, as well as all things Java. We will support you all the way from conceptional design via development through to operations."],
     "bank": {
-      "heading": "Finanzdienstleister",
-      "desc": ["Viele große Finanzdienstleister sehen seit der Finanzkrise und Niedrigzinspolitik ihr Kerngeschäft auf den Kopf gestellt. Wir helfen unseren Kunden innovative Konzepte in ihre bestehenden Systeme zu integrieren, wie zum Beispiel Roboadvisors und integrierte Cloud Lösung für alle Berater. Desweiteren helfen wir Ihnen dabei Regulatorien wie MiFID II und eine Beratung nach dem DEFINO Standard umzusetzen."]
+      "heading": "Financial Sector",
+      "desc": ["After the financial crisis and the policy of low interest rates, many big financial service providers are seeing their core business turned upside down. We are here to help our customers integrate innovative concepts into their existing systems, for example roboadvisors and integrated cloud solutions for all their consultants. Furthermore we will help them implement regulations such as MiFID II and consultations by DEFINO standards."]
     },
     "transport": {
-      "heading": "Transportwesen",
-      "desc": ["Das Transportwesen der Zukunft wird immer transparenter. Unsere Kunden stehen vor der Herrausforderung die gewaltige Menge an Echtzeitdaten verarbeiten zu können. Hierbei unterstützen wir unsere Kunden bei der Umsetzung von verteilten, hochskalierbaren Microservicelösungen und stellen eine umfassende Systemtestsuite für ihre Cloudarchitektur zur Verfügung."]
+      "heading": "Transportation Sector",
+      "desc": ["The transportation of the future is becoming more and more transparent. Our clients are facing the challenge of processing immense amounts of real-time data. To help our customers with this, we provide support for the implementation of distributed, highly scalable microservice solutions and a comprehensive system test suite for their cloud architecture."]
     },
     "clients": [
       {
@@ -68,19 +68,19 @@
 
   "about": {
     "company": {
-      "heading": "Über uns",
-      "desc": ["Aus dem Verlangen heraus Beratung menschlich, fair und professionell zu gestalten, haben wir 2012 die melsicon GmbH gegründet. Wir verstehen uns als lösungsorientiertes Beratungsunternehmen. Dies macht schon unser Firmenname deutlich: ", "melsicon ist ein Kunstwort aus {melsi} und {con}. Das Wort {melsi} kommt aus dem eritreischen, dem Ursprungsland vom Geschäftsführer Makele Ghebreamlak, und bedeutet {solution}. Das Wort {con} ist die Abkürzung für Consulting."],
+      "heading": "About us",
+      "desc": ["Driven by the desire to make consulting humane, fair and professional we founded melsicon GmbH in 2012. We consider ourself as a solution-oriented consulting company. This is already revealed in our company name: ", "melsicon is a coinage made up of {melsi} and {con}. The word {melsi} is of Eritrean origin, the home country of CEO Makele Ghebreamlak and means {solution}. The word {con} is an abbreviation of consulting."],
       "melsi": "melsi",
       "con": "con",
-      "solution": "Lösung"
+      "solution": "solution"
     },
     "team": {
-      "heading": "IT-Experten mit geballtem Wissen",
-      "desc": "Wir stellen Ihnen ein erfahrenes und eingespieltes Expertenteam zur Verfügung. Dieses wird Ihre bestehenden Teams unterstützen oder eigenständig gesamte IT-Projekte planen und umsetzen. Dabei bringen wir langjährige Erfahrung in der Industrie, frische Ideen und aktuelles Know-How mit.",
+      "heading": "IT-professionals with extensive knowledge",
+      "desc": "We offer you an experienced and well-coordinated team of experts. It will support your existing teams or plan and implement entire IT projects autonomously. We bring many years of experience in the industry, fresh ideas and the latest know-how.",
       "profiles": [{
         "name": "Makele Ghebreamlak",
-        "title": "Geschäftsführer",
-        "subtitle": "Projektmanagement, Back-End Entwickler",
+        "title": "CEO",
+        "subtitle": "Project Management, Back-End Developer",
         "img": "../img/profiles/makele.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/makelefy/",
@@ -90,8 +90,8 @@
       },
       {
         "name": "Alexander Figul",
-        "title": "Geschäftsführer",
-        "subtitle": "Back-End Entwickler (Java)",
+        "title": "CEO",
+        "subtitle": "Back-End Developer (Java)",
         "img": "../img/profiles/alex.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/alexander-figul-b800a128/",
@@ -101,8 +101,8 @@
       },
       {
         "name": "Victoria Bergquist",
-        "title": "Front-End Entwicklerin",
-        "subtitle": "Designerin, Community Manager",
+        "title": "Front-End Developer",
+        "subtitle": "Designer, Community Manager",
         "img": "../img/profiles/victoria.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
@@ -112,8 +112,8 @@
       },
       {
         "name": "Bastian Baist",
-        "title": "Berater",
-        "subtitle": "Back-End Entwickler (Java/DevOps)",
+        "title": "Consultant",
+        "subtitle": "Back-End Developer (Java/DevOps)",
         "img": "../img/profiles/bastian.jpg",
         "social": {
           "xing": "https://www.xing.com/profile/Bastian_Baist/",
@@ -122,8 +122,8 @@
       },
       {
         "name": "Amir Wasim",
-        "title": "Senior Berater",
-        "subtitle": "Back-End Entwickler (Java/JavaScript)",
+        "title": "Senior Consultant",
+        "subtitle": "Back-End Developer (Java/JavaScript)",
         "img": "../img/profiles/amir.jpg",
         "social": {
           "xing": "https://www.xing.com/profile/Amir_Wasim/"
@@ -131,8 +131,8 @@
       },
       {
         "name": "Sarah Kesete",
-        "title": "Assistentin der Geschäftsführung",
-        "subtitle": "Assistentin",
+        "title": "Executive Assistant",
+        "subtitle": "Assistent",
         "img": "../img/profiles/sarah.jpg",
         "social": {
           "linkedin": "https://www.linkedin.com/in/sarah-kesete-63b02b156/",
@@ -140,25 +140,28 @@
         }
       },
       {
-        "name": "Mina Dawlatzai",
-        "title": "Researcher",
-        "subtitle": "Innovation & Strategy Research",
-        "img": "../img/profiles/mina.jpg",
+        "name": "Meike Hankewicz",
+        "title": "Junior Software Developer",
+        "subtitle": "Back-End Developer (Java/JavaScript)",
+        "img": "../img/profiles/meike.jpg",
         "social": {
+          "linkedin": "https://www.linkedin.com/in/meike-h/",
+          "github": "https://github.com/Schlenges",
+          "twitter": "https://twitter.com/meikewicz"
         }
       }
     ]
     },
     "careers": {
-      "heading": "Werde Teil unseres Teams!",
-      "desc": "Wir sind immer auf der suche nach motivierter Verstärkung für unser Team. Ob Senior Berater-/in, Entwickler-/in mit Berufserfahrung, Quereinsteiger oder Code-affiner Hobbyist, wenn du zu uns ins Team passt finden wir für dich einen Platz.",
+      "heading": "Become Part of Our Team!",
+      "desc": "We are always on the lookout for motivated additions to our team! Whether you are a senior consultant, experienced developer, newcomer or code-affine hobbyist, if you're a fit for our team, we will find a place for you.",
       "benefits": {
-        "heading": "Warum melsicon?",
-        "desc": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie."
+        "heading": "Why melsicon?",
+        "desc": "At melsicon you will not only find interesting projects, but also a great work-life-balance, a fair salary, active support of your further education, customers exclusively from the Rhein-Main area as well as a good compatibility of career and family."
       },
       "community": {
-        "heading": "Engagement in der Community",
-        "desc": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
+        "heading": "Engagement Within the Community",
+        "desc": "It is important to us to support and foster the tech community in the Rhein-Main area. We encourage our employees to actively participate in it and are proud to say that several meetups in the community are organized by our employees and sponsored by melsicon.",
         "meetups": {
           "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
           "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
@@ -168,11 +171,11 @@
         }
       },
       "open": [{
-          "title": "Front-End Entwickler/Berater (w/m)",
+          "title": "Front-End Developer/Consultant (w/m)",
           "url": "https://fradevjobs.de/job/152/frontend-web-developer-consultant"
         },
         {
-          "title": "Back-End Entwickler/Berater (w/m)",
+          "title": "Back-End Developer/Consultant (w/m)",
           "url": "https://fradevjobs.de/job/102/backend-java-developer-consultant"
         }
       ]
@@ -180,33 +183,33 @@
   },
 
   "contact": {
-    "heading": "Wir freuen uns von Ihnen zu hören!",
-    "desc": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
+    "heading": "We are looking forward to hear from you!",
+    "desc": ["Do you want to discuss a business inquiry or a project, apply to one of our open positions or simply get a coffee with us? Then message us, our mailbox is always open!", "You can reach us via {email} or directly in the {chat} on our website."],
     "email": "hallo@melsicon.de",
-    "chat": "Chat"
+    "chat": "chat"
   },
 
   "buttons": {
     "contact": "Chat",
     "open": "Menu",
-    "close": "Schliessen",
+    "close": "Close",
     "apply": "Apply now"
   },
 
   "error": {
     "heading": "404 :(",
-    "desc": "Wir haben überall gesucht, aber wir konnten die gewünschte Seite nicht finden!",
-    "action": "Gehen Sie züruck zur {back}!",
-    "back": "Startseite"
+    "desc": "We looked everywhere, but we couldn't find the requested page!",
+    "action": "Go back to {back}!",
+    "back": "home"
   },
 
   "imprint": {
-    "heading": "Impressum",
+    "heading": "Legal Notice",
     "main": {
-      "heading": "Hauptsitz der Gesellschaft",
+      "heading": "Company Headquarters",
       "company": "melsicon GmbH",
-      "address": ["Mergenthalerallee 73-75", "65760 Eschborn", "Deutschland"],
-      "contact": ["Telefon: +49 6196 9349 950", "Fax: +49 6196 9349 951", "Email: hallo@melsicon.de"]
+      "address": ["Mergenthalerallee 73-75", "65760 Eschborn", "Germany"],
+      "contact": ["Phone: +49 6196 9349 950", "Fax: +49 6196 9349 951", "Email: hallo@melsicon.de"]
     },
     "responsible": {
       "heading": "Vertretungsberechtigter Vorstand",
@@ -236,7 +239,7 @@
 
   "footer": {
     "contact": {
-      "heading": "Kontakt",
+      "heading": "Contact",
       "address": {
         "line-1": "melsicon GmbH",
         "line-2": "Mergenthalerallee 73-75",
@@ -244,7 +247,7 @@
         "line-4": ""
       },
       "phone": {
-        "label": "Telefon",
+        "label": "Phone",
         "data": "+49 6196 93499 50"
       },
       "email": {
@@ -253,19 +256,19 @@
       }
     },
     "legal": {
-      "heading": "Rechtliches",
-      "imprint": "Impressum",
-      "data": "Datenschutz"
+      "heading": "Legal Information",
+      "imprint": "Legal Notice",
+      "data": "Privacy"
     },
     "quick": {
-      "heading": "Schnelleinstieg",
-      "jobs": "Stellenangebote"
+      "heading": "Quick Access",
+      "jobs": "Job Openings"
     },
     "meetups": {
-      "heading": "Unsere Meetups"
+      "heading": "Our Meetups"
     },
     "social": {
-      "heading": "Folg uns",
+      "heading": "Follow Us",
       "social": {
         "twitter": "https://twitter.com/melsicon",
         "xing": "https://www.xing.com/companies/melsicongmbh",

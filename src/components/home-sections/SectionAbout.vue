@@ -65,9 +65,9 @@ export default {
 <style lang="sass">
 
   .section-about
-    padding-top: 10em
+    padding-top: 5em
     @include small
-      padding-top: 1em
+      padding-top: 1.5em
 
   .article-about
     align-self: center

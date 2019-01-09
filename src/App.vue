@@ -120,13 +120,17 @@ export default {
     margin-bottom: .2em
     hyphens: auto
     @include small
-      font-size: 2.1em
+      font-size: 1.6em
 
   .sub-heading
     font-weight: 600
     margin-top: 1em
     margin-bottom: .2em
     hyphens: auto
+
+  h4
+    hyphens: auto
+    font-size: 1em
 
   // CONTENT
   .article, .illustration

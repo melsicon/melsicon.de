@@ -6,7 +6,7 @@
             <!-- IMPRINT -->
             <h2 class="heading heading-privacy">Datenschutzerklärung</h2>
             <article class="article article-privacy">
-                <h3>Erfassung allgemeiner Informationen beim Besuch unserer Website</h3>
+                <h3 class="sub-heading">Erfassung allgemeiner Informationen beim Besuch unserer Website</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches. </p>
                 <p>Sie werden insbesondere zu folgenden Zwecken verarbeitet:</p>
@@ -25,7 +25,7 @@
                 <p>Die Daten werden gelöscht, sobald diese für den Zweck der Erhebung nicht mehr erforderlich sind. Dies ist für die Daten, die der Bereitstellung der Webseite dienen, grundsätzlich der Fall, wenn die jeweilige Sitzung beendet ist.</p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein. Aus diesem Grund ist ein Widerspruch ausgeschlossen. </p>
-                <h3>Cookies</h3>
+                <h3 class="sub-heading">Cookies</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Bei Cookies handelt es sich um kleine Textdateien, die auf Ihrem Endgerät (Laptop, Tablet, Smartphone o.ä.) gespeichert werden, wenn Sie unsere Webseite besuchen. </p>
                 <p>Hierdurch erhalten wir bestimmte Daten wie z. B. IP-Adresse, verwendeter Browser und Betriebssystem.</p>
@@ -57,7 +57,7 @@
                         target="_blank" 
                         rel="nofollow noopener">Safari</a></li>
                 </ul>
-                <h3>Registrierung auf unserer Website</h3>
+                <h3 class="sub-heading">Registrierung auf unserer Website</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Bei der Registrierung für die Nutzung unserer personalisierten Leistungen werden einige personenbezogene Daten erhoben, wie Name, Anschrift, Kontakt- und Kommunikationsdaten (z. B. Telefonnummer und E-Mail-Adresse). Sind Sie bei uns registriert, können Sie auf Inhalte und Leistungen zugreifen, die wir nur registrierten Nutzern anbieten. Angemeldete Nutzer haben zudem die Möglichkeit, bei Bedarf die bei Registrierung angegebenen Daten jederzeit zu ändern oder zu löschen. Selbstverständlich erteilen wir Ihnen darüber hinaus jederzeit Auskunft über die von uns über Sie gespeicherten personenbezogenen Daten.</p>
                 <h4>Rechtsgrundlage</h4>
@@ -70,7 +70,7 @@
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Ohne die Bereitstellung Ihrer personenbezogenen Daten können wir Ihnen keinen Zugang auf unsere angebotenen Inhalte und Leistungen gewähren.</p>
 
-                <h3>Erbringung kostenpflichtiger Leistungen</h3>
+                <h3 class="sub-heading">Erbringung kostenpflichtiger Leistungen</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Zur Erbringung kostenpflichtiger Leistungen werden von uns zusätzliche Daten erfragt, wie z.B. Zahlungsangaben, um Ihre Bestellung ausführen zu können.</p>
                 <h4>Rechtsgrundlage</h4>
@@ -82,7 +82,7 @@
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Ohne die Bereitstellung Ihrer personenbezogenen Daten können wir Ihnen keinen Zugang auf unsere angebotenen Inhalte und Leistungen gewähren.</p>
 
-                <h3>Kommentarfunktion</h3>
+                <h3 class="sub-heading">Kommentarfunktion</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Wenn Nutzer Kommentare auf unserer Website hinterlassen, werden neben diesen Angaben auch der Zeitpunkt ihrer Erstellung und der zuvor durch den Websitebesucher gewählte Nutzername gespeichert. Dies dient unserer Sicherheit, da wir für widerrechtliche Inhalte auf unserer Webseite belangt werden können, auch wenn diese durch Benutzer erstellt wurden.</p>
                 <h4>Rechtsgrundlage</h4>
@@ -95,7 +95,7 @@
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Ohne die Bereitstellung Ihrer personenbezogenen Daten können wir Ihnen keinen Zugang zu unserer Kommentarfunktion gewähren.</p>
 
-                <h3>Newsletter</h3>
+                <h3 class="sub-heading">Newsletter</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Ihre Daten werden ausschließlich dazu verwendet, Ihnen den abonnierten Newsletter per E-Mail zuzustellen. Die Angabe Ihres Namens erfolgt, um Sie im Newsletter persönlich ansprechen zu können und ggf. zu identifizieren, falls Sie von Ihren Rechten als Betroffener Gebrauch machen wollen.</p>
                 <p>Für den Empfang des Newsletters ist die Angabe Ihrer E-Mail-Adresse ausreichend. Bei der Anmeldung zum Bezug unseres Newsletters werden die von Ihnen angegebenen Daten ausschließlich für diesen Zweck verwendet. Abonnenten können auch über Umstände per E-Mail informiert werden, die für den Dienst oder die Registrierung relevant sind (bspw. Änderungen des Newsletterangebots oder technische Gegebenheiten).</p>
@@ -109,7 +109,7 @@
                 <p>Die Daten werden in diesem Zusammenhang nur verarbeitet, solange die entsprechende Einwilligung vorliegt. Danach werden sie gelöscht.</p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Ohne bestehende Einwilligung können wir Ihnen unseren Newsletter leider nicht zusenden.</p>
-                <h3>Kontaktformular</h3>
+                <h3 class="sub-heading">Kontaktformular</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert. Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional.</p>
                 <h4>Rechtsgrundlage</h4>
@@ -123,7 +123,7 @@
                 <p>Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen nach HGB und löschen Ihre Daten nach Ablauf dieser Fristen. </p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen.</p>
-                <h3>Verwendung von Google Analytics</h3>
+                <h3 class="sub-heading">Verwendung von Google Analytics</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA (nachfolgend: „Google“). Google Analytics verwendet sog. „Cookies“, also Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Aufgrund der Aktivierung der IP-Anonymisierung auf diesen Webseiten, wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Webseitenbetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.</p>
                 <p>Die Zwecke der Datenverarbeitung liegen in der Auswertung der Nutzung der Website und in der Zusammenstellung von Reports über Aktivitäten auf der Website. Auf Grundlage der Nutzung der Website und des Internets sollen dann weitere verbundene Dienstleistungen erbracht werden.</p>
@@ -147,7 +147,7 @@
                 <p>Mit Hilfe des Tracking-Tools Google Analytics kann das Verhalten der Besucher der Webseite bewertet und die Interessen analysiert werden. Hierzu erstellen wir ein pseudonymes Nutzerprofil.</p>
             </article>
             <article class="article article-privacy">
-                <h3>Verwendung von Scriptbibliotheken (Google Webfonts)</h3>
+                <h3 class="sub-heading">Verwendung von Scriptbibliotheken (Google Webfonts)</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden wir auf dieser Website „Google Web Fonts“ der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; nachfolgend „Google“) zur Darstellung von Schriften.</p>
                 <p>Hier finden Sie die <a href="https://www.google.com/policies/privacy/">Datenschutzrichtlinie</a> des Bibliothekbetreibers Google.</p>
@@ -165,7 +165,7 @@
                 <h4>Widerruf der Einwilligung</h4>
                 <p>Zur Darstellung der Inhalte wird regelmäßig die Programmiersprache JavaScript verwendet. Sie können der Datenverarbeitung daher widersprechen, indem Sie die Ausführung von JavaScript in Ihrem Browser deaktivieren oder einen Einbindung JavaScript-Blocker installieren. Bitte beachten Sie, dass es hierdurch zu Funktionseinschränkungen auf der Website kommen kann.</p>
                 <p/>
-                <h3>Verwendung von Google Maps</h3>
+                <h3 class="sub-heading">Verwendung von Google Maps</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Auf dieser Webseite nutzen wir das Angebot von Google Maps. Google Maps wird von Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (nachfolgend „Google“) betrieben. Dadurch können wir Ihnen interaktive Karten direkt in der Webseite anzeigen und ermöglichen Ihnen die komfortable Nutzung der Karten-Funktion.</p>
                 <p>Nähere Informationen über die Datenverarbeitung durch Google können Sie <a href="http://www.google.com/privacypolicy.html">den Google-Datenschutzhinweisen</a> entnehmen. Dort können Sie im Datenschutzcenter auch Ihre persönlichen Datenschutz-Einstellungen verändern.</p>
@@ -184,7 +184,7 @@
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
                 <p/>
-                <h3>Eingebettete YouTube-Videos</h3>
+                <h3 class="sub-heading">Eingebettete YouTube-Videos</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Auf einigen unserer Webseiten betten wir YouTube-Videos ein. Betreiber der entsprechenden Plugins ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA (nachfolgend „YouTube“). Wenn Sie eine Seite mit dem YouTube-Plugin besuchen, wird eine Verbindung zu Servern von YouTube hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr Surfverhalten Ihnen persönlich zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem YouTube-Account ausloggen.</p>
                 <p>Wird ein YouTube-Video gestartet, setzt der Anbieter Cookies ein, die Hinweise über das Nutzerverhalten sammeln.</p>
@@ -200,12 +200,12 @@
                 <p>Google verarbeitet Ihre Daten in den USA und hat sich dem <a href="https://www.privacyshield.gov/EU-US-Framework">EU_US Privacy Shield</a> unterworfen.</p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
-                <p/><h3>Social Plugins</h3>
+                <p/><h3 class="sub-heading">Social Plugins</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Wir bieten Ihnen auf unserer Webseite die Möglichkeit der Nutzung von sog. „Social-Media-Buttons“ an. Zum Schutze Ihrer Daten setzen wir bei der Implementierung auf die Lösung „Shariff“. Hierdurch werden diese Buttons auf der Webseite lediglich als Grafik eingebunden, die eine Verlinkung auf die entsprechende Webseite des Button-Anbieters enthält. Durch Anklicken der Grafik werden Sie somit zu den Diensten der jeweiligen Anbieter weitergeleitet. Erst dann werden Ihre Daten an die jeweiligen Anbieter gesendet. Sofern Sie die Grafik nicht anklicken, findet keinerlei Austausch zwischen Ihnen und den Anbietern der Social-Media-Buttons statt. Informationen über die Erhebung und Verwendung Ihrer Daten in den sozialen Netzwerken finden Sie in den jeweiligen Nutzungsbedingungen der entsprechenden Anbieter. <a href="http://www.heise.de/ct/artikel/Shariff-Social-Media-Buttons-mit-Datenschutz-2467514.html">Mehr Informationen zur Shariff-Lösung</a>.</p>
                 <p>Wir haben auf unserer Website die Social-Media-Buttons folgender Unternehmen eingebunden:</p>
                 <p>xing.com github.com linkedin.com twitter.com</p>
-                <p/><h3>Google AdWords</h3>
+                <p/><h3 class="sub-heading">Google AdWords</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Unsere Webseite nutzt das Google Conversion-Tracking. Betreibergesellschaft der Dienste von Google AdWords ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Sind Sie über eine von Google geschaltete Anzeige auf unsere Webseite gelangt, wird von Google Adwords ein Cookie auf Ihrem Rechner gesetzt. Das Cookie für Conversion-Tracking wird gesetzt, wenn ein Nutzer auf eine von Google geschaltete Anzeige klickt.</p>
                 <p>Besucht der Nutzer bestimmte Seiten unserer Website und das Cookie ist noch nicht abgelaufen, können wir und Google erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu dieser Seite weitergeleitet wurde. Jeder Google AdWords-Kunde erhält ein anderes Cookie. Cookies können somit nicht über die Websites von AdWords-Kunden nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für AdWords-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen.</p>
@@ -223,7 +223,7 @@
                 <p>Bitte beachten Sie, dass Sie die Opt-out-Cookies nicht löschen dürfen, solange Sie keine Aufzeichnung von Messdaten wünschen. Haben Sie alle Ihre Cookies im Browser gelöscht, müssen Sie das jeweilige Opt-out Cookie erneut setzen.</p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
-                <p/><h3>Einsatz von Google Remarketing</h3>
+                <p/><h3 class="sub-heading">Einsatz von Google Remarketing</h3>
                 <h4>Art und Zweck der Verarbeitung</h4>
                 <p>Diese Webseite verwendet die Remarketing-Funktion der Google Inc. Betreibergesellschaft der Dienste von Google Remarketing ist die Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (nachfolgend „Google“).</p>
                 <p>Die Funktion dient dazu, Webseitenbesuchern innerhalb des Google-Werbenetzwerks interessenbezogene Werbeanzeigen zu präsentieren. Im Browser des Webseitenbesuchers wird ein sog. „Cookie“ gespeichert, der es ermöglicht, den Besucher wiederzuerkennen, wenn dieser Webseiten aufruft, die dem Werbenetzwerk von Google angehören. Auf diesen Seiten können dem Besucher Werbeanzeigen präsentiert werden, die sich auf Inhalte beziehen, die der Besucher zuvor auf Webseiten aufgerufen hat, die die Remarketing Funktion von Google verwenden.</p>
@@ -233,14 +233,14 @@
                 <p>Bei jedem Besuch unsere Webseite werden personenbezogene Daten, einschließlich Ihrer IP-Adresse an Google in die USA übertragen. Diese personenbezogenen Daten werden durch Google gespeichert. Google gibt diese über das technische Verfahren erhobenen personenbezogenen Daten unter Umständen an Dritte weiter.</p>
                 <p>Unser Unternehmen enthält keine Informationen von Google, mittels derer die betroffene Person identifiziert werden könnte.</p>
                 <h4>Widerruf der Einwilligung</h4>
-                <p>Nach eigenen Angaben erhebt Google bei diesem Vorgang keine personenbezogenen Daten. Sollten Sie die Funktion Remarketing von Google dennoch nicht wünschen, können Sie diese grundsätzlich deaktivieren, indem Sie die entsprechenden Einstellungen unter <a href="https://support.google.com/adwordspolicy/answer/143465">https://support.google.com/adwordspolicy/answer/143465</a> vornehmen. Alternativ können Sie den Einsatz von Cookies für interessenbezogene Werbung über die Werbenetzwerkinitiative deaktivieren, indem Sie den Anweisungen unter <a href="http://www.networkadvertising.org/managing/opt_out.asp">http://www.networkadvertising.org/managing/opt_out.asp</a> folgen.</p>
+                <p>Nach eigenen Angaben erhebt Google bei diesem Vorgang keine personenbezogenen Daten. Sollten Sie die Funktion Remarketing von Google dennoch nicht wünschen, können Sie diese grundsätzlich deaktivieren, indem Sie die entsprechenden <a href="https://support.google.com/adwordspolicy/answer/143465">Einstellungen</a> vornehmen. Alternativ können Sie den Einsatz von Cookies für interessenbezogene Werbung über die Werbenetzwerkinitiative deaktivieren, indem Sie den <a href="http://www.networkadvertising.org/managing/opt_out.asp">Anweisungen</a> folgen.</p>
                 <h4>Bereitstellung vorgeschrieben oder erforderlich</h4>
                 <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
-                <p/><h3>SSL-Verschlüsselung</h3>
+                <p/><h3 class="sub-heading">SSL-Verschlüsselung</h3>
                 <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.</p>
-                <p/><h3>Änderung unserer Datenschutzbestimmungen</h3>
+                <p/><h3 class="sub-heading">Änderung unserer Datenschutzbestimmungen</h3>
                 <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
-                <h3>Fragen an den Datenschutzbeauftragten</h3>
+                <h3 class="sub-heading">Fragen an den Datenschutzbeauftragten</h3>
                 <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
                 <p/><p><em>Die Datenschutzerklärung wurde mit dem </em><em><a 
                     href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" 
@@ -269,6 +269,7 @@ export default {
     padding: 5em 0
 
   .article-privacy
+    max-width: 100%
     @include medium
       flex-basis: 100%
 

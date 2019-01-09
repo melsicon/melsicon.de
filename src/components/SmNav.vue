@@ -1,6 +1,8 @@
 <template>
     <div class="nav">
-        <the-logo :class="{'logo-white': open}"/>
+        <the-logo 
+            :class="{'logo-white': open}" 
+            @click.native="toTop"/>
         <!-- NAV BACKGROUND CIRCLE -->
         <transition name="circle">
             <div
@@ -17,12 +19,12 @@
             @click="open = !open">
             <span v-if="!open">{{ $t('buttons.open') }}</span>
             <span v-else>{{ $t('buttons.close') }}</span>
-            <div
+            <!-- <div
                 :class="{close: open}"
                 class="icon-toggle">
                 <span class="line"/>
                 <span class="line"/>
-            </div>
+            </div> -->
         </button>
         <!-- NAV MENU WHEN MENU IS OPENED -->
         <transition name="fade-in">
@@ -79,6 +81,9 @@ export default {
     duration: 400
   }),
   methods: {
+    toTop() {
+      window.scrollTo(0, 0)
+    },
     toggleOpen() {
       setTimeout(() => {
         this.open = !this.open
@@ -123,7 +128,7 @@ export default {
     display: flex
     align-items: center
     color: $color-primary
-    font-size: 1em
+    font-size: .9em
     font-weight: 600
     text-transform: uppercase
     transition: all 1s
@@ -165,21 +170,14 @@ export default {
   // CIRCLE BACKGROUND
   .circle
     position: absolute
-    top: 0
-    right: 0
-    height: 160vw
-    width: 160vw
+    top: calc(-768px / 2)
+    right: calc((100% - 768px) / 2)
+    height: 768px
+    width: 768px
     background: $color-primary-darker
     border-radius: 50%
-    transform: translate3d(20%,-40%,0)
     z-index: -1
     transform-origin: 100% 0%
-    @media screen and (max-width: 768px)
-      transform: translate3d(20%,-55%,0)
-    @media screen and (max-width: 400px)
-      transform: translate3d(20%,-40%,0)
-    @media screen and (max-width: 320px)
-      transform: translate3d(20%,-30%,0)
 
   .circle-enter-active, .circle-leave-active
     transition: all 1s

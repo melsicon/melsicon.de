@@ -73,7 +73,6 @@ export default {
     @include small
       padding: 0
       margin-bottom: 1em
-    @include x-small
       flex-basis: 100%
 
   .profile-name

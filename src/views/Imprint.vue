@@ -65,6 +65,7 @@ export default {
     padding-right: 1rem
     @include medium
       padding: 0
+
   .article-imprint:last-of-type
     padding-left: 1rem
     @include medium

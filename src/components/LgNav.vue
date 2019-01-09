@@ -26,6 +26,10 @@
                     :class="{'is-active': $route.name === 'imprint'}"
                     to="/imprint"
                     class="nav-link">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'privacy'}"
+                    to="/privacy"
+                    class="nav-link">{{ $t('footer.legal.privacy') }}</router-link>
             </nav>
             <the-logo/>
         </div>

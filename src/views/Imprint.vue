@@ -61,6 +61,15 @@ export default {
     @include medium
       flex-basis: 100%
 
+  .article-imprint:first-of-type
+    padding-right: 1rem
+    @include medium
+      padding: 0
+  .article-imprint:last-of-type
+    padding-left: 1rem
+    @include medium
+      padding: 0
+
   .heading-imprint
     flex-basis: 100%
     padding: 1rem 0

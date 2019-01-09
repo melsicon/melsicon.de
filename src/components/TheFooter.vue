@@ -51,6 +51,9 @@
                 <router-link
                     class="footer-link"
                     to="/imprint">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    class="footer-link"
+                    to="/privacy">{{ $t('footer.legal.privacy') }}</router-link>
             </div>
         </div>
     </footer>

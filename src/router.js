@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // Pages
 const Home = () => import('@/views/Home')
 const Imprint = () => import('@/views/Imprint')
+const DataPrivacy = () => import('@/views/DataPrivacy')
 const NotFound = () => import('@/views/NotFound')
 
 Vue.use(Router)
@@ -21,6 +22,11 @@ export default new Router({
       path: '/imprint',
       name: 'imprint',
       component: Imprint
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: DataPrivacy
     },
     {
       path: '*',

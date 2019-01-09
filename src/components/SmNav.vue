@@ -56,6 +56,11 @@
                     to="/imprint"
                     class="nav-link"
                     @click.native="toggleOpen">{{ $t('footer.legal.imprint') }}</router-link>
+                <router-link
+                    :class="{'is-active': $route.name === 'privacy'}"
+                    to="/privacy"
+                    class="nav-link"
+                    @click.native="toggleOpen">{{ $t('footer.legal.privacy') }}</router-link>
             </nav>
         </transition>
     </div>

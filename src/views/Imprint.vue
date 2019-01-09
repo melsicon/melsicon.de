@@ -63,7 +63,7 @@ export default {
 
   .heading-imprint
     flex-basis: 100%
-    padding: 1rem
+    padding: 1rem 0
     @include small
       padding: 0
 

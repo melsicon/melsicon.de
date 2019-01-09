@@ -63,12 +63,15 @@ export default {
 
   a, a:visited
     text-decoration: none
-    color: $color-primary
+    color: $color-primary-darker
     transition: transform .5s ease-in-out
     &:hover
       transform: scale(1.02)
       @include small
         transform: scale(1.01)
+
+  a:focus
+    text-decoration: underline
 
   ul
     list-style-type: none

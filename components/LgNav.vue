@@ -1,7 +1,9 @@
 <template>
   <div class="nav">
     <div class="lg-nav-wrapper">
-      <nav
+      <scrollactive
+        :offset="0"
+        :modify-url="false"
         class="lg-nav"
         role="navigation">
         <template v-if="$nuxt.$route.name === 'index'">
@@ -9,6 +11,7 @@
             v-for="(nav, key) in $t('nav')"
             :href="'#' + key"
             :key="nav.index"
+            :class="{'scrollactive-item': $nuxt.$route.name === 'index'}"
             class="nav-link">{{ nav }}</a>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
@@ -18,7 +21,7 @@
             :key="nav.index"
             class="nav-link">{{ nav }}</nuxt-link>
         </template>
-      </nav>
+      </scrollactive>
       <the-logo/>
     </div>
   </div>

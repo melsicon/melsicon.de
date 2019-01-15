@@ -20,6 +20,7 @@ module.exports = {
     '~/plugins/i18n.js',
     '~/plugins/vue-lazyload',
     '~/plugins/font-awesome',
+    { src: '~plugins/vue-scrollactive', ssr: false },
     { src: '~plugins/ga', ssr: false }
   ],
   generate: {

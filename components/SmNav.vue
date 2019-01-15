@@ -26,16 +26,19 @@
     </button>
     <!-- NAV MENU WHEN MENU IS OPENED -->
     <transition name="fade-in">
-      <nav
+      <scrollactive
         v-if="open"
         id="menu"
+        :offset="30"
+        :duration="duration"
+        :modify-url="false"
         class="sm-nav">
         <template v-if="$nuxt.$route.name === 'index'">
           <a
             v-for="(nav, key) in $t('nav')"
             :key="nav.index"
             :href="'/#' + key"
-            class="nav-link"
+            class="nav-link scrollactive-item"
             @click="toggleOpen">{{ nav }}</a>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
@@ -46,7 +49,7 @@
             class="nav-link"
             @click="toggleOpen">{{ nav }}</nuxt-link>
         </template>
-      </nav>
+      </scrollactive>
     </transition>
   </div>
 </template>

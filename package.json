@@ -23,7 +23,8 @@
     "nuxt-mq": "^1.1.2",
     "nuxt-sass-resources-loader": "^2.0.5",
     "vue-i18n": "^8.2.1",
-    "vue-mq": "^1.0.1"
+    "vue-mq": "^1.0.1",
+    "vue-scrollactive": "^0.8.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

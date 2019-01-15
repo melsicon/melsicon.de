@@ -1,0 +1,26 @@
+// Media Queries
+$x-large: 1700px
+$large: 1400px
+$medium: 1200px
+$small: 768px
+$x-small: 420px
+
+@mixin x-large
+  @media (min-width: #{$x-large})
+    @content
+
+@mixin large
+  @media (max-width: #{$large})
+    @content
+
+@mixin medium
+  @media (max-width: #{$medium})
+    @content
+
+@mixin small
+  @media (max-width: #{$small})
+    @content
+
+@mixin x-small
+  @media (max-width: #{$x-small})
+    @content

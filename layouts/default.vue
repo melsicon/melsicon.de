@@ -17,8 +17,7 @@ export default {
     TheFooter,
     LgNav,
     SmNav
-  },
-  scrollToTop: true
+  }
 }
 </script>
 
@@ -65,6 +64,8 @@ export default {
     background: 0
     border: 0
     box-shadow: 0
+    font-size: 1em
+    font-family: $font-body
 
   #app
     //min-height: 100vh
@@ -74,6 +75,7 @@ export default {
     position: relative
     max-width: $normal-width
     margin: auto
+    min-height: 100vh
 
   // MAIN SECTIONS
   .section
@@ -143,29 +145,12 @@ export default {
 </style>
 
 <style>
-.page-enter-active {
-  animation: acrossIn 0.45s ease-out both;
-}
-
+.page-enter-active,
 .page-leave-active {
-  animation: acrossOut 0.65s ease-in both;
+  transition: opacity 0.5s;
 }
-
-@keyframes acrossIn {
-  0% {
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes acrossOut {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(100%, 0, 0);
-  }
+.page-enter,
+.page-leave-active {
+  opacity: 0;
 }
 </style>

@@ -55,9 +55,7 @@ export default {
 
   .section-contact
     align-items: center
-    padding: 5em
-    @include small
-      padding: 2em 0
+    padding: 5em 1em
 
   .heading-contact
     hyphens: none

@@ -265,27 +265,39 @@
         }
       },
       {
-        "title": "DevOps Engineer",
+        "title": "Backend Developer",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
         "profile": {
-          "heading": "About you",
-          "list": ["About you 1", "about you 2", "about you 3"]
+          "heading": "You are:",
+          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
         },
         "tasks": {
           "heading": "About the job",
-          "list": ["Open-minded", "Interested in modern software architectures", "Fluent in both German and English", "Other keyword"]
+          "list": ["Consult our customers in Frankfurt area"]
         }
       },
       {
-        "title": "DevOps Engineer",
+        "title": "Backend Developer",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
         "profile": {
-          "heading": "About you",
-          "list": ["About you 1", "about you 2", "about you 3"]
+          "heading": "You are:",
+          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
         },
         "tasks": {
           "heading": "About the job",
-          "list": ["Open-minded", "Interested in modern software architectures", "Fluent in both German and English", "Other keyword"]
+          "list": ["Consult our customers in Frankfurt area"]
+        }
+      },
+      {
+        "title": "Backend Developer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
+        "profile": {
+          "heading": "You are:",
+          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
+        },
+        "tasks": {
+          "heading": "About the job",
+          "list": ["Consult our customers in Frankfurt area"]
         }
       }
     ]

@@ -47,13 +47,13 @@
           v-lazy="$t('illustrations.careers.src')"
           :alt="$t('illustrations.careers.desc')">
       </div>
-      <h3 class="sub-heading">Stellenangebote</h3>
+      <h2 class="heading listing-heading">Unsere Stellenangebote</h2>
       <ul class="job-list">
         <li 
           v-for="job in $t('jobs.list')" 
           :key="job" 
           class="job-item">
-          <h3 class="job-title">{{ job.title }}</h3>
+          <h3 class="sub-heading job-title-heading">{{ job.title }}</h3>
           <p>{{ job.description }}</p>
           <h4 class="list-heading">{{ job.profile.heading }}</h4>
           <ul class="item-list">
@@ -95,6 +95,9 @@
   .item-icon
     font-size: .8em
     margin-top: .15em
+  
+  .listing-heading
+    margin-top: .5em
 
   .job-list
     display: flex
@@ -110,6 +113,9 @@
     padding-right: 1rem
     @include small
       padding: 0
+
+  .job-title-heading
+    margin-top: 0
 
   .job-item:nth-child(2n)
     padding-left: 0

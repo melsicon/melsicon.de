@@ -102,6 +102,8 @@
 
     .job-item
       flex-basis: 50%
+      @include small
+        flex-basis: 100%
 
   .job-item
     margin-bottom: 2em

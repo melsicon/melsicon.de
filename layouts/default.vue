@@ -74,9 +74,6 @@ export default {
     position: relative
     max-width: $normal-width
     margin: auto
-    padding: 0 1em
-    @include x-small
-      padding: 0 .6em
 
   // MAIN SECTIONS
   .section

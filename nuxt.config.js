@@ -12,8 +12,22 @@ module.exports = {
   mode: 'universal',
   router: {
     middleware: 'i18n',
-    scrollBehavior: function(to, from, savedPosition) {
-      return { x: 0, y: 0 }
+    mode: 'history',
+    scrollBehavior(to, from, savedPosition) {
+      console.log(to.hash)
+      if (savedPosition) {
+        return savedPosition
+      } else {
+        const position = {}
+        // scroll to anchor by returning the selector
+        if (to.hash) {
+          position.selector = to.hash
+          if (document.querySelector(to.hash)) {
+            return position
+          }
+          return false
+        }
+      }
     }
   },
   plugins: [
@@ -24,7 +38,7 @@ module.exports = {
     { src: '~plugins/ga', ssr: false }
   ],
   generate: {
-    routes: ['/', '/imprint', '/privacy']
+    routes: ['/', '/imprint', '/privacy', '/careers']
   },
   head: {
     title: meta.name,

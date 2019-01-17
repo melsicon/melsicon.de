@@ -47,11 +47,11 @@
           v-lazy="$t('illustrations.careers.src')"
           :alt="$t('illustrations.careers.desc')">
       </div>
-      <h2 class="heading listing-heading">Unsere Stellenangebote</h2>
+      <h2 class="heading listing-heading">Stellenangebote</h2>
       <ul class="job-list">
         <li 
           v-for="job in $t('jobs.list')" 
-          :key="job" 
+          :key="job.index" 
           class="job-item">
           <h3 class="sub-heading job-title-heading">{{ job.title }}</h3>
           <p>{{ job.description }}</p>

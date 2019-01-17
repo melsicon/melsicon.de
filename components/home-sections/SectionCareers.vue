@@ -16,7 +16,7 @@
       <!-- CURRENT/MOST RECENT OPENINGS -->
       <nuxt-link 
         class="inline-link" 
-        to="/jobs">To the jobs page</nuxt-link>
+        to="/careers">To the jobs page</nuxt-link>
       <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
       <div
         v-if="$mq === 'xs' || $mq === 'md'"

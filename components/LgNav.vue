@@ -3,7 +3,7 @@
     <div class="lg-nav-wrapper">
       <scrollactive
         :offset="0"
-        :modify-url="false"
+        :modify-url="true"
         class="lg-nav"
         role="navigation">
         <template v-if="$nuxt.$route.name === 'index'">
@@ -11,15 +11,15 @@
             v-for="(nav, key) in $t('nav')"
             :href="'#' + key"
             :key="nav.index"
-            :class="{'scrollactive-item': $nuxt.$route.name === 'index'}"
+            :class="{'scrollactive-item': $nuxt.$route.name === 'index', 'is-active': active === '#' + key}"
             class="nav-link">{{ nav }}</a>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
           <nuxt-link
             v-for="(nav, key) in $t('nav')"
-            :to="'/#' + key"
+            :to="{name: 'index', hash: `#${key}`}"
             :key="nav.index"
-            class="nav-link">{{ nav }}</nuxt-link>
+            class="nav-link scrollactive-item">{{ nav }}</nuxt-link>
         </template>
       </scrollactive>
       <the-logo/>
@@ -36,7 +36,12 @@ export default {
   },
   data: () => ({
     open: false
-  })
+  }),
+  computed: {
+    active() {
+      return window.location.hash
+    }
+  }
 }
 </script>
 

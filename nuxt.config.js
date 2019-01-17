@@ -21,7 +21,7 @@ module.exports = {
     { src: '~/plugins/axe', ssr: false }
   ],
   generate: {
-    routes: ['/', '/imprint', '/privacy', '/careers']
+    routes: ['/', '/impressum', '/datenschutz', '/karriere']
   },
   head: {
     title: meta.name,

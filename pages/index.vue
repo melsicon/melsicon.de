@@ -23,6 +23,11 @@ export default {
     SectionAbout,
     SectionCareers,
     SectionContact
+  },
+  head() {
+    return {
+      title: 'melsicon'
+    }
   }
 }
 </script>

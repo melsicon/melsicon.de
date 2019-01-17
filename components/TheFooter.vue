@@ -50,10 +50,10 @@
         <h3 class="footer-heading">{{ $t('footer.legal.heading') }}</h3>
         <nuxt-link
           class="footer-link"
-          to="/imprint">{{ $t('footer.legal.imprint') }}</nuxt-link>
+          to="/impressum">{{ $t('footer.legal.imprint') }}</nuxt-link>
         <nuxt-link
           class="footer-link"
-          to="/privacy">{{ $t('footer.legal.privacy') }}</nuxt-link>
+          to="/datenschutz">{{ $t('footer.legal.privacy') }}</nuxt-link>
       </div>
     </div>
   </footer>

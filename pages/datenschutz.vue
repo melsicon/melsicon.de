@@ -253,7 +253,12 @@
 <script>
 export default {
   name: 'Privacy',
-  scrollToTop: true
+  scrollToTop: true,
+  head() {
+    return {
+      title: 'melsicon - Datenschützerklärung'
+    }
+  }
 }
 </script>
 

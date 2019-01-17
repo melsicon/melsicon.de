@@ -47,7 +47,12 @@
 
 <script>
 export default {
-  name: 'Imprint'
+  name: 'Imprint',
+  head() {
+    return {
+      title: 'melsicon - Impressum'
+    }
+  }
 }
 </script>
 

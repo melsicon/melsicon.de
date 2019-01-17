@@ -15,8 +15,14 @@
       <p>{{ $t('about.careers.desc') }}</p>
       <!-- CURRENT/MOST RECENT OPENINGS -->
       <nuxt-link 
-        class="inline-link" 
-        to="/careers">To the jobs page</nuxt-link>
+        class="inline-link job-page-link" 
+        to="/karriere">
+        <font-awesome-icon
+          :icon="['fas', 'angle-right']"
+          aria-role="img"
+          aria-hidden="true"
+          fixed-width
+          class="item-icon"/>{{ $t('about.careers.link') }}</nuxt-link>
       <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
       <div
         v-if="$mq === 'xs' || $mq === 'md'"
@@ -34,5 +40,9 @@
 
   .article-careers
     align-self: center
+  
+  .job-page-link
+    display: block
+    margin-bottom: 1.2em
 
 </style>

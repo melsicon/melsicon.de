@@ -11,24 +11,7 @@ const meta = {
 module.exports = {
   mode: 'universal',
   router: {
-    middleware: 'i18n',
-    mode: 'history',
-    scrollBehavior(to, from, savedPosition) {
-      console.log(to.hash)
-      if (savedPosition) {
-        return savedPosition
-      } else {
-        const position = {}
-        // scroll to anchor by returning the selector
-        if (to.hash) {
-          position.selector = to.hash
-          if (document.querySelector(to.hash)) {
-            return position
-          }
-          return false
-        }
-      }
-    }
+    middleware: 'i18n'
   },
   plugins: [
     '~/plugins/i18n.js',

@@ -74,6 +74,13 @@
   </main>
 </template>
 
+<script>
+export default {
+  scrollToTop: true
+}
+</script>
+
+
 <style lang="sass">
   .meetup-list
     display: flex

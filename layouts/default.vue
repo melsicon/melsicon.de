@@ -17,6 +17,11 @@ export default {
     TheFooter,
     LgNav,
     SmNav
+  },
+  head() {
+    return {
+      title: 'melsicon'
+    }
   }
 }
 </script>
@@ -44,13 +49,11 @@ export default {
 
   a, a:visited
     text-decoration: none
-    color: $color-primary-darker
+    color: $color-primary
     font-weight: semi-bold
     transition: transform .5s ease-in-out
     &:hover
-      transform: scale(1.02)
-      @include small
-        transform: scale(1.01)
+      transform: scale(1.005)
 
   ul
     list-style-type: none

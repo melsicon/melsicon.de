@@ -18,6 +18,7 @@ module.exports = {
     '~/plugins/vue-lazyload',
     '~/plugins/font-awesome',
     { src: '~plugins/vue-scrollactive', ssr: false },
+    { src: '~plugins/ga', ssr: false },
     { src: '~/plugins/axe', ssr: false }
   ],
   generate: {
@@ -73,24 +74,23 @@ module.exports = {
   loading: { color: '#33f' },
   css: [],
   modules: [
-    [
-      'nuxt-sass-resources-loader',
-      ['@/assets/sass/variables.sass', '@/assets/sass/mixins.sass']
-    ],
+    '@nuxtjs/style-resources',
     [
       'nuxt-mq',
       {
         // Default breakpoint for SSR
-        ssr: false,
         defaultBreakpoint: 'default',
         breakpoints: {
-          xs: 600,
-          md: 770,
+          sm: 450,
+          md: 1250,
           lg: Infinity
         }
       }
     ]
   ],
+  styleResources: {
+    sass: ['./assets/sass/*.sass']
+  },
   build: {
     extend(config, ctx) {
       // Run ESLint on save

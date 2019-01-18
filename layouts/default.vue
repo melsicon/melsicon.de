@@ -53,7 +53,7 @@ export default {
     font-weight: semi-bold
     transition: transform .5s ease-in-out
     &:hover
-      transform: scale(1.005)
+      text-decoration: underline
 
   ul
     list-style-type: none
@@ -140,6 +140,10 @@ export default {
 
   img[lazy=loading]
     opacity: 0
+    height: 500px
+
+  img[lazy=loading].profile-img
+    height: 9em
 
   img[lazy=loaded]
     opacity: 1

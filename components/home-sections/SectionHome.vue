@@ -20,6 +20,7 @@
     flex-wrap: nowrap
     align-items: center
     @include small
+      padding-top: 0
       flex-wrap: wrap
 
   .main-heading

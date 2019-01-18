@@ -66,6 +66,7 @@ export default {
 
   .section-about
     padding-top: 5em
+    padding-bottom: 0
     @include small
       padding-top: 1em
 

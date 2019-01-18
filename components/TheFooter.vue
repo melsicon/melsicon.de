@@ -5,6 +5,9 @@
       <!-- QUICK LINKS -->
       <div class="footer-content footer-quick">
         <h3 class="footer-heading">{{ $t('footer.quick.heading') }}</h3>
+        <nuxt-link 
+          class="footer-link" 
+          to="/karriere">Stellenangebote</nuxt-link>
         <a
           v-for="(meetup, key) in $t('about.careers.community.meetups')"
           :key="meetup.index"
@@ -110,9 +113,8 @@ export default {
 
 
   .footer-heading
-    font-size: 0.8em
+    font-size: 0.9em
     margin-top: .5em
-    margin-bottom: .5em
     text-transform: uppercase
     letter-spacing: .5px
 

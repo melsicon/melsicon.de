@@ -3,6 +3,7 @@ const meta = {
   title: 'melsicon GmbH',
   description:
     'Spezialist für Softwareentwicklung im Banken- und Transportwesen im Rhein-Main-Gebiet. Agile Entwicklung, Testmanagement, DevOps, Cloud Engineering sowie alles rund um Java.',
+  keywords: '',
   url: 'https://melsicon.de',
   img: 'melsicon.jpg',
   locale: 'de'
@@ -40,7 +41,7 @@ module.exports = {
       {
         hid: 'keywords',
         name: 'keywords',
-        content: ''
+        content: meta.keywords
       },
       {
         name: 'google-site-verification',
@@ -51,7 +52,7 @@ module.exports = {
       { name: 'og:description', content: meta.description },
       { name: 'og:type', content: 'website' },
       { name: 'og:url', content: meta.url },
-      { name: 'og:image', content: 'https://melsicon.de/melsicon.jpg' },
+      { name: 'og:image', content: 'https://melsicon.de/icon.png' },
       { name: 'og:locale', content: meta.locale },
       // Twitter
       { name: 'twitter:card', content: 'summary' },
@@ -59,7 +60,7 @@ module.exports = {
       { name: 'twitter:creator', content: '@melsicon' },
       { name: 'twitter:title', content: meta.title },
       { name: 'twitter:description', content: meta.description },
-      { name: 'twitter:image', content: 'https://melsicon.de/melsicon.jpg' },
+      { name: 'twitter:image', content: 'https://melsicon.de/icon.png' },
       { name: 'twitter:image:alt', content: 'melsicon logo' }
     ],
     link: [

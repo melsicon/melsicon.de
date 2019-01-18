@@ -71,10 +71,14 @@ module.exports = {
       }
     ]
   },
+  manifest: {
+    lang: 'de'
+  },
   loading: { color: '#33f' },
   css: [],
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
     [
       'nuxt-mq',
       {

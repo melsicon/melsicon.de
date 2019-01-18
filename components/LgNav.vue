@@ -11,7 +11,7 @@
             v-for="(nav, key) in $t('nav')"
             :href="'#' + key"
             :key="nav.index"
-            :class="{'scrollactive-item': $nuxt.$route.name === 'index', 'is-active': active === '#' + key}"
+            :class="{'scrollactive-item': $nuxt.$route.name === 'index'}"
             class="nav-link">{{ nav }}</a>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
@@ -19,7 +19,8 @@
             v-for="(nav, key) in $t('nav')"
             :to="{name: 'index', hash: `#${key}`}"
             :key="nav.index"
-            class="nav-link scrollactive-item">{{ nav }}</nuxt-link>
+            exact
+            class="nav-link">{{ nav }}</nuxt-link>
         </template>
       </scrollactive>
       <the-logo/>
@@ -36,12 +37,7 @@ export default {
   },
   data: () => ({
     open: false
-  }),
-  computed: {
-    active() {
-      return window.location.hash
-    }
-  }
+  })
 }
 </script>
 
@@ -90,6 +86,8 @@ export default {
     transition: transform .3s ease-in
     border-bottom: 1px solid $color-white
     transition: all .3s ease-in
+    &:hover
+      text-decoration: underline
 
   .is-active
     color: $color-primary

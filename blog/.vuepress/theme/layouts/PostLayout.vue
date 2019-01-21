@@ -31,7 +31,6 @@
 </template>
 
 <script>
-  //const victoria = () => import('./victoria.png')
   export default {
     name: 'PostLayout',
     data: () => ({

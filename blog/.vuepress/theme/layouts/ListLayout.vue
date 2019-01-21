@@ -14,7 +14,7 @@
         <h3 class="post-heading">{{ post.frontmatter.title }}</h3>
         <div class="meta-info">{{ post.frontmatter.author }} <time>{{ post.frontmatter.date | dateFormat }}</time></div>
         <p>{{ post.frontmatter.excerpt }}</p>
-        <a :href="post.path" class="read-more">Read more...</a>
+        <router-link :to="post.path" class="read-more">Read more...</router-link>
       </div>
     </article>
     </div>
@@ -35,12 +35,6 @@
           return {...post, author}
         })
         return withAuthor
-      }
-    },
-    filters: {
-      dateFormat(date){
-        const newDate = new Date(date)
-        return newDate.toLocaleDateString('de-DE')
       }
     }
   }

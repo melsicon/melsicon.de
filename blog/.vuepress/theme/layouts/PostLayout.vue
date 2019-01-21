@@ -78,6 +78,8 @@
 .single-post-heading
   font-weight: 300
   font-size: 2.4em
+  @media screen and (max-width: 420px)
+    font-size: 2em
 
 .author-name
   font-size: 1.2em

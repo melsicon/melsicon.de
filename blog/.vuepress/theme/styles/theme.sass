@@ -91,6 +91,9 @@ ul
 strong
   font-weight: 600
 
+p
+  margin: 1em 0
+
 button
   background: 0
   border: 0
@@ -110,12 +113,15 @@ button
   max-width: $normal-width
   margin: 0 auto
   padding: 3em 1em
+  @media screen and (max-width: 768px)
+    padding-top: 1em
 
 .blog-post
   display: flex
 
 .author-img
   display: flex
+  flex-shrink: 0
   align-items: center
   justify-content: center
   height: 4.5em
@@ -125,6 +131,9 @@ button
   margin-right: 1em
   box-shadow: -.3em .1em 0 #66E866
   border-radius: 49% 51% 30% 70% / 43% 47% 53% 57%
+
+.author-title
+  margin: 0
 
 // HEADINGS
 h2

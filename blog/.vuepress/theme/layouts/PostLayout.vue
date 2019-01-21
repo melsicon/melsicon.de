@@ -2,19 +2,19 @@
   <main class="blog-content">
     <article class="blog-post blog-post-single">
       <div class="author-info">
-        <!-- <img
+        <img
           class="author-img author-img-single"
           :src="`/profiles/${author.img}`"
-          alt=""> -->
+          alt="">
         <h3 class="author-name">{{ $page.frontmatter.author }}</h3>
-        <!-- <p class="author-title">{{ author.title }}</p> -->
-        <!-- <ul class="social-media-list">
+        <p class="author-title">{{ author.title }}</p>
+        <ul class="social-media-list">
           <li class="social-media-item" v-for="(link, key) in author.links">
             <a :href="link">
               <img class="social-icon" aria-hidden="true" :src="`/social/${key}.svg`">
             </a>
           </li>
-        </ul> -->
+        </ul>
         <!-- TODO: Add list of other posts by same author -->
       </div>
       <div class="main-content">
@@ -34,9 +34,21 @@
   //const victoria = () => import('./victoria.png')
   export default {
     name: 'PostLayout',
+    data: () => ({
+      author: {}
+    }),
+    mounted(){
+      this.findAuthor()
+    },
+    methods: {
+      findAuthor(){
+        const authorMatch = this.authors.find(author => author.name === this.$page.frontmatter.author)
+        this.author = authorMatch
+      }
+    },
     computed: {
-      author(){
-        return this.$site.themeConfig.authors.find(author => author.name === this.$page.frontmatter.author)
+      authors(){
+        return this.$site.themeConfig.authors
       }
     }
   }

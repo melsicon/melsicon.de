@@ -7,6 +7,7 @@
           :key="nav.text"
           :href="nav.link"
           active-class="is-active"
+          :class="{mobile: nav.text !== 'Home'}"
           class="nav-link"
           v-text="nav.text"
         />
@@ -75,5 +76,9 @@
 .is-active
   color: #6464E1
   font-weight: 600
+
+.mobile
+  @media screen and (max-width: 420px)
+    display: none
 
 </style>

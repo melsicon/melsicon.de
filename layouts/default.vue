@@ -3,11 +3,15 @@
     <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
     <lg-nav v-if="$mq === 'lg'"/>
     <nuxt/>
+    <cookie-consent 
+      v-if="cookieOpen" 
+      @cookie="toggleCookie"/>
     <the-footer/>
   </div>
 </template>
 
 <script>
+import CookieConsent from '@/components/CookieConsent'
 const SmNav = () => import('@/components/SmNav')
 const LgNav = () => import('@/components/LgNav')
 import TheFooter from '@/components/TheFooter'
@@ -16,11 +20,27 @@ export default {
   components: {
     TheFooter,
     LgNav,
-    SmNav
+    SmNav,
+    CookieConsent
   },
+  data: () => ({
+    cookieOpen: true
+  }),
   head() {
     return {
       title: 'melsicon'
+    }
+  },
+  mounted() {
+    this.checkCookie
+  },
+  methods: {
+    toggleCookie() {
+      this.cookieOpen = false
+    },
+    checkCookie() {
+      // create a consent status cookie when opt in
+      const cookieArray = this.cookies.split(';')
     }
   }
 }
@@ -69,6 +89,21 @@ export default {
     box-shadow: 0
     font-size: 1em
     font-family: $font-body
+
+  .btn-purple
+    color: $color-white
+    background: $color-primary
+    font-size: 1em
+    font-weight: bold
+    padding: .5em 1rem
+    border-radius: 2em
+    min-width: 150px
+    margin: .5em auto
+    box-shadow: 0px 3px 10px $box-shadow-purple
+    transition: all .1s linear
+    &:active
+      transform: translateY(1px)
+      box-shadow: 0px 2px 5px $box-shadow-purple, inset 0px 0px 5px $box-shadow-purple
 
   #app
     //min-height: 100vh

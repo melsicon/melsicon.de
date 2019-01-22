@@ -39,7 +39,8 @@
             :key="nav.index"
             :href="'/#' + key"
             class="nav-link scrollactive-item"
-            @click="toggleOpen">{{ nav }}</a>
+            @click="toggleOpen"
+            v-text="nav"/>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
           <nuxt-link
@@ -47,7 +48,8 @@
             :key="nav.index"
             :to="'/#' + key"
             class="nav-link"
-            @click="toggleOpen">{{ nav }}</nuxt-link>
+            @click="toggleOpen"
+            v-text="nav"/>
         </template>
       </scrollactive>
     </transition>

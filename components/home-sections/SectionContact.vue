@@ -14,18 +14,14 @@
       </div>
       <!-- CONTACT US -->
       <h2 class="heading heading-contact">{{ $t('contact.heading') }}</h2>
-      <p>{{ $t('contact.desc[0]') }}</p>
       <i18n
-        path="contact.desc[1]"
+        path="contact.desc[0]"
         tag="p">
         <span
           class="email inline-link"
           place="email">{{ $t('contact.email') }}</span>
-        <a
-          class="chat inline-link"
-          place="chat"
-          @click="openChat">{{ $t('contact.chat') }}</a>
       </i18n>
+      <p>{{ $t('contact.desc[1]') }}</p>
     </article>
     <!-- ILLUSTRATION ON LARGE & XSMALL SCREENS -->
     <div

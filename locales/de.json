@@ -195,8 +195,8 @@
   },
 
   "contact": {
-    "heading": "Wir freuen uns von Ihnen zu hören!",
-    "desc": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen, sich auf eine unserer Stellen bewerben oder einfach mit uns einen Kaffee trinken gehen? Dann schreiben Sie uns, unser Postfach ist immer offen!", "Sie können uns unter {email} erreichen, oder einfach direkt im {chat} hier auf unsere Webseite."],
+    "heading": "Wir freuen uns auf Sie!",
+    "desc": ["Möchten Sie eine Geschäftsanfrage oder ein Projekt besprechen? Dann schreiben Sie uns, unser Postfach ist immer offen! Sie können uns unter {email} erreichen.", "Sie können auch einfach vorbei kommen und überzeugen Sie sich selbst! Wir bieten Face-to-Face Kennenlerngespräche über Skype, WhatsApp oder bei uns im melsicon-Office."],
     "email": "hallo@melsicon.de",
     "chat": "Chat"
   },

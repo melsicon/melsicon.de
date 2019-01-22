@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <sm-nav v-if="$mq === 'xs' || $mq === 'md'"/>
+    <sm-nav v-if="$mq === 'sm' || $mq === 'md'"/>
     <lg-nav v-if="$mq === 'lg'"/>
     <nuxt/>
     <the-footer/>

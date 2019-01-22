@@ -3,14 +3,15 @@
     <sm-nav v-if="$mq === 'sm' || $mq === 'md'"/>
     <lg-nav v-if="$mq === 'lg'"/>
     <nuxt/>
-    <cookie-consent 
-      v-if="cookieOpen" 
-      @cookie="toggleCookie"/>
+    <cookie-consent
+      v-if="cookieOpen"
+      @cookieConsent="updateConsent"/>
     <the-footer/>
   </div>
 </template>
 
 <script>
+import Cookies from 'js-cookie'
 import CookieConsent from '@/components/CookieConsent'
 const SmNav = () => import('@/components/SmNav')
 const LgNav = () => import('@/components/LgNav')
@@ -24,23 +25,43 @@ export default {
     CookieConsent
   },
   data: () => ({
-    cookieOpen: true
+    cookieOpen: false
   }),
   head() {
     return {
-      title: 'melsicon'
+      title: 'melsicon GmbH'
     }
   },
   mounted() {
-    this.checkCookie
+    // Cookies.remove('melsicon_cookie')
+    this.checkConsent()
   },
   methods: {
-    toggleCookie() {
-      this.cookieOpen = false
+    checkConsent() {
+      // Check if consent has already been given
+      const cookieStatus = Cookies.getJSON('melsicon_cookie')
+      if (cookieStatus === undefined) this.cookieOpen = true
+      if (cookieStatus) this.enableTracking()
+      // To make sure tracking is disabled
+      if (!cookieStatus) this.disableTracking()
     },
-    checkCookie() {
-      // create a consent status cookie when opt in
-      const cookieArray = this.cookies.split(';')
+    updateConsent(consent) {
+      // Update consent according to user response
+      this.setCookie(consent)
+      this.cookieOpen = !consent
+    },
+    setCookie(consent) {
+      // Create cookie with appropriate response
+      // Cookie expires in 90 days
+      Cookies.set('melsicon_cookie', consent, { expires: 90 })
+    },
+    disableTracking() {
+      // Disable Google Analytics
+      this.$ga.disable()
+    },
+    enableTracking() {
+      // Enable Google Analytics
+      this.$ga.enable()
     }
   }
 }
@@ -95,7 +116,7 @@ export default {
     background: $color-primary
     font-size: 1em
     font-weight: bold
-    padding: .5em 1rem
+    padding: .5em 2rem
     border-radius: 2em
     min-width: 150px
     margin: .5em auto

@@ -83,7 +83,7 @@ module.exports = {
       '@nuxtjs/google-analytics',
       {
         id: 'UA-59119788-4',
-        set: [{ field: 'anonymize_ip', value: true }],
+        anonymize_ip: true,
         disabled: true,
         debug: {
           enable: false,

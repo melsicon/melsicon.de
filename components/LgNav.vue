@@ -12,7 +12,8 @@
             :href="'#' + key"
             :key="nav.index"
             :class="{'scrollactive-item': $nuxt.$route.name === 'index'}"
-            class="nav-link">{{ nav }}</a>
+            class="nav-link"
+            v-text="nav"/>
         </template>
         <template v-if="$nuxt.$route.name !== 'index'">
           <nuxt-link
@@ -20,7 +21,8 @@
             :to="{name: 'index', hash: `#${key}`}"
             :key="nav.index"
             exact
-            class="nav-link">{{ nav }}</nuxt-link>
+            class="nav-link"
+            v-text="nav"/>
         </template>
       </scrollactive>
       <the-logo/>

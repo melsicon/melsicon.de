@@ -1,14 +1,17 @@
 <template>
   <div class="cookie-consent">
     <h2 class="cookie-heading">Cookie Policy 🍪</h2>
-    <p class="cookie-description">We use cookies to improve your user experience and for analytics purposes. By continuing to browse our site, you agree to our use of cookies.</p>
-    <p class="cookie-description">Please see our 
-      <nuxt-link 
-        to="/datenschutz" 
-        class="inline-link">Data Privacy Policy</nuxt-link> for more information and how to change your settings.</p>
-    <button 
-      class="btn btn-cookie btn-purple"
-      @click="optIn">Got it!</button>
+    <p class="cookie-description">We use cookies to improve your user experience and for analytics purposes.</p>
+    <p class="cookie-description">Please see our
+      <nuxt-link
+        to="/datenschutz"
+        class="inline-link">Data Privacy Policy</nuxt-link> for more information and how to update your settings.</p>
+    <button
+      class="btn btn-optin btn-purple"
+      @click="optIn">Accept Cookies!</button>
+    <button
+      class="btn btn-cookie btn-optout"
+      @click="optOut">No, thank you.</button>
   </div>
 </template>
 
@@ -17,15 +20,10 @@ export default {
   name: 'CookieConsent',
   methods: {
     optOut() {
-      //console.log('cookie are yucky')
-      this.$emit('cookie', false)
-      this.$ga.disable()
+      this.$emit('cookieConsent', false)
     },
     optIn() {
-      //console.log('cookies are yummy')
-      this.$emit('cookie', true)
-      document.cookie = 'cookie:accepted'
-      this.$ga.enable()
+      this.$emit('cookieConsent', true)
     }
   }
 }
@@ -37,29 +35,34 @@ export default {
     position: fixed
     bottom: 0
     left: 0
-    max-width: 400px
+    max-width: 350px
     margin: 1.5em 2em
     border-radius: 2em
     background: $color-white
     box-shadow: 0px 3px 10px $box-shadow-white
-    padding: 1.5em
+    padding: 1.5em 1em 1em
     display: flex
+    flex-direction: column
     flex-wrap: wrap
+
+  .cookie-description
+    margin-bottom: .5em
 
   .cookie-heading
     font-size: 1.2em
     margin-bottom: .2em
 
-  .btn-cookie
-    margin: 0 auto
+  .btn-optin
+    margin-top: .5em
 
   .btn-optout
     color: $color-black
-    opacity: .5
-    margin: 0 auto
+    opacity: .7
+    font-size: .8em
+    align-self: center
     min-width: 100px
     transition: opcaity .2s linear
     &:hover
-      opacity: .7
+      opacity: .9
 
 </style>

@@ -22,7 +22,7 @@
       class="section section-jobs">
       <ul 
         class="job-list" 
-        aria-labeledby="job-list-heading">
+        aria-labelledby="job-list-heading">
         <li 
           v-for="job in $t('jobs.list')" 
           :key="job.index"
@@ -43,8 +43,10 @@
               :key="item.index">{{ item }}</li>
           </ul>
           <a 
-            :href="`mailto:careers@melsicon.de?subject=Job Application: ${job.title}&body=Please attach your CV and cover letter.`"
-            class="apply-link"><button class="btn btn-apply">Apply now</button></a>
+            :href="`mailto:karriere@melsicon.de?subject=Job Application: ${job.title}&body=Please attach your CV and cover letter.`"
+            class="apply-link">
+            <button class="btn btn-purple">Apply now</button>
+          </a>
         </li>
       </ul>
     </section>
@@ -112,15 +114,6 @@ export default {
 
   .list-heading
     margin-top: 1em
-
-  .btn-apply
-    color: $color-white
-    background: $color-primary
-    font-size: 1em
-    font-weight: bold
-    padding: .5em 1rem
-    border-radius: 5px
-    margin: 1em auto
 
   .section-careers-intro
     align-items: center

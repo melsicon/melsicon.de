@@ -80,6 +80,18 @@ module.exports = {
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
     [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-59119788-4',
+        set: [{ field: 'anonymize_ip', value: true }],
+        disabled: true,
+        debug: {
+          enable: false,
+          sendHitTask: false
+        }
+      }
+    ],
+    [
       'nuxt-mq',
       {
         // Default breakpoint for SSR

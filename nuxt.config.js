@@ -19,7 +19,8 @@ module.exports = {
     '~/plugins/vue-lazyload',
     '~/plugins/font-awesome',
     { src: '~plugins/vue-scrollactive', ssr: false },
-    { src: '~/plugins/axe', ssr: false }
+    { src: '~/plugins/axe', ssr: false },
+    { src: '~plugins/ga', ssr: false }
   ],
   generate: {
     routes: ['/', '/impressum', '/datenschutz', '/karriere']
@@ -79,18 +80,6 @@ module.exports = {
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-59119788-4',
-        anonymize_ip: true,
-        disabled: true,
-        debug: {
-          enable: false,
-          sendHitTask: false
-        }
-      }
-    ],
     [
       'nuxt-mq',
       {

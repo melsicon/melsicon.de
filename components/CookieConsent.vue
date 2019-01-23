@@ -1,7 +1,7 @@
 <template>
   <div class="cookie-consent">
     <h2 class="cookie-heading">Cookie Policy 🍪</h2>
-    <p class="cookie-description">We use cookies to improve your user experience and for analytics purposes.</p>
+    <p class="cookie-description">We use cookies to improve your user experience and for analytics purposes, but can only do this with your consent.</p>
     <p class="cookie-description">Please see our
       <nuxt-link
         to="/datenschutz"
@@ -20,10 +20,10 @@ export default {
   name: 'CookieConsent',
   methods: {
     optOut() {
-      this.$emit('cookieConsent', false)
+      this.$emit('updateConsent', false)
     },
     optIn() {
-      this.$emit('cookieConsent', true)
+      this.$emit('updateConsent', true)
     }
   }
 }

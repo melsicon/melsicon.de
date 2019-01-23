@@ -3,9 +3,11 @@
     <sm-nav v-if="$mq === 'sm' || $mq === 'md'"/>
     <lg-nav v-if="$mq === 'lg'"/>
     <nuxt/>
-    <cookie-consent
-      v-if="cookieOpen"
-      @updateConsent="updateConsent"/>
+    <transition name="page">
+      <cookie-consent
+        v-if="cookieOpen"
+        @updateConsent="updateConsent"/>
+    </transition>
     <the-footer/>
   </div>
 </template>
@@ -25,7 +27,7 @@ export default {
     CookieConsent
   },
   data: () => ({
-    cookieOpen: true,
+    cookieOpen: false,
     cookieStatus: undefined
   }),
   head() {
@@ -201,15 +203,10 @@ export default {
     opacity: 1
     transition: all .5s ease-in
 
-</style>
+  .page-enter-active, .page-leave-active
+    transition: 0.5s
 
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-active {
-  opacity: 0;
-}
+  .page-enter, .page-leave-active
+    opacity: 0
+
 </style>

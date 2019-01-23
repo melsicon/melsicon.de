@@ -5,7 +5,7 @@
     <nuxt/>
     <cookie-consent
       v-if="cookieOpen"
-      @cookieConsent="updateConsent"/>
+      @updateConsent="updateConsent"/>
     <the-footer/>
   </div>
 </template>
@@ -25,7 +25,8 @@ export default {
     CookieConsent
   },
   data: () => ({
-    cookieOpen: false
+    cookieOpen: true,
+    cookieStatus: undefined
   }),
   head() {
     return {
@@ -33,35 +34,28 @@ export default {
     }
   },
   mounted() {
+    // Disable tracking until consent is given
     // Cookies.remove('melsicon_cookie')
+    this.setTracking(false)
+    this.cookieStatus = Cookies.getJSON('melsicon_cookie')
     this.checkConsent()
   },
   methods: {
     checkConsent() {
-      // Check if consent has already been given
-      const cookieStatus = Cookies.getJSON('melsicon_cookie')
-      if (cookieStatus === undefined) this.cookieOpen = true
-      if (cookieStatus) this.enableTracking()
-      // To make sure tracking is disabled
-      if (!cookieStatus) this.disableTracking()
+      if (this.cookieStatus === undefined) this.cookieOpen = true // If no melsicon_cookie, show the cookie banner
+      if (this.cookieStatus) this.setTracking(true) // If cookie is true, start tracking
     },
     updateConsent(consent) {
-      // Update consent according to user response
-      this.setCookie(consent)
-      this.cookieOpen = !consent
+      this.setCookie(consent) // Update consent according to user response
+      this.cookieOpen = false // Hide banner
+      this.setTracking(consent) // Set tracking based on response
     },
     setCookie(consent) {
-      // Create cookie with appropriate response
-      // Cookie expires in 90 days
-      Cookies.set('melsicon_cookie', consent, { expires: 90 })
+      Cookies.set('melsicon_cookie', consent, { expires: 90 }) // Cookie to track consent
     },
-    disableTracking() {
-      // Disable Google Analytics
-      this.$ga.disable()
-    },
-    enableTracking() {
-      // Enable Google Analytics
-      this.$ga.enable()
+    setTracking(consent) {
+      window['ga-disable-UA-59119788-4'] = !consent // Set consent
+      window.ga('send', 'pageview') // Reload google analytics with new setting
     }
   }
 }
@@ -135,6 +129,8 @@ export default {
     max-width: $normal-width
     margin: auto
     min-height: 100vh
+    @include x-large
+      max-width: $large-width
 
   // MAIN SECTIONS
   .section

@@ -5,8 +5,8 @@
       class="section section-imprint">
       <!-- IMPRINT -->
       <h1 class="heading heading-imprint">{{ $t('imprint.heading') }}</h1>
-      <article class="article article-imprint">
-        <!-- COMPANY DETAILS -->
+      <!-- COMPANY DETAILS -->
+      <article>
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.main.heading') }}</h2>
         <p>{{ $t('imprint.main.company') }}</p>
         <address class="address">
@@ -15,7 +15,10 @@
         <div
           v-for="content in $t('imprint.main.contact')"
           :key="content.index">{{ content }}</div>
-        <!-- FOUNDERS -->
+      </article>
+
+      <!-- FOUNDERS -->
+      <article>
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.responsible.heading') }}</h2>
         <p>
           <span
@@ -23,7 +26,9 @@
             :key="content.index"
             class="imprint-p">{{ content }}</span>
         </p>
-        <!-- COMPANY REGISTRATION -->
+      </article>
+      <!-- COMPANY REGISTRATION -->
+      <article>
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.register.heading') }}</h2>
         <p>{{ $t('imprint.register.desc') }}</p>
         <!-- TAX ID NUMBER -->
@@ -33,14 +38,15 @@
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.copyright.heading') }}</h2>
         <p>{{ $t('imprint.copyright.desc') }}</p>
       </article>
-      <article class="article article-imprint">
-        <!-- CONTENT DISCLAIMER -->
+      <!-- CONTENT DISCLAIMER -->
+      <article>
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.content.heading') }}</h2>
         <p>{{ $t('imprint.content.desc') }}</p>
         <!-- EXTERNAL LINKS DISCLAIMER -->
         <h2 class="sub-heading sub-heading-imprint">{{ $t('imprint.links.heading') }}</h2>
         <p>{{ $t('imprint.links.desc') }}</p>
       </article>
+
     </section>
   </main>
 </template>
@@ -64,28 +70,18 @@ export default {
 
 <style lang="sass">
 
-  .section-imprint
+  #imprint
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-flow: dense
+    gap: 1em
     min-height: 50vh
-    padding: 5em 0
-
-  .article-imprint
+    padding-top: 5em
+    padding-bottom: 3em
     @include small
-      flex-basis: 100%
-
-  .article-imprint:first-of-type
-    padding-right: 1rem
-    @include small
-      padding: 0
-
-  .article-imprint:last-of-type
-    padding-left: 1rem
-    @include small
-      padding: 0
+      grid-template-columns: 1fr
 
   .heading-imprint
-    flex-basis: 100%
-    padding: 1rem 0
-    @include small
-      padding: 0
+    grid-column: 1/-1
 
 </style>

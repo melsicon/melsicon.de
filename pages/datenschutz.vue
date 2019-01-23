@@ -354,7 +354,6 @@ export default {
     margin-top: 0
     font-weight: 300
 
-
   h3
     font-size: 1em
 </style>
@@ -369,6 +368,8 @@ export default {
     min-height: 50vh
     padding-top: 5em
     padding-bottom: 3em
+    @include small
+      grid-template-columns: 1fr
 
   .heading-privacy
     grid-column: 1/-1
@@ -377,4 +378,5 @@ export default {
     list-style-type: disc
     margin-left: 2rem
     margin-bottom: 1rem
+
 </style>

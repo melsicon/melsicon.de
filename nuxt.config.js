@@ -91,7 +91,8 @@ module.exports = {
           lg: Infinity
         }
       }
-    ]
+    ],
+    ['@nuxtjs/google-tag-manager', { id: 'UA-132430036-1' }]
   ],
   styleResources: {
     sass: ['./assets/sass/*.sass']

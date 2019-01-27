@@ -92,7 +92,7 @@ module.exports = {
         }
       }
     ],
-    ['@nuxtjs/google-tag-manager', { id: 'UA-132430036-1' }]
+    ['@nuxtjs/google-tag-manager', { id: 'UA-59119788-4' }]
   ],
   styleResources: {
     sass: ['./assets/sass/*.sass']

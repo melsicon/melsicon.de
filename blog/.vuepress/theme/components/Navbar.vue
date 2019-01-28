@@ -46,7 +46,7 @@
   top: 0
   width: 100%
   margin: 0 auto
-  padding: .5rem 1em
+  padding: .5rem 0
   align-items: center
   background: #fff
 
@@ -54,6 +54,7 @@
   display: flex
   max-width: 80rem
   margin: 0 auto
+  padding: 0 1em
 
 .logo-wrapper
   margin-left: auto

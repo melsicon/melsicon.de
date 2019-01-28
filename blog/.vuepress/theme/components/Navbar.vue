@@ -1,25 +1,24 @@
 <template>
    <div class="nav-wrapper">
+     <!-- TODO: add breadcrumbs -->
      <nav v-if="navLinks" class="nav">
         <a
-          v-if="nav.external"
-          v-for="nav in navLinks"
-          :key="nav.text"
-          :href="nav.link"
+          href="https://melsicon.netlify.com"
           active-class="is-active"
-          :class="{mobile: nav.text !== 'Home'}"
           class="nav-link"
-          v-text="nav.text"
+          v-text="'Home'"
         />
         <router-link
-          v-if="!nav.external"
-          v-for="nav in navLinks"
-          :key="nav.text"
-          :to="nav.link"
+          to="/"
           active-class="is-active"
           class="nav-link"
-          v-text="nav.text"
+          v-text="'Blog'"
+          exact
         />
+        <router-link
+          v-if="$page.path !== '/'"
+          class="nav-link is-active"
+          :to="$page.path">{{ $page.title }}</router-link>
       <the-logo/>
     </nav>
   </div>

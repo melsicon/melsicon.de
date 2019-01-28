@@ -3,12 +3,7 @@ module.exports = {
   description: 'melsicon GmbH company blog',
   themeConfig: {
     nav: [
-      { text: 'Home', link: 'https://melsicon.netlify.com', external: true },
-      { text: 'Leistungen', link: 'https://melsicon.netlify.com/#services', external: true },
-      { text: 'Über uns', link: 'https://melsicon.netlify.com/#about', external: true },
-      { text: 'Karriere', link: 'https://melsicon.netlify.com/#team', external: true },
-      { text: 'Blog', link: '/' },
-      { text: 'Kontakt', link: 'https://melsicon.netlify.com/#contact', external: true },
+      { text: 'Home', link: 'https://melsicon.netlify.com', external: true }
     ],
     authors: [
       {

@@ -1,5 +1,5 @@
 <template>
-  <main class="blog-content">
+  <main class="blog-content content">
     <article class="blog-post blog-post-single">
       <div class="author-info">
         <img

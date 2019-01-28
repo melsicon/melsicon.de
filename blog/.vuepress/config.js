@@ -1,7 +1,6 @@
 module.exports = {
   title: 'melsicon blog',
   description: 'melsicon GmbH company blog',
-  css: ['./styles/theme.sass'],
   themeConfig: {
     nav: [
       { text: 'Home', link: 'https://melsicon.netlify.com', external: true },

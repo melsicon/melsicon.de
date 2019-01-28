@@ -28,10 +28,9 @@
     }
   }
 </script>
+<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="./styles/theme.styl" lang="stylus"></style>
 
-<style lang="sass">
-@import './styles/theme.sass'
-</style>
 <style>
 .page-enter-active,
 .page-leave-active {

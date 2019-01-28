@@ -1,17 +1,28 @@
 <template>
-  <main class="blog-list">
+  <main class="blog-content">
     <!-- TODO: add current active filter here, and option to remove -->
     <p v-if="typeof(byAuthor) !== 'boolean'">Showing posts by: {{ byAuthor }}</p>
     <p v-if="typeof(byAuthor) !== 'boolean'" @click="byAuthor = false">Remove filter</p>
-    <blog-preview v-for="post in posts" :key="post.index" :post="post" @filter-author="filterAuthor"/>
+    <!-- TODO: Add twitter timeline -->
+    <twitter-timeline class="twitter-timeline"/>
+    <div class="blog-post-previews">
+      <blog-preview
+        v-for="post in posts"
+        :key="post.index"
+        :post="post"
+        @filter-author="filterAuthor"/>
+    </div>
+
   </main>
 </template>
 
 <script>
+  import TwitterTimeline from '../components/TwitterTimeline'
   import BlogPreview from '../components/BlogPreview'
   export default {
     name: 'ListLayout',
     components: {
+      TwitterTimeline,
       BlogPreview
     },
     data() {
@@ -45,15 +56,16 @@
   }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 
-  .blog-list
+  .blog-content
     display: grid
     grid-template-columns: 1fr 1fr
-    gap: 1em
-    max-width: 1000px
+    grid-template-areas: 'twitter blog'
+    gap: 2em
     margin: 0 auto
-    padding: 5em 0
+    padding: 0 1em
+    padding-bottom: 4em
     @media screen and (max-width: 768px)
       grid-template-columns: 1fr
 

@@ -79,5 +79,16 @@ module.exports = {
       permalink: false,
       permalinkBefore: false
     }
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-59119788-4'
+      }
+    ]
+  ],
+  head: [
+    ['script', { async: true, src: "https://platform.twitter.com/widgets.js", charset: "utf-8" }]
+  ]
 }

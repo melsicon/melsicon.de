@@ -88,7 +88,7 @@ export default {
     transition: transform .3s ease-in
     border-bottom: 1px solid $color-white
     transition: all .3s ease-in
-    &:hover, &:focus
+    &:hover
       text-decoration: underline
 
   .is-active

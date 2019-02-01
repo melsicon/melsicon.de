@@ -6,7 +6,6 @@
     <transition name="page">
       <cookie-consent
         v-if="cookieOpen"
-        ref="modal"
         @updateConsent="updateConsent"/>
     </transition>
     <the-footer/>
@@ -38,18 +37,12 @@ export default {
   },
   mounted() {
     // Disable tracking until consent is given
-    this.setFocus()
     // Cookies.remove('melsicon_cookie')
     this.setTracking(false)
     this.cookieStatus = Cookies.getJSON('melsicon_cookie')
     this.checkConsent()
   },
   methods: {
-    setFocus() {
-      setTimeout(() => {
-        this.$refs.modal.$el.focus()
-      }, 150)
-    },
     checkConsent() {
       if (this.cookieStatus === undefined) this.cookieOpen = true // If no melsicon_cookie, show the cookie banner
       if (this.cookieStatus) this.setTracking(true) // If cookie is true, start tracking
@@ -82,6 +75,7 @@ export default {
     background: $color-white
     font-family: $font-body
     font-size: 20px
+    //height: 100%
     line-height: 1.4
     color: $color-black
     text-size-adjust: none
@@ -95,11 +89,8 @@ export default {
     color: $color-primary
     font-weight: semi-bold
     transition: transform .5s ease-in-out
-    outline: 0
     &:hover
       text-decoration: underline
-    &:focus
-      border-bottom: 3px solid $color-secondary
 
   ul
     list-style-type: none
@@ -115,9 +106,6 @@ export default {
     box-shadow: 0
     font-size: 1em
     font-family: $font-body
-    outline: 0
-    &:focus
-      border: 2px solid $color-secondary
 
   .btn-purple
     color: $color-white
@@ -133,6 +121,9 @@ export default {
     &:active
       transform: translateY(1px)
       box-shadow: 0px 2px 5px $box-shadow-purple, inset 0px 0px 5px $box-shadow-purple
+
+  #app
+    //min-height: 100vh
 
   // MAIN WRAPPER
   .wrapper

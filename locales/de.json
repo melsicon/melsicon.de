@@ -292,6 +292,14 @@
     ]
   },
 
+  "cookie": {
+    "heading": "Datenschutzrichtlinien 🍪",
+    "desc": ["Wir benutzen Cookies, um unseren Lesern das beste Webseiten-Erlebnis zu ermöglichen. Außerdem werden teilweise auch Cookies von Diensten Dritter eingesetzt.", "Weiterführende Informationen erhalten Sie in unserer {link}."],
+    "link": "Datenschutzerklärung",
+    "accept": "Accept cookies!",
+    "decline": "Nein, danke."
+  },
+
   "footer": {
     "contact": {
       "heading": "Kontakt",

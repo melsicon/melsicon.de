@@ -1,17 +1,29 @@
 <template>
-  <div class="cookie-consent">
-    <h2 class="cookie-heading">Cookie Policy 🍪</h2>
-    <p class="cookie-description">We use cookies to improve your user experience and for analytics purposes, but can only do this with your consent.</p>
-    <p class="cookie-description">Please see our
-      <nuxt-link
+  <div
+    class="cookie-consent"
+    tabindex="1"
+    aria-labelledby="cookie-heading">
+    <h2
+      id="cookie-heading"
+      class="cookie-heading">{{ $t('cookie.heading') }}</h2>
+    <p class="cookie-description">{{ $t('cookie.desc[0]') }}</p>
+    <i18n
+      class="cookie-description"
+      path="cookie.desc[1]"
+      tag="p">
+      <router-link
         to="/datenschutz"
-        class="inline-link">Data Privacy Policy</nuxt-link> for more information and how to update your settings.</p>
+        class="inline-link"
+        place="link">{{ $t('cookie.link') }}</router-link>
+    </i18n>
     <button
+      tabindex="1"
       class="btn btn-optin btn-purple"
-      @click="optIn">Accept Cookies!</button>
+      @click="optIn">{{ $t('cookie.accept') }}</button>
     <button
+      tabindex="1"
       class="btn btn-cookie btn-optout"
-      @click="optOut">No, thank you.</button>
+      @click="optOut">{{ $t('cookie.decline') }}</button>
   </div>
 </template>
 
@@ -32,18 +44,24 @@ export default {
 <style lang="sass" scoped>
 
   .cookie-consent
-    position: fixed
-    bottom: 0
+    position: sticky
+    bottom: 1em
     left: 0
-    max-width: 350px
-    margin: 1.5em 2em
+    max-width: 380px
+    margin: 0 2em
     border-radius: 2em
     background: $color-white
-    box-shadow: 0px 3px 10px $box-shadow-white
-    padding: 1.5em 1em 1em
+    box-shadow: 0px 3px 15px 2px $box-shadow-white
+    padding: 1.2em 1em 1.2em
     display: flex
     flex-direction: column
     flex-wrap: wrap
+    &:focus
+      outline: 0
+      border: 1px solid $color-primary
+    @include x-small
+      margin: 0 auto
+      bottom: .5em
 
   .cookie-description
     margin-bottom: .5em

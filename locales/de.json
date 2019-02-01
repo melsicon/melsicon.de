@@ -27,6 +27,10 @@
   "contact": {
     "desc": "Eine Person die im Sitzen an ihrem Handy ist.",
     "src": "../img/illustrations/contact.svg"
+  },
+  "error404": {
+    "desc": "Seite nicht gefunden.",
+    "src": "../img/illustrations/error404.svg"
   }
 },
 

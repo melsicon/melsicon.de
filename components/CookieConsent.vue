@@ -58,7 +58,7 @@ export default {
     flex-wrap: wrap
     &:focus
       outline: 0
-      border: 1px solid $color-primary
+      box-shadow: 0px 3px 15px 2px rgba(0,0,0,0.15)
     @include x-small
       margin: 0 auto
       bottom: .5em

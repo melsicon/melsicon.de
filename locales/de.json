@@ -243,44 +243,20 @@
   },
 
   "jobs": {
-    "heading": "Wir suchen dich!",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
+    "heading": "Warum melsicon?",
+    "desc": "Bei uns findest du nicht nur interessante Projekte, sondern auch eine gute Work-Life-Balance, ein faires Gehalt, aktive Förderung deiner Weiterbildung, Kunden ausschließlich im Rhein-Main-Gebiet sowie eine gute Vereinbarkeit zwischen Beruf und Familie.",
     "list": [
       {
-        "title": "Backend Entwickler (m/w)",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
+        "title": "Backend Java Entwickler/Berater (m/w)",
+        "description": "We are looking for someone who is ready to develop high-quality software with a short time to market cycles.",
         "profile": {
-          "heading": "You are:",
-          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
-        },
-        "tasks": {
-          "heading": "About the job",
-          "list": ["Consult our customers in Frankfurt area"]
-        }
-      },
-      {
-        "title": "DevOps Engineer",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
-        "profile": {
-          "heading": "You are:",
-          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
-        },
-        "tasks": {
-          "heading": "About the job",
-          "list": ["Consult our customers in Frankfurt area"]
-        }
-      },
-      {
-        "title": "Other job",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae elit ut elit molestie maximus. Suspendisse potenti. Maecenas ullamcorper auctor ex, nec pretium quam venenatis vitae. Sed tincidunt interdum dolor, a sodales dolor pretium vitae.",
-        "profile": {
-          "heading": "You are:",
-          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Fluent in both German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
-        },
-        "tasks": {
-          "heading": "About the job",
-          "list": ["Consult our customers in Frankfurt area"]
-        }
+          "heading": "About you",
+          "list": ["Open-minded", "Ready to grow and shape the company with us", "Interested in modern software architectures", "Speak fluent German and English", "Have solid knowledge of Java, SQL, DevOps, Cloud, REST, Git", "Quality-conscious, communicative with social and emotional competence"]
+          },
+          "tasks": {
+            "heading": "Your tasks",
+            "list": ["Consult our customers in the Frankfurt area", "Use state of the art tech stack and tools to develop Java, SQL, DevOps, Cloud, REST, Git", "Write Clean Code"]
+          }
       }
     ]
   },
@@ -313,14 +289,11 @@
     "legal": {
       "heading": "Rechtliches",
       "imprint": "Impressum",
-      "privacy": "Datenschutz"
+      "privacy": "Datenschutzerklärung"
     },
     "quick": {
       "heading": "Schnelleinstieg",
-      "jobs": "Stellenangebote"
-    },
-    "meetups": {
-      "heading": "Unsere Meetups"
+      "jobs": "Karriere"
     },
     "social": {
       "heading": "Folg uns",

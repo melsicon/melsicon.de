@@ -14,8 +14,8 @@
       <h2 class="heading">{{ $t('about.careers.heading') }}</h2>
       <p>{{ $t('about.careers.desc') }}</p>
       <!-- CURRENT/MOST RECENT OPENINGS -->
-      <nuxt-link 
-        class="inline-link job-page-link" 
+      <nuxt-link
+        class="inline-link job-page-link"
         to="/karriere">
         <font-awesome-icon
           :icon="['fas', 'angle-right']"
@@ -40,9 +40,8 @@
 
   .article-careers
     align-self: center
-  
+
   .job-page-link
-    display: block
     margin-bottom: 1.2em
 
 </style>

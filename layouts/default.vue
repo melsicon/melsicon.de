@@ -81,7 +81,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 20px
+    font-size: 21px
     line-height: 1.4
     color: $color-black
     text-size-adjust: none
@@ -96,10 +96,10 @@ export default {
     font-weight: semi-bold
     transition: transform .5s ease-in-out
     outline: 0
-    &:hover
-      text-decoration: underline
-    &:focus
-      border-bottom: 3px solid $color-secondary
+    border-bottom: 2px solid transparent
+    align-self: flex-start
+    &:hover, &:focus
+      border-bottom: 2px solid $color-secondary
 
   ul
     list-style-type: none

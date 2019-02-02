@@ -20,11 +20,11 @@
     <section
       id="jobs"
       class="section section-jobs">
-      <ul 
-        class="job-list" 
+      <ul
+        class="job-list"
         aria-labelledby="job-list-heading">
-        <li 
-          v-for="job in $t('jobs.list')" 
+        <li
+          v-for="job in $t('jobs.list')"
           :key="job.index"
           :id="job.title"
           class="job-item">
@@ -32,20 +32,19 @@
           <p>{{ job.description }}</p>
           <h4 class="list-heading">{{ job.profile.heading }}</h4>
           <ul class="item-list">
-            <li 
-              v-for="item in job.profile.list" 
+            <li
+              v-for="item in job.profile.list"
               :key="item.index">{{ item }}</li>
           </ul>
           <h4 class="list-heading">{{ job.tasks.heading }}</h4>
           <ul class="item-list">
-            <li 
-              v-for="item in job.tasks.list" 
+            <li
+              v-for="item in job.tasks.list"
               :key="item.index">{{ item }}</li>
           </ul>
-          <a 
+          <a
             :href="`mailto:karriere@melsicon.de?subject=Job Application: ${job.title}&body=Please attach your CV and cover letter.`"
-            class="apply-link">
-            <button class="btn btn-purple">Apply now</button>
+            class="apply-link btn btn-purple">Apply now
           </a>
         </li>
       </ul>
@@ -77,9 +76,10 @@ export default {
       font-size: 2.5em
     @include x-small
       font-size: 2em
-  
+
   .job-heading
-    font-size: 1.2em
+    font-size: 2em
+    font-weight: 300
 
   .section-jobs
     padding-top: 1em
@@ -92,7 +92,7 @@ export default {
     flex-wrap: wrap
 
     .job-item
-      flex-basis: 50%
+      flex-basis: 70%
       @include small
         flex-basis: 100%
 
@@ -117,5 +117,9 @@ export default {
 
   .section-careers-intro
     align-items: center
+
+  .apply-link
+    display: inline-block
+    margin-top: 1em
 
 </style>

@@ -5,8 +5,8 @@
       <!-- QUICK LINKS -->
       <div class="footer-content footer-quick">
         <h3 class="footer-heading">{{ $t('footer.quick.heading') }}</h3>
-        <nuxt-link 
-          class="footer-link" 
+        <nuxt-link
+          class="footer-link"
           to="/karriere">Stellenangebote</nuxt-link>
         <a
           v-for="(meetup, key) in $t('about.careers.community.meetups')"
@@ -102,6 +102,9 @@ export default {
       min-height: 2em
 
   .footer-content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
     flex-basis: calc(100% / 4)
     @include small
       flex-basis: 50%
@@ -111,10 +114,9 @@ export default {
       order: 1
       flex-basis: 100%
 
-
   .footer-heading
-    font-size: 0.9em
-    margin-top: .5em
+    font-size: 0.95em
+    margin: .5em 0
     text-transform: uppercase
     letter-spacing: .5px
 

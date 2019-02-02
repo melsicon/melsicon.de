@@ -17,9 +17,10 @@
       <i18n
         path="contact.desc[0]"
         tag="p">
-        <span
+        <a
+          href="mailto:hallo@melsicon.de"
           class="email inline-link"
-          place="email">{{ $t('contact.email') }}</span>
+          place="email">{{ $t('contact.email') }}</a>
       </i18n>
       <p>{{ $t('contact.desc[1]') }}</p>
     </article>

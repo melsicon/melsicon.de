@@ -78,7 +78,6 @@ export default {
     background: $color-primary-darker
     color: $color-white
     padding: 1em 0
-    font-size: 21px
 
   .footer-wrapper
     display: flex

@@ -26,8 +26,6 @@
     </article>
     <!-- ILLUSTRATION ON LARGE & XSMALL SCREENS -->
     <div
-      v-if="$mq === 'lg' || $mq === 'xs'"
-      :class="{'illustration-medium': $mq === 'md'}"
       class="illustration illustration-contact">
       <img
         v-lazy="$t('illustrations.contact.src')"
@@ -53,6 +51,8 @@ export default {
   .section-contact
     align-items: center
     padding: 5em 1em
+    @media screen and (max-width: 768px)
+      padding: 2em 1em
 
   .heading-contact
     hyphens: none

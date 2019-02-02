@@ -1,6 +1,5 @@
 <template>
   <section class="section section-error">
-    <!-- TODO: Insert 404 illustration -->
     <img
       :src="$t('illustrations.error404.src')"
       :alt="$t('illustrations.error404.desc')"

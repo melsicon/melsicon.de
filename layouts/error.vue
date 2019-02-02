@@ -1,6 +1,10 @@
 <template>
   <section class="section section-error">
     <!-- TODO: Insert 404 illustration -->
+    <img
+      :src="$t('illustrations.error404.src')"
+      :alt="$t('illustrations.error404.desc')"
+      class="illustration illustration-error404">
     <h2 class="error-heading">{{ $t('error.heading') }}</h2>
     <p>{{ $t('error.desc') }}
       <i18n
@@ -38,7 +42,10 @@ export default {
   margin: auto;
   flex-direction: column
   padding-bottom: 3em
-  padding: 5em 0
+  align-items: center
+
+.illustration-error404
+  max-height: 400px
 
 .error-heading
   color: $color-black

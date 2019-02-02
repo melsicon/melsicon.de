@@ -184,10 +184,13 @@
         <p>Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig, allein auf Basis Ihrer Einwilligung. Sofern Sie den Zugriff unterbinden, kann es hierdurch zu Funktionseinschränkungen auf der Website kommen.</p>
         <h3>Widerruf der Einwilligung</h3>
         <p>Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de">Browser Add On zur Deaktivierung von Google Analytics</a>.</p>
-        <p>Zusätzlich oder als Alternative zum Browser-Add-On können Sie das Tracking durch Google Analytics auf unseren Seiten unterbinden, indem Sie <a
+        <p>Zusätzlich oder als Alternative zum Browser-Add-On können Sie das Tracking durch Google Analytics auf unseren Seiten unterbinden, indem Sie <button
+          class="inline-link opt-btn"
           title="Google Analytics Opt-Out-Cookie setzen"
-          href="#"
-          @click="optOut">diesen Link anklicken</a>. Dabei wird ein Opt-out-Cookie auf Ihrem Gerät installiert. Damit wird die Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert bleibt. <!-- TODO: Add opt in text and link --></p>
+          @click="optOut">diesen Link</button> anklicken. Dabei wird ein Opt-out-Cookie auf Ihrem Gerät installiert. Damit wird die Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert, so lange das Cookie in Ihrem Browser installiert bleibt. Falls Sie Ihre Meinung ändern sollten und unserer Nutzung von Google Analytics doch zustimmen wollen, klicken Sie bitte <button
+            class="inline-link opt-btn"
+            title="Google Analytics Opt-In-Cookie setzen"
+            @click="optIn">diesen Link</button>.</p>
         <h3>Profiling</h3>
         <p>Mit Hilfe des Tracking-Tools Google Analytics kann das Verhalten der Besucher der Webseite bewertet und die Interessen analysiert werden. Hierzu erstellen wir ein pseudonymes Nutzerprofil.</p>
       </article>
@@ -368,7 +371,7 @@ export default {
     min-height: 50vh
     padding-top: 5em
     padding-bottom: 3em
-    @include small
+    @media screen and (max-width: 768px)
       grid-template-columns: 1fr
 
   .heading-privacy
@@ -379,4 +382,7 @@ export default {
     margin-left: 2rem
     margin-bottom: 1rem
 
+  .opt-btn:focus
+    border: 0
+    border-bottom: 2px solid $color-secondary
 </style>

@@ -27,6 +27,10 @@
   "contact": {
     "desc": "Eine Person die im Sitzen an ihrem Handy ist.",
     "src": "../img/illustrations/contact.svg"
+  },
+  "error404": {
+    "desc": "Seite nicht gefunden.",
+    "src": "../img/illustrations/error404.svg"
   }
 },
 
@@ -147,17 +151,6 @@
         "social": {
           "linkedin": "https://www.linkedin.com/in/meike-h/",
           "github": "https://github.com/Schlenges",
-          "twitter": "https://twitter.com/meikewicz"
-        }
-      },
-      {
-        "name": "Christian Gröger",
-        "title": "Researcher",
-        "subtitle": "Werkstudent",
-        "img": "../img/profiles/meike.jpg",
-        "social": {
-          "linkedin": "https://www.linkedin.com/in/meike-h/",
-          "xing": "#",
           "twitter": "https://twitter.com/meikewicz"
         }
       }
@@ -290,6 +283,14 @@
         }
       }
     ]
+  },
+
+  "cookie": {
+    "heading": "Datenschutzrichtlinien 🍪",
+    "desc": ["Wir benutzen Cookies, um unseren Lesern das beste Webseiten-Erlebnis zu ermöglichen. Außerdem werden teilweise auch Cookies von Diensten Dritter eingesetzt.", "Weiterführende Informationen erhalten Sie in unserer {link}."],
+    "link": "Datenschutzerklärung",
+    "accept": "Accept cookies!",
+    "decline": "Nein, danke."
   },
 
   "footer": {

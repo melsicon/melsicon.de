@@ -7,7 +7,7 @@
         <h3 class="footer-heading">{{ $t('footer.quick.heading') }}</h3>
         <nuxt-link
           class="footer-link"
-          to="/karriere">Stellenangebote</nuxt-link>
+          to="/karriere">{{ $t('footer.quick.jobs') }}</nuxt-link>
         <a
           v-for="(meetup, key) in $t('about.careers.community.meetups')"
           :key="meetup.index"
@@ -75,11 +75,10 @@ export default {
 <style lang="sass">
 
   .footer
-    min-height: 15rem
     background: $color-primary-darker
     color: $color-white
-    font-size: 17px
     padding: 1em 0
+    font-size: 21px
 
   .footer-wrapper
     display: flex
@@ -115,8 +114,8 @@ export default {
       flex-basis: 100%
 
   .footer-heading
-    font-size: 0.95em
-    margin: .5em 0
+    font-size: 1em
+    margin: .3em 0
     text-transform: uppercase
     letter-spacing: .5px
 
@@ -127,7 +126,6 @@ export default {
   .footer-social-item
     margin-bottom: .5em
     color: $color-white
-    font-size: 1em
     text-transform: capitalize
     @include small
       margin-left: 0

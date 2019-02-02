@@ -81,7 +81,7 @@ export default {
     position: relative
     background: $color-white
     font-family: $font-body
-    font-size: 20px
+    font-size: 21px
     line-height: 1.4
     color: $color-black
     text-size-adjust: none

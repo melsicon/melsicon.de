@@ -3,7 +3,6 @@
     id="careers"
     class="section section-careers">
     <div
-      v-if="$mq === 'lg'"
       class="illustration illustration-careers">
       <img
         v-lazy="$t('illustrations.careers.src')"
@@ -23,15 +22,13 @@
           aria-hidden="true"
           fixed-width
           class="item-icon"/>{{ $t('about.careers.link') }}</nuxt-link>
-      <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
-      <div
-        v-if="$mq === 'xs' || $mq === 'md'"
-        :class="{'illustration-medium': $mq === 'md'}"
+          <!-- ILLUSTRATION ON SMALL AND MEDIUM SCREENS -->
+          <!-- <div
         class="illustration illustration-careers">
         <img
           v-lazy="$t('illustrations.careers.src')"
           :alt="$t('illustrations.careers.desc')">
-      </div>
+      </div> -->
     </article>
   </section>
 </template>
@@ -43,5 +40,4 @@
 
   .job-page-link
     margin-bottom: 1.2em
-
 </style>

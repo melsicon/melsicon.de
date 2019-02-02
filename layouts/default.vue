@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <sm-nav v-if="$mq === 'sm' || $mq === 'md'"/>
-    <lg-nav v-if="$mq === 'lg'"/>
+    <sm-nav v-if="$mq === 'sm'"/>
+    <lg-nav v-else/>
     <nuxt/>
     <transition name="page">
       <cookie-consent
@@ -150,7 +150,7 @@ export default {
     padding: 4em 1em 1em
     margin: 0 auto
     @include small
-      padding-top: 3em
+      padding-top: 2em
 
   // HEADINGS
   .heading
@@ -174,6 +174,16 @@ export default {
     @include small
       flex-basis: 100%
 
+  .article:nth-child(2n+1)
+    padding-right: 1em
+    @include small
+      padding: 0
+
+  .article:nth-child(2n+2)
+    padding-left: 1em
+    @include small
+      padding: 0
+
   p:not(:last-child)
     margin-bottom: 1em
 
@@ -182,7 +192,9 @@ export default {
     padding: 0 4em
     align-self: center
     @include small
-      padding: 0 1em
+      padding: 1em
+      max-width: 450px
+      margin: 0 auto
 
   .illustration-medium
     float: right

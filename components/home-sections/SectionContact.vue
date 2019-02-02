@@ -59,7 +59,6 @@ export default {
 
   .illustration-contact
     padding: 0 4em
-    margin: 2em 0
     @include small
-      padding: 0 2em
+      padding: 1em 2em
 </style>

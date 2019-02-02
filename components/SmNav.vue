@@ -102,7 +102,7 @@ export default {
     transition: opacity 1s .5s
 
   .nav-link
-    display: block
+    align-self: center
     font-size: 1.2em
     color: $color-white
     margin-bottom: 1em
@@ -119,6 +119,9 @@ export default {
     transition: all 1s
     margin-left: auto
     min-height: 1.5em
+    &:focus, &:hover
+      border: 0
+      border-bottom: 2px solid $color-secondary
 
   .btn-close
     color: $color-white
@@ -156,20 +159,20 @@ export default {
   .circle
     position: absolute
     top: 0
-    right: 0
-    height: 160vw
-    width: 160vw
+    right: calc((100% - 500px)/2)
+    height: 500px
+    width: 500px
     background: $color-primary-darker
     border-radius: 50%
-    transform: translate3d(20%,-40%,0)
+    transform: translate3d(0,-30%,0)
     z-index: -1
     transform-origin: 100% 0%
-    @media screen and (max-width: 768px)
-      transform: translate3d(20%,-55%,0)
-    @media screen and (max-width: 400px)
-      transform: translate3d(20%,-40%,0)
-    @media screen and (max-width: 320px)
-      transform: translate3d(20%,-30%,0)
+    // @media screen and (max-width: 768px)
+    //   transform: translate3d(20%,-55%,0)
+    // @media screen and (max-width: 400px)
+    //   transform: translate3d(20%,-40%,0)
+    // @media screen and (max-width: 320px)
+    //   transform: translate3d(20%,-30%,0)
 
   .circle-enter-active, .circle-leave-active
     transition: all 1s

@@ -72,6 +72,8 @@
 
     .client
       margin: 1.5em 0
+      &:last-child
+        margin-bottom: 0
 
   .commerzbank
     max-height: 2.3em

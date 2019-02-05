@@ -1,4 +1,3 @@
-const pkg = require('./package')
 const meta = {
   title: 'melsicon GmbH',
   description:
@@ -79,7 +78,7 @@ module.exports = {
   css: [],
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     [
       'nuxt-mq',
       {

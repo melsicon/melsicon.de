@@ -104,17 +104,6 @@
         }
       },
       {
-        "name": "Victoria Bergquist",
-        "title": "Front-End Entwicklerin",
-        "subtitle": "Community Manager",
-        "img": "../img/profiles/victoria.jpg",
-        "social": {
-          "linkedin": "https://www.linkedin.com/in/victoriabergquist/",
-          "github": "https://github.com/vicbergquist",
-          "twitter": "https://twitter.com/vicbergquist"
-        }
-      },
-      {
         "name": "Bastian Baist",
         "title": "Berater",
         "subtitle": "Back-End Entwickler (Java/DevOps)",

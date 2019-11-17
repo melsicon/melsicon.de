@@ -157,10 +157,6 @@
         "heading": "Engagement in der Community",
         "desc": "Es ist uns wichtig, die Tech-Community im Rhein-Main-Gebiet zu unterstützen und zu fördern. Wir ermutigen unsere Mitarbeiter sich aktiv einzubringen und können voller stolz behaupten, dass einige Meetups der Community von unseren Mitarbeitern organisiert und von melsicon gesponsert werden.",
         "meetups": {
-          "CSS Frankfurt": "https://www.meetup.com/CSSFrankfurt/",
-          "Vue.js Frankfurt": "https://www.meetup.com/vuejsfrankfurt/",
-          "DevBizFra": "https://www.meetup.com/devbizfra/",
-          "FRADevJobs": "https://www.meetup.com/FRADevJobs-Berufliche-Neuorientierung-fur-Entwickler",
           "Business meets IT": "https://www.meetup.com/de-DE/Business-meets-IT/"
         }
       },
@@ -288,7 +284,6 @@
       "heading": "Folg uns",
       "social": {
         "twitter": "https://twitter.com/melsicon",
-        "xing": "https://www.xing.com/companies/melsicongmbh",
         "linkedin": "https://www.linkedin.com/company/melsicon",
         "github": "https://github.com/melsicon"
       }
